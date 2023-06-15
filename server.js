@@ -4,9 +4,7 @@ const { parse } = require("url");
 const next = require("next");
 const fs = require("fs");
 const path = require("path");
-
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
