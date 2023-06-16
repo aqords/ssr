@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Homepage } from "./Homepage/Homepage";
+import Homepage from "./Homepage/Homepage";
 
 export default function Home({ image }: any) {
   return (

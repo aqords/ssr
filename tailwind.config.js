@@ -18,8 +18,9 @@ module.exports = {
       },
       fontSize: {
         sm: "16px",
-        lg: "40px",
+        lg: "20px",
       },
+
       backgroundColor: {
         main: "#080809",
         second: "#19191A",
@@ -50,10 +51,10 @@ module.exports = {
             maxWidth: "768px",
           },
           "@screen lg": {
-            maxWidth: "1124px",
+            maxWidth: "1104px",
           },
           "@screen xl": {
-            maxWidth: "1124px",
+            maxWidth: "1104px",
           },
         },
       });

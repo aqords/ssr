@@ -1,3 +1,12 @@
-export function Homepage() {
-  return <div className="">homepage</div>;
-}
+import React from "react";
+import MainContent from "../../components/main/MainContent";
+
+const Homepage = () => {
+  return (
+    <>
+      <MainContent />
+    </>
+  );
+};
+
+export default Homepage;
