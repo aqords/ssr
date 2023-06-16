@@ -56,7 +56,7 @@ const items = [
 ];
 const ItemsList = () => {
   return (
-    <div>
+    <div className="pb-[120px]">
       <ul>
         {items.map((item, i) => (
           <Item key={i} item={item} />

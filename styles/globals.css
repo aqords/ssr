@@ -1,14 +1,57 @@
+@import url(./fonts.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: Helvetica, Roboto, system-ui, "Segoe UI", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "AmpleSoft Pro";
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: -0.14px;
   color: #ffffff;
   background-color: #080809;
+}
+
+@layer components {
+  .gradient-brown-yellow {
+    border-image-slice: 1;
+    border-image-source: radial-gradient(
+      99.07% 69.6% at 129.48% 82.56%,
+      #c6b38a 0%,
+      #f3c691 46.36%,
+      #b4703e 100%
+    );
+  }
+  .gradient-border-brown-yellow {
+    background: linear-gradient(#080809, #080809) padding-box,
+      linear-gradient(210deg, #c6b38a 0%, #f3c691 47.4%, #b4703e 100%)
+        border-box;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+  .gradient-button {
+    background: linear-gradient(
+          324.99deg,
+          rgba(157, 135, 86, 0.2) 29.37%,
+          rgba(173, 167, 133, 0.2) 97.59%
+        )
+        padding-box,
+      linear-gradient(
+          324.99deg,
+          rgba(157, 135, 86, 0.2) 29.37%,
+          rgba(173, 167, 133, 0.2) 97.59%
+        )
+        border-box;
+    border-radius: 500px;
+    border: 3px solid transparent;
+  }
+  .mobile-button-color {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      linear-gradient(
+        200.74deg,
+        rgba(214, 211, 194, 0.2) 0%,
+        rgba(92, 92, 92, 0.14) 100%
+      );
+  }
 }

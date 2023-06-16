@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ({ item }: any) => {
   return (
-    <li className=" mb-[60px] md:mb-[120px]">
+    <li className=" pt-[60px] md:pt-[120px]">
       <div className="md:mb-[40px] mb-[30px]">
         <img
           src={item.topicon.src}
@@ -20,8 +20,10 @@ const Item = ({ item }: any) => {
           {item.title}
         </h3>
       </div>
-      <p className="  mb-[25px] md:mb-[44px] md:text-lg">{item.description}</p>
-      <p className="text-gray text-base">{item.text}</p>
+      <p className=" font-cyr mb-[25px] md:mb-[44px] md:text-lg">
+        {item.description}
+      </p>
+      <p className="text-gray font-cyr text-base">{item.text}</p>
     </li>
   );
 };
