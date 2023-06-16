@@ -30,28 +30,4 @@ body {
     border-radius: 10px;
     border: 1px solid transparent;
   }
-  .gradient-button {
-    background: linear-gradient(
-          324.99deg,
-          rgba(157, 135, 86, 0.2) 29.37%,
-          rgba(173, 167, 133, 0.2) 97.59%
-        )
-        padding-box,
-      linear-gradient(
-          324.99deg,
-          rgba(157, 135, 86, 0.2) 29.37%,
-          rgba(173, 167, 133, 0.2) 97.59%
-        )
-        border-box;
-    border-radius: 500px;
-    border: 3px solid transparent;
-  }
-  .mobile-button-color {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      linear-gradient(
-        200.74deg,
-        rgba(214, 211, 194, 0.2) 0%,
-        rgba(92, 92, 92, 0.14) 100%
-      );
-  }
 }

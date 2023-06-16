@@ -70,7 +70,7 @@ const linksForMobile: Link[] = [
   },
 ];
 
-const isMobile = true;
+const isMobile = false;
 
 const Header = () => {
   return isMobile ? (
@@ -81,9 +81,15 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-        <button className="text-sm px-[35px] py-[2px] gradient-button">
-          Connect wallet
-        </button>
+        <div className="flex min-h-screen max-w-screen-sm items-center justify-center">
+          <div className=" w-full rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]">
+            <div className="flex h-full rounded-full w-full items-center justify-center bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]">
+              <button className="text-white text-sm px-[37px]">
+                Connect wallet
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <nav className="">
         <ul className="flex flex-col gap-[10px] w-[100%]">
@@ -91,10 +97,14 @@ const Header = () => {
             return (
               <li
                 key={obj.path}
-                className="px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer flex items-center"
+                className="px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer flex justify-between items-center overflow-hidden"
               >
                 <Link href={obj.path}>{obj.name}</Link>
-                {obj.url ? <Image src={obj.url} alt="logo" /> : ""}
+                {obj.url ? (
+                  <Image className="m-[-19px]" src={obj.url} alt="logo" />
+                ) : (
+                  ""
+                )}
               </li>
             );
           })}
@@ -106,9 +116,13 @@ const Header = () => {
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"
-          className="w-[58px] h-[58px] gradient-border-brown-yellow hover:cursor-pointer"
+          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer"
         >
-          <Image src={logo} width={50} height={50} alt="aqords logo" />
+          <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
+            <div className="rounded-[8px] w-full bg-black p-[1px]">
+              <Image src={logo} width={50} height={50} alt="aqords logo" />
+            </div>
+          </div>
         </Link>
         <ul className="flex gap-[32px]">
           {linksForDesktop.map((obj) => {
@@ -122,9 +136,15 @@ const Header = () => {
             );
           })}
         </ul>
-        <button className="text-sm px-[35px] py-[2px] gradient-button">
-          Connect wallet
-        </button>
+        <div className="flex min-h-screen max-w-screen-sm items-center justify-center">
+          <div className=" w-full rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]">
+            <div className="flex h-full rounded-full w-full items-center justify-center bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]">
+              <button className="text-white text-sm px-[37px]">
+                Connect wallet
+              </button>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
   );
