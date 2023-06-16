@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cyr: "HelveticaNeueCyr",
+        neue: "Helvetica Neue",
+        amp: "AmpleSoft Pro",
+      },
       spacing: {
         25: "6.25rem",
       },
@@ -17,8 +22,8 @@ module.exports = {
         gray: "#838383",
       },
       fontSize: {
-        sm: "16px",
-        lg: "40px",
+        sm: "14px",
+        lg: "20px",
       },
       backgroundColor: {
         main: "#080809",
@@ -53,7 +58,7 @@ module.exports = {
             maxWidth: "1124px",
           },
           "@screen xl": {
-            maxWidth: "1124px",
+            maxWidth: "1108px",
           },
         },
       });
