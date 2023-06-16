@@ -27,6 +27,7 @@ const headers = [
   },
 ];
 
+
 const nextConfig = {
   images: {
     domains: ["dev.qoobus.com", "qoobus.com"],
