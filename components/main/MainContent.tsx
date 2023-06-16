@@ -17,13 +17,13 @@ const MainContent = () => {
         <ItemsList />
       </section>
 
-      <section className=" bg-cover bg-center bg-no-repeat bg-[url('../public/assets/images/truck.png')]">
+      <section className=" bg-cover bg-center bg-no-repeat bg-[url('../public/assets/images/md-truck.png')] md:bg-[url('../public/assets/images/truck.png')]">
         <div className="container">
-          <div className="py-[20%] w-full max-w-[532px]">
-            <h3 className="md:leading-[59px] font-bold text-2xl md:text-4xl mb-[30px]">
+          <div className="py-[20%] w-full max-w-[340px] md:max-w-[450px]">
+            <h3 className=" text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
               Are you prepared to embark on this transformative journey?
             </h3>
-            <p>
+            <p className="font-normal md:text-[20px] text-base leading-6  md:leading-8 ">
               Delve into our website to unravel the intricate workings of our
               platform, acquaint yourself with our exceptional team, and witness
               firsthand how AQORDS propels your freight transportation
