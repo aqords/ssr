@@ -1,14 +1,18 @@
-import React from "react";
+import React, { use, useEffect, useState } from "react";
+import { useResize } from "../../utils/hooks/useResize";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/assets/images/logo.svg";
 import manifesto from "../../public/assets/images/manifesto-btn.svg";
 import about from "../../public/assets/images/aboutus-btn.svg";
+import burger from "../../public/assets/images/burger-btn.svg";
+import closeburg from "../../public/assets/images/close-burger.svg";
 
 interface Link {
   name: string;
   path: string;
   url?: string;
+  bgLight?: string;
 }
 
 const linksForDesktop: Link[] = [
@@ -45,41 +49,62 @@ const linksForMobile: Link[] = [
   {
     name: "How it does works?",
     path: "/",
+    bgLight:
+      "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
     name: "Manifesto",
     path: "/",
     url: manifesto,
+    bgLight:
+      "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
     name: "Whitepapper",
     path: "/",
+    bgLight:
+      "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
   },
   {
     name: "Road map",
     path: "/",
+    bgLight:
+      "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "About US",
     path: "/",
     url: about,
+    bgLight:
+      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "Our team",
     path: "/",
+    bgLight:
+      "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
   },
 ];
 
-const isMobile = false;
+const isMobile = true;
 
 const Header = () => {
+  const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  const toggleBurger = () => {
+    isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
+  };
+
   return isMobile ? (
-    <header className="container">
+    <header className="container relative">
       <div className="flex justify-between items-center h-[60px]">
-        <button>
-          <span></span>
-          <span></span>
-          <span></span>
+        <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
+          {isOpenBurger ? (
+            <Image className="scale-305" src={closeburg} alt="menu" />
+          ) : (
+            <Image src={burger} alt="menu" />
+          )}
         </button>
         <div className="flex min-h-screen max-w-screen-sm items-center justify-center">
           <div className=" w-full rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]">
@@ -92,23 +117,35 @@ const Header = () => {
         </div>
       </div>
       <nav className="">
-        <ul className="flex flex-col gap-[10px] w-[100%]">
-          {linksForMobile.map((obj) => {
-            return (
-              <li
-                key={obj.path}
-                className="px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer flex justify-between items-center overflow-hidden"
-              >
-                <Link href={obj.path}>{obj.name}</Link>
-                {obj.url ? (
-                  <Image className="m-[-19px]" src={obj.url} alt="logo" />
-                ) : (
-                  ""
-                )}
-              </li>
-            );
-          })}
-        </ul>
+        {isOpenBurger ? (
+          <ul className="flex flex-col gap-[12px] w-[100%]">
+            {linksForMobile.map((obj) => {
+              return (
+                <li
+                  key={obj.path}
+                  className="relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer flex justify-between items-center "
+                >
+                  <Link href={obj.path}>{obj.name}</Link>
+
+                  {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
+
+                  {obj.url ? (
+                    <Image className="m-[-19px]" src={obj.url} alt="logo" />
+                  ) : (
+                    ""
+                  )}
+                  {obj.name === "About US" ? (
+                    <div className="absolute top-[-90px] right-[-80px] w-[183px] h-[183px] opacity-40 background-light"></div>
+                  ) : (
+                    ""
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          ""
+        )}
       </nav>
     </header>
   ) : (

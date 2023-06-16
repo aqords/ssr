@@ -116,7 +116,7 @@ const nextConfig = {
         source: "/:locale/news",
         destination: "/auth?lang=:locale",
         permanent: false,
-        locale: false
+        locale: false,
       },
     ];
   },
