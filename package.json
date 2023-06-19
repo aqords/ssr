@@ -29,6 +29,7 @@
     "preact": "^10.11.3",
     "react": "^18.2.0",
     "react-autocomplete": "^1.8.1",
+    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-i18next": "^11.18.6",

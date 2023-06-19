@@ -5,6 +5,38 @@ import Image from "next/image";
 import logo from "../../public/assets/images/logoaqords.svg";
 import Link from "next/link";
 
+const LinksForLearn = [
+  {
+    name: "About",
+    path: "/",
+  },
+  {
+    name: "How it works",
+    path: "/",
+  },
+  {
+    name: "Manifesto",
+    path: "/",
+  },
+  {
+    name: "Whitepaper",
+    path: "/",
+  },
+];
+const LinkForExplore = [
+  {
+    name: "Road map",
+    path: "/",
+  },
+  {
+    name: "Team",
+    path: "/",
+  },
+  {
+    name: "Contact us",
+    path: "/",
+  },
+];
 const Footer = () => {
   return (
     <footer className="py-[120px] bg-second">
@@ -30,20 +62,56 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="">
-          <Image src={logo} />
-          <p>
-            Empowering Carriers, Shippers and Freight Forwarders with Real-Time
-            DEFI Payments
-          </p>
-          <div className=" w-full rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]">
-            <div className="flex h-full rounded-full w-full   bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]">
-              <button className=" text-white text-sm px-[37px]">
-                Announcing our next round of funding.
-                <Link className="" href="">
-                  Read more →
-                </Link>
-              </button>
+        <div className="flex justify-between">
+          <div>
+            <div className="mb-[24px]">
+              <Image src={logo} alt="aqodrds logo" />
+            </div>
+            <p className="block mb-[71px] text-[14px]">
+              Empowering Carriers, Shippers and Freight Forwarders with
+              Real-Time DEFI Payments
+            </p>
+            <div className="flex flex-start">
+              <Button
+                insideGradient="bg-black"
+                outsideGradient="bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+              >
+                <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[15px] lg:mr-[15px] lg:gap-[24px] lg:text-[16px]">
+                  <p className="text-[#838383] text-[14px]">
+                    Announcing our next round of funding.
+                  </p>
+                  <p className="font-normal text-[14px]">Read more →</p>
+                </div>
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex gap-[110px]">
+            <div>
+              <span className="block mb-[32px] font-bold">Learn</span>
+              <ul>
+                {LinksForLearn.map((link, i) => (
+                  <li
+                    className="text-[#A1A1A6] mb-[12px] leading-[20px]"
+                    key={i}
+                  >
+                    {link.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <span className="block mb-[32px] font-bold">Explore</span>
+              <ul>
+                {LinkForExplore.map((link, i) => (
+                  <li
+                    className=" text-[#A1A1A6] mb-[12px] leading-[20px]"
+                    key={i}
+                  >
+                    {link.name}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
