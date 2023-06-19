@@ -13,7 +13,7 @@ const Button: React.FC<ComponentProps> = ({
 }) => {
   return (
     <div className="flex max-w-screen-sm items-center justify-center">
-      <div className={`w-full rounded-full ${outsideGradient}`}>
+      <div className={`w-full rounded-full  ${outsideGradient}`}>
         <div
           className={`flex h-full rounded-full w-full items-center justify-center ${insideGradient}`}
         >

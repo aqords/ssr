@@ -61,11 +61,11 @@ const Upperblock = () => {
           </p>
         </div>
       </section>
-      <Image
-        className="absolute bottom-[-175px] lg:bottom-[-455px] left-[0px]"
+      {/* <Image
+        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-455px] left-[0px]"
         src={truck1}
         alt="turck"
-      />
+      /> */}
     </div>
   );
 };
