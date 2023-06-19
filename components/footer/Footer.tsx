@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
 import Image from "next/image";
+import logo from "../../public/assets/images/logoaqords.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -29,7 +31,21 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <div className=""></div>
+          <Image src={logo} />
+          <p>
+            Empowering Carriers, Shippers and Freight Forwarders with Real-Time
+            DEFI Payments
+          </p>
+          <div className=" w-full rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]">
+            <div className="flex h-full rounded-full w-full   bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]">
+              <button className=" text-white text-sm px-[37px]">
+                Announcing our next round of funding.
+                <Link className="" href="">
+                  Read more →
+                </Link>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
