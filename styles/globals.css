@@ -5,7 +5,7 @@
 
 body {
   font-family: "AmpleSoft Pro";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: -0.14px;
@@ -38,6 +38,14 @@ body {
       #c6b38a 0%,
       #f3c691 46.36%,
       #b4703e 100%
+    );
+  }
+  .span-gradient {
+    background: linear-gradient(
+      270deg,
+      rgba(38, 38, 38, 0) 0%,
+      #f3c691 47.92%,
+      rgba(38, 38, 38, 0) 100%
     );
   }
 }

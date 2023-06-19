@@ -1,7 +1,8 @@
 import React, { use, useEffect, useState } from "react";
-import { useResize } from "../../utils/hooks/useResize";
+import { isMobile } from "react-device-detect";
 import Image from "next/image";
 import Link from "next/link";
+
 import logo from "../../public/assets/images/logo.svg";
 import manifesto from "../../public/assets/images/manifesto-btn.svg";
 import about from "../../public/assets/images/aboutus-btn.svg";
@@ -89,17 +90,14 @@ const linksForMobile: Link[] = [
 
 const Header = () => {
   const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  console.log(useResize().width);
 
   const toggleBurger = () => {
     isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
   };
 
   return isMobile ? (
-    <header className="container relative">
-      <div className="flex justify-between items-center h-[60px]">
+    <header className="container relative mb-[35px] bg-black z-10">
+      <div className="flex justify-between items-center h-[60px] mb-[12px]">
         <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
           {isOpenBurger ? (
             <Image className="scale-305" src={closeburg} alt="menu" />
@@ -107,7 +105,9 @@ const Header = () => {
             <Image src={burger} alt="menu" />
           )}
         </button>
-        <Button text={"Connect wallet"} />
+        <Button>
+          <button className="px-[35px]">Connect wallet</button>
+        </Button>
       </div>
       <nav className="">
         {isOpenBurger ? (
@@ -116,7 +116,7 @@ const Header = () => {
               return (
                 <li
                   key={obj.path}
-                  className="relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer flex justify-between items-center "
+                  className="relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
                 >
                   <Link href={obj.path}>{obj.name}</Link>
 
@@ -142,11 +142,11 @@ const Header = () => {
       </nav>
     </header>
   ) : (
-    <header className="container">
+    <header className="container mb-[130px]">
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"
-          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer"
+          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer mr-[110px] ml-[8px]"
         >
           <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
             <div className="rounded-[8px] w-full bg-black p-[1px]">
@@ -154,19 +154,21 @@ const Header = () => {
             </div>
           </div>
         </Link>
-        <ul className="flex gap-[32px]">
+        <ul className="flex gap-[35px]">
           {linksForDesktop.map((obj) => {
             return (
               <li
                 key={obj.path}
-                className="text-sm text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-[#080809] hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
+                className="text-sm   text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent hover:font-bold hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
               >
                 <Link href={obj.path}>{obj.name}</Link>
               </li>
             );
           })}
         </ul>
-        <Button text={"Connect wallet"} />
+        <Button>
+          <button className="px-[35px]">Connect wallet</button>
+        </Button>
       </nav>
     </header>
   );
