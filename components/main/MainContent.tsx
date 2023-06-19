@@ -10,7 +10,7 @@ const MainContent = () => {
             <h2 className="  font-bold text-2xl md:text-4xl mb-[30px]">
               Why AQORDS?
             </h2>
-            <p className="font-normal tracking-wide text-base md:text-lg font-cyr max-w-[790px] leading-6 md:leading-8">
+            <p className="font-normal  text-base md:text-lg font-cyr max-w-[790px] leading-6 md:leading-8">
               AQORDS revolutionizes the freight transportation industry with
               blockchain-powered solutions and unprecedented opportunities.
             </p>
@@ -19,7 +19,7 @@ const MainContent = () => {
         </div>
       </section>
 
-      <section className=" bg-cover bg-center bg-no-repeat bg-[url('../public/assets/images/md-truck.png')] sm:bg-[url('../public/assets/images/truck.png')]">
+      <section className=" bg-cover bg-left bg-no-repeat bg-[url('../public/assets/images/truck.png')] sm:bg-center">
         <div className="container">
           <div className="  py-[20%] w-full max-w-[330px] md:max-w-[450px]">
             <h3 className=" max-w-[280px] md:max-w-[430px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
