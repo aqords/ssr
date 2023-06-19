@@ -30,9 +30,9 @@ const Upperblock = () => {
           src={aqordsLogo}
           alt="AQORDS Logo"
         />
-        <p className="text-[24px] text-center mt-[35px] mb-[120px] tracking-[-1.0px]">
-          Empowering Carriers, Shippers and Freight Forwarders <br /> with
-          Real-Time DEFI Payments
+        <p className="text-[32px] leading-[40px] font-[400] lg:text-[24px] max-w-[540px] lg:text-center mt-[35px] mb-[120px] tracking-[-1.5px] lg:tracking-[-1.0px]">
+          Empowering Carriers, Shippers and Freight Forwarders with Real-Time
+          DEFI Payments
         </p>
       </section>
       <span className="block h-[1px] w-full span-gradient"></span>
@@ -40,14 +40,14 @@ const Upperblock = () => {
         <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[35px] mt-[130px]">
           Discover the Future of Freight Transportation
         </h2>
-        <p className="text-[16px] lg:text-[20px] lg:mb-[78px] mb-[39px]">
+        <p className="font-man text-[16px] lg:text-[20px] lg:mb-[78px] mb-[39px]">
           At AQORDS, we embark on a transformative journey to revolutionize the
           freight transportation industry by harnessing the immense potential of
           blockchain technology.
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
           <Image src={truck2} alt="turck" />
-          <p className="font-cry text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px] leading-[24px] lg:leading-8 w-[440px]">
+          <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px] leading-[24px] lg:leading-8 w-[440px]">
             Our cutting-edge platform empowers <br /> instant, verifiable, and
             highly secure transactions, ushering in an era of transparency,
             trust,
@@ -61,11 +61,11 @@ const Upperblock = () => {
           </p>
         </div>
       </section>
-      <Image
-        className="absolute bottom-[-175px] lg:bottom-[-455px] left-[0px]"
+      {/* <Image
+        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-455px] left-[0px]"
         src={truck1}
         alt="turck"
-      />
+      /> */}
     </div>
   );
 };

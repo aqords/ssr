@@ -8,11 +8,11 @@ const MainContent = () => {
       <main>
         <section className="bg-second">
           <div className="container">
-            <div className=" pt-[120px]">
+            <div className="pt-[60px] md:pt-[120px]">
               <h2 className="  font-bold text-2xl md:text-4xl mb-[30px]">
                 Why AQORDS?
               </h2>
-              <p className="font-normal  text-base md:text-lg font-cyr max-w-[790px] leading-6 md:leading-8">
+              <p className="font-normal  text-base md:text-lg font-man max-w-[790px] leading-6 md:leading-8">
                 AQORDS revolutionizes the freight transportation industry with
                 blockchain-powered solutions and unprecedented opportunities.
               </p>
@@ -27,7 +27,7 @@ const MainContent = () => {
               <h3 className=" max-w-[280px] md:max-w-[430px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
                 Are you prepared to embark on this transformative journey?
               </h3>
-              <p className=" font-cry font-normal md:text-[20px] text-base leading-6  md:leading-8 ">
+              <p className=" font-man font-normal md:text-[20px] text-base leading-6  md:leading-8 ">
                 Delve into our website to unravel the intricate workings of our
                 platform, acquaint yourself with our exceptional team, and
                 witness firsthand how AQORDS propels your freight transportation

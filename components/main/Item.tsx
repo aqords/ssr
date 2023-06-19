@@ -20,10 +20,10 @@ const Item = ({ item }: any) => {
           {item.title}
         </h3>
       </div>
-      <p className=" font-cyr mb-[25px] md:mb-[44px] md:text-lg">
+      <p className=" font-man mb-[25px] md:mb-[44px] md:text-lg">
         {item.description}
       </p>
-      <p className="text-gray font-cyr text-base">{item.text}</p>
+      <p className="text-gray font-man text-base">{item.text}</p>
     </li>
   );
 };
