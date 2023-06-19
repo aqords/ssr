@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cyr: "HelveticaNeueCyr",
-        neue: "Helvetica Neue",
+        man: "Manrope",
         amp: "AmpleSoft Pro",
       },
       spacing: {
