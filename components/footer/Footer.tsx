@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -25,6 +26,10 @@ const Footer = () => {
             />
             <FooterButton />
           </form>
+        </div>
+
+        <div className="">
+          <div className=""></div>
         </div>
       </div>
     </footer>
