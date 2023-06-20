@@ -55,7 +55,7 @@ const InfoCard: React.FC<ComponentProps> = ({
               "rounded-full mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
             }
           >
-            <button className="mx-[112px] my-[10px] md:mx-[60px] md:my-[14px] md:text-[20px] font-man">
+            <button className="mx-[110px] my-[10px] md:mx-[60px] md:my-[14px] md:text-[20px] font-man">
               View more
             </button>
           </Button>
