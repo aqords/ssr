@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./Item";
 import one from "public/assets/images/one.svg";
-import mexa from "public/assets/images/mexa.png";
+import mexa from "public/assets/images/mexa.svg";
 import wallet from "public/assets/images/wallet.svg";
 import arrow from "public/assets/images/arrow.svg";
 import guardian from "public/assets/images/guardian.svg";
@@ -56,7 +56,7 @@ const items = [
 ];
 const ItemsList = () => {
   return (
-    <div>
+    <div className="pb-[120px]">
       <ul>
         {items.map((item, i) => (
           <Item key={i} item={item} />

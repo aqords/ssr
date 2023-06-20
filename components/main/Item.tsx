@@ -2,11 +2,13 @@ import React from "react";
 
 const Item = ({ item }: any) => {
   return (
-    <li className=" mb-[60px] md:mb-[120px]">
+    <li className=" pt-[60px] md:pt-[120px]">
       <div className="md:mb-[40px] mb-[30px]">
         <img
           src={item.topicon.src}
-          className="font-light text-6xl w-[16px] h-[35px] md:w-[39px] md:h-[74px]"
+          className="font-light text-6xl w-[16px] h-[35px] md:w-[39px] md:h-[74px]
+          "
+          alt="number icon"
         />
       </div>
       <div className="flex items-center gap-5 md:gap-10 mb-[30px] md:mb-[55px]">
@@ -20,8 +22,10 @@ const Item = ({ item }: any) => {
           {item.title}
         </h3>
       </div>
-      <p className="  mb-[25px] md:mb-[44px] md:text-lg">{item.description}</p>
-      <p className="text-gray text-base">{item.text}</p>
+      <p className=" font-man mb-[25px] md:mb-[44px] md:text-lg">
+        {item.description}
+      </p>
+      <p className="text-gray font-man text-base">{item.text}</p>
     </li>
   );
 };

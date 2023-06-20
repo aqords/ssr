@@ -1,16 +1,11 @@
 import React from "react";
-
-import Header from "../../components/Header/Header";
-import Navigationblock from "../../components/Navigationblock/Navigationblock";
-import Upperblock from "../../components/Upperblock/Upperblock";
+import MainContent from "../../components/main/MainContent";
 
 const Homepage = () => {
   return (
-    <div>
-      <Header />
-      <Upperblock />
-      <Navigationblock />
-    </div>
+    <>
+      <MainContent />
+    </>
   );
 };
 

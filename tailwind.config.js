@@ -11,6 +11,15 @@ module.exports = {
         man: "Manrope",
         amp: "AmpleSoft Pro",
       },
+      styles: {
+        ".bg-image-top-left": {
+          backgroundPosition: "top left",
+        },
+      },
+
+      screens: {
+        smx: "500px",
+      },
       spacing: {
         25: "6.25rem",
       },
@@ -26,6 +35,7 @@ module.exports = {
       },
 
       backgroundColor: {
+        "custom-color": "rgba(141, 121, 76, 1)",
         main: "#080809",
         second: "#19191A",
       },
@@ -38,6 +48,7 @@ module.exports = {
         current: "currentColor",
         white: "#ffffff",
         purple: "#6734BA",
+        gray: " #838383;",
       },
     },
   },
