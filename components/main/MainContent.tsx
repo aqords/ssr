@@ -7,7 +7,7 @@ const MainContent = () => {
       <main>
         <section className="bg-second">
           <div className="container">
-            <div className="pt-[60px] md:pt-[305px]">
+            <div className="pt-[100px] sm:pt-[150px] md:pt-[205px]">
               <h2 className="  font-bold text-2xl md:text-4xl mb-[30px]">
                 Why AQORDS?
               </h2>

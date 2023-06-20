@@ -8,7 +8,7 @@ import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
   return (
-    <div className="container relative pb-[250px]">
+    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[250px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -62,7 +62,7 @@ const Upperblock = () => {
         </div>
       </section>
       <Image
-        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
+        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck"
         width={1084}
