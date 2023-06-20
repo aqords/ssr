@@ -18,7 +18,7 @@ const Upperblock = () => {
           insideGradient="rounded-full bg-black"
           outsideGradient="rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
         >
-          <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[85px] lg:mr-[96px] lg:gap-[24px] lg:text-[16px]">
+          <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
             <p className="text-[#838383]">
               Announcing our next round of funding.
             </p>
@@ -30,17 +30,17 @@ const Upperblock = () => {
           src={aqordsLogo}
           alt="AQORDS Logo"
         />
-        <p className="text-[32px] leading-[40px] font-[400] lg:text-[24px] max-w-[540px] lg:text-center mt-[35px] mb-[120px] tracking-[-1.5px] lg:tracking-[-1.0px]">
+        <p className="text-[32px] leading-[40px] font-[400] lg:text-[24px] max-w-[540px] lg:text-center mb-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]">
           Empowering Carriers, Shippers and Freight Forwarders with Real-Time
           DEFI Payments
         </p>
       </section>
       <span className="block h-[1px] w-full span-gradient"></span>
       <section>
-        <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[35px] mt-[130px]">
+        <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[40px] mt-[130px]">
           Discover the Future of Freight Transportation
         </h2>
-        <p className="font-man text-[16px] lg:text-[20px] lg:mb-[78px] mb-[39px]">
+        <p className="font-man text-[16px] lg:text-[20px] lg:mb-[79px] mb-[39px]">
           At AQORDS, we embark on a transformative journey to revolutionize the
           freight transportation industry by harnessing the immense potential of
           blockchain technology.

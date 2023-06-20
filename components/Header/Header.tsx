@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 import Image from "next/image";
 import Link from "next/link";
@@ -142,19 +142,19 @@ const Header = () => {
       </nav>
     </header>
   ) : (
-    <header className="container mb-[130px]">
+    <header className="container mb-[100px]">
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"
-          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer xl:mr-[120px] ml-[8px]"
+          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer xl:mr-[120px] ml-[2px]"
         >
           <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
             <div className="rounded-[8px] w-full bg-black p-[1px]">
-              <Image src={logo} width={50} height={50} alt="aqords logo" />
+              <Image src={logo} width={52} height={50} alt="aqords logo" />
             </div>
           </div>
         </Link>
-        <ul className="flex gap-[10px] lg:gap-[35px]">
+        <ul className="flex gap-[10px] lg:gap-[34px]">
           {linksForDesktop.map((obj) => {
             return (
               <li
