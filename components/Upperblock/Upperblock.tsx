@@ -46,7 +46,11 @@ const Upperblock = () => {
           blockchain technology.
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
-          <Image className=" rounded-[20px]" src={truck2} alt="turck" />
+          <Image
+            className="rounded-[20px] w-[447px] h-[auto] md:w-[532px] md:h-[352px]"
+            src={truck2}
+            alt="turck2"
+          />
           <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
             Our cutting-edge platform empowers <br /> instant, verifiable, and
             highly secure transactions, ushering in an era of transparency,
@@ -64,9 +68,7 @@ const Upperblock = () => {
       <Image
         className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
         src={truck1}
-        alt="turck"
-        width={1084}
-        height={375}
+        alt="turck1"
       />
     </div>
   );
