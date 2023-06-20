@@ -6,7 +6,6 @@ interface ComponentProps {
   title: string;
   desc: string;
   img?: string;
-  img1?: string;
   imgStyle?: string;
   flex?: string;
 }
@@ -15,7 +14,6 @@ const InfoCard: React.FC<ComponentProps> = ({
   title,
   desc,
   img,
-  img1,
   imgStyle,
   flex,
 }) => {
@@ -31,15 +29,17 @@ const InfoCard: React.FC<ComponentProps> = ({
   }
 
   return (
-    <div className="hover:cursor-pointer">
+    <div className="overflow-hidden">
       <Button
         outsideGradient={
-          "rounded-[20px] hover:bg-gradient-to-r from-[#080809]  to-[#c6b38a] p-[2px]"
+          "rounded-[19px] hover:bg-gradient-to-r from-[#080809]  to-[#c6b38a] p-[2px]"
         }
         insideGradient={"block rounded-[19px] mobile-button-color p-[1px]"}
       >
         <div className={`${flex} relative`}>
-          {img ? <Image className={imgStyle} src={img} alt="" /> : ""}
+          <div className={imgStyle}>
+            {img ? <Image src={img} alt="" /> : ""}
+          </div>
           <div className="flex flex-col w-full items-start gap-[37px] p-[40px]">
             <h3 className="text-[40px] ">{title}</h3>
             <p className="text-[20px]  text-[#838383] font-man max-w-[700px]">
@@ -51,7 +51,6 @@ const InfoCard: React.FC<ComponentProps> = ({
               </button>
             </Button>
           </div>
-          {img1 ? <Image className={imgStyle} src={img1} alt="" /> : ""}
         </div>
       </Button>
     </div>

@@ -49,7 +49,9 @@ const Navigationblock = () => {
           title={db[1].title}
           desc={db[1].desc}
           img={db[1].url}
-          imgStyle={"relative top-[0px] left-[60px]"}
+          imgStyle={
+            "relative top-[0px] left-[135px]  md:left-[260px] lg:left-[60px]"
+          }
         />
         <div className="flex flex-col">
           <InfoCard title={db[2].title} desc={db[2].desc} />
@@ -60,15 +62,14 @@ const Navigationblock = () => {
       <InfoCard
         title={db[4].title}
         desc={db[4].desc}
-        img1={db[4].url}
-        imgStyle={"relative top-[0px] right-[0px]"}
-        flex={"flex"}
+        img={db[4].url}
+        imgStyle={
+          "max-w-none md:relative top-[0px] md:left-[280px] lg:left-[0px]"
+        }
+        flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
       />
       <span className="block h-[0px] my-[60px]"></span>
       <InfoCard title={db[5].title} desc={db[5].desc} />
-      <div className="hover:cursor-pointer hover:bg-white w-[50px] h-[100px]">
-        sadasdas
-      </div>
     </div>
   );
 };
