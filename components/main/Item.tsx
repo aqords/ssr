@@ -6,7 +6,7 @@ const Item = ({ item }: any) => {
       <div className="md:mb-[40px] mb-[30px]">
         <img
           src={item.topicon.src}
-          className="font-light text-6xl w-[16px] h-[35px] md:w-[39px] md:h-[74px]
+          className="font-light text-6xl w-[16px] h-[30px] md:w-[39px] md:h-[51px]
           "
           alt="number icon"
         />
@@ -22,10 +22,10 @@ const Item = ({ item }: any) => {
           {item.title}
         </h3>
       </div>
-      <p className=" font-man mb-[25px] md:mb-[44px] md:text-lg">
+      <p className=" font-man mb-[25px] font-normal md:mb-[44px] md:text-lg">
         {item.description}
       </p>
-      <p className="text-gray font-man text-base">{item.text}</p>
+      <p className="text-gray font-man font-normal text-base">{item.text}</p>
     </li>
   );
 };
