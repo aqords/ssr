@@ -109,7 +109,7 @@ const Header = () => {
           <button className="px-[35px]">Connect wallet</button>
         </Button>
       </div>
-      <nav className="">
+      <nav>
         {isOpenBurger ? (
           <ul className="flex flex-col gap-[12px] w-[100%] pb-[300px]">
             {linksForMobile.map((obj) => {
@@ -146,7 +146,7 @@ const Header = () => {
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"
-          className="flex max-w-screen-sm items-center justify-centerhover:cursor-pointer mr-[120px] ml-[8px]"
+          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer mr-[120px] ml-[8px]"
         >
           <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
             <div className="rounded-[8px] w-full bg-black p-[1px]">
@@ -159,7 +159,7 @@ const Header = () => {
             return (
               <li
                 key={obj.path}
-                className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent hover:font-bold hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
+                className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent  hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
               >
                 <Link href={obj.path}>{obj.name}</Link>
               </li>

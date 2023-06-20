@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
 
@@ -5,17 +6,60 @@ interface ComponentProps {
   title: string;
   desc: string;
   img?: string;
+  imgStyle?: string;
+  imgWrapper?: string;
+  flex?: string;
 }
 
-const InfoCard: React.FC<ComponentProps> = ({ title, desc }) => {
+const InfoCard: React.FC<ComponentProps> = ({
+  title,
+  desc,
+  img,
+  imgStyle,
+  imgWrapper,
+  flex,
+}) => {
+  function clampString(inputString: string): string {
+    if (inputString.length <= 230) {
+      return inputString;
+    }
+
+    inputString = inputString.slice(0, 230);
+    inputString += "...";
+
+    return inputString;
+  }
+
   return (
-    <div>
-      <h3 className="text-[40px] ">{title}</h3>
-      <p className="text-[20px]  text-[#838383]  font-man">{desc}</p>
-      <Button>
-        <p className="mx-[60px] text-[20px]font-man">View more</p>
-      </Button>
-    </div>
+    <Button
+      outsideGradient={
+        "overflow-hidden rounded-[15px] hover:infocard-gradient p-[2px] hover:infocard-boxshadow"
+      }
+      insideGradient={
+        "block rounded-[15px] bg-black mobile-button-color p-[1px]"
+      }
+    >
+      <div className={`${flex} relative`}>
+        <div className={imgWrapper}>
+          {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
+        </div>
+        <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
+          <h3 className="text-[32px] md:text-[40px] ">{title}</h3>
+          <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px]">
+            {clampString(desc)}
+          </p>
+          <Button
+            outsideGradient={
+              "mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+            }
+          >
+            <button className="mx-[112px] my-[10px] md:mx-[60px] md:my-[14px] md:text-[20px] font-man">
+              View more
+            </button>
+          </Button>
+        </div>
+      </div>
+    </Button>
   );
 };
 
