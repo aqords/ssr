@@ -159,7 +159,7 @@ const Header = () => {
             return (
               <li
                 key={obj.path}
-                className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent hover:font-bold hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
+                className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent  hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
               >
                 <Link href={obj.path}>{obj.name}</Link>
               </li>
