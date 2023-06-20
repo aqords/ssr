@@ -9,6 +9,7 @@ interface ComponentProps {
   imgStyle?: string;
   imgWrapper?: string;
   flex?: string;
+  bgLight?: string;
 }
 
 const InfoCard: React.FC<ComponentProps> = ({
@@ -18,6 +19,7 @@ const InfoCard: React.FC<ComponentProps> = ({
   imgStyle,
   imgWrapper,
   flex,
+  bgLight,
 }) => {
   function clampString(inputString: string): string {
     if (inputString.length <= 230) {
@@ -33,11 +35,13 @@ const InfoCard: React.FC<ComponentProps> = ({
   return (
     <Button
       outsideGradient={
-        "overflow-hidden rounded-[19px] hover:bg-gradient-to-r from-[#080809]  to-[#c6b38a] p-[2px]"
+        "overflow-hidden rounded-[15px] hover:infocard-gradient p-[2px] hover:infocard-shadow relative"
       }
-      insideGradient={"block rounded-[19px] mobile-button-color p-[1px]"}
+      insideGradient={
+        "block rounded-[15px] bg-black mobile-button-color p-[1px]"
+      }
     >
-      <div className={`${flex} relative`}>
+      <div className={`${flex ? flex : ""} relative`}>
         <div className={imgWrapper}>
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
@@ -48,7 +52,7 @@ const InfoCard: React.FC<ComponentProps> = ({
           </p>
           <Button
             outsideGradient={
-              "mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+              "rounded-full mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
             }
           >
             <button className="mx-[112px] my-[10px] md:mx-[60px] md:my-[14px] md:text-[20px] font-man">
@@ -56,6 +60,7 @@ const InfoCard: React.FC<ComponentProps> = ({
             </button>
           </Button>
         </div>
+        {bgLight ? <div className={bgLight}></div> : ""}
       </div>
     </Button>
   );

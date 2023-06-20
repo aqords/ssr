@@ -48,4 +48,19 @@ body {
       rgba(38, 38, 38, 0) 100%
     );
   }
+  .infocard-gradient {
+    background: radial-gradient(
+      99.07% 69.6% at 129.48% 82.56%,
+      #c6b38a 0%,
+      #f3c691 46.36%,
+      #b4703e 100%
+    );
+  }
+  .infocard-shadow {
+    box-shadow: 0px 44px 74px -20px rgba(181, 115, 64, 0.21),
+      inset -2.62px -1.618px 4.23916px rgba(250, 250, 250, 0.22);
+  }
+  .btn-hover-gradient {
+    background: linear-gradient(324.99deg, #8d794c 29.37%, #ada785 97.59%);
+  }
 }

@@ -15,8 +15,8 @@ const Upperblock = () => {
       ></div>
       <section className="flex flex-col items-center">
         <Button
-          insideGradient="bg-black"
-          outsideGradient="bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+          insideGradient="rounded-full bg-black"
+          outsideGradient="rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
         >
           <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[85px] lg:mr-[96px] lg:gap-[24px] lg:text-[16px]">
             <p className="text-[#838383]">
