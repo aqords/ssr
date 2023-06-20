@@ -33,9 +33,11 @@ const InfoCard: React.FC<ComponentProps> = ({
   return (
     <Button
       outsideGradient={
-        "overflow-hidden rounded-[19px] hover:bg-gradient-to-r from-[#080809]  to-[#c6b38a] p-[2px]"
+        "overflow-hidden rounded-[15px] hover:infocard-gradient p-[2px] hover:infocard-boxshadow"
       }
-      insideGradient={"block rounded-[19px] mobile-button-color p-[1px]"}
+      insideGradient={
+        "block rounded-[15px] bg-black mobile-button-color p-[1px]"
+      }
     >
       <div className={`${flex} relative`}>
         <div className={imgWrapper}>
