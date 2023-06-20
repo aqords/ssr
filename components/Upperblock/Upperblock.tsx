@@ -8,7 +8,7 @@ import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
   return (
-    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[250px]">
+    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -51,11 +51,10 @@ const Upperblock = () => {
             src={truck2}
             alt="turck2"
           />
-          <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
+          <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
             Our cutting-edge platform empowers <br /> instant, verifiable, and
-            highly secure transactions, ushering in an era of transparency,
-            trust,
-            <br /> and operational efficiency across global
+            highly secure transactions, <br /> ushering in an era of
+            transparency, trust, and operational efficiency across global
             <br /> supply chains.
             <br />
             <br />
@@ -66,7 +65,7 @@ const Upperblock = () => {
         </div>
       </section>
       <Image
-        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
+        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck1"
       />

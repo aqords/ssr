@@ -106,7 +106,7 @@ const Header = () => {
           )}
         </button>
         <Button>
-          <button className="px-[35px]">Connect wallet</button>
+          <button className="px-[30px]">Connect wallet</button>
         </Button>
       </div>
       <nav>
@@ -167,7 +167,7 @@ const Header = () => {
           })}
         </ul>
         <Button>
-          <button className="px-[32px] font-man text-sm">Connect wallet</button>
+          <button className="px-[30px] font-man text-sm">Connect wallet</button>
         </Button>
       </nav>
     </header>
