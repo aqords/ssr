@@ -50,7 +50,10 @@ const Navigationblock = () => {
           desc={db[1].desc}
           img={db[1].url}
           imgStyle={
-            "relative top-[0px] left-[135px]  md:left-[260px] lg:left-[60px]"
+            "relative top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
+          }
+          imgWrapper={
+            "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
           }
         />
         <div className="flex flex-col">
@@ -58,15 +61,18 @@ const Navigationblock = () => {
           <InfoCard title={db[3].title} desc={db[3].desc} />
         </div>
       </div>
-      <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
+      <span className="hidden md:block h-[1px] w-full span-gradient my-[60px]"></span>
       <InfoCard
         title={db[4].title}
         desc={db[4].desc}
         img={db[4].url}
         imgStyle={
-          "max-w-none md:relative top-[0px] md:left-[280px] lg:left-[0px]"
+          "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px]"
         }
-        flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
+        imgWrapper={"w-[274px] h-[318px] scale-[0.85] lg:scale-[1]"}
+        flex={
+          "flex flex-col lg:gap-[70px] items-end md:items-start  lg:flex-row-reverse"
+        }
       />
       <span className="block h-[0px] my-[60px]"></span>
       <InfoCard title={db[5].title} desc={db[5].desc} />
