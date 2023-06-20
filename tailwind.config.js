@@ -11,6 +11,12 @@ module.exports = {
         man: "Manrope",
         amp: "AmpleSoft Pro",
       },
+      styles: {
+        ".bg-image-top-left": {
+          backgroundPosition: "top left",
+        },
+      },
+
       screens: {
         smx: "500px",
       },

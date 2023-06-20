@@ -6,7 +6,9 @@ const Item = ({ item }: any) => {
       <div className="md:mb-[40px] mb-[30px]">
         <img
           src={item.topicon.src}
-          className="font-light text-6xl w-[16px] h-[35px] md:w-[39px] md:h-[74px]"
+          className="font-light text-6xl w-[16px] h-[35px] md:w-[39px] md:h-[74px]
+          "
+          alt="number icon"
         />
       </div>
       <div className="flex items-center gap-5 md:gap-10 mb-[30px] md:mb-[55px]">

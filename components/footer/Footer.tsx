@@ -54,6 +54,8 @@ const Footer = () => {
 
           <form className="flex md:items-start gap-[16px] mb-[56px] md:mb-[0px] ">
             <input
+              name="email"
+              autoComplete="email"
               type="text"
               placeholder="Enter your email"
               className="text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
@@ -62,16 +64,16 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="flex flex-col-reverse items-center md:flex-row justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
+        <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
           <div>
             <div className="hidden md:block mb-[24px]">
               <Image src={logo} alt="aqodrds logo" />
             </div>
-            <p className="hidden md:block mb-[71px] text-[14px]">
+            <p className="hidden md:block mb-[65px] text-[14px]">
               Empowering Carriers, Shippers and Freight Forwarders with
               Real-Time DEFI Payments
             </p>
-            <div className="flex flex-start mb-[44px]">
+            <div className="flex flex-start mb-[40px]">
               <Button
                 insideGradient="bg-black"
                 outsideGradient="bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
@@ -93,11 +95,13 @@ const Footer = () => {
 
           <div className=" mb-[20px] md:mb-0 flex gap-[110px]">
             <div>
-              <span className="block mb-[35px] font-bold">Learn</span>
+              <span className=" leading-[20px] block mb-[40px] font-bold">
+                Learn
+              </span>
               <ul>
                 {LinksForLearn.map((link, i) => (
                   <li
-                    className=" leading-[42px] md:leading-[20px] font-man text-[#A1A1A6] mb-[12px] "
+                    className=" leading-[42px] md:leading-[27px] lg:leading-[20px] font-man text-[#A1A1A6] mb-[12px] "
                     key={i}
                   >
                     {link.name}
@@ -106,7 +110,9 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <span className="block mb-[35px] font-bold">Explore</span>
+              <span className=" leading-[20px] block mb-[35px] font-bold">
+                Explore
+              </span>
               <ul>
                 {LinkForExplore.map((link, i) => (
                   <li
