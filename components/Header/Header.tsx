@@ -20,31 +20,31 @@ interface Link {
 const linksForDesktop: Link[] = [
   {
     name: "Home",
-    path: "/",
+    path: "/1",
   },
   {
     name: "About",
-    path: "/",
+    path: "/2",
   },
   {
     name: "Manifesto",
-    path: "/",
+    path: "/3",
   },
   {
     name: "How it works",
-    path: "/",
+    path: "/4",
   },
   {
     name: "Whitepaper",
-    path: "/",
+    path: "/5",
   },
   {
     name: "Team",
-    path: "/",
+    path: "/6",
   },
   {
     name: "Road map",
-    path: "/",
+    path: "/7",
   },
 ];
 const linksForMobile: Link[] = [
@@ -146,7 +146,7 @@ const Header = () => {
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"
-          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer mr-[120px] ml-[8px]"
+          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer xl:mr-[120px] ml-[8px]"
         >
           <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
             <div className="rounded-[8px] w-full bg-black p-[1px]">
@@ -154,7 +154,7 @@ const Header = () => {
             </div>
           </div>
         </Link>
-        <ul className="flex gap-[35px]">
+        <ul className="flex gap-[10px] lg:gap-[35px]">
           {linksForDesktop.map((obj) => {
             return (
               <li

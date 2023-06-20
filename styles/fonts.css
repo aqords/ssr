@@ -24,7 +24,7 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "AmpleSoft Pro";
   src: url("../public/assets/Fonts/AmpleSoftPro-Light.eot");
   src: local("AmpleSoftPro-Light"),
@@ -35,9 +35,9 @@
     url("../public/assets/Fonts/AmpleSoftPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "AmpleSoft Pro";
   src: url("../public/assets/Fonts/AmpleSoftPro-Thin.eot");
   src: local("AmpleSoftPro-Thin"),
@@ -48,9 +48,9 @@
     url("../public/assets/Fonts/AmpleSoftPro-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "AmpleSoft Pro";
   src: url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.eot");
   src: local("AmpleSoftPro-ExtraLight"),
@@ -61,7 +61,7 @@
     url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "AmpleSoft Pro";
@@ -83,13 +83,13 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: local("Manrope-SemiBold"),
     url("../public/assets/Fonts/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: "Manrope";
   src: local("Manrope-Medium"),
@@ -97,7 +97,7 @@
   font-weight: 500;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: local("Manrope-Light"),
     url("../public/assets/Fonts/Manrope-Light.ttf") format("truetype");
@@ -110,7 +110,7 @@
     url("../public/assets/Fonts/Manrope-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: "Manrope";
   src: local("Manrope-Bold"),

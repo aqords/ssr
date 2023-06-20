@@ -8,12 +8,15 @@ interface Data {
   title: string;
   desc: string;
   url?: string;
+  bgLight?: string;
 }
 
 export const db: Data[] = [
   {
     title: "How it does works?",
     desc: "Our goal is to provide a seamless and transparent experience for all parties involved, from shippers and carriers to freight exchange platforms.",
+    bgLight:
+      "absolute md:opacity-40 md:background-light md:top-[287px] md:left-[-233px] md:w-[556px] md:h-[556px]",
   },
   {
     title: "Manifesto",
@@ -32,17 +35,21 @@ export const db: Data[] = [
     title: "About us",
     desc: "Our core focus is to leverage the power of blockchain technology to streamline contract execution, enable instant payments, and enhance security throughout the entire logistics process.",
     url: bull,
+    bgLight:
+      "absolute opacity-40 background-light top-[-216px] left-[270px] w-[535px] h-[535px] md:top-[254px] md:left-[771px] md:w-[625px] md:h-[625px]",
   },
   {
     title: "Our team",
     desc: "We are a team of visionaries, technologists, and industry experts dedicated to revolutionizing the freight transportation landscape through blockchain innovation.",
+    bgLight:
+      "absolute md:opacity-40 md:background-light md:top-[287px] md:left-[-233px] md:w-[556px] md:h-[556px]",
   },
 ];
 
 const Navigationblock = () => {
   return (
     <div className="container py-[120px]">
-      <InfoCard title={db[0].title} desc={db[0].desc} />
+      <InfoCard title={db[0].title} desc={db[0].desc} bgLight={db[0].bgLight} />
       <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
       <div className="flex flex-wrap lg:flex-nowrap">
         <InfoCard
@@ -73,9 +80,10 @@ const Navigationblock = () => {
         flex={
           "flex flex-col lg:gap-[70px] items-end md:items-start  lg:flex-row-reverse"
         }
+        bgLight={db[4].bgLight}
       />
       <span className="block h-[0px] my-[60px]"></span>
-      <InfoCard title={db[5].title} desc={db[5].desc} />
+      <InfoCard title={db[5].title} desc={db[5].desc} bgLight={db[5].bgLight} />
     </div>
   );
 };

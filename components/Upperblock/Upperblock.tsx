@@ -8,15 +8,15 @@ import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
   return (
-    <div className="container relative pb-[250px]">
+    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[250px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
       ></div>
       <section className="flex flex-col items-center">
         <Button
-          insideGradient="bg-black"
-          outsideGradient="bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+          insideGradient="rounded-full bg-black"
+          outsideGradient="rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
         >
           <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[85px] lg:mr-[96px] lg:gap-[24px] lg:text-[16px]">
             <p className="text-[#838383]">
@@ -46,7 +46,11 @@ const Upperblock = () => {
           blockchain technology.
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
-          <Image className=" rounded-[20px]" src={truck2} alt="turck" />
+          <Image
+            className="rounded-[20px] w-[447px] h-[auto] md:w-[532px] md:h-[352px]"
+            src={truck2}
+            alt="turck2"
+          />
           <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
             Our cutting-edge platform empowers <br /> instant, verifiable, and
             highly secure transactions, ushering in an era of transparency,
@@ -62,11 +66,9 @@ const Upperblock = () => {
         </div>
       </section>
       <Image
-        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
+        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
         src={truck1}
-        alt="turck"
-        width={1084}
-        height={375}
+        alt="turck1"
       />
     </div>
   );
