@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="container">
         <div className=" flex flex-col items-start smx:items-center gap-[20px] md:items-start  md:flex-row  md:justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
           <div className="max-w-[270px] smx:max-w-full text-left smx:text-center md:text-left mb-[40px]">
-            <h3 className="font-medium text-2xl text-white mb-[10px]">
+            <h3 className="font-medium text-[32px] text-white mb-[10px]">
               Subscribe to our newsletter
             </h3>
             <p className="text-[#838383]">

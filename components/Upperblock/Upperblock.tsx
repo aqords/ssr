@@ -3,12 +3,12 @@ import Image from "next/image";
 
 import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
-import truck2 from "../../public/assets/images/truck2.svg";
-import truck1 from "../../public/assets/images/truck1.svg";
+import truck2 from "../../public/assets/images/truck2.png";
+import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
   return (
-    <div className="container relative">
+    <div className="container relative pb-[250px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -46,8 +46,8 @@ const Upperblock = () => {
           blockchain technology.
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
-          <Image src={truck2} alt="turck" />
-          <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px] leading-[24px] lg:leading-8 w-[440px]">
+          <Image className="rounded-[20px]" src={truck2} alt="turck" />
+          <p className="font-man text-[16px] lg:text-[20px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
             Our cutting-edge platform empowers <br /> instant, verifiable, and
             highly secure transactions, ushering in an era of transparency,
             trust,
@@ -61,11 +61,11 @@ const Upperblock = () => {
           </p>
         </div>
       </section>
-      {/* <Image
-        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-455px] left-[0px]"
+      <Image
+        className="absolute px-[12px] bottom-[-175px] lg:bottom-[-175px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck"
-      /> */}
+      />
     </div>
   );
 };

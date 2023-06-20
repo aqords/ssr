@@ -1,6 +1,5 @@
 import React from "react";
 import ItemsList from "./ItemsList";
-import Footer from "../footer/Footer";
 
 const MainContent = () => {
   return (
@@ -8,7 +7,7 @@ const MainContent = () => {
       <main>
         <section className="bg-second">
           <div className="container">
-            <div className="pt-[60px] md:pt-[120px]">
+            <div className="pt-[60px] md:pt-[305px]">
               <h2 className="  font-bold text-2xl md:text-4xl mb-[30px]">
                 Why AQORDS?
               </h2>
@@ -37,7 +36,6 @@ const MainContent = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };
