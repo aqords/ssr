@@ -9,6 +9,7 @@ interface ComponentProps {
   imgStyle?: string;
   imgWrapper?: string;
   flex?: string;
+  bgLight?: string;
 }
 
 const InfoCard: React.FC<ComponentProps> = ({
@@ -18,6 +19,7 @@ const InfoCard: React.FC<ComponentProps> = ({
   imgStyle,
   imgWrapper,
   flex,
+  bgLight,
 }) => {
   function clampString(inputString: string): string {
     if (inputString.length <= 230) {
@@ -33,13 +35,13 @@ const InfoCard: React.FC<ComponentProps> = ({
   return (
     <Button
       outsideGradient={
-        "overflow-hidden rounded-[15px] hover:infocard-gradient p-[2px] hover:infocard-boxshadow"
+        "overflow-hidden rounded-[15px] hover:infocard-gradient p-[2px] hover:infocard-shadow relative"
       }
       insideGradient={
         "block rounded-[15px] bg-black mobile-button-color p-[1px]"
       }
     >
-      <div className={`${flex} relative`}>
+      <div className={`${flex ? flex : ""} relative`}>
         <div className={imgWrapper}>
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
@@ -58,6 +60,7 @@ const InfoCard: React.FC<ComponentProps> = ({
             </button>
           </Button>
         </div>
+        {bgLight ? <div className={bgLight}></div> : ""}
       </div>
     </Button>
   );
