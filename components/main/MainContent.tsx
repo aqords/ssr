@@ -20,7 +20,7 @@ const MainContent = () => {
           </div>
         </section>
 
-        <section className=" bg-cover bg-image-top-left bg-no-repeat bg-[url('../public/assets/images/truck.png')] sm:bg-center">
+        <section className=" bg-cover bg-left bg-no-repeat bg-[url('../public/assets/images/truck.png')] sm:bg-center">
           <div className="container">
             <div className="  py-[20%] w-full max-w-[330px] md:max-w-[450px]">
               <h3 className=" max-w-[280px] md:max-w-[430px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
