@@ -48,7 +48,7 @@ export const db: Data[] = [
 
 const Navigationblock = () => {
   return (
-    <div className="container py-[120px]">
+    <div className="container pt-[120px] pb-[157px]">
       <InfoCard title={db[0].title} desc={db[0].desc} bgLight={db[0].bgLight} />
       <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
       <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
