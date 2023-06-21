@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import ScrollToggle from "../../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../../utils/hooks/useScrollChange";
 
 import InfoCard from "../UI/InfoCard.tsx/InfoCard";
 import bull from "../../public/assets/images/bull.svg";
@@ -47,9 +49,33 @@ export const db: Data[] = [
 ];
 
 const Navigationblock = () => {
+  const isScrolled = ScrollToggle({
+    targetClasses: ["el-1", "el-2", "el-3", "el-4"],
+    visibleClass: "visible",
+    originalClass: "original",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRef,
+    className: "original",
+  });
+
   return (
     <div className="container py-[120px]">
-      <InfoCard title={db[0].title} desc={db[0].desc} bgLight={db[0].bgLight} />
+      <div>
+        <div
+          ref={elementRef}
+          className={isScrolled["el-4"] ? "el-4 visible" : "el-4 original"}
+        >
+          <InfoCard
+            title={db[0].title}
+            desc={db[0].desc}
+            bgLight={db[0].bgLight}
+          />
+        </div>
+      </div>
       <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
       <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
         <InfoCard
@@ -69,19 +95,27 @@ const Navigationblock = () => {
         </div>
       </div>
       <span className="hidden md:block h-[1px] w-full span-gradient my-[60px]"></span>
-      <InfoCard
-        title={db[4].title}
-        desc={db[4].desc}
-        img={db[4].url}
-        imgStyle={
-          "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
-        }
-        imgWrapper={"w-[274px] h-[318px] scale-[0.85] lg:scale-[1]"}
-        flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
-        bgLight={db[4].bgLight}
-      />
+      <div className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}>
+        <InfoCard
+          title={db[4].title}
+          desc={db[4].desc}
+          img={db[4].url}
+          imgStyle={
+            "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
+          }
+          imgWrapper={"w-[274px] h-[318px] scale-[0.85] lg:scale-[1]"}
+          flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
+          bgLight={db[4].bgLight}
+        />
+      </div>
       <span className="block h-[0px] my-[60px]"></span>
-      <InfoCard title={db[5].title} desc={db[5].desc} bgLight={db[5].bgLight} />
+      <div className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}>
+        <InfoCard
+          title={db[5].title}
+          desc={db[5].desc}
+          bgLight={db[5].bgLight}
+        />
+      </div>
     </div>
   );
 };

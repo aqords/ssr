@@ -63,4 +63,14 @@ body {
   .btn-hover-gradient {
     background: linear-gradient(324.99deg, #8d794c 29.37%, #ada785 97.59%);
   }
+  .visible {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0px);
+  }
+
+  .original {
+    opacity: 0;
+    transform: translateY(200px);
+  }
 }
