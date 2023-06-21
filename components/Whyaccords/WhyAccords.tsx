@@ -1,7 +1,7 @@
 import React from "react";
 import ItemsList from "./WhyAccordsList";
 
-const MainContent = () => {
+const WhyAccordsList = () => {
   return (
     <>
       <main>
@@ -40,4 +40,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default WhyAccordsList;

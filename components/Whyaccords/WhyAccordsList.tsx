@@ -54,7 +54,7 @@ const items = [
     text: "Our platform guarantees prompt payment once the contract is duly executed and confirmed by all stakeholders, empowering carriers to stay focused on their core competencies.",
   },
 ];
-const ItemsList = () => {
+const WhyAccordsList = () => {
   return (
     <div className="pb-[120px]">
       <ul>
@@ -66,4 +66,4 @@ const ItemsList = () => {
   );
 };
 
-export default ItemsList;
+export default WhyAccordsList;
