@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 import Image from "next/image";
 import Link from "next/link";
+
+import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 
 import logo from "../../public/assets/images/logo.svg";
 import manifesto from "../../public/assets/images/manifesto-btn.svg";
@@ -95,9 +97,11 @@ const Header = () => {
     isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
   };
 
+  const isMobile = useIsMobile();
+
   return isMobile ? (
-    <header className="container relative mb-[35px] bg-black z-10">
-      <div className="flex justify-between items-center h-[60px] mb-[12px]">
+    <header className="relative mb-[35px] bg-black z-10">
+      <div className="flex container justify-between items-center h-[60px] mb-[12px]">
         <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
           {isOpenBurger ? (
             <Image className="scale-305" src={closeburg} alt="menu" />
