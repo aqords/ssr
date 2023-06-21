@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { isMobile } from "react-device-detect";
 import Image from "next/image";
 import Link from "next/link";
-
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 
 import logo from "../../public/assets/images/logo.svg";
@@ -109,7 +107,11 @@ const Header = () => {
             <Image src={burger} alt="menu" />
           )}
         </button>
-        <Button>
+        <Button
+          outsideGradient={
+            "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
+          }
+        >
           <button className="px-[30px]">Connect wallet</button>
         </Button>
       </div>
@@ -170,7 +172,11 @@ const Header = () => {
             );
           })}
         </ul>
-        <Button>
+        <Button
+          outsideGradient={
+            "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
+          }
+        >
           <button className="px-[30px] font-man text-sm">Connect wallet</button>
         </Button>
       </nav>
