@@ -46,16 +46,16 @@ const InfoCard: React.FC<ComponentProps> = ({
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
         <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
-          <h3 className="text-[32px] md:text-[40px] ">{title}</h3>
-          <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px]">
+          <h3 className="text-[32px] mb-[2px] md:text-[40px]">{title}</h3>
+          <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px] mt-[15px]">
             {clampString(desc)}
           </p>
           <Button
             outsideGradient={
-              "rounded-full mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+              "rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
             }
           >
-            <button className="mx-[110px] my-[10px] md:mx-[60px] md:my-[14px] md:text-[20px] font-man">
+            <button className="mx-[110px] my-[10px] md:mx-[55px] md:my-[10px] md:text-[20px] font-man">
               View more
             </button>
           </Button>
