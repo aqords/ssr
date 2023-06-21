@@ -1,9 +1,11 @@
 import React from "react";
-import Button from "../UI/Button/Button";
-import FooterButton from "../UI/Button/FooterButton";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import logo from "../../public/assets/images/logoaqords.svg";
 import Link from "next/link";
+
+const Button = dynamic(() => import("../UI/Button/Button"));
+const FooterButton = dynamic(() => import("../UI/Button/FooterButton"));
 
 const LinksForLearn = [
   {

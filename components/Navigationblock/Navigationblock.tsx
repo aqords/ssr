@@ -1,8 +1,9 @@
 import React from "react";
-
-import InfoCard from "../UI/InfoCard.tsx/InfoCard";
+import dynamic from "next/dynamic";
 import bull from "../../public/assets/images/bull.svg";
 import planet from "../../public/assets/images/planet.svg";
+
+const InfoCard = dynamic(() => import("../UI/InfoCard.tsx/InfoCard"));
 
 interface Data {
   title: string;

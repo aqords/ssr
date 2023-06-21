@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
-
+import dynamic from "next/dynamic";
 import logo from "../../public/assets/images/logo.svg";
 import manifesto from "../../public/assets/images/manifesto-btn.svg";
 import about from "../../public/assets/images/aboutus-btn.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
 import closeburg from "../../public/assets/images/close-burger.svg";
-import Button from "../UI/Button/Button";
+
+const Button = dynamic(() => import("../UI/Button/Button"));
 
 interface Link {
   name: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "./WhyAccordsItem";
+import dynamic from "next/dynamic";
 import one from "public/assets/images/one.svg";
 import mexa from "public/assets/images/mexa.svg";
 import wallet from "public/assets/images/wallet.svg";
@@ -10,6 +10,9 @@ import two from "public/assets/images/two.svg";
 import three from "public/assets/images/three.svg";
 import four from "public/assets/images/four.svg";
 import fife from "public/assets/images/fife.svg";
+
+const Item = dynamic(() => import("./WhyAccordsItem"));
+
 const items = [
   {
     topicon: one,

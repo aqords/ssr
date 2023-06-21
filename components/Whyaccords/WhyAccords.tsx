@@ -1,5 +1,6 @@
 import React from "react";
-import ItemsList from "./WhyAccordsList";
+import dynamic from "next/dynamic";
+const ItemsList = dynamic(() => import("./WhyAccordsList"));
 
 const WhyAccordsList = () => {
   return (
