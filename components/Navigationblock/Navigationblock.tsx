@@ -33,7 +33,7 @@ export const db: Data[] = [
   },
   {
     title: "About us",
-    desc: "Our core focus is to leverage the power of blockchain  technology to streamline contract execution, enable instant payments, and enhance security throughout the entire logistics process.",
+    desc: `Our core focus is to leverage the power of blockchain technology to streamline contract execution, enable  instant payments, and enhance security throughout the entire logistics process.`,
     url: bull,
     bgLight:
       "absolute opacity-40 background-light top-[-216px] left-[270px] w-[535px] h-[535px] md:top-[254px] md:left-[771px] md:w-[625px] md:h-[625px]",
@@ -51,7 +51,7 @@ const Navigationblock = () => {
     <div className="container py-[120px]">
       <InfoCard title={db[0].title} desc={db[0].desc} bgLight={db[0].bgLight} />
       <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
-      <div className="flex flex-wrap lg:flex-nowrap">
+      <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
         <InfoCard
           title={db[1].title}
           desc={db[1].desc}
@@ -63,7 +63,7 @@ const Navigationblock = () => {
             "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
           }
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-[18px]">
           <InfoCard title={db[2].title} desc={db[2].desc} />
           <InfoCard title={db[3].title} desc={db[3].desc} />
         </div>
@@ -74,12 +74,10 @@ const Navigationblock = () => {
         desc={db[4].desc}
         img={db[4].url}
         imgStyle={
-          "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px]"
+          "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
         }
         imgWrapper={"w-[274px] h-[318px] scale-[0.85] lg:scale-[1]"}
-        flex={
-          "flex flex-col lg:gap-[70px] items-end md:items-start  lg:flex-row-reverse"
-        }
+        flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
         bgLight={db[4].bgLight}
       />
       <span className="block h-[0px] my-[60px]"></span>
