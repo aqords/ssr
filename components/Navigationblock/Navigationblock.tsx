@@ -66,7 +66,7 @@ const Navigationblock = () => {
   });
 
   return (
-    <div className="container py-[120px]">
+    <div className="container py-[120px] pb-[157px]">
       <div
         ref={elementRef4}
         className={isScrolled["el-4"] ? "el-4 visible" : "el-4 original"}
