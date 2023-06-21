@@ -33,7 +33,7 @@ export const db: Data[] = [
   },
   {
     title: "About us",
-    desc: "Our core focus is to leverage the power of blockchain technology to streamline contract execution, enable instant payments, and enhance security throughout the entire logistics process.",
+    desc: "Our core focus is to leverage the power of blockchain  technology to streamline contract execution, enable instant payments, and enhance security throughout the entire logistics process.",
     url: bull,
     bgLight:
       "absolute opacity-40 background-light top-[-216px] left-[270px] w-[535px] h-[535px] md:top-[254px] md:left-[771px] md:w-[625px] md:h-[625px]",

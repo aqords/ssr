@@ -45,7 +45,7 @@ const InfoCard: React.FC<ComponentProps> = ({
         <div className={imgWrapper}>
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
-        <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
+        <div className="flex flex-col w-full items-start gap-[17px] md:gap-[42px] p-[20px] md:p-[40px]">
           <h3 className="text-[32px] md:text-[40px] ">{title}</h3>
           <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px]">
             {clampString(desc)}
