@@ -5,6 +5,7 @@ import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
 import truck2 from "../../public/assets/images/truck2.png";
 import truck1 from "../../public/assets/images/truck1.png";
+import AnimatedText from "../animate/Animate";
 
 const Upperblock = () => {
   return (
@@ -30,10 +31,11 @@ const Upperblock = () => {
           src={aqordsLogo}
           alt="AQORDS Logo"
         />
-        <p className="text-[32px] leading-[40px] font-[400] lg:text-[24px] max-w-[540px] lg:text-center mb-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]">
-          Empowering Carriers, Shippers and Freight Forwarders with Real-Time
-          DEFI Payments
-        </p>
+        <AnimatedText
+          text=" Empowering Carriers, Shippers and Freight Forwarders with Real-Time
+          DEFI Payments"
+          styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[85px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
+        />
       </section>
       <span className="block h-[1px] w-full span-gradient"></span>
       <section>

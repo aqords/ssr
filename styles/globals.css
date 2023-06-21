@@ -63,4 +63,19 @@ body {
   .btn-hover-gradient {
     background: linear-gradient(324.99deg, #8d794c 29.37%, #ada785 97.59%);
   }
+  @keyframes move-text-color {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animetedText {
+    animation: move-text-color 0.5s forwards;
+    opacity: 0;
+  }
+  .animetedSpan {
+    animation: move-text-color 0.5s infinite;
+  }
 }
