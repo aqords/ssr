@@ -56,46 +56,55 @@ const Navigationblock = () => {
   });
 
   const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef2 = useRef<HTMLDivElement>(null);
+  const elementRef3 = useRef<HTMLDivElement>(null);
+  const elementRef4 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
-    elementRef,
+    elementRefs: [elementRef, elementRef2, elementRef3, elementRef4],
     className: "original",
   });
 
   return (
     <div className="container py-[120px]">
-      <div>
-        <div
-          ref={elementRef}
-          className={isScrolled["el-4"] ? "el-4 visible" : "el-4 original"}
-        >
-          <InfoCard
-            title={db[0].title}
-            desc={db[0].desc}
-            bgLight={db[0].bgLight}
-          />
-        </div>
+      <div
+        ref={elementRef4}
+        className={isScrolled["el-4"] ? "el-4 visible" : "el-4 original"}
+      >
+        <InfoCard
+          title={db[0].title}
+          desc={db[0].desc}
+          bgLight={db[0].bgLight}
+        />
       </div>
       <span className="block h-[1px] w-full span-gradient my-[60px]"></span>
-      <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
-        <InfoCard
-          title={db[1].title}
-          desc={db[1].desc}
-          img={db[1].url}
-          imgStyle={
-            "relative top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
-          }
-          imgWrapper={
-            "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
-          }
-        />
-        <div className="flex flex-col gap-[18px]">
-          <InfoCard title={db[2].title} desc={db[2].desc} />
-          <InfoCard title={db[3].title} desc={db[3].desc} />
+      <div
+        ref={elementRef3}
+        className={isScrolled["el-3"] ? "el-3 visible" : "el-3 original"}
+      >
+        <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
+          <InfoCard
+            title={db[1].title}
+            desc={db[1].desc}
+            img={db[1].url}
+            imgStyle={
+              "relative top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
+            }
+            imgWrapper={
+              "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
+            }
+          />
+          <div className="flex flex-col gap-[18px]">
+            <InfoCard title={db[2].title} desc={db[2].desc} />
+            <InfoCard title={db[3].title} desc={db[3].desc} />
+          </div>
         </div>
       </div>
       <span className="hidden md:block h-[1px] w-full span-gradient my-[60px]"></span>
-      <div className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}>
+      <div
+        ref={elementRef2}
+        className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}
+      >
         <InfoCard
           title={db[4].title}
           desc={db[4].desc}
@@ -109,7 +118,10 @@ const Navigationblock = () => {
         />
       </div>
       <span className="block h-[0px] my-[60px]"></span>
-      <div className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}>
+      <div
+        ref={elementRef}
+        className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}
+      >
         <InfoCard
           title={db[5].title}
           desc={db[5].desc}

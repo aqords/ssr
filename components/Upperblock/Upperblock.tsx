@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
+import ScrollToggle from "../../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../../utils/hooks/useScrollChange";
 
 import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
@@ -7,6 +9,19 @@ import truck2 from "../../public/assets/images/truck2.png";
 import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
+  const isScrolled = ScrollToggle({
+    targetClasses: ["el-1", "el-2"],
+    visibleClass: "visible",
+    originalClass: "original",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef2 = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRefs: [elementRef, elementRef2],
+    className: "original",
+  });
   return (
     <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
       <div
@@ -36,7 +51,10 @@ const Upperblock = () => {
         </p>
       </section>
       <span className="block h-[1px] w-full span-gradient"></span>
-      <section>
+      <section
+        ref={elementRef}
+        className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}
+      >
         <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[40px] mt-[130px]">
           Discover the Future of Freight Transportation
         </h2>
@@ -64,11 +82,16 @@ const Upperblock = () => {
           </p>
         </div>
       </section>
-      <Image
-        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
-        src={truck1}
-        alt="turck1"
-      />
+      <div
+        ref={elementRef2}
+        className={
+          isScrolled["el-2"]
+            ? "absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px]  el-2 visible"
+            : "el-2 original"
+        }
+      >
+        <Image className="rounded-[20px]" src={truck1} alt="turck1" />
+      </div>
     </div>
   );
 };

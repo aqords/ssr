@@ -1,23 +1,25 @@
 import { useEffect } from "react";
 
 interface ScrollClassHookProps {
-  elementRef: React.RefObject<HTMLElement>;
+  elementRefs: React.RefObject<HTMLElement>[];
   className: string;
 }
 
-const useScrollClass = ({ elementRef, className }: ScrollClassHookProps) => {
+const useScrollClass = ({ elementRefs, className }: ScrollClassHookProps) => {
   useEffect(() => {
     const handleScroll = () => {
-      if (elementRef.current) {
-        const { top, height } = elementRef.current.getBoundingClientRect();
-        const visibleHeight = window.innerHeight - top;
+      elementRefs.forEach((elementRef) => {
+        if (elementRef.current) {
+          const { top, height } = elementRef.current.getBoundingClientRect();
+          const visibleHeight = window.innerHeight - top;
 
-        if (visibleHeight < height && visibleHeight < 200) {
-          elementRef.current.classList.add(className);
-        } else {
-          elementRef.current.classList.remove(className);
+          if (visibleHeight < height && visibleHeight < 300) {
+            elementRef.current.classList.add(className);
+          } else {
+            elementRef.current.classList.remove(className);
+          }
         }
-      }
+      });
     };
 
     handleScroll();
@@ -27,7 +29,7 @@ const useScrollClass = ({ elementRef, className }: ScrollClassHookProps) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [elementRef, className]);
+  }, [elementRefs, className]);
 };
 
 export default useScrollClass;
