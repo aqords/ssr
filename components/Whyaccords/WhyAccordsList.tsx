@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "./Item";
+import Item from "./WhyAccordsItem";
 import one from "public/assets/images/one.svg";
 import mexa from "public/assets/images/mexa.svg";
 import wallet from "public/assets/images/wallet.svg";
