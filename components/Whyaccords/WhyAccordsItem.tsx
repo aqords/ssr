@@ -1,6 +1,7 @@
 import React from "react";
 
-const Item = ({ item }: any) => {
+const WhyAccordsItem = ({ item }: any) => {
+  
   return (
     <li className=" pt-[60px] md:pt-[130px]">
       <div className="md:mb-[60px] mb-[30px]">
@@ -30,4 +31,4 @@ const Item = ({ item }: any) => {
   );
 };
 
-export default Item;
+export default WhyAccordsItem;

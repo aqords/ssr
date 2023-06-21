@@ -1,5 +1,6 @@
 import React from "react";
-import Item from "./WhyAccordsItem";
+import dynamic from "next/dynamic";
+
 import one from "public/assets/images/one.svg";
 import mexa from "public/assets/images/mexa.svg";
 import wallet from "public/assets/images/wallet.svg";
@@ -10,6 +11,8 @@ import two from "public/assets/images/two.svg";
 import three from "public/assets/images/three.svg";
 import four from "public/assets/images/four.svg";
 import fife from "public/assets/images/fife.svg";
+
+const Item = dynamic(() => import("./WhyAccordsItem"));
 
 const items = [
   {
@@ -55,7 +58,8 @@ const items = [
     text: "Our platform guarantees prompt payment once the contract is duly executed and confirmed by all stakeholders, empowering carriers to stay focused on their core competencies.",
   },
 ];
-const ItemsList = () => {
+const WhyAccordsList = () => {
+  
   return (
     <div className="pb-[120px]">
       <ul>
@@ -67,4 +71,4 @@ const ItemsList = () => {
   );
 };
 
-export default ItemsList;
+export default WhyAccordsList;

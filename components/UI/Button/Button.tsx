@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ComponentProps {
   children: JSX.Element;
   insideGradient?: string;

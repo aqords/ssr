@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-
-import InfoCard from "../UI/InfoCard.tsx/InfoCard";
+import dynamic from "next/dynamic";
 import bull from "../../public/assets/images/bull.svg";
 import planet from "../../public/assets/images/planet.svg";
+
+const InfoCard = dynamic(() => import("../UI/InfoCard/InfoCard"));
 
 interface Data {
   title: string;

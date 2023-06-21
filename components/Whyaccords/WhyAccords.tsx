@@ -1,7 +1,9 @@
 import React from "react";
-import ItemsList from "./WhyAccordsList";
+import dynamic from "next/dynamic";
 
-const MainContent = () => {
+const ItemsList = dynamic(() => import("./WhyAccordsList"));
+
+const WhyAccordsList = () => {
   return (
     <>
       <main>
@@ -40,4 +42,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default WhyAccordsList;

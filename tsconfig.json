@@ -19,6 +19,6 @@
   "paths": {
     "@interfaces/*": ["/interfaces/*"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/.d.ts", "components/UI/InfoCard"],
   "exclude": ["node_modules"]
 }

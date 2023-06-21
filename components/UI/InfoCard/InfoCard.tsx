@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../Button/Button";
+import dynamic from "next/dynamic";
+
+const Button = dynamic(() => import("../../UI/Button/Button"));
 
 interface ComponentProps {
   title: string;
