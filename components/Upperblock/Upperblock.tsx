@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
+import AnimatedText from "../../utils/AnimatedText";
 
 import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
@@ -46,10 +47,11 @@ const Upperblock = () => {
           src={aqordsLogo}
           alt="AQORDS Logo"
         />
-        <p className="text-[32px] leading-[40px] font-[400] lg:text-[24px] max-w-[540px] lg:text-center mb-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]">
-          Empowering Carriers, Shippers and Freight Forwarders with Real-Time
-          DEFI Payments
-        </p>
+        <AnimatedText
+          text=" Empowering Carriers, Shippers and Freight Forwarders with Real-Time
+          DEFI Payments"
+          styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[85px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
+        />
       </section>
       <span className="block h-[1px] w-full span-gradient"></span>
       <section
@@ -83,16 +85,11 @@ const Upperblock = () => {
           </p>
         </div>
       </section>
-      <div
-        ref={elementRef2}
-        className={
-          isScrolled["el-2"]
-            ? "absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px]  el-2 visible"
-            : "el-2 original"
-        }
-      >
-        <Image className="rounded-[20px]" src={truck1} alt="turck1" />
-      </div>
+      <Image
+        className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
+        src={truck1}
+        alt="turck1"
+      />
     </div>
   );
 };
