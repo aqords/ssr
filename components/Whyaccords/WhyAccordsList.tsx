@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 
 import one from "public/assets/images/one.svg";
@@ -58,8 +58,8 @@ const items = [
     text: "Our platform guarantees prompt payment once the contract is duly executed and confirmed by all stakeholders, empowering carriers to stay focused on their core competencies.",
   },
 ];
+
 const WhyAccordsList = () => {
-  
   return (
     <div className="pb-[120px]">
       <ul>
