@@ -50,39 +50,39 @@ const linksForDesktop: Link[] = [
 const linksForMobile: Link[] = [
   {
     name: "How it does works?",
-    path: "/",
+    path: "/1",
     bgLight:
       "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
   },
   {
     name: "Manifesto",
-    path: "/",
+    path: "/2",
     url: manifesto,
     bgLight:
       "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
     name: "Whitepapper",
-    path: "/",
+    path: "/3",
     bgLight:
       "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
   },
   {
     name: "Road map",
-    path: "/",
+    path: "/4",
     bgLight:
       "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "About US",
-    path: "/",
+    path: "/5",
     url: about,
     bgLight:
       "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "Our team",
-    path: "/",
+    path: "/6",
     bgLight:
       "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
   },
@@ -92,6 +92,10 @@ const Header = () => {
   const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
 
   const toggleBurger = () => {
+    console.log("blocked");
+    isOpenBurger
+      ? (document.body.style.overflow = "scroll")
+      : (document.body.style.overflow = "hidden");
     isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
   };
 
@@ -117,7 +121,7 @@ const Header = () => {
       </div>
       <nav>
         {isOpenBurger ? (
-          <ul className="flex flex-col gap-[12px] w-[100%] pb-[300px]">
+          <ul className="flex flex-col gap-[12px] w-[100%] h-[100vh] container">
             {linksForMobile.map((obj) => {
               return (
                 <li
