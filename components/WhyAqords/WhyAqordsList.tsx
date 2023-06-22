@@ -1,5 +1,6 @@
 import React from "react";
-import Item from "./Item";
+import Item from "./WhyAqordsItem";
+
 import one from "public/assets/images/one.svg";
 import mexa from "public/assets/images/mexa.svg";
 import wallet from "public/assets/images/wallet.svg";
@@ -55,7 +56,7 @@ const items = [
     text: "Our platform guarantees prompt payment once the contract is duly executed and confirmed by all stakeholders, empowering carriers to stay focused on their core competencies.",
   },
 ];
-const ItemsList = () => {
+const WhyAqordsList = () => {
   return (
     <div className="pb-[120px]">
       <ul>
@@ -67,4 +68,4 @@ const ItemsList = () => {
   );
 };
 
-export default ItemsList;
+export default WhyAqordsList;

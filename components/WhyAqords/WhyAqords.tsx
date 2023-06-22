@@ -1,7 +1,7 @@
 import React from "react";
-import ItemsList from "./ItemsList";
+import ItemsList from "./WhyAqordsList";
 
-const MainContent = () => {
+const WhyAqords = () => {
   return (
     <>
       <main>
@@ -40,4 +40,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default WhyAqords;
