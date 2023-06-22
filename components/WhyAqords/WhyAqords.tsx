@@ -20,7 +20,7 @@ const WhyAqords = () => {
           </div>
         </section>
 
-        <section className=" bg-no-repeat  bg-[url('../public/assets/images/truck.png')] sm:bg-center ">
+        <section className=" bg-no-repeat bg-cover  bg-[url('../public/assets/images/truck.png')] sm:bg-center ">
           <div className="container">
             <div className="  py-[22%] w-full max-w-[330px] md:max-w-[530px]">
               <h3 className="tracking-[-1.5px] max-w-[280px] md:max-w-[537px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-[48px] mb-[30px]">
