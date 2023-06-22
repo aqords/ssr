@@ -116,12 +116,7 @@ const Navigationblock = () => {
           flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
           bgLight={db[4].bgLight}
         />
-      </div>
-      <span className="block h-[0px] my-[60px]"></span>
-      <div
-        ref={elementRef}
-        className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}
-      >
+        <span className="block h-[0px] my-[60px]"></span>
         <InfoCard
           title={db[5].title}
           desc={db[5].desc}
