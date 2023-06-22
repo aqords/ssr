@@ -22,8 +22,8 @@ const MainContent = () => {
 
         <section className=" bg-cover bg-image-top-left bg-no-repeat bg-[url('../public/assets/images/truck.png')] sm:bg-center">
           <div className="container">
-            <div className="  py-[20%] w-full max-w-[330px] md:max-w-[450px]">
-              <h3 className=" max-w-[280px] md:max-w-[430px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
+            <div className="  py-[20%] w-full  md:max-w-[450px]">
+              <h3 className="  md:max-w-[430px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-4xl mb-[30px]">
                 Are you prepared to embark on this transformative journey?
               </h3>
               <p className=" font-man font-normal md:text-[20px] text-base leading-6  md:leading-8 ">

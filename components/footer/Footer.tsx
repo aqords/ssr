@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" mb-[20px] md:mb-0 flex gap-[110px]">
+          <div className=" mb-[20px] mr-[55px] sm:mr-0 sm md:mb-0 flex gap-[110px]">
             <div>
               <span className=" leading-[20px] block mb-[40px] font-bold">
                 Learn
