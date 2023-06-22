@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Homepage from "./Homepage/Homepage";
+import HowWorks from "./HowWorks/HowWorks";
 
 export default function Home({ image }: any) {
   return (
@@ -13,7 +13,7 @@ export default function Home({ image }: any) {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <Homepage />
+      <HowWorks />
       <Footer />
     </>
   );
