@@ -1,5 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const ItemsList = dynamic(() => import("./WhyAccordsList"));
 
@@ -22,7 +23,15 @@ const WhyAccordsList = () => {
           </div>
         </section>
 
-        <section className=" bg-no-repeat bg-cover  bg-[url('../public/assets/images/truck.png')] sm:bg-center ">
+        <section className="relative">
+          <div className="absolute inset-0 z-[-1] h-[807px]">
+            <Image
+              src="/assets/images/truck.png"
+              alt="Background Image"
+              width={2500}
+              height={807}
+            />
+          </div>
           <div className="container">
             <div className="  py-[22%] w-full max-w-[330px] md:max-w-[530px]">
               <h3 className="tracking-[-1.5px] max-w-[280px] md:max-w-[537px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-[48px] mb-[30px]">
