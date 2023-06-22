@@ -22,6 +22,7 @@ const Upperblock = () => {
     elementRefs: [elementRef, elementRef2],
     className: "original",
   });
+
   return (
     <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
       <div
