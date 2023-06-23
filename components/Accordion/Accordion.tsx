@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 import arrow from "../../public/assets/images/arrow-accordion.svg";
 
-const Accordion = () => {
+interface db {
+  title: string;
+  desc1: string;
+  desc2: string;
+}
+
+const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = (boolean: boolean) => {
@@ -12,14 +21,14 @@ const Accordion = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <button
         className={`text-[32px] text-[${
           isOpen ? "#fff" : "#838383"
-        }]  hover:text-[#fff] w-full flex justify-between items-center`}
+        }]  hover:text-[#fff] w-full flex justify-between items-center `}
         onClick={() => toggleAccordion(isOpen)}
       >
-        Signing and Execution
+        {title}
         <Button
           insideGradient={
             "rounded-[10px] bg-gradient-to-r from-[#27241d]  to-[#252118] px-[15px] py-[19px]"
@@ -36,28 +45,25 @@ const Accordion = () => {
         </Button>
       </button>
       <div
-        className={`flex justify-between items-end ${
+        className={`flex overflow-hidden justify-between   duration-500 ${
           isOpen
-            ? "visible opacity-100 max-h-full"
-            : "invisible opacity-0 max-h-0"
-        } transition-all duration-500`}
+            ? "max-h-[100vh] opacity-100 visible pt-[40px]"
+            : "max-h-0 opacity-0 unvisible"
+        }`}
       >
         <div className="max-w-[624px] leading-8">
-          <p className="font-man text-[19px] mt-[40px] mb-[35px] tracking-[-0.14px]">
-            To get started, shippers and carriers can easily integrate their
-            existing systems or applications with the AQORDS platform. Our
-            seamless integration process ensures a smooth transition and minimal
-            disruption to your current operations.
+          <p className="font-man text-[19px] mb-[35px] tracking-[-0.14px]">
+            {t(`${desc1}`)}
           </p>
           <p className="font-man text-[15px] text-[#838383] tracking-[-0.14px] ">
-            We also collaborate with major freight exchange platforms to enhance
-            connectivity and expand your network of potential business partners.
+            {t(`${desc2}`)}
           </p>
         </div>
         <div className="w-[348px] h-[226px] overflow-hidden bg-gray rounded-[20px]">
           {/* <Image /> */}
         </div>
       </div>
+      <span className="hidden md:block h-[1px] w-full bg-[#98A2B3] opacity-25 my-[40px]"></span>
     </div>
   );
 };

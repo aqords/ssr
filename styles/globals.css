@@ -88,11 +88,4 @@ body {
   .animetedSpan {
     animation: move-text-color 0.5s infinite;
   }
-  .howitwork-gradient {
-    opacity: 0.25;
-    background: var(
-      --bronze-gradient-v-2,
-      linear-gradient(325deg, #8d794c 0%, #ada785 100%)
-    );
-  }
 }

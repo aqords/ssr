@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button/Button";
+import { useTranslation } from "next-i18next";
 
 interface ComponentProps {
   title: string;
@@ -20,6 +21,8 @@ const InfoCard: React.FC<ComponentProps> = ({
   flex,
   bgLight,
 }) => {
+  const { t } = useTranslation();
+
   function clampString(inputString: string): string {
     if (inputString.length <= 230) {
       return inputString;
@@ -45,9 +48,11 @@ const InfoCard: React.FC<ComponentProps> = ({
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
         <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
-          <h3 className="text-[32px] mb-[2px] md:text-[40px]">{title}</h3>
+          <h3 className="text-[32px] mb-[2px] md:text-[40px]">
+            {t(`${title}`)}
+          </h3>
           <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px] mt-[15px]">
-            {clampString(desc)}
+            {t(`${clampString(desc)}`)}
           </p>
           <Button
             outsideGradient={
@@ -55,7 +60,7 @@ const InfoCard: React.FC<ComponentProps> = ({
             }
           >
             <button className="mx-[110px] my-[10px] md:mx-[55px] md:my-[10px] md:text-[20px] font-man">
-              View more
+              {t("View more")}
             </button>
           </Button>
         </div>

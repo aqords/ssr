@@ -3,6 +3,7 @@ import Image from "next/image";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import AnimatedText from "../../utils/AnimatedText";
+import { useTranslation } from "next-i18next";
 
 import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
@@ -10,6 +11,8 @@ import truck2 from "../../public/assets/images/truck2.png";
 import truck1 from "../../public/assets/images/truck1.png";
 
 const Upperblock = () => {
+  const { t } = useTranslation();
+
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1", "el-2"],
     visibleClass: "visible",
@@ -37,9 +40,9 @@ const Upperblock = () => {
         >
           <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
             <p className="text-[#838383]">
-              Announcing our next round of funding.
+              {t("Announcing our next round of funding.")}
             </p>
-            <p className="font-normal">Read more →</p>
+            <p className="font-normal"> {t("Read more →")}</p>
           </div>
         </Button>
         <Image
@@ -59,12 +62,12 @@ const Upperblock = () => {
         className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}
       >
         <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[40px] mt-[130px]">
-          Discover the Future of Freight Transportation
+          {t("Discover the Future of Freight Transportation")}
         </h2>
         <p className="font-man text-[16px] lg:text-[20px] lg:mb-[79px] mb-[39px]">
-          At AQORDS, we embark on a transformative journey to revolutionize the
-          freight transportation industry by harnessing the immense potential of
-          blockchain technology.
+          {t(
+            "  At AQORDS, we embark on a transformative journey to revolutionize the freight transportation industry by harnessing the immense potential of blockchain technology."
+          )}
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
           <Image
@@ -73,15 +76,17 @@ const Upperblock = () => {
             alt="turck2"
           />
           <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
-            Our cutting-edge platform empowers <br /> instant, verifiable, and
-            highly secure transactions, <br /> ushering in an era of
+            {t(`Our cutting-edge platform empowers ${(
+              <br />
+            )} instant, verifiable, and
+            highly secure transactions, ${(<br />)} ushering in an era of
             transparency, trust, and operational efficiency across global
-            <br /> supply chains.
-            <br />
-            <br />
+            ${(<br />)}> supply chains.
+            ${(<br />)}
+            ${(<br />)}
             Whether you represent a shipper, carrier, or a distinguished player
             in the realm of freight exchanges, AQORDS presents a comprehensive
-            solution meticulously tailored to your unique requirements.
+            solution meticulously tailored to your unique requirements.`)}
           </p>
         </div>
       </section>

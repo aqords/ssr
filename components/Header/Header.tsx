@@ -2,97 +2,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
+import { useTranslation } from "next-i18next";
 
+import { linksForDesktop, linksForMobile } from "../Constant/HeaderLinks";
 import logo from "../../public/assets/images/logo.svg";
-import manifesto from "../../public/assets/images/manifesto-btn.svg";
-import about from "../../public/assets/images/aboutus-btn.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
 import closeburg from "../../public/assets/images/close-burger.svg";
 import Button from "../UI/Button/Button";
 
-interface Link {
-  name: string;
-  path: string;
-  url?: string;
-  bgLight?: string;
-}
-
-const linksForDesktop: Link[] = [
-  {
-    name: "Home",
-    path: "/1",
-  },
-  {
-    name: "About",
-    path: "/2",
-  },
-  {
-    name: "Manifesto",
-    path: "/3",
-  },
-  {
-    name: "How it works",
-    path: "/4",
-  },
-  {
-    name: "Whitepaper",
-    path: "/5",
-  },
-  {
-    name: "Team",
-    path: "/6",
-  },
-  {
-    name: "Road map",
-    path: "/7",
-  },
-];
-const linksForMobile: Link[] = [
-  {
-    name: "How it does works?",
-    path: "/1",
-    bgLight:
-      "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
-  },
-  {
-    name: "Manifesto",
-    path: "/2",
-    url: manifesto,
-    bgLight:
-      "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
-  },
-  {
-    name: "Whitepapper",
-    path: "/3",
-    bgLight:
-      "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
-  },
-  {
-    name: "Road map",
-    path: "/4",
-    bgLight:
-      "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
-  },
-  {
-    name: "About US",
-    path: "/5",
-    url: about,
-    bgLight:
-      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
-  },
-  {
-    name: "Our team",
-    path: "/6",
-    bgLight:
-      "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
-  },
-];
-
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
 
   const toggleBurger = () => {
-    console.log("blocked");
     isOpenBurger
       ? (document.body.style.overflow = "scroll")
       : (document.body.style.overflow = "hidden");
@@ -116,7 +39,7 @@ const Header = () => {
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
-          <button className="px-[30px]">Connect wallet</button>
+          <button className="px-[30px]">{t("Connect wallet")}</button>
         </Button>
       </div>
       <nav>
@@ -128,7 +51,7 @@ const Header = () => {
                   key={obj.path}
                   className="font-man relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
                 >
-                  <Link href={obj.path}>{obj.name}</Link>
+                  <Link href={obj.path}>{t(`${obj.name}`)}</Link>
 
                   {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
 
@@ -171,7 +94,7 @@ const Header = () => {
                 key={obj.path}
                 className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent  hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
               >
-                <Link href={obj.path}>{obj.name}</Link>
+                <Link href={obj.path}>{t(`${obj.name}`)}</Link>
               </li>
             );
           })}
@@ -181,7 +104,9 @@ const Header = () => {
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
-          <button className="px-[30px] font-man text-sm">Connect wallet</button>
+          <button className="px-[30px] font-man text-sm">
+            {t("Connect wallet")}
+          </button>
         </Button>
       </nav>
     </header>

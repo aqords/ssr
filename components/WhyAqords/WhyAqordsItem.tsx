@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
+import { useTranslation } from "next-i18next";
 
 const WhyAqordsItem = ({ item }: any) => {
+  const { t } = useTranslation();
+
   const isScrolled = ScrollToggle({
     targetClasses: ["el1"],
     visibleClass: "visible",
@@ -38,13 +41,15 @@ const WhyAqordsItem = ({ item }: any) => {
           />
 
           <h3 className="text-2xl md:text-[40px]  font-bold text-white  leading-[64px] tracking-[-0.05rem] ">
-            {item.title}
+            {t(`${item.title}`)}
           </h3>
         </div>
         <p className=" font-man mb-[25px] font-normal md:mb-[38px] md:text-[20px] tracking-[-0.22px]">
-          {item.description}
+          {t(`${item.description}`)}
         </p>
-        <p className="text-gray font-man font-normal text-base">{item.text}</p>
+        <p className="text-gray font-man font-normal text-base">
+          {t(`${item.text}`)}
+        </p>
       </div>
     </li>
   );
