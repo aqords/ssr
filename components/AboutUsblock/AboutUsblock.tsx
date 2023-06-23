@@ -8,7 +8,7 @@ const AboutUsblock = () => {
           <h1 className=" font-bold text-2xl md:text-[48px]  mb-[30px] tracking-[-1.5px]">
             About us!
           </h1>
-          <p className="font-normal  md:text-lg font-man max-w-[790px] leading-6 md:leading-8 tracking-[-0.42px] mb-[30px]">
+          <p className="  font-normal  md:text-lg font-man max-w-[790px] leading-6 md:leading-8 tracking-[-0.42px] mb-[30px]">
             We are a team of visionaries, technologists, and industry experts
             dedicated to revolutionizing the freight transportation landscape
             through blockchain innovation.
