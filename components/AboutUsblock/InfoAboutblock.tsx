@@ -9,7 +9,7 @@ const InfoAboutblock = () => {
     <>
       <section className="relative">
         <div className="container relative  pt-[120px] pb-[130px] lg:pb-[187px]">
-          <p className="font-normal  text-[#838383] text-[16px] md:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
+          <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
             Driven by our passion for disruptive technologies, we have embarked
             on a remarkable journey to create a decentralized smart contract
             platform specifically designed for the needs of the freight
@@ -18,7 +18,7 @@ const InfoAboutblock = () => {
             and online marketplaces, enabling us to tackle the complex
             challenges faced by the industry head-on.
           </p>
-          <p className="font-normal  text-[#838383] text-[16px] md:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px]  mb-[60px] md:mb-[80px] ">
+          <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px]  mb-[60px] md:mb-[80px] ">
             As trailblazers in this field, we understand the pain points and
             inefficiencies that plague traditional freight transportation
             processes. Outdated systems, manual paperwork, delayed payments, and
@@ -39,9 +39,9 @@ const InfoAboutblock = () => {
         </div>
 
         <div className="bg-[#19191A]">
-          <div className="container pt-[160px] lg:pt-[267px]   pb-[80px] md:flex justify-between">
+          <div className="container pt-[100px]  md:pt-[160px] lg:pt-[267px]   pb-[80px]  lg:flex justify-between">
             <div>
-              <p className="font-normal  text-[20px] font-man max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] mb-[30px]">
+              <p className="font-normal text-[16px] lg:text-[20px] font-man lg:max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] mb-[30px]">
                 Our core focus is to leverage the power of blockchain technology
                 to streamline contract execution, enable instant payments, and
                 enhance security throughout the entire logistics process. By
@@ -50,7 +50,7 @@ const InfoAboutblock = () => {
                 administrative overhead, and facilitate real-time tracking and
                 monitoring of shipments.
               </p>
-              <p className="font-normal text-[20px] font-man max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] ">
+              <p className="font-normal  text-[16px] lg:text-[20px] font-man lg:max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] ">
                 We believe that collaboration and partnership are essential for
                 success. We are actively seeking strategic alliances with major
                 shippers, freight forwarders, and technology providers to ensure
@@ -64,7 +64,7 @@ const InfoAboutblock = () => {
             </div>
 
             <Image
-              className="  "
+              className="hidden lg:block"
               alt="gradient2"
               src={gradient2}
               width={440}
@@ -73,7 +73,7 @@ const InfoAboutblock = () => {
           </div>
         </div>
 
-        <div className="bg-[#202020]">
+        <div className="bg-[#202020] ">
           <div className=" py-[92px] container">
             <div className="max-w-[440px]">
               <h1 className=" leading-[3.8rem]   font-bold text-2xl md:text-[48px]  mb-[30px] tracking-[-1.5px]">
