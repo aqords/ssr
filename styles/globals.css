@@ -88,4 +88,10 @@ body {
   .animetedSpan {
     animation: move-text-color 0.5s infinite;
   }
+
+  .connect {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+  }
 }
