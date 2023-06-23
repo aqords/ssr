@@ -21,9 +21,9 @@ const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <button
-        className={`text-[32px] text-[${
+        className={`tracking-[-0.6px] text-[24px] lg:text-[32px] text-[${
           isOpen ? "#fff" : "#838383"
         }]  hover:text-[#fff] w-full flex justify-between items-center `}
         onClick={() => toggleAccordion(isOpen)}
@@ -31,7 +31,7 @@ const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
         {title}
         <Button
           insideGradient={
-            "rounded-[10px] bg-gradient-to-r from-[#27241d]  to-[#252118] px-[15px] py-[19px]"
+            "rounded-[10px] bg-gradient-to-r from-[#27241d]  to-[#252118] px-[13px] py-[17px]"
           }
           outsideGradient={`rounded-[10px] ${
             isOpen ? "bg-gradient-to-l" : "bg-gradient-to-r"
@@ -47,23 +47,23 @@ const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
       <div
         className={`flex overflow-hidden justify-between   duration-500 ${
           isOpen
-            ? "max-h-[100vh] opacity-100 visible pt-[40px]"
+            ? "max-h-[100vh] opacity-100 visible pt-[39px]"
             : "max-h-0 opacity-0 unvisible"
         }`}
       >
         <div className="max-w-[624px] leading-8">
-          <p className="font-man text-[19px] mb-[35px] tracking-[-0.14px]">
+          <p className="font-man font-[300] text-[19px] mb-[30px] tracking-[0.2px]">
             {t(`${desc1}`)}
           </p>
-          <p className="font-man text-[15px] text-[#838383] tracking-[-0.14px] ">
+          <p className="font-man text-[15px] text-[#838383] tracking-[0.14px] ">
             {t(`${desc2}`)}
           </p>
         </div>
-        <div className="w-[348px] h-[226px] overflow-hidden bg-gray rounded-[20px]">
+        <div className="hidden lg:block w-[348px] h-[226px] bg-gray rounded-[20px]">
           {/* <Image /> */}
         </div>
       </div>
-      <span className="hidden md:block h-[1px] w-full bg-[#98A2B3] opacity-25 my-[40px]"></span>
+      <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25 my-[39.5px]"></span>
     </div>
   );
 };

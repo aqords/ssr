@@ -3,6 +3,7 @@ import React from "react";
 import Accordion from "../../components/Accordion/Accordion";
 import Navigationblock from "../../components/Navigationblock/Navigationblock";
 import { useTranslation } from "next-i18next";
+import BlockWithBackground from "../../components/BlockWithBackground/BlockWithBackground";
 
 interface db {
   title: string;
@@ -73,15 +74,11 @@ const HowWorks = () => {
   return (
     <>
       <section className="container relative">
-        <div
-          className="
-      absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
-        ></div>
-        <article className="mb-[80px] mt-[120px]">
-          <h2 className="font-bold text-[48px] mb-[30px]">
+        <article className="mb-[80px] lg:mt-[120px]">
+          <h2 className="font-bold tracking-[-1.5px] text-[32px] lg:text-[48px] mb-[40px]">
             {t("How it works")}
           </h2>
-          <p className="font-man text-[20px] tracking-[-0.14px] leading-8 mb-[80px]">
+          <p className="font-man lg:text-[20px] tracking-[0.3px] leading-8 mb-[40px] lg:mb-[80px]">
             {t(
               "At AQORDS, we are developing a user-friendly and efficient platform that simplifies the freight transportation process through the power of blockchain technology. Our goal is to provide a seamless and transparent experience for all parties involved, from shippers and carriers to freight exchange platforms."
             )}
@@ -102,28 +99,17 @@ const HowWorks = () => {
           );
         })}
       </section>
-      <section className="bg-gray h-[807px]">
-        <div className="container h-full flex items-center">
-          <div className="max-w-[580px] flex gap-[30px] flex-col ">
-            <h3 className="font-bold text-[42px] tracking-[-0.5px] leading-[3rem]">
-              {t(
-                "  To get started, shippers and carriers can easily integrate their existing systems or applications with the AQORDS platform."
-              )}
-            </h3>
-            <p className="font-man text-[19px] tracking-[-0.14px]">
-              {t(
-                "Our seamless integration process ensures a smooth transition and minimal disruption to your current operations."
-              )}
-            </p>
-            <p className="font-man text-[#838383] text-[15px] tracking-[-0.14px]">
-              {t(
-                " We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
-              )}
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <BlockWithBackground
+        title={
+          "To get started, shippers and carriers can easily integrate their existing systems or applications with the AQORDS platform."
+        }
+        desc1={
+          "Our seamless integration process ensures a smooth transition and minimal disruption to your current operations"
+        }
+        desc2={
+          "We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
+        }
+      />
       <Navigationblock />
     </>
   );
