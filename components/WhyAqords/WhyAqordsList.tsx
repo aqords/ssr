@@ -1,13 +1,24 @@
 import React from "react";
-import Item from "./WhyAqordsItem";
-import { whyAqordsList } from "../Constant/WhyAqordsItems";
+import WhyAqordsItem from "./WhyAqordsItem";
+import { renderObject } from "../Constant/WhyAqordsItems";
 
-const WhyAqordsList = () => {
+interface WhyAqordsListProps {
+  itemsArray: renderObject[];
+}
+
+const WhyAqordsList = ({ itemsArray }: WhyAqordsListProps) => {
   return (
     <div className="pb-[120px]">
       <ul>
-        {whyAqordsList.map((item) => (
-          <Item key={item.title} item={item} />
+        {itemsArray?.map((obj) => (
+          <WhyAqordsItem
+            key={obj.title}
+            text={obj.text}
+            description={obj.description}
+            icon={obj.icon}
+            topicon={obj.topicon}
+            title={obj.title}
+          />
         ))}
       </ul>
     </div>

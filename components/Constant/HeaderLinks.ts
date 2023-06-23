@@ -11,69 +11,69 @@ interface Link {
 export const linksForDesktop: Link[] = [
   {
     name: "Home",
-    path: "/1",
+    path: "/homepage/homepage",
   },
   {
     name: "About",
-    path: "/2",
+    path: "/about/about",
   },
   {
     name: "Manifesto",
-    path: "/3",
+    path: "/manifesto/manifesto",
   },
   {
     name: "How it works",
-    path: "/4",
+    path: "/howitworks/howitworks",
   },
   {
     name: "Whitepaper",
-    path: "/5",
+    path: "/whitepaper/whitepaper",
   },
   {
     name: "Team",
-    path: "/6",
+    path: "/team/team",
   },
   {
     name: "Road map",
-    path: "/7",
+    path: "/roadmap/roadmap",
   },
 ];
 export const linksForMobile: Link[] = [
   {
     name: "How it does works?",
-    path: "/1",
+    path: "/howitworks/howitworks",
     bgLight:
       "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
   },
   {
     name: "Manifesto",
-    path: "/2",
+    path: "/manifesto/manifesto",
     url: manifesto,
     bgLight:
       "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
     name: "Whitepapper",
-    path: "/3",
+    path: "/whitepaper/whitepaper",
     bgLight:
       "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
   },
   {
     name: "Road map",
-    path: "/4",
+    path: "/roadmap/roadmap",
     bgLight:
       "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "About US",
-    path: "/5",
+    path: "/about/about",
     url: about,
     bgLight:
       "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
     name: "Our team",
-    path: "/6",
+    path: "/team/team",
     bgLight:
       "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
   },

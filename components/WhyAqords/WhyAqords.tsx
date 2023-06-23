@@ -1,12 +1,16 @@
 import React, { useRef } from "react";
-import ItemsList from "./WhyAqordsList";
+import WhyAqordsList from "./WhyAqordsList";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import { useTranslation } from "next-i18next";
+import { renderObject } from "../Constant/WhyAqordsItems";
 
-const WhyAqords = () => {
+interface WhyAqordsProps {
+  itemsArray: renderObject[];
+}
+
+const WhyAqords = ({ itemsArray }: WhyAqordsProps) => {
   const { t } = useTranslation();
-
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1", "el-2", "el-3"],
     visibleClass: "visible",
@@ -41,7 +45,7 @@ const WhyAqords = () => {
               </p>
             </div>
           </div>
-          <ItemsList />
+          <WhyAqordsList itemsArray={itemsArray} />
         </div>
       </section>
 

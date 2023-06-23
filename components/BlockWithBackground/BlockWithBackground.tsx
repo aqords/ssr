@@ -1,16 +1,27 @@
 import React from "react";
+import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
-interface db {
+interface BlockWithBackgroundProps {
   title: string;
   desc1: string;
   desc2: string;
+  img?: string;
+  imgStyle?: string;
+  blockStyle?: string;
 }
 
-const BlockWithBackground: React.FC<db> = ({ title, desc1, desc2 }) => {
+const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
+  title,
+  desc1,
+  desc2,
+  img,
+  imgStyle,
+  blockStyle = "bg-gray",
+}) => {
   const { t } = useTranslation();
   return (
-    <section className="bg-gray h-[479px] lg:h-[807px]">
+    <section className={`${blockStyle} h-[479px] lg:h-[807px]`}>
       <div className="container h-full flex items-center">
         <div className="max-w-[624px]">
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
@@ -24,6 +35,11 @@ const BlockWithBackground: React.FC<db> = ({ title, desc1, desc2 }) => {
           </p>
         </div>
       </div>
+      {img ? (
+        <Image className={imgStyle} src={img} alt="backgroundimage" />
+      ) : (
+        ""
+      )}
     </section>
   );
 };
