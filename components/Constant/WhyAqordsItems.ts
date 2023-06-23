@@ -11,7 +11,6 @@ import fife from "public/assets/images/fife.svg";
 import six from "public/assets/images/six.svg";
 import seven from "public/assets/images/seven.svg";
 import lock from "public/assets/images/lock.svg";
-import growth from "public/assets/images/growth.svg";
 
 export interface renderObject {
   topicon: string;
@@ -100,7 +99,7 @@ export const ManifestList: renderObject[] = [
   },
   {
     topicon: fife,
-    icon: mexa,
+    icon: lock,
     title: "Security and Privacy",
     description:
       "We prioritize the security and privacy of our users' data. With advanced cryptographic protocols and robust security measures, we ensure the integrity and confidentiality of sensitive information.",
@@ -108,7 +107,7 @@ export const ManifestList: renderObject[] = [
   },
   {
     topicon: six,
-    icon: lock,
+    icon: tepi,
     title: "Sustainable Growth",
     description:
       "We are committed to building a sustainable future for the freight transportation industry.",
@@ -116,7 +115,7 @@ export const ManifestList: renderObject[] = [
   },
   {
     topicon: seven,
-    icon: growth,
+    icon: lock,
     title: "Empowering Communities",
     description:
       "We aim to empower carriers, shippers, and other stakeholders within the freight transportation community.",

@@ -52,10 +52,10 @@ const WhyAqordsItem = ({
             {t(`${title}`)}
           </h3>
         </div>
-        <p className=" font-man mb-[25px] font-normal md:mb-[38px] md:text-[20px] tracking-[-0.22px]">
+        <p className=" font-man mb-[25px] font-normal md:mb-[38px] md:text-[20px] tracking-[-0.4px] leading-[1.9rem]">
           {t(`${description}`)}
         </p>
-        <p className="text-gray font-man font-normal text-base">
+        <p className="text-gray font-man font-normal text-base tracking-[-0.3px] leading-[1.63rem]">
           {t(`${text}`)}
         </p>
       </div>
