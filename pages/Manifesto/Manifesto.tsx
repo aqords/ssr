@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import BlockWithBackground from "../../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../../components/Constant/WhyAqordsItems";
 import Footer from "../../components/Footer/Footer";
@@ -11,7 +12,13 @@ import { useTranslation } from "next-i18next";
 const Manifesto = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
+      <Head>
+        <title>{t("Homepage")}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="home_description" />
+        <meta name="theme-color" content="default"></meta>
+      </Head>
       <Header />
       <BlockWithBackground
         blockStyle="relative h-[580px] lg:h-[807px] overflow-hidden "
@@ -46,7 +53,7 @@ const Manifesto = () => {
       />
       <Navigationblock />
       <Footer />
-    </div>
+    </>
   );
 };
 
