@@ -25,7 +25,7 @@ const Upperblock = () => {
   });
 
   return (
-    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
+    <div className="container sm:pt-[100px] pt-[12px] relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"

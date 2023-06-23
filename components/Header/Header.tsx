@@ -152,7 +152,7 @@ const Header = () => {
       </nav>
     </header>
   ) : (
-    <header className="container mb-[100px]">
+    <header className="container mb-[0px]">
       <nav className="flex items-center justify-between h-[96px]">
         <Link
           href="/"

@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Homepage from "./Homepage/Homepage";
+// import Homepage from "./Homepage/Homepage";
+import AboutUs from "./AboutUs/AboutUs";
 
-export default function Home({ image }: any) {
+const Home = ({ image }: any) => {
   return (
     <>
       <Head>
@@ -13,8 +14,11 @@ export default function Home({ image }: any) {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <Homepage />
+      {/* <Homepage /> */}
+      <AboutUs />
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

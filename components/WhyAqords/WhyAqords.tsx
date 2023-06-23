@@ -48,7 +48,7 @@ const WhyAqords = () => {
               ref={elementRef2}
               className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}
             >
-              <h3 className="tracking-[-1.5px]md:max-w-[537px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-[48px] mb-[30px]">
+              <h3 className="tracking-[-1.5px] md:max-w-[537px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-[48px] mb-[30px]">
                 Are you prepared to embark on this transformative journey?
               </h3>
             </div>
