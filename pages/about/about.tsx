@@ -11,7 +11,7 @@ const about = () => {
     <div>
       <Header />
       <BlockWithBackground
-        blockStyle="relative overflow-hidden"
+        blockStyle="relative overflow-hidden items-start  "
         title={"About us!"}
         desc1={
           " We are a team of visionaries, technologists, and industry experts dedicated to revolutionizing the freight transportation landscape through blockchain innovation."
@@ -20,9 +20,8 @@ const about = () => {
           "Our mission is to transform the way contracts are executed andpayments are processed, bringing transparency, efficiency, and trustto supply chains worldwide."
         }
         img={aboutusbg}
-        imgStyle="absolute z-[-1] top-[-10%] w-[1920px]  left-1/2 transform -translate-x-1/2"
+        imgStyle="absolute z-[-1] top-[65%]   smx:top-[50%]  sm:top-[20%]  lg:top-[10%]  xl:top-[-12%]xl  2xl:top-[-12%]  w-[1920px]  left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[0px]"
       />
-
       <InfoAboutblock />
       <Navigationblock />
       <Footer />

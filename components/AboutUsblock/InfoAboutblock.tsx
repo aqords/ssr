@@ -9,7 +9,7 @@ const InfoAboutblock = () => {
   return (
     <>
       <section className="relative">
-        <div className="container relative  pt-[120px] pb-[130px] lg:pb-[187px]">
+        <div className="container relative  pt-[60px] sm:pt-[120px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
           <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
             Driven by our passion for disruptive technologies, we have embarked
             on a remarkable journey to create a decentralized smart contract
@@ -40,7 +40,7 @@ const InfoAboutblock = () => {
         </div>
 
         <div className="bg-[#19191A]">
-          <div className="container pt-[100px]  md:pt-[160px] lg:pt-[267px]   pb-[80px]  lg:flex justify-between">
+          <div className="container  smx:pt-[60px] sm:pt-[80px]  md:pt-[160px] lg:pt-[267px]   pb-[40px]  lg:flex justify-between">
             <div>
               <p className="font-normal text-[16px] lg:text-[20px] font-man lg:max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] mb-[30px]">
                 Our core focus is to leverage the power of blockchain technology
@@ -75,12 +75,12 @@ const InfoAboutblock = () => {
         </div>
 
         <div className="bg-[#202020] ">
-          <div className=" py-[92px] container">
+          <div className=" py-[48px] lg:py-[92px] container">
             <div className="max-w-[440px]">
-              <h1 className=" leading-[3.8rem]   font-bold text-2xl md:text-[48px]  mb-[30px] tracking-[-1.5px]">
+              <h1 className="leading-[2.8rem] lg:leading-[3.8rem]   font-bold text-[32px] lg:text-[48px]  mb-[30px] tracking-[-1.5px]">
                 Experience the future of supply chains with AQORDS.
               </h1>
-              <p className="font-normal  md:text-lg font-man max-w-[532px] leading-6 md:leading-8 tracking-[-0.42px] ">
+              <p className="font-normal text-[16px] lg:text-[20px] font-man max-w-[532px] leading-6 md:leading-8 tracking-[-0.42px] ">
                 Join us in shaping the future of freight transportation powered
                 by blockchain technology. Together, we can unlock new
                 possibilities, enhance operational efficiency, and establish a
