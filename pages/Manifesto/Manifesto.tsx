@@ -42,16 +42,18 @@ const Manifesto = () => {
       </div>
       <BlockWithBackground
         title={
-          "To get started, shippers and carriers can easily integrate their existing systems or applications with the AQORDS platform."
+          "Together, we can reshape the freight transportation industry, transforming it into a seamless, secure, and efficient ecosystem."
         }
         desc1={
-          "Our seamless integration process ensures a smooth transition and minimal disruption to your current operations"
+          "AQORDS is more than just a platform; it is a movement towards a future where trust and transparency prevail. Join us in this revolution and be part of a new era in freight transportation. Together, let's embark on a journey of empowerment, innovation, and shared success. Welcome to AQORDS."
         }
         desc2={
           "We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
         }
       />
-      <Navigationblock />
+      <div className="pt-[85px] pb-[175px]">
+        <Navigationblock />
+      </div>
       <Footer />
     </>
   );

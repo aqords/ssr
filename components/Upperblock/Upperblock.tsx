@@ -28,7 +28,7 @@ const Upperblock = () => {
   });
 
   return (
-    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
+    <div className="container relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px] lg:mt-[99px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -56,7 +56,7 @@ const Upperblock = () => {
           styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[85px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
         />
       </section>
-      <span className="block h-[1px] w-full span-gradient"></span>
+      <span className="block h-[1px] w-full span-gradient mt-[13px]"></span>
       <section
         ref={elementRef}
         className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}

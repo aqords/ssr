@@ -60,7 +60,7 @@ const Footer = () => {
                     href="/"
                     className="font-normal text-[12px] smx:text-[14px]"
                   >
-                    {t("Explore")}
+                    {t("Read more →")}
                   </Link>
                 </div>
               </Button>
