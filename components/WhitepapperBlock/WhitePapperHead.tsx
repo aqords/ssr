@@ -43,7 +43,7 @@ const WhitePapperHead = () => {
               >
                 <div className=" py-[11px] px-[54px]">
                   <Link
-                    href="/"
+                    href="/whitepappetinfo/whitepapperinfo"
                     className="font-man font-normal text-[14px] smx:text-[18px]"
                   >
                     {t("Open whitepaper")}
