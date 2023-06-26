@@ -11,7 +11,6 @@ module.exports = {
         man: "Manrope",
         amp: "AmpleSoft Pro",
       },
-
       screens: {
         smx: "500px",
       },
@@ -28,7 +27,6 @@ module.exports = {
         sm: "14px",
         lg: "20px",
       },
-
       backgroundColor: {
         "custom-color": "rgba(141, 121, 76, 1)",
         main: "#080809",
@@ -43,7 +41,7 @@ module.exports = {
         current: "currentColor",
         white: "#ffffff",
         purple: "#6734BA",
-        gray: " #838383;",
+        gray: "#838383",
       },
     },
   },
