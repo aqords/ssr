@@ -1,17 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import { fill } from "lodash";
 
 const AboutUsblock = () => {
   return (
     <section>
-      <div className="relative">
-        <Image
-          className="absolute z-[-1]"
-          src="/assets/images/aboutbg.png"
-          alt="Image Alt Text"
-        />
-      </div>
       <div className="container">
         <div className="sm:py-[150px]  md:py-[200px] lg:py-[350px] max-w-[532px]">
           <h1 className=" font-bold  text-[48px]  mb-[30px] tracking-[-1.5px]">

@@ -3,6 +3,7 @@ import gradient1 from "/public/assets/images/gradientimg.svg";
 import gradient2 from "/public/assets/images/gradientimg2.svg";
 import Image from "next/image";
 import bull from "/public/assets/images/bull.svg";
+import BlockWithBackground from "../BlockWithBackground/BlockWithBackground";
 
 const InfoAboutblock = () => {
   return (

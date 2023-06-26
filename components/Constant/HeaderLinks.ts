@@ -64,13 +64,13 @@ export const linksForMobile: Link[] = [
     bgLight:
       "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
   },
-  {
-    name: "About US",
-    path: "/about/about",
-    url: about,
-    bgLight:
-      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
-  },
+  // {
+  //   name: "About US",
+  //   path: "/about/about",
+  //   url: about,
+  //   bgLight:
+  //     "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
+  // },
   {
     name: "Our team",
     path: "/team/team",
