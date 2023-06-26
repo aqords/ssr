@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useTranslation } from "next-i18next";
 
 interface BlockWithBackgroundProps {
   title: string;
   desc1: string;
   desc2: string;
-  img?: string;
+  img?: StaticImageData;
   imgStyle?: string;
   blockStyle?: string;
 }

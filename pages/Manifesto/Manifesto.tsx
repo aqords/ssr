@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Navigationblock from "../../components/Navigationblock/Navigationblock";
 import WhyAqords from "../../components/WhyAqords/WhyAqordsList";
-import manifesto from "../../public/assets/images/manifesto-background.svg";
+import manifesto from "../../public/assets/images/manifesto-background.png";
 import { useTranslation } from "next-i18next";
 
 const Manifesto = () => {
