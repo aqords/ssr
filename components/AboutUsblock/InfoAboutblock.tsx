@@ -9,7 +9,7 @@ const InfoAboutblock = () => {
   return (
     <>
       <section className="relative">
-        <div className="container relative  pt-[60px] sm:pt-[120px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
+        <div className="container relative  pt-[60px] sm:pt-[0px] md:pt-[30px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
           <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
             Driven by our passion for disruptive technologies, we have embarked
             on a remarkable journey to create a decentralized smart contract

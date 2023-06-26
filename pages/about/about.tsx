@@ -20,7 +20,7 @@ const about = () => {
           "Our mission is to transform the way contracts are executed andpayments are processed, bringing transparency, efficiency, and trustto supply chains worldwide."
         }
         img={aboutusbg}
-        imgStyle="absolute z-[-1] top-[65%]   smx:top-[50%]  sm:top-[20%]  lg:top-[10%]  xl:top-[-12%]xl  2xl:top-[-12%]  w-[1920px]  left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[0px]"
+        imgStyle="absolute z-[-1] top-[65%]   smx:top-[50%]  sm:top-[0%]  lg:top-[10%]  xl:top-[-12%]xl  2xl:top-[-12%]  w-[1920px]  left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[0px]"
       />
       <InfoAboutblock />
       <Navigationblock />
