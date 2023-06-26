@@ -4,8 +4,8 @@ import { useTranslation } from "next-i18next";
 
 interface BlockWithBackgroundProps {
   title: string;
-  desc1: string;
-  desc2: string;
+  desc1?: string;
+  desc2?: string;
   img?: StaticImageData;
   imgStyle?: string;
   blockStyle?: string;
@@ -23,7 +23,7 @@ const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
   return (
     <section className={`${blockStyle}`}>
       <div className="container flex lg:h-full items-center">
-        <div className="max-w-[624px]">
+        <div className="max-w-[624px] pt-[40px]">
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t(`${title}`)}
           </h3>

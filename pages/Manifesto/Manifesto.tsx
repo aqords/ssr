@@ -14,7 +14,7 @@ const Manifesto = () => {
   return (
     <>
       <Head>
-        <title>{t("Homepage")}</title>
+        <title>{t("Manifesto")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
@@ -46,9 +46,6 @@ const Manifesto = () => {
         }
         desc1={
           "AQORDS is more than just a platform; it is a movement towards a future where trust and transparency prevail. Join us in this revolution and be part of a new era in freight transportation. Together, let's embark on a journey of empowerment, innovation, and shared success. Welcome to AQORDS."
-        }
-        desc2={
-          "We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
         }
       />
       <div className="pt-[85px] pb-[175px]">
