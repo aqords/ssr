@@ -2,7 +2,6 @@ import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Homepage from "./Homepage/Homepage";
-import AboutUs from "./AboutUs/AboutUs";
 
 const Home = ({ image }: any) => {
   return (
