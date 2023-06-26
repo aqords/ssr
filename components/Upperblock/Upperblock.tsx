@@ -16,7 +16,6 @@ const Upperblock = () => {
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1", "el-2"],
     visibleClass: "visible",
-    originalClass: "original",
   });
 
   const elementRef = useRef<HTMLDivElement>(null);
@@ -75,19 +74,22 @@ const Upperblock = () => {
             src={truck2}
             alt="turck2"
           />
-          <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
-            {t(`Our cutting-edge platform empowers ${(
-              <br />
-            )} instant, verifiable, and
-            highly secure transactions, ${(<br />)} ushering in an era of
-            transparency, trust, and operational efficiency across global
-            ${(<br />)}> supply chains.
-            ${(<br />)}
-            ${(<br />)}
-            Whether you represent a shipper, carrier, or a distinguished player
+          <div>
+            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
+              {t(`Our cutting-edge platform empowers instant, verifiable, and
+            highly secure transactions, ushering in an era of
+            transparency, trust, and operational efficiency across global supply chains.
+            `)}
+            </p>
+            <br />
+            <br />
+            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
+              {t(` Whether you represent a shipper, carrier, or a distinguished player
             in the realm of freight exchanges, AQORDS presents a comprehensive
-            solution meticulously tailored to your unique requirements.`)}
-          </p>
+            solution meticulously tailored to your unique requirements.
+            `)}
+            </p>
+          </div>
         </div>
       </section>
       <Image

@@ -65,13 +65,13 @@ body {
   }
   .visible {
     opacity: 1;
-    transition: all 1.1s;
+    transition: all 1.2s;
     transform: translateY(0px);
   }
 
   .original {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(50px);
   }
   @keyframes move-text-color {
     0% {

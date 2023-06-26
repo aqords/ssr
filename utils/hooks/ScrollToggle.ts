@@ -2,13 +2,11 @@ import { useEffect, useState } from "react";
 interface ScrollToggleProps {
   targetClasses: string[];
   visibleClass: string;
-  originalClass: string;
 }
 
 const useScrollToggle = ({
   targetClasses,
   visibleClass,
-  originalClass,
 }: ScrollToggleProps) => {
   const [isScrolled, setIsScrolled] = useState<{ [key: string]: boolean }>({});
 

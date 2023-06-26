@@ -17,7 +17,6 @@ const WhyAqordsItem = ({
   const isScrolled = ScrollToggle({
     targetClasses: ["el1"],
     visibleClass: "visible",
-    originalClass: "original",
   });
 
   const elementRef = useRef<HTMLDivElement>(null);

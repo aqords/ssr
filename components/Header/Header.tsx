@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
@@ -16,11 +16,14 @@ const Header = () => {
   const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
 
   const toggleBurger = () => {
-    isOpenBurger
-      ? (document.body.style.overflow = "scroll")
-      : (document.body.style.overflow = "hidden");
     isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
   };
+
+  useEffect(() => {
+    isOpenBurger
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "scroll");
+  }, [isOpenBurger]);
 
   const isMobile = useIsMobile();
 
@@ -47,11 +50,12 @@ const Header = () => {
           <ul className="flex flex-col gap-[12px] w-[100%] h-[100vh] container">
             {linksForMobile.map((obj) => {
               return (
-                <li
+                <Link
                   key={obj.path}
+                  href={obj.path}
                   className="font-man relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
                 >
-                  <Link href={obj.path}>{t(`${obj.name}`)}</Link>
+                  <p>{t(`${obj.name}`)}</p>
 
                   {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
 
@@ -65,7 +69,7 @@ const Header = () => {
                   ) : (
                     ""
                   )}
-                </li>
+                </Link>
               );
             })}
           </ul>

@@ -11,7 +11,6 @@ const Navigationblock = () => {
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1", "el-2", "el-3", "el-4", "el-5", "el-6"],
     visibleClass: "visible",
-    originalClass: "original",
   });
 
   const elementRef = useRef<HTMLDivElement>(null);
@@ -71,7 +70,7 @@ const Navigationblock = () => {
           <div
             className={`flex ${
               currentLocation.includes("manifesto") ? "flex-row" : "flex-col"
-            } gap-[18px]`}
+            } gap-[18px] flex-wrap`}
           >
             {currentLocation.includes("whitepaper") ? (
               ""
