@@ -122,3 +122,57 @@ export const ManifestList: renderObject[] = [
     text: "Our platform provides equal opportunities and access to a wider range of business partners, opening doors for growth, innovation, and success.",
   },
 ];
+
+export const whyInvestList: renderObject[] = [
+  {
+    topicon: one,
+    icon: guardian,
+    title: "Disruptive Technology",
+    description:
+      "AQORDS leverages blockchain, smart contracts, and decentralized finance (DeFi) to revolutionize the logistics industry.",
+    text: "Our platform offers transparency, efficiency, and security, paving the way for seamless transactions and improved supply chain management.",
+  },
+  {
+    topicon: two,
+    icon: mexa,
+    title: "Market Potential",
+    description:
+      "The global logistics market is projected to grow rapidly, presenting a significant opportunity for disruptive solutions like AQORDS.",
+    text: "By investing in AQORDS, you become a part of a pioneering platform with immense growth potential.",
+  },
+  {
+    topicon: three,
+    icon: wallet,
+    title: "Experienced Team",
+    description:
+      "Our team consists of industry experts, blockchain enthusiasts, and seasoned entrepreneurs with a track record of success.",
+    text: "We are passionate about transforming the logistics industry and have the knowledge and expertise to make AQORDS a game-changer.",
+  },
+];
+
+export const detailInvestList: renderObject[] = [
+  {
+    topicon: one,
+    icon: guardian,
+    title: "Pre-Sale Allocation",
+    description:
+      "We are offering a limited allocation of our QOR tokens during the pre-sale phase.",
+    text: "This is your chance to secure your share of AQORDS tokens at an exclusive price before the public sale.",
+  },
+  {
+    topicon: two,
+    icon: mexa,
+    title: "Comprehensive Documentation",
+    description:
+      "To make an informed investment decision, we provide detailed documentation, including our white paper, pitch deck, roadmap, tokenomics, and token distribution.",
+    text: "These resources offer insights into our vision, strategy, and token structure.",
+  },
+  {
+    topicon: three,
+    icon: wallet,
+    title: "Contact Us",
+    description:
+      "If you are interested in participating in the AQORDS pre-sale or have any questions, please don't hesitate to reach out to us.",
+    text: "Our team is ready to assist you and provide the necessary information to help you get started.",
+  },
+];

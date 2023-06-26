@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import AnimatedText from "../../utils/AnimatedText";
@@ -33,17 +34,20 @@ const Upperblock = () => {
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
       ></div>
       <section className="flex flex-col items-center">
-        <Button
-          insideGradient="rounded-full bg-black"
-          outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
-        >
-          <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
-            <p className="text-[#838383]">
-              {t("Announcing our next round of funding.")}
-            </p>
-            <p className="font-normal"> {t("Read more →")}</p>
-          </div>
-        </Button>
+        <Link href={"/invest/invest"}>
+          <Button
+            insideGradient="rounded-full bg-black"
+            outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+          >
+            <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
+              <p className="text-[#838383]">
+                {t("Announcing our next round of funding.")}
+              </p>
+              <p className="font-normal"> {t("Read more →")}</p>
+            </div>
+          </Button>
+        </Link>
+
         <Image
           className="mt-[100px] mb-[39px]"
           src={aqordsLogo}
