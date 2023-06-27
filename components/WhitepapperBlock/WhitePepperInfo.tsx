@@ -19,7 +19,14 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        list: [],
+        lunderlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "1.2 The Need for Innovation",
@@ -30,7 +37,14 @@ const whitepapper = [
         text4: null,
         text2:
           "These characteristics make blockchain an ideal solution for addressing the challenges faced by the freight transportation industry. Blockchain technology can enable trustless transactions, automate processes through smart contracts, enhance track-and-trace capabilities, and provide a secure and auditable record of all interactions. AQORDS harnesses the power of blockchain to transform the freight transportation landscape and unlock new possibilities for stakeholders.",
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "1.3 The Role of Blockchain",
@@ -41,7 +55,14 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
     ],
   },
@@ -59,7 +80,14 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "2.2 Objectives and Key Features",
@@ -69,30 +97,37 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        list: [
+        underlist: [
           {
-            title: "Smart Contract Execution:",
-            text: "AQORDS enables the execution of smart contracts for freight transportation, automating processes, and eliminating the need for manual intervention.",
-          },
-          {
-            title: "Instant Payments:",
-            text: "The platform facilitates instant payments upon contract execution and delivery confirmation, reducing payment delays and improving cash flow for carriers.",
-          },
-          {
-            title: "Decentralized Finance (DeFi) Integration:",
-            text: "AQORDS integrates with decentralized finance protocols to provide carriers with access to financing options, minimizing their reliance on traditional financial institutions.",
-          },
-          {
-            title: "Track-and-Trace Functionality:",
-            text: "The advanced track-and-trace capabilities of AQORDS enable real-time monitoring of shipments, ensuring transparency and accountability throughout the transportation process.",
-          },
-          {
-            title: "Dispute Resolution Mechanisms:",
-            text: "AQORDS incorporates automated dispute resolution mechanisms, reducing the time and costs associated with resolving disputes between shippers and carriers.",
-          },
-          {
-            title: "Data Privacy and Security: ",
-            text: "The platform prioritizes data privacy and security, ensuring that sensitive information is protected and only accessible to authorized parties.",
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Smart Contract Execution:",
+                text: "AQORDS enables the execution of smart contracts for freight transportation, automating processes, and eliminating the need for manual intervention.",
+              },
+              {
+                title: "Instant Payments:",
+                text: "The platform facilitates instant payments upon contract execution and delivery confirmation, reducing payment delays and improving cash flow for carriers.",
+              },
+              {
+                title: "Decentralized Finance (DeFi) Integration:",
+                text: "AQORDS integrates with decentralized finance protocols to provide carriers with access to financing options, minimizing their reliance on traditional financial institutions.",
+              },
+              {
+                title: "Track-and-Trace Functionality:",
+                text: "The advanced track-and-trace capabilities of AQORDS enable real-time monitoring of shipments, ensuring transparency and accountability throughout the transportation process.",
+              },
+              {
+                title: "Dispute Resolution Mechanisms:",
+                text: "AQORDS incorporates automated dispute resolution mechanisms, reducing the time and costs associated with resolving disputes between shippers and carriers.",
+              },
+              {
+                title: "Data Privacy and Security: ",
+                text: "The platform prioritizes data privacy and security, ensuring that sensitive information is protected and only accessible to authorized parties.",
+              },
+            ],
           },
         ],
       },
@@ -104,26 +139,33 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        list: [
+        underlist: [
           {
-            title: "Efficiency:",
-            text: "By automating processes and eliminating manual interventions, AQORDS streamlines operations, reducing administrative burdens and optimizing resource utilization.",
-          },
-          {
-            title: "Transparency:",
-            text: "The transparent nature of blockchain technology provides stakeholders with real-time visibility into contract execution, payment status, and shipment tracking, fostering trust and accountability.",
-          },
-          {
-            title: "Cost Reduction:",
-            text: "AQORDS reduces costs associated with manual paperwork, payment delays, and dispute resolution, enabling more efficient and cost-effective operations for shippers and carriers.",
-          },
-          {
-            title: "Trust and Security:",
-            text: "The immutability and cryptographic security of blockchain ensure the integrity of transactions, minimizing fraud risks and establishing trust between parties",
-          },
-          {
-            title: "Access to Financing:",
-            text: "Through DeFi integration, AQORDS opens up new financing opportunities for carriers, empowering them with access to capital and reducing their dependence on traditional financial institutions.",
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Efficiency:",
+                text: "By automating processes and eliminating manual interventions, AQORDS streamlines operations, reducing administrative burdens and optimizing resource utilization.",
+              },
+              {
+                title: "Transparency:",
+                text: "The transparent nature of blockchain technology provides stakeholders with real-time visibility into contract execution, payment status, and shipment tracking, fostering trust and accountability.",
+              },
+              {
+                title: "Cost Reduction:",
+                text: "AQORDS reduces costs associated with manual paperwork, payment delays, and dispute resolution, enabling more efficient and cost-effective operations for shippers and carriers.",
+              },
+              {
+                title: "Trust and Security:",
+                text: "The immutability and cryptographic security of blockchain ensure the integrity of transactions, minimizing fraud risks and establishing trust between parties",
+              },
+              {
+                title: "Access to Financing:",
+                text: "Through DeFi integration, AQORDS opens up new financing opportunities for carriers, empowering them with access to capital and reducing their dependence on traditional financial institutions.",
+              },
+            ],
           },
         ],
       },
@@ -142,7 +184,14 @@ const whitepapper = [
           "By digitizing and automating contract terms, smart contracts eliminate the need for intermediaries, reduce administrative burdens, and facilitate instant and verifiable transactions. Through smart contracts, AQORDS revolutionizes the traditional contractual processes, streamlining operations and reducing the risk of errors or disputes.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "3.2 Decentralized Finance (DeFi) Integration",
@@ -152,7 +201,14 @@ const whitepapper = [
           "Through DeFi integration, AQORDS empowers carriers and shippers with innovative financial solutions, such as instant payments, factoring, and access to liquidity pools. By leveraging DeFi, AQORDS aims to enhance cash flow management, reduce financing costs, and foster financial stability within the industry.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "3.3 Track-and-Trace Functionality",
@@ -162,7 +218,14 @@ const whitepapper = [
           "Participants can track the movement of goods, verify their condition, and ensure adherence to predefined criteria. The track-and-trace functionality enhances supply chain efficiency, reduces delays, and enables proactive decision-making based on accurate and up-to-date information.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
 
       {
@@ -173,7 +236,14 @@ const whitepapper = [
           "Participants can track the movement of goods, verify their condition, and ensure adherence to predefined criteria. The track-and-trace functionality enhances supply chain efficiency, reduces delays, and enables proactive decision-making based on accurate and up-to-date information.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "3.5 Data Privacy and Security",
@@ -183,7 +253,14 @@ const whitepapper = [
           " AQORDS adheres to data protection regulations and empowers users with control over their data through consent mechanisms. By upholding the highest standards of data privacy and security, AQORDS provides peace of mind to all stakeholders involved.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
     ],
   },
@@ -200,7 +277,14 @@ const whitepapper = [
           "The transparent nature of the blockchain provides increased trust between shippers and carriers, reducing the risk of fraudulent activities. ",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "4.2 Carriers",
@@ -210,7 +294,14 @@ const whitepapper = [
           " Additionally, carriers can expand their business opportunities by accessing a larger pool of shippers within the AQORDS ecosystem. The platform also offers risk mitigation tools and fraud prevention mechanisms, ensuring a secure and trustworthy environment for carriers to operate in.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "4.3 Freight Exchanges",
@@ -220,7 +311,14 @@ const whitepapper = [
           " Freight exchanges can increase their value proposition by offering a more efficient and secure environment for transactional activities. AQORDS integration empowers freight exchanges to attract a larger user base and differentiate themselves from competitors by providing cutting-edge technology and innovative solutions.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "4.4 Supply Chain Partners",
@@ -232,7 +330,14 @@ const whitepapper = [
           "The combination of these use cases and benefits positions AQORDS as a transformative platform in the freight transportation industry, revolutionizing how contracts are executed, payments are processed, and trust is established among participants. ",
         text4:
           "By leveraging smart contracts, DeFi integration, track-and-trace functionality, automated dispute resolution, and robust data privacy and security measures, AQORDS sets a new standard for efficiency, transparency, and reliability in freight transportation. ",
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
     ],
   },
@@ -249,7 +354,14 @@ const whitepapper = [
           " By integrating AQORDS into these systems, users can harness the benefits of blockchain technology without disrupting their current workflows. Our team of experts will work closely with businesses and organizations to ensure a smooth integration process, minimizing downtime and maximizing the value derived from AQORDS. ",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "5.2 Collaborations and Partnerships",
@@ -259,7 +371,14 @@ const whitepapper = [
           "  Partnerships may include joint development initiatives, API integrations, data sharing agreements, and mutually beneficial marketing efforts. Together, we can drive innovation, improve operational efficiency, and create new opportunities in the freight transportation industry.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
     ],
   },
@@ -276,7 +395,14 @@ const whitepapper = [
           " The QOR token will be built on a secure and efficient blockchain infrastructure, ensuring fast and cost-effective transactions. As the ecosystem grows, the QOR token will play a central role in facilitating the seamless and secure execution of smart contracts, further enhancing trust and transparency in freight transportation transactions.",
         text3: null,
         text4: null,
-        list: [],
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
       },
       {
         subtitle: "6.2 Token Utility, Tokenomics & Liquidity pool",
@@ -285,54 +411,261 @@ const whitepapper = [
         text2: null,
         text3: null,
         text4: null,
-        list: [
+        underlist: [
           {
-            title: "Token Utility",
-            text: "The QOR Token serves as the primary utility token within the AQORDS platform, offering various benefits and functionalities to its holders.",
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Token Utility",
+                text: "The QOR Token serves as the primary utility token within the AQORDS platform, offering various benefits and functionalities to its holders.",
+              },
+              {
+                title: "Premium Features:",
+                text: "Holders of QOR Tokens gain access to premium features within the platform, including advanced smart contract options, extended payment terms, and enhanced visibility for freight transportation contracts. These features empower users with greater flexibility, efficiency, and control over their supply chain operations.",
+              },
+              {
+                title: "Discounted Services:",
+                text: "AQORDS may introduce discounted service fees or preferential rates for users who choose to transact using QOR Tokens. This creates an incentive for users to hold and utilize the token for their supply chain and freight transportation needs, further driving token adoption and utility.",
+              },
+              {
+                title: "Ecosystem Expansion:",
+                text: "As AQORDS expands its reach and establishes partnerships with other industry players, the QOR Token may be accepted as a means of payment or utility token within these partner networks. This integration expands the utility and acceptance of the token, unlocking new opportunities for its holders.",
+              },
+              {
+                title: "Transparency and Reporting:",
+                text: "We are committed to transparency and will provide regular reports on token distribution, utility updates, and ecosystem developments. By ensuring clear communication and visibility, we promote trust and confidence in the value and utility of the QOR Token.",
+              },
+              {
+                title: "Distribution",
+                text: "As the AQORDS platform disrupts the supply chain and freight transportation industry, the QOR Token plays a pivotal role in enabling secure, efficient, and transparent transactions. With its utility-driven design and community-centric approach, the QOR Token unlocks a world of possibilities within the AQORDS ecosystem, empowering users and driving the long-term success of AQORDS.Our tokenomics model ensures a balanced token supply while fostering platform growth, community engagement, and long-term value.",
+              },
+              {
+                title: "Token Supply:",
+                text: "The maximum supply of QOR Tokens is set at 22,200,000,000 QOR. However, we recognize the importance of maintaining a controlled token release to avoid market flooding and maintain stability.",
+              },
+              {
+                title: "Optimal Token Release Plan:",
+                text: "We have devised an optimal token release plan that starts with an initial circulating supply of 2,220,000,000 QOR tokens (10% from max supply). This initial distribution includes strategic partners, early adopters, and active community members who contribute to the development and success of AQORDS.",
+              },
+              {
+                title: "Demand-Driven Release:",
+                text: "As AQORDS gains traction and user adoption grows, we will gradually release additional tokens into circulation. The rate of token release will be directly tied to real-world platform metrics such as transaction volume, active user base, and other relevant indicators. This approach ensures that token release aligns with the actual utilization and value generated by the platform.",
+              },
+              {
+                title: "Controlled Release Mechanism:",
+                text: "To maintain stability and prevent market manipulation, the token release will follow a controlled mechanism. We leverage smart contract technology to schedule and automate token distribution over time, providing a predictable and transparent token release process.",
+              },
+              {
+                title: "Community Incentives:",
+                text: "We believe in the power of community participation and engagement. A portion of the released tokens will be allocated for community incentives, rewarding active participants and contributors within the AQORDS ecosystem. These incentives may include staking rewards, airdrops, or other mechanisms that encourage long-term token holding and engagement.",
+              },
+              {
+                title: "Transparency and Reporting:",
+                text: "We are committed to transparency and will provide regular reports on token distribution, release schedules, and overall tokenomics. By ensuring access to accurate information, we promote trust and confidence in the QOR Token and its value proposition.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        subtitle: "6.3 On-Chain Governance",
+        text1:
+          "AQORDS embraces decentralized governance principles to ensure a transparent and inclusive decision-making process. On-chain governance allows token holders to actively participate in shaping the future direction of the platform. Through the governance mechanism, token holders can propose and vote on system upgrades, feature enhancements, and changes to platform parameters.",
+        text2:
+          "This democratic approach enables community-driven decision-making and ensures that the interests of all stakeholders are considered. AQORDS is committed to fostering a governance framework that promotes fairness, accountability, and the long-term success of the ecosystem.",
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+      {
+        subtitle: "6.4 Token Distribution",
+        text1: null,
+        text2: null,
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: "1. Pre-sale:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Allocation: ",
+                text: "20% of the max token supply",
+              },
+              {
+                title: "Purpose: ",
+                text: "Reserved for early investors and strategic partners",
+              },
+              {
+                title: "Distribution: ",
+                text: " Pre-sale participants will receive their allocated tokens based on the agreed terms and conditions of the pre-sale event.",
+              },
+            ],
           },
           {
-            title: "Premium Features:",
-            text: "Holders of QOR Tokens gain access to premium features within the platform, including advanced smart contract options, extended payment terms, and enhanced visibility for freight transportation contracts. These features empower users with greater flexibility, efficiency, and control over their supply chain operations.",
+            title: null,
+            a_title: "A. Cliff Period: 6 months ",
+            b_title: "B. Vesting Period schedule:",
+            list: [
+              {
+                title: "After 6 months (Cliff Period): ",
+                text: "No tokens are released.",
+              },
+              {
+                title: "Year 1: ",
+                text: "At the end of the first year following the cliff period, 20% of the remaining allocation will be released, resulting in a total of 4% of their initial allocation.",
+              },
+              {
+                title: "Year 2: ",
+                text: " At the end of the second year, another 20% of the remaining allocation will be released, resulting in a total of 8% of their initial allocation.",
+              },
+              {
+                title: "Year 3: ",
+                text: " At the end of the second year, another 20% of the remaining allocation will be released, resulting in a total of 8% of their initial allocation.",
+              },
+              {
+                title: "Year 4: ",
+                text: " At the end of the second year, another 20% of the remaining allocation will be released, resulting in a total of 8% of their initial allocation.",
+              },
+              {
+                title: "Year 5: ",
+                text: "  Finally, at the end of the fifth year, the remaining 20% of the allocation will be released, resulting in a total of 20% of their initial allocation.",
+              },
+            ],
           },
           {
-            title: "Discounted Services:",
-            text: "AQORDS may introduce discounted service fees or preferential rates for users who choose to transact using QOR Tokens. This creates an incentive for users to hold and utilize the token for their supply chain and freight transportation needs, further driving token adoption and utility.",
+            title: "2. Other Investors:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Allocation: ",
+                text: "30% of the max token supply",
+              },
+              {
+                title: "Purpose: ",
+                text: "Reserved for investors who participate in the public sale and subsequent fundraising rounds.",
+              },
+              {
+                title: "Distribution: ",
+                text: " Tokens will be distributed to investors based on their contribution during the public sale and other fundraising events. The token distribution will be conducted in several stages, aligned with the progress and growth of the AQORDS platform. ",
+              },
+            ],
           },
           {
-            title: "Ecosystem Expansion:",
-            text: "As AQORDS expands its reach and establishes partnerships with other industry players, the QOR Token may be accepted as a means of payment or utility token within these partner networks. This integration expands the utility and acceptance of the token, unlocking new opportunities for its holders.",
+            title: null,
+            a_title: "A. Cliff Period: 6 months",
+            b_title: "B. Vesting Schedule:",
+            list: [
+              {
+                title: "Phase 1: ",
+                text: "20% of the total allocation vests over a period of 12 months.",
+              },
+              {
+                title: "Phase 2: ",
+                text: "30% of the total allocation vests over a period of 18 months.",
+              },
+              {
+                title: "Phase 3: ",
+                text: " 50% of the total allocation vests over a period of 24 months. ",
+              },
+            ],
           },
           {
-            title: "Transparency and Reporting:",
-            text: "We are committed to transparency and will provide regular reports on token distribution, utility updates, and ecosystem developments. By ensuring clear communication and visibility, we promote trust and confidence in the value and utility of the QOR Token.",
+            title: "3. Founding Team and Advisors:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Allocation: ",
+                text: "20% of the max token supply",
+              },
+              {
+                title: "Purpose: ",
+                text: "Reserved for the founding team members and advisors who have contributed to the project's development and success.",
+              },
+              {
+                title: "Distribution: ",
+                text: " Tokens will be distributed to the founding team and advisors based on their respective roles and contributions, subject to vesting schedules and performance milestones to ensure long-term commitment and alignment of interests.",
+              },
+            ],
           },
           {
-            title: "Distribution",
-            text: "As the AQORDS platform disrupts the supply chain and freight transportation industry, the QOR Token plays a pivotal role in enabling secure, efficient, and transparent transactions. With its utility-driven design and community-centric approach, the QOR Token unlocks a world of possibilities within the AQORDS ecosystem, empowering users and driving the long-term success of AQORDS.Our tokenomics model ensures a balanced token supply while fostering platform growth, community engagement, and long-term value.",
+            title: null,
+            a_title:
+              "A. Initial Allocation: At the project's inception, 20% of the total token allocation for the founding team will be distributed. This initial allocation serves as a foundation for their involvement and commitment to the project.",
+            b_title:
+              "B. Time-Based Vesting: The remaining 80% of the founding team's token allocation will be subject to a vesting period to ensure a long-term commitment.",
+            list: [
+              {
+                title: "Year 1: ",
+                text: " After the first year of active participation, 20% of the remaining allocation will be released to the team members, resulting in a total of 36% of their initial allocation.",
+              },
+              {
+                title: "Year 2: ",
+                text: " In the second year, an additional 20% of the remaining allocation will be released, resulting in a total of 52% of their initial allocation.",
+              },
+              {
+                title: "Year 3: ",
+                text: "  By the end of the third year, another 20% of the remaining allocation will be released, resulting in a total of 68% of their initial allocation.",
+              },
+              {
+                title: "Year 4: ",
+                text: " In the fourth year, the team will receive the next 20% of the remaining allocation, resulting in a total of 84% of their initial allocation.",
+              },
+              {
+                title: "Year 5: ",
+                text: "  The final installment of 20% of the remaining allocation will be released at the end of the fifth year, resulting in a total of 100% of their initial allocation.",
+              },
+            ],
           },
           {
-            title: "Token Supply:",
-            text: "The maximum supply of QOR Tokens is set at 22,200,000,000 QOR. However, we recognize the importance of maintaining a controlled token release to avoid market flooding and maintain stability.",
+            title: "4. Platform Development and Growth:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Allocation: ",
+                text: " 10% of the total token supply",
+              },
+              {
+                title: "Purpose: ",
+                text: " Reserved for the development, enhancement, and marketing of the AQORDS platform, including ecosystem growth and expansion efforts.",
+              },
+              {
+                title: " Distribution: ",
+                text: " Tokens from this allocation will be used gradually over time to fund platform development, marketing initiatives, partnerships, and other activities aimed at driving the adoption and success of the AQORDS platform.",
+              },
+            ],
           },
           {
-            title: "Optimal Token Release Plan:",
-            text: "We have devised an optimal token release plan that starts with an initial circulating supply of 2,220,000,000 QOR tokens (10% from max supply). This initial distribution includes strategic partners, early adopters, and active community members who contribute to the development and success of AQORDS.",
-          },
-          {
-            title: "Demand-Driven Release:",
-            text: "As AQORDS gains traction and user adoption grows, we will gradually release additional tokens into circulation. The rate of token release will be directly tied to real-world platform metrics such as transaction volume, active user base, and other relevant indicators. This approach ensures that token release aligns with the actual utilization and value generated by the platform.",
-          },
-          {
-            title: "Controlled Release Mechanism:",
-            text: "To maintain stability and prevent market manipulation, the token release will follow a controlled mechanism. We leverage smart contract technology to schedule and automate token distribution over time, providing a predictable and transparent token release process.",
-          },
-          {
-            title: "Community Incentives:",
-            text: "We believe in the power of community participation and engagement. A portion of the released tokens will be allocated for community incentives, rewarding active participants and contributors within the AQORDS ecosystem. These incentives may include staking rewards, airdrops, or other mechanisms that encourage long-term token holding and engagement.",
-          },
-          {
-            title: "Transparency and Reporting:",
-            text: "We are committed to transparency and will provide regular reports on token distribution, release schedules, and overall tokenomics. By ensuring access to accurate information, we promote trust and confidence in the QOR Token and its value proposition.",
+            title: "5. Community and Ecosystem Incentives:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: "Allocation: ",
+                text: " 20% of the total token supply",
+              },
+              {
+                title: "Purpose: ",
+                text: " Reserved for incentivizing users, community members, and early adopters who actively contribute to the AQORDS ecosystem.",
+              },
+              {
+                title: " Distribution: ",
+                text: "  Tokens will be distributed as rewards for platform usage, participation in community activities, referrals, and other actions that help foster the growth and engagement of the AQORDS community.",
+              },
+            ],
           },
         ],
       },
@@ -427,19 +760,30 @@ const Whitepapper = () => {
                             {el.text4}
                           </p>
                         )}
-
-                        {el.list.length > 0 ? (
-                          <ul className="list-disc text-[#838383]">
-                            {el.list.map((target) => (
-                              <li className="ml-[25px] mb-[20px]">
-                                <h4 className="text-white">{target.title}</h4>
-                                <p className="font-man text-[14px]">
-                                  {target.text}
-                                </p>
+                        {el.underlist &&
+                          el.underlist.map((item) => (
+                            <ul>
+                              <li>
+                                {item.title && <h3>{item.title}</h3>}
+                                {item.a_title && <h3>{item.a_title}</h3>}
+                                {item.b_title && <h3>{item.b_title}</h3>}
+                                {item.list && (
+                                  <ul className="list-disc text-[#838383]">
+                                    {item.list.map((target) => (
+                                      <li className="ml-[25px] mb-[20px]">
+                                        <h4 className="text-white">
+                                          {target.title}
+                                        </h4>
+                                        <p className="font-man text-[14px]">
+                                          {target.text}
+                                        </p>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
                               </li>
-                            ))}
-                          </ul>
-                        ) : null}
+                            </ul>
+                          ))}
                       </div>
                     ))}
                   </div>
