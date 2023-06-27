@@ -10,7 +10,7 @@ const WhitePapperHead = () => {
   return (
     <>
       <section>
-        <div className="container pb-[85px]">
+        <div className="container py-[120px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("Whitepapper")}
           </h1>
@@ -30,7 +30,6 @@ const WhitePapperHead = () => {
       <section className="relative bg-[#19191A]">
         <div className="container  py-[195px]">
           <div className=" max-w-[531px]">
-            <div className="absolute"></div>
             <h1 className="leading-[0.8rem] lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px]  mb-[40px] tracking-[-1.5px]">
               {t(
                 "Dive into the AQORDS whitepaper and embark on a new era of trust,transparency, and efficiency in freight transportation."
