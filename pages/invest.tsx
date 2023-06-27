@@ -1,17 +1,18 @@
 import React from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import Navigationblock from "../../components/Navigationblock/Navigationblock";
-import BlockWithBackground from "../../components/BlockWithBackground/BlockWithBackground";
+
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Navigationblock from "../components/Navigationblock/Navigationblock";
+import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import {
   detailInvestList,
   whyInvestList,
-} from "../../components/Constant/WhyAqordsItems";
-import WhyAqordsList from "../../components/WhyAqords/WhyAqordsList";
+} from "../components/Constant/WhyAqordsItems";
+import WhyAqordsList from "../components/WhyAqords/WhyAqordsList";
 
-const roadmap = () => {
+const invest = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -52,4 +53,4 @@ const roadmap = () => {
   );
 };
 
-export default roadmap;
+export default invest;

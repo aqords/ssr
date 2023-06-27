@@ -33,7 +33,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className="text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
             />
-            <FooterButton />
+            <FooterButton>{t("Subscribe")}</FooterButton>
           </form>
         </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
                     {t("Announcing our next round of funding.")}
                   </p>
                   <Link
-                    href="/"
+                    href="/invest"
                     className="font-normal text-[12px] smx:text-[14px]"
                   >
                     {t("Read more →")}

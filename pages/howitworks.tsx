@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
-import Accordion from "../../components/Accordion/Accordion";
-import Navigationblock from "../../components/Navigationblock/Navigationblock";
 import { useTranslation } from "next-i18next";
-import BlockWithBackground from "../../components/BlockWithBackground/BlockWithBackground";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import { HowItWorksData } from "../../components/Constant/HowItWorks";
+
+import Accordion from "../components/Accordion/Accordion";
+import Navigationblock from "../components/Navigationblock/Navigationblock";
+import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import { HowItWorksData } from "../components/Constant/HowItWorks";
 
 const HowWorks = () => {
   const { t } = useTranslation();

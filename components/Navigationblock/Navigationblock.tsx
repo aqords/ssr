@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
@@ -51,7 +51,13 @@ const Navigationblock = () => {
         ref={elementRef3}
         className={isScrolled["el-3"] ? "el-3 visible" : "el-3 original"}
       >
-        <div className="flex flex-wrap lg:flex-nowrap gap-[16px]">
+        <div
+          className={`${
+            currentLocation.includes("manifesto")
+              ? ""
+              : "flex flex-wrap lg:flex-nowrap gap-[16px]"
+          } gap-[18px] flex-wrap`}
+        >
           {currentLocation.includes("manifesto") ? (
             ""
           ) : (
@@ -69,7 +75,7 @@ const Navigationblock = () => {
           )}
           <div
             className={`flex ${
-              currentLocation.includes("manifesto") ? "flex-row" : "flex-col"
+              currentLocation.includes("manifesto") ? "flex-col" : "flex-col"
             } gap-[18px] flex-wrap`}
           >
             {currentLocation.includes("whitepaper") ? (

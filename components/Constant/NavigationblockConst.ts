@@ -10,7 +10,7 @@ interface Data {
 
 export const NavigationblockData: Data[] = [
   {
-    title: "How it does works?",
+    title: "How does it works?",
     desc: "Our goal is to provide a seamless and transparent experience for all parties involved, from shippers and carriers to freight exchange platforms.",
     bgLight:
       "absolute md:opacity-40 md:background-light md:top-[287px] md:left-[-233px] md:w-[556px] md:h-[556px]",

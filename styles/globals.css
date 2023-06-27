@@ -88,4 +88,8 @@ body {
   .animetedSpan {
     animation: move-text-color 0.5s infinite;
   }
+  .focusInput {
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+  }
 }

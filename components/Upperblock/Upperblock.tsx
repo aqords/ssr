@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import AnimatedText from "../../utils/AnimatedText";
-import { useTranslation } from "next-i18next";
-
 import Button from "../UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
 import truck2 from "../../public/assets/images/truck2.png";
@@ -34,7 +34,7 @@ const Upperblock = () => {
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
       ></div>
       <section className="flex flex-col items-center">
-        <Link href={"/invest/invest"}>
+        <Link href={"/invest"}>
           <Button
             insideGradient="rounded-full bg-black"
             outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"

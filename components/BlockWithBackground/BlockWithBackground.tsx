@@ -30,7 +30,7 @@ const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
           <p className="font-man text-[15px] lg:text-[20px] leading-[1.5rem] lg:leading-[2rem] lg:tracking-[-0.45px] mb-[35px]">
             {t(`${desc1}`)}
           </p>
-          <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[20px] tracking-[-0.3px] mb-[0px]">
+          <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem]  tracking-[-0.3px] mb-[0px]">
             {t(`${desc2}`)}
           </p>
         </div>

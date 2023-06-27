@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Homepage from "./homepage/homepage";
 import { useTranslation } from "next-i18next";
+
+import Homepage from "./homepage";
 
 export default function Home({ image }: any) {
   const { t } = useTranslation();
