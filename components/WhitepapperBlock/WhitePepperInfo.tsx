@@ -669,6 +669,186 @@ const whitepapper = [
           },
         ],
       },
+      {
+        subtitle: "6.5 Token Incentives Program",
+        text1:
+          "In addition to the token distribution mentioned earlier, AQORDS will implement a comprehensive token incentives program to reward and incentivize platform users and partners. This program aims to foster engagement, encourage participation, and promote the growth of the AQORDS ecosystem. The specific structure of the token incentives program is as follows:",
+        text2: null,
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: "1. User Incentives:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Users who actively utilize the AQORDS platform will have the opportunity to earn QOR tokens as rewards for their participation.",
+              },
+              {
+                title: null,
+                text: "Various actions such as executing smart contracts, referring new users, providing feedback, and contributing to the platform's development may be eligible for token rewards.",
+              },
+              {
+                title: null,
+                text: "The allocation and distribution of tokens as user incentives will be determined based on predefined criteria and guidelines to ensure fairness and encourage active engagement.",
+              },
+            ],
+          },
+          {
+            title: "2. Partner Incentives:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " AQORDS will collaborate with strategic partners, including shippers, carriers, freight forwarders, freight exchanges, and other participants within the supply chain industry.",
+              },
+              {
+                title: null,
+                text: "Partners who integrate and utilize AQORDS platform services, contribute to its growth, or bring value to the ecosystem may receive QOR tokens as incentives.",
+              },
+              {
+                title: null,
+                text: "The distribution of tokens to partners will be based on mutually agreed terms and performance metrics, encouraging strong partnerships and fostering a collaborative environment.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        subtitle: "6.6 Liquidity pool for operations",
+        text1:
+          "The need for a liquidity pool within AQORDS is paramount to ensure smooth and seamless operations within the decentralized finance (DeFi) ecosystem. ",
+        text2:
+          "By establishing a robust liquidity pool, AQORDS can effectively source the necessary resources to facilitate instant payments to carriers, providing them with timely compensation for their services.",
+        text3: "Key considerations for the liquidity pool include:",
+        text4: null,
+        underlist: [
+          {
+            title: "1. Seamless Transactions:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " The liquidity pool serves as a reservoir of funds that can be readily accessed to facilitate instant payments to carriers upon delivery. This eliminates delays in payment processing and enhances the overall efficiency of the platform.",
+              },
+            ],
+          },
+          {
+            title: "2. Carrier Confidence:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "By offering instant payment capabilities, AQORDS can attract more carriers to join the platform. Carriers value prompt and reliable compensation, and having a well-funded liquidity pool ensures their trust and confidence in the platform.",
+              },
+            ],
+          },
+          {
+            title: "3. Reliable DEFI Operations:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "The liquidity pool acts as a reliable source of funds to support the platform's DeFi operations. It enables AQORDS to participate in decentralized lending, borrowing, and other financial activities seamlessly, leveraging the benefits of blockchain technology and enhancing liquidity management.",
+              },
+            ],
+          },
+          {
+            title: "4. Risk Mitigation: ",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "A well-managed liquidity pool provides a buffer against market fluctuations and unexpected events. By maintaining sufficient reserves, AQORDS can mitigate the risk of insufficient funds, ensuring that carrier payments and other financial operations can be executed without disruption.",
+              },
+            ],
+          },
+          {
+            title: "5. Sustainability and Growth: ",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "A robust liquidity pool ensures the platform's long-term sustainability and growth. It provides the necessary financial resources to support the expansion of AQORDS' services, onboard more shippers and carriers, and foster a vibrant ecosystem within the freight transportation industry.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        subtitle: "6.7 Economics and incentives for AQORDS liquidity pool:",
+        text1:
+          "The need for a liquidity pool within AQORDS is paramount to ensure smooth and seamless operations within the decentralized finance (DeFi) ecosystem. ",
+        text2:
+          "By establishing a robust liquidity pool, AQORDS can effectively source the necessary resources to facilitate instant payments to carriers, providing them with timely compensation for their services.",
+        text3: "Key considerations for the liquidity pool include:",
+        text4: null,
+        underlist: [
+          {
+            title: "1. Seamless Transactions:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " The liquidity pool serves as a reservoir of funds that can be readily accessed to facilitate instant payments to carriers upon delivery. This eliminates delays in payment processing and enhances the overall efficiency of the platform.",
+              },
+            ],
+          },
+          {
+            title: "2. Carrier Confidence:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "By offering instant payment capabilities, AQORDS can attract more carriers to join the platform. Carriers value prompt and reliable compensation, and having a well-funded liquidity pool ensures their trust and confidence in the platform.",
+              },
+            ],
+          },
+          {
+            title: "3. Reliable DEFI Operations:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "The liquidity pool acts as a reliable source of funds to support the platform's DeFi operations. It enables AQORDS to participate in decentralized lending, borrowing, and other financial activities seamlessly, leveraging the benefits of blockchain technology and enhancing liquidity management.",
+              },
+            ],
+          },
+          {
+            title: "4. Risk Mitigation: ",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "A well-managed liquidity pool provides a buffer against market fluctuations and unexpected events. By maintaining sufficient reserves, AQORDS can mitigate the risk of insufficient funds, ensuring that carrier payments and other financial operations can be executed without disruption.",
+              },
+            ],
+          },
+          {
+            title: "5. Sustainability and Growth: ",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "A robust liquidity pool ensures the platform's long-term sustainability and growth. It provides the necessary financial resources to support the expansion of AQORDS' services, onboard more shippers and carriers, and foster a vibrant ecosystem within the freight transportation industry.",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 ];
