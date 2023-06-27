@@ -10,7 +10,7 @@ const WhitePapperHead = () => {
   return (
     <>
       <section>
-        <div className="container py-[120px]">
+        <div className="container pb-[85px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("Whitepapper")}
           </h1>
