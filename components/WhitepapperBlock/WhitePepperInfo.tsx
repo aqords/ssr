@@ -785,67 +785,483 @@ const whitepapper = [
       },
       {
         subtitle: "6.7 Economics and incentives for AQORDS liquidity pool:",
-        text1:
-          "The need for a liquidity pool within AQORDS is paramount to ensure smooth and seamless operations within the decentralized finance (DeFi) ecosystem. ",
-        text2:
-          "By establishing a robust liquidity pool, AQORDS can effectively source the necessary resources to facilitate instant payments to carriers, providing them with timely compensation for their services.",
-        text3: "Key considerations for the liquidity pool include:",
+        text1: null,
+        text2: null,
+        text3: null,
         text4: null,
         underlist: [
           {
-            title: "1. Seamless Transactions:",
+            title: "1. Liquidity Generation:",
             a_title: null,
             b_title: null,
             list: [
               {
                 title: null,
-                text: " The liquidity pool serves as a reservoir of funds that can be readily accessed to facilitate instant payments to carriers upon delivery. This eliminates delays in payment processing and enhances the overall efficiency of the platform.",
+                text: " To create the liquidity pool, AQORDS will allocate a portion of its token supply and other compatible digital assets to serve as the initial pool reserves. These assets will be strategically managed and deployed to ensure sufficient liquidity for carrier payments.",
               },
             ],
           },
           {
-            title: "2. Carrier Confidence:",
+            title: "2. Incentives for Investors:",
             a_title: null,
             b_title: null,
             list: [
               {
                 title: null,
-                text: "By offering instant payment capabilities, AQORDS can attract more carriers to join the platform. Carriers value prompt and reliable compensation, and having a well-funded liquidity pool ensures their trust and confidence in the platform.",
+                text: "Yield Farming: Investors can stake their tokens in the liquidity pool and earn additional rewards in the form of yield farming. By contributing liquidity, they can participate in decentralized finance activities and earn a share of the transaction fees generated within the AQORDS ecosystem.",
+              },
+              {
+                title: null,
+                text: "Token Rewards: AQORDS will introduce a governance token that grants holders certain rights and privileges within the platform. Investors who contribute to the liquidity pool will be eligible to receive these governance tokens as a reward for their participation and ongoing support.",
+              },
+              {
+                title: null,
+                text: "Profit Sharing: AQORDS may implement a profit-sharing mechanism, where a portion of the transaction fees generated from carrier payments is distributed among liquidity providers in proportion to their stake in the pool. This serves as a continuous incentive for investors to contribute and maintain liquidity within the platform.",
               },
             ],
           },
           {
-            title: "3. Reliable DEFI Operations:",
+            title: "3. Dynamic Market-Based Pricing:",
             a_title: null,
             b_title: null,
             list: [
               {
                 title: null,
-                text: "The liquidity pool acts as a reliable source of funds to support the platform's DeFi operations. It enables AQORDS to participate in decentralized lending, borrowing, and other financial activities seamlessly, leveraging the benefits of blockchain technology and enhancing liquidity management.",
+                text: "The liquidity pool will leverage market-based pricing mechanisms to ensure fair and efficient allocation of rewards. These mechanisms may include algorithms that adjust the reward distribution based on supply and demand dynamics within the platform.",
               },
             ],
           },
           {
-            title: "4. Risk Mitigation: ",
+            title: "4. Governance and Participation:",
             a_title: null,
             b_title: null,
             list: [
               {
                 title: null,
-                text: "A well-managed liquidity pool provides a buffer against market fluctuations and unexpected events. By maintaining sufficient reserves, AQORDS can mitigate the risk of insufficient funds, ensuring that carrier payments and other financial operations can be executed without disruption.",
+                text: "AQORDS will adopt a decentralized governance model that empowers liquidity providers to actively participate in decision-making processes. This includes voting on important protocol upgrades, fee structures, and the allocation of rewards. By involving liquidity providers in governance, AQORDS ensures that their interests are aligned with the long-term success and sustainability of the platform.",
               },
             ],
           },
           {
-            title: "5. Sustainability and Growth: ",
+            title: "5. Continuous Optimization:",
             a_title: null,
             b_title: null,
             list: [
               {
                 title: null,
-                text: "A robust liquidity pool ensures the platform's long-term sustainability and growth. It provides the necessary financial resources to support the expansion of AQORDS' services, onboard more shippers and carriers, and foster a vibrant ecosystem within the freight transportation industry.",
+                text: "AQORDS will regularly assess and optimize the liquidity pool's performance to maintain an optimal balance of assets and liquidity. This may involve periodic rebalancing, risk management strategies, and the introduction of new assets that enhance liquidity provision and stability.",
               },
             ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    mainTitle: "7. Development",
+    text1: null,
+    text2: null,
+    body: [
+      {
+        subtitle: "7.1 Development Milestones",
+        text1:
+          "The development of AQORDS follows a carefully planned roadmap that outlines key milestones and deliverables. Our dedicated team of developers, blockchain experts, and industry specialists is focused on delivering a world-class platform that meets the evolving needs of the freight transportation industry. ",
+        text2:
+          " The roadmap includes the continuous improvement of existing features, the introduction of new functionalities, and the expansion of partnerships and collaborations. We are committed to maintaining a high level of transparency and communication with our community as we progress through each milestone. ",
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+      {
+        subtitle: "7.2 Expansion Plans and Partnerships",
+        text1:
+          "As AQORDS gains traction and demonstrates its value proposition, we have ambitious plans for expansion and scaling. We aim to establish strategic partnerships with global shippers, carriers, and logistics companies to expand our network and enhance our reach. These partnerships will enable us to tap into new markets, explore innovative use cases, and drive adoption of AQORDS on a global scale. ",
+        text2:
+          "Additionally, we will actively seek collaborations with technology providers, academic institutions, and industry associations to further enrich our platform and contribute to the advancement of the freight transportation industry. ",
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+      {
+        subtitle: "7.3 Future Enhancements and Features",
+        text1:
+          "The future of AQORDS is filled with exciting possibilities. Our roadmap includes the continuous development and introduction of new features and enhancements based on user feedback and industry trends. We are actively exploring the integration of emerging technologies such as artificial intelligence (AI), Internet of Things (IoT), and machine learning (ML) to further optimize and automate processes within the freight transportation ecosystem. ",
+        text2:
+          "Our commitment to innovation ensures that AQORDS will remain at the forefront of technological advancements, delivering cutting-edge solutions that revolutionize the way transactions are executed and managed in the industry.",
+        text3: null,
+        text4: null,
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    mainTitle: "8. Legal operations (LTD-DAO)",
+    text1: null,
+    text2: null,
+    body: [
+      {
+        subtitle: "8.1 Starting as a Centralized Operating Company:",
+        text1:
+          "The decision to begin as a centralized operating company is driven by the need for initial development, rapid iteration, and establishing a strong foundation for AQORDS. This phase allows us to bootstrap the platform, build partnerships, and gain market traction efficiently. ",
+        text2:
+          " By operating in a centralized manner, we can ensure streamlined decision-making, quicker execution, and focused development based on the expertise of the founding team. ",
+        text3: "Benefits of the Centralized Phase:",
+        text4: null,
+        underlist: [
+          {
+            title: "1. Rapid Development:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Operating in a centralized manner enables us to swiftly develop and launch the AQORDS platform, ensuring that it meets the needs of shippers, carriers, and freight exchanges.",
+              },
+            ],
+          },
+          {
+            title: "2. Controlled Operations:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Centralized operations provide greater control over the platform's functionality, user experience, and security measures, ensuring a seamless and reliable service for users.",
+              },
+            ],
+          },
+          {
+            title: "3. Established Reputation:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "By delivering exceptional centralized services, AQORDS can establish a solid reputation as a trusted and efficient platform in the road freight transportation sector.",
+              },
+            ],
+          },
+          {
+            title: "4. Partnership Formation:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Centralized operations allow us to establish partnerships with key industry players, including shippers, carriers, and freight exchanges, fostering collaboration and expanding the platform's reach.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        subtitle: "8.2 Transitioning to a Decentralized Organization:",
+        text1:
+          "The shift towards decentralization is motivated by our commitment to transparency, inclusivity, and empowering the community. By transitioning to a decentralized autonomous organization (DAO), we unlock several benefits and align with the core principles of blockchain technology. ",
+        text2: null,
+        text3: "Benefits of the Decentralized Phase:",
+        text4: null,
+        underlist: [
+          {
+            title: "1. Community Empowerment:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Transferring power to the AQORDS community allows for a more inclusive and participatory decision-making process. Community members have a say in the platform's governance, development, and future direction, creating a sense of ownership and fostering a stronger ecosystem.",
+              },
+            ],
+          },
+          {
+            title: "2. Transparency and Trust:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Decentralization promotes transparency through open access to platform data, transaction history, and governance decisions. This transparency enhances trust among users, as they can verify the fairness and integrity of operations.",
+              },
+            ],
+          },
+          {
+            title: "3. Resilience and Security:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Decentralized systems are inherently more resilient and secure, as they distribute control and data across a network of participants. This reduces the risk of single points of failure and potential vulnerabilities.",
+              },
+            ],
+          },
+          {
+            title: "4. Innovation and Scalability:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " With power vested in the community, the AQORDS ecosystem can tap into the collective intelligence and diverse perspectives of its participants. This fosters innovation, encourages contributions, and enables scalability as the platform grows.",
+              },
+            ],
+          },
+          {
+            title: "5. Long-Term Sustainability:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "By involving the community in decision-making and aligning incentives, the decentralized phase ensures the long-term sustainability and evolution of AQORDS. Community members become stakeholders with vested interests in the platform's success, fostering its continuous growth and improvement.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        subtitle: "8.3 Roadmap: Transition from Centralized Entity to DAO",
+        text1: null,
+        text2: null,
+        text3: "Phase 1: Centralized Entity (Year 1-3)",
+        text4: null,
+        underlist: [
+          {
+            title: "1. Founding and Platform Development:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Form the AQORDS team comprising experts in supply chains, freight transportation, blockchain, and online marketplaces.",
+              },
+              {
+                title: null,
+                text: "Develop and launch the AQORDS platform with centralized operations.",
+              },
+              {
+                title: null,
+                text: "Establish partnerships with major shippers, freight forwarders, and other industry stakeholders.",
+              },
+            ],
+          },
+          {
+            title: "2. User Adoption and Expansion:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Focus on user acquisition and onboarding of shippers, carriers, and freight exchanges.",
+              },
+              {
+                title: null,
+                text: "Drive platform growth by providing reliable and efficient services, establishing trust with users, and expanding the user base across Europe.",
+              },
+              {
+                title: null,
+                text: "Continuously improve platform features based on user feedback and market demands.",
+              },
+            ],
+          },
+          {
+            title: "3. Building Reputation and Partnerships:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Cultivate a strong reputation as a trusted and innovative platform in the road freight transportation sector.",
+              },
+              {
+                title: null,
+                text: "Forge strategic partnerships with key industry players to enhance service offerings, expand market reach, and foster collaboration.",
+              },
+            ],
+          },
+          {
+            title: "4. Governance Framework Design:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Initiate the development of a decentralized governance framework for AQORDS.",
+              },
+              {
+                title: null,
+                text: "Conduct research and engage the community to design a robust and inclusive governance model that aligns with the values of transparency, participation, and fairness.",
+              },
+            ],
+          },
+          {
+            title: "5. Token Migration and Community Engagement:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Launch a token migration process to transition from the existing centralized system to a decentralized model.",
+              },
+              {
+                title: null,
+                text: "Involve the AQORDS community in the migration process, providing them with opportunities for participation, input, and feedback.",
+              },
+            ],
+          },
+          {
+            title: "6. DAO Establishment:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Implement the finalized governance framework and establish the AQORDS DAO.",
+              },
+              {
+                title: null,
+                text: "Transfer decision-making power and control from the founding team to the community through voting rights and participation mechanisms.",
+              },
+            ],
+          },
+          {
+            title: "7. Community Empowerment and Growth:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Encourage community members to actively participate in platform governance, proposal submission, and voting.",
+              },
+              {
+                title: null,
+                text: "Foster a collaborative and inclusive environment where community members have a stake in the development, growth, and direction of AQORDS.",
+              },
+            ],
+          },
+          {
+            title: "8. Mature DAO Operations:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Achieve a fully functional DAO with decentralized decision-making, resource allocation, and platform governance.",
+              },
+              {
+                title: null,
+                text: " Continuously enhance the DAO mechanisms and processes based on community feedback and emerging industry trends.",
+              },
+            ],
+          },
+          {
+            title: "9. Ecosystem Expansion and Global Reach:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: "Expand the AQORDS platform, targeting new markets and regions.",
+              },
+              {
+                title: null,
+                text: "Forge alliances with other blockchain-based supply chain and logistics platforms to create interoperability and enhance the global freight transportation ecosystem.",
+              },
+            ],
+          },
+          {
+            title: "10. Continued Innovation and Sustainability:",
+            a_title: null,
+            b_title: null,
+            list: [
+              {
+                title: null,
+                text: " Foster a culture of innovation within the AQORDS community, encouraging the development of new features, services, and integrations.",
+              },
+              {
+                title: null,
+                text: "Ensure the long-term sustainability and growth of AQORDS by adapting to evolving market needs and emerging technologies.",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    mainTitle: "9. Conclusion",
+    text1: null,
+    text2: null,
+    body: [
+      {
+        subtitle: "9.1 Impact on Freight Transportation",
+        text1:
+          "​​Since its inception, AQORDS has been dedicated to revolutionizing the freight transportation industry through its innovative blockchain platform. By leveraging the power of smart contracts, decentralized finance (DeFi) integration, track-and-trace functionality, dispute resolution mechanisms, and data privacy and security, AQORDS has made significant strides in transforming the way freight transportation contracts are executed, payments are processed, and trust is established.One of the key impacts of AQORDS on the freight transportation landscape is the elimination of traditional inefficiencies and delays associated with paper-based processes. By digitizing and automating contract execution, AQORDS streamlines the entire workflow, reducing administrative burdens and minimizing the time taken to process payments. Shippers can now enjoy faster and more reliable transactions, while carriers benefit from improved cash flow and reduced risk of delayed payments.Moreover, AQORDS facilitates increased transparency and accountability throughout the supply chain. With track-and-trace functionality, all stakeholders can access real-time visibility into the movement of shipments, ensuring timely delivery and reducing the potential for disputes. Dispute resolution mechanisms embedded in smart contracts enable fair and efficient resolution, eliminating the need for lengthy legal proceedings and fostering trust among participants.Additionally, AQORDS embraces the principles of data privacy and security, safeguarding sensitive information and ensuring compliance with relevant regulations. Through blockchain technology, data integrity is preserved, and users maintain control over their data, enhancing trust and confidence in the platform.",
+        text2: null,
+        text3: null,
+        text4: null,
+        lunderlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+      {
+        subtitle: "9.2 Benefits and Advantages",
+        text1:
+          "By embracing AQORDS, industry participants can unlock a multitude of benefits and advantages. Shippers experience streamlined processes, reduced administration costs, and increased access to a network of trusted carriers. The instant payment feature ensures timely compensation for services rendered, promoting healthy cash flow and reducing financial strain. With enhanced transparency, shippers gain full visibility into the transportation process, enabling better planning and decision-making.Carriers, on the other hand, enjoy expedited payments, eliminating the frustrations and uncertainties of delayed invoices. Access to a broader network of shippers through the AQORDS ecosystem expands business opportunities and revenue potential. Mitigating risk and fraud through the platform's robust security measures provides carriers with peace of mind, knowing that transactions are conducted in a trusted and secure environment.Freight exchanges benefit from the integration of AQORDS, as it enhances their service offerings and attracts a wider customer base. Increased efficiency and revenue opportunities arise from the streamlined contract execution, secure transactions, and real-time tracking provided by AQORDS. By embracing blockchain technology, freight exchanges establish themselves as industry leaders and catalysts for innovation.Supply chain partners experience collaborative and streamlined operations, enabling seamless coordination and improved efficiency. Real-time tracking and visibility across the supply chain empower partners to make informed decisions and quickly adapt to changing circumstances. With AQORDS as a trusted platform, supply chain resilience is strengthened, reducing disruptions and enhancing overall performance.",
+        text2: null,
+        text3: null,
+        text4: null,
+
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
+          },
+        ],
+      },
+      {
+        subtitle:
+          "9.3 Call to Action and Participation in the AQORDS Ecosystem",
+        text1:
+          "We invite all stakeholders in the freight transportation industry to join the AQORDS ecosystem and be part of this transformative journey. Whether you are a shipper, carrier, freight exchange, or supply chain partner, AQORDS offers unique opportunities to streamline operations, enhance transparency, and drive growth.To participate in the AQORDS ecosystem, you can explore integration options with your existing systems, collaborate with us to develop tailored solutions, or become a trusted partner in our network. By joining forces, we can collectively reshape the industry and unlock new possibilities for efficient, secure, and sustainable freight transportation.Take the first step towards a future of frictionless transactions, instant payments, and trustless operations. Contact us today to learn more about AQORDS and how you can contribute to shaping the future of freight transportation. Together, let's build a more connected, transparent, and prosperous industry powered by blockchain technology.",
+        text2: null,
+        text3: null,
+        text4: null,
+
+        underlist: [
+          {
+            title: null,
+            a_title: null,
+            b_title: null,
+            list: [],
           },
         ],
       },
@@ -931,7 +1347,7 @@ const Whitepapper = () => {
                           </p>
                         )}
                         {el.text3 && (
-                          <p className="font-man block mb-[30px] text-[18px]">
+                          <p className="font-man font-bold block mb-[30px] text-[18px]">
                             {el.text3}
                           </p>
                         )}
