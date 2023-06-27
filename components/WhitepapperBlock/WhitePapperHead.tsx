@@ -10,7 +10,7 @@ const WhitePapperHead = () => {
   return (
     <>
       <section>
-        <div className="container py-[120px]">
+        <div className="container py-[40px] lg:py-[120px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("Whitepapper")}
           </h1>
@@ -27,37 +27,40 @@ const WhitePapperHead = () => {
         </div>
       </section>
 
-      <section className="relative bg-[#19191A]">
-        <div className="container  py-[195px]">
-          <div className=" max-w-[531px]">
-            <h1 className="leading-[0.8rem] lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px]  mb-[40px] tracking-[-1.5px]">
+      <section className="relative bg-black lg:bg-[#19191A]">
+        <div className="container h-auto lg:h-[580px] flex flex-col-reverse  lg:flex-row lg:items-center ">
+          <div className="  xl:max-w-[531px]">
+            <h1 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
               {t(
                 "Dive into the AQORDS whitepaper and embark on a new era of trust,transparency, and efficiency in freight transportation."
               )}
             </h1>
-            <div className="flex flex-start mb-[40px]">
+            <div className="flex justify-center lg:justify-start mb-[40px]">
               <Button
-                insideGradient="rounded-full bg-black"
-                outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+                outsideGradient={
+                  "hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+                }
               >
-                <div className=" py-[11px] px-[54px]">
+                <button className="mx-[102px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
                   <Link
                     href="/whitepappetinfo/whitepapperinfo"
-                    className="font-man font-normal text-[14px] smx:text-[18px]"
+                    className="font-man font-normal text-[16px]"
                   >
                     {t("Open whitepaper")}
                   </Link>
-                </div>
+                </button>
               </Button>
             </div>
           </div>
+          <div className="w-full ">
+            <Image
+              className="rounded-[20px] lg:rounded-none"
+              src={circle}
+              // className="absolute top-0  right-[15%] h-[580px] "
+              alt="borderlight"
+            />
+          </div>
         </div>
-
-        <Image
-          src={circle}
-          className="absolute top-0  right-[15%] h-[580px] "
-          alt="borderlight"
-        />
       </section>
     </>
   );
