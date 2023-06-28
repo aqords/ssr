@@ -7,6 +7,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
 
   const [name, setName] = useState("");
+  const [nameError, setNameError] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [subject, setSubject] = useState("");
@@ -14,19 +15,18 @@ const ContactForm = () => {
   const [text, setText] = useState("");
   const [textError, setTextError] = useState("");
 
-  const validateForm = (): void => {
-    name !== "" &&
-    email !== "" &&
-    subject !== "" &&
-    text !== "" &&
-    emailError === "" &&
-    subjectError === "" &&
-    textError === ""
-      ? console.log("done")
-      : console.log("error");
-  };
-
   const sendForm = () => {};
+
+  const nameHandler = (name: string) => {
+    setName(name);
+    if (name.length === 0) {
+      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+    } else if (name.length < 2) {
+      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+    } else {
+      setNameError("");
+    }
+  };
 
   const emailHandler = (email: string) => {
     setEmail(email);
@@ -47,6 +47,9 @@ const ContactForm = () => {
     setSubject(subject);
     if (subject.length > 50) {
       setSubjectError(`${t("Max characters limit")}`);
+    }
+    if (subject.length < 10) {
+      setSubjectError(`${t("Subject must be min. 10 characters.")}`);
     } else {
       setSubjectError("");
     }
@@ -56,9 +59,29 @@ const ContactForm = () => {
     setText(text);
     if (text.length > 255) {
       setTextError(`${t("Max characters limit")}`);
+    }
+    if (text.length < 10) {
+      setTextError(`${t("Your message must contain min. 10 characters.")}`);
     } else {
       setTextError("");
     }
+  };
+
+  const validateForm = (): void => {
+    nameHandler(name);
+    emailHandler(email);
+    subjectHandler(subject);
+    textHandler(text);
+    isValid();
+  };
+
+  const isValid = () => {
+    nameError === "" &&
+    emailError === "" &&
+    subjectError === "" &&
+    textError === ""
+      ? console.log("done")
+      : console.log("error");
   };
 
   return (
@@ -92,7 +115,7 @@ const ContactForm = () => {
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => nameHandler(e.target.value)}
               placeholder={t("Write your name")}
               className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
               type="text"
@@ -136,14 +159,14 @@ const ContactForm = () => {
             ""
           )}
           <span
-            className={`block absolute top-[43px] right-[13px] text-[15px] ${
+            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px] absolute top-[52px] right-[13px] text-[15px] ${
               subject.length > 50 ? "text-[#F44A77]" : ""
             }`}
           >
             {subject.length} / 50
           </span>
         </label>
-        <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px]">
+        <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
           <p>
             {t("Message")} <span className="text-[#F44A77]"> *</span>
           </p>
@@ -153,14 +176,14 @@ const ContactForm = () => {
             placeholder={t("Write your message")}
           />
           {textError && text !== "" ? (
-            <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+            <span className="absolute bottom-[-10px] left-[0px] text-[#F44A77]">
               {textError}
             </span>
           ) : (
             ""
           )}
           <span
-            className={`block absolute top-[114px] right-[13px] text-[15px] ${
+            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px]  absolute top-[114px] right-[13px] text-[15px] ${
               text.length > 255 ? "text-[#F44A77]" : ""
             }`}
           >
