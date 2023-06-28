@@ -6,6 +6,26 @@ import React, { useState, useEffect } from "react";
 
 const Whitepapper = () => {
   const { t } = useTranslation();
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY || window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const threshold = windowHeight * 1.5; // Пример: кнопка появляется при прокрутке на половину высоты окна
+
+      setShowButton(scrollPosition > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 900, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -52,7 +72,7 @@ const Whitepapper = () => {
               </ul>
             </div>
 
-            <div className="max-w-[624px]">
+            <div className="relative max-w-[624px]">
               {whitepapper.map((item) => (
                 <div className="sheaker border-b-[1px] border-opacity-25 border-[#98A2B3]">
                   <div className="mb-[40px]">
@@ -149,6 +169,16 @@ const Whitepapper = () => {
               </div>
             </div>
           </div>
+          {showButton && (
+            <button
+              onClick={handleScrollToTop}
+              className={`fixed bottom-10 right-1/3 transform -translate-x-1/2 z-50  text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]  flex justify-center items-center px-[35px] py-[8px] rounded-[10px] bg-gray-700 border-none outline-none cursor-pointer ${
+                showButton ? "animate-fade-in" : "animate-fade-out"
+              }`}
+            >
+              {t("Move on top ↑")}
+            </button>
+          )}
         </div>
       </section>
     </>

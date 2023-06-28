@@ -18,11 +18,11 @@ const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
   desc2,
   img,
   imgStyle,
-  blockStyle = "bg-gray",
+  blockStyle = "bg-gray ",
 }) => {
   const { t } = useTranslation();
   return (
-    <section className={`${blockStyle} h-[479px] lg:h-[807px]`}>
+    <section className={`${blockStyle}  h-[479px] lg:h-[807px]`}>
       <div className="container h-full flex  sm:items-center">
         <div className="max-w-[624px]">
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
