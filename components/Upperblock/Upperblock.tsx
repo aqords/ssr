@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import AnimatedText from "../../utils/AnimatedText";
-import Button from "../UI/Button/Button";
+import Button from "./UI/Button/Button";
 import aqordsLogo from "../../public/assets/images/aqords-logo.svg";
 import truck2 from "../../public/assets/images/truck2.png";
 import truck1 from "../../public/assets/images/truck1.png";

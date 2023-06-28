@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-import InfoCard from "../UI/InfoCard.tsx/InfoCard";
+import InfoCard from "../Upperblock/UI/InfoCard.tsx/InfoCard";
 import { NavigationblockData } from "../Constant/NavigationblockConst";
 
 const Navigationblock = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 
-import FooterButton from "../UI/Button/FooterButton";
+import FooterButton from "../Upperblock/UI/Button/FooterButton";
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -14,8 +14,6 @@ const ContactForm = () => {
   const [subjectError, setSubjectError] = useState("");
   const [text, setText] = useState("");
   const [textError, setTextError] = useState("");
-
-  const sendForm = () => {};
 
   const nameHandler = (name: string) => {
     setName(name);
@@ -68,20 +66,18 @@ const ContactForm = () => {
   };
 
   const validateForm = (): void => {
-    nameHandler(name);
-    emailHandler(email);
-    subjectHandler(subject);
-    textHandler(text);
-    isValid();
-  };
-
-  const isValid = () => {
-    nameError === "" &&
-    emailError === "" &&
-    subjectError === "" &&
-    textError === ""
-      ? console.log("done")
-      : console.log("error");
+    if (name === "" || email === "" || subject === "" || text === "") {
+      console.log("error");
+    } else if (
+      nameError === "" &&
+      emailError === "" &&
+      subjectError === "" &&
+      textError === ""
+    ) {
+      console.log("done");
+    } else {
+      console.log("error");
+    }
   };
 
   return (
@@ -109,7 +105,7 @@ const ContactForm = () => {
       <div className="relative font-man text-[15px] w-full lg:max-w-[575px] ">
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
         <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[10px] mt-[-5px]">
-          <label className="flex flex-col text-[#6B7280] text-[12px] ">
+          <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
             <p>
               {t("Enter your email")}
               <span className="text-[#F44A77]"> *</span>
@@ -120,6 +116,13 @@ const ContactForm = () => {
               className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
               type="text"
             />
+            {nameError ? (
+              <span className="absolute bottom-[-10px] left-[0px] text-[#F44A77]">
+                {nameError}
+              </span>
+            ) : (
+              ""
+            )}
           </label>
           <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
             <p>
@@ -132,7 +135,7 @@ const ContactForm = () => {
               placeholder="write your email"
               type="email"
             />
-            {emailError && email !== "" ? (
+            {emailError ? (
               <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
                 {emailError}
               </span>
@@ -151,7 +154,7 @@ const ContactForm = () => {
             placeholder={t("Write a subject")}
             type="text"
           />
-          {subjectError && subject !== "" ? (
+          {subjectError ? (
             <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
               {subjectError}
             </span>
@@ -175,7 +178,7 @@ const ContactForm = () => {
             className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] mb-[20px] h-[120px]"
             placeholder={t("Write your message")}
           />
-          {textError && text !== "" ? (
+          {textError ? (
             <span className="absolute bottom-[-10px] left-[0px] text-[#F44A77]">
               {textError}
             </span>

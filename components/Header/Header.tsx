@@ -8,7 +8,7 @@ import { linksForDesktop, linksForMobile } from "../Constant/HeaderLinks";
 import logo from "../../public/assets/images/logo.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
 import closeburg from "../../public/assets/images/close-burger.svg";
-import Button from "../UI/Button/Button";
+import Button from "../Upperblock/UI/Button/Button";
 
 const Header = () => {
   const { t } = useTranslation();

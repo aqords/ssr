@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../UI/Button/Button";
+import Button from "../Upperblock/UI/Button/Button";
 import circle from "/public/assets/images/circle.png";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
