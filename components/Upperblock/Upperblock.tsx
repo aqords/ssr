@@ -54,7 +54,7 @@ const Upperblock = () => {
           alt="AQORDS Logo"
         />
         <AnimatedText
-          text=" Empowering Carriers, Shippers and Freight Forwarders with Real-Time
+          text="Empowering Carriers, Shippers and Freight Forwarders with Real-Time
           DEFI Payments"
           styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[85px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
         />
