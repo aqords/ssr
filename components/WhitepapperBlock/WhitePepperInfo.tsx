@@ -153,7 +153,6 @@ const Whitepapper = () => {
                   </div>
                 </div>
               ))}
-
               <div className="p-[24px] orangeb">
                 <h5 className="text-[24px] font-bold mb-[40px]">{t("Note")}</h5>
                 <p className="font-man block mb-[30px] text-[18px]">
@@ -172,7 +171,7 @@ const Whitepapper = () => {
           {showButton && (
             <button
               onClick={handleScrollToTop}
-              className={`fixed bottom-10 right-1/3 transform -translate-x-1/2 z-50  text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]  flex justify-center items-center px-[35px] py-[8px] rounded-[10px] bg-gray-700 border-none outline-none cursor-pointer ${
+              className={`fixed  bottom-10  right-1/3 transform -translate-x-1/2 -translate-y-1/2  text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
                 showButton ? "animate-fade-in" : "animate-fade-out"
               }`}
             >
