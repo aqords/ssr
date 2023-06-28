@@ -1,5 +1,6 @@
 const whitepapper = [
   {
+    id: "section1",
     mainTitle: "1. Introduction",
     text1:
       "The transportation industry plays a critical role in global commerce, facilitating the movement of goods across borders and connecting businesses to markets. However, this industry faces various challenges such as inefficient processes, lack of transparency, delayed payments, and disputes.",
@@ -63,6 +64,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section2",
     mainTitle: "2. AQORDS Technology",
     text1: null,
     text2: null,
@@ -168,6 +170,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section3",
     mainTitle: "3. Features Overview",
     text1: null,
     text2: null,
@@ -261,6 +264,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section4",
     mainTitle: "4. Use Cases and Benefits",
     text1: null,
     text2: null,
@@ -338,6 +342,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section5",
     mainTitle: "5. Implementation and Integration",
     text1: null,
     text2: null,
@@ -379,6 +384,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section6",
     mainTitle: "6. Tokenomics, Governance and Distribution",
     text1: null,
     text2: null,
@@ -854,6 +860,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section7",
     mainTitle: "7. Development",
     text1: null,
     text2: null,
@@ -912,6 +919,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section8",
     mainTitle: "8. Legal operations (LTD-DAO)",
     text1: null,
     text2: null,
@@ -1206,6 +1214,7 @@ const whitepapper = [
     ],
   },
   {
+    id: "section9",
     mainTitle: "9. Conclusion",
     text1: null,
     text2: null,
