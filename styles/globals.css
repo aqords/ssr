@@ -22,6 +22,7 @@ body {
         rgba(92, 92, 92, 0.14) 100%
       );
   }
+}
   .background-light {
     background: radial-gradient(
       99.07% 69.6% at 129.48% 82.56%,
@@ -91,5 +92,33 @@ body {
   .focusInput {
     outline: 0;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+
+  .connect {
+    display: flex;
+    gap: 20px;
+  }
+  .sheaker:not(:first-child) {
+    padding-top: 80px;
+  }
+
+  .orangeb {
+    border-radius: 20px;
+    border: 1.5px solid var(--warning-600, #eea23e);
+    background: rgba(255, 248, 235, 0.04);
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+  .anchor-heading {
+    scroll-margin-top: -20vh; /* Здесь 50vh означает половину высоты окна просмотра */
+    position: relative;
+  }
+
+  .anchor-heading::before {
+    content: "";
+    display: block;
+    height: 50vh; /* Здесь 50vh означает половину высоты окна просмотра */
+    margin-top: -50vh; /* Здесь -50vh означает отрицательное значение половины высоты окна просмотра */
   }
 }
