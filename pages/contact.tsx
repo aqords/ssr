@@ -48,9 +48,7 @@ const contact = () => {
           </p>
         </div>
       </section>
-      <div className="py-[120px]">
-        <Navigationblock />
-      </div>
+      <Navigationblock />
       <Footer />
     </>
   );

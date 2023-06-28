@@ -49,9 +49,7 @@ const Manifesto = () => {
           "AQORDS is more than just a platform; it is a movement towards a future where trust and transparency prevail. Join us in this revolution and be part of a new era in freight transportation. Together, let's embark on a journey of empowerment, innovation, and shared success. Welcome to AQORDS."
         }
       />
-      <div className="pt-[85px] pb-[55px]">
-        <Navigationblock />
-      </div>
+      <Navigationblock />
       <Footer />
     </>
   );

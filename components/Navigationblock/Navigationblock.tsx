@@ -26,7 +26,7 @@ const Navigationblock = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container py-[30px] md:py-[100px]">
       {currentLocation.includes("howitworks") ? (
         ""
       ) : (

@@ -22,9 +22,7 @@ const Homepage = () => {
       <Header />
       <Upperblock />
       <WhyAqords itemsArray={whyAqordsList} />
-      <div className="pt-[124px] pb-[157px]">
-        <Navigationblock />
-      </div>
+      <Navigationblock />
       <Footer />
     </>
   );

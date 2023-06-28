@@ -45,9 +45,7 @@ const invest = () => {
         desc1="Together, let's shape the future of logistics and supply chain management."
         blockStyle="bg-gray h-[390px] lg:h-[807px]"
       />
-      <div className="py-[120px]">
-        <Navigationblock />
-      </div>
+      <Navigationblock />
       <Footer />
     </>
   );

@@ -87,10 +87,7 @@ const team = () => {
           </p>
         </div>
       </div>
-      <div className="my-[10px] md:my-[120px]">
-        <Navigationblock />
-      </div>
-
+      <Navigationblock />
       <Footer />
     </>
   );

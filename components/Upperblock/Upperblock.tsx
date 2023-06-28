@@ -28,7 +28,7 @@ const Upperblock = () => {
   });
 
   return (
-    <div className="container sm:pt-[100px] pt-[12px] relative pb-[100px] sm:pb-[150px] md:pb-[170px] lg:pb-[270px]">
+    <div className="container sm:pt-[100px] pt-[12px] relative pb-[150px] sm:pb-[130px] md:pb-[170px] lg:pb-[270px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -79,7 +79,7 @@ const Upperblock = () => {
             alt="turck2"
           />
           <div>
-            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
+            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 md:w-[440px]">
               {t(`Our cutting-edge platform empowers instant, verifiable, and
             highly secure transactions, ushering in an era of
             transparency, trust, and operational efficiency across global supply chains.
@@ -87,7 +87,7 @@ const Upperblock = () => {
             </p>
             <br />
             <br />
-            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 w-[440px]">
+            <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 md:w-[440px]">
               {t(` Whether you represent a shipper, carrier, or a distinguished player
             in the realm of freight exchanges, AQORDS presents a comprehensive
             solution meticulously tailored to your unique requirements.

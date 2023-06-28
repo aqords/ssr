@@ -58,10 +58,7 @@ const HowWorks = () => {
           "We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
         }
       />
-      <div className="pt-[123px] pb-[160px]">
-        <Navigationblock />
-      </div>
-
+      <Navigationblock />
       <Footer />
     </>
   );
