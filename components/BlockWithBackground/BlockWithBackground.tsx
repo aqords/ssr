@@ -9,7 +9,6 @@ interface BlockWithBackgroundProps {
   img?: StaticImageData;
   imgStyle?: string;
   blockStyle?: string;
-  contentWidth?: string;
 }
 
 const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
