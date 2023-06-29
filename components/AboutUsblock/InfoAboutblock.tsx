@@ -1,31 +1,26 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
+
 import gradient1 from "/public/assets/images/gradientimg.svg";
 import gradient2 from "/public/assets/images/gradientimg2.svg";
 import Image from "next/image";
 import bull from "/public/assets/images/bull.svg";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 const InfoAboutblock = () => {
+  const { t } = useTranslation();
+  console.log(t);
+
   return (
     <>
       <section className="relative">
         <div className="container relative  pt-[60px] sm:pt-[0px] md:pt-[30px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
           <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
-            Driven by our passion for disruptive technologies, we have embarked
-            on a remarkable journey to create a decentralized smart contract
-            platform specifically designed for the needs of the freight
-            transportation industry. Our team combines extensive experience in
-            supply chains, blockchain technology, decentralized finance (DeFi),
-            and online marketplaces, enabling us to tackle the complex
-            challenges faced by the industry head-on.
+            {t("info_about_block_desc1")}
           </p>
           <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px]  mb-[60px] md:mb-[80px] ">
-            As trailblazers in this field, we understand the pain points and
-            inefficiencies that plague traditional freight transportation
-            processes. Outdated systems, manual paperwork, delayed payments, and
-            a lack of transparency have long hindered the industry's potential.
-            That's why we set out to develop a platform that transforms these
-            challenges into opportunities for growth, operational excellence,
-            and financial empowerment.
+            {t("info_about_block_desc2")}
           </p>
         </div>
         <div className="container relative top-[-170px]">
