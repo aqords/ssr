@@ -27,7 +27,6 @@
     "mobile-detect": "^1.4.5",
     "next": "12.3.2-canary.43",
     "next-i18next": "^11.0.0",
-    "npm": "^9.7.2",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^8.3.2",
