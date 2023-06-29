@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 import Image from "next/image";
 
 import Footer from "../components/Footer/Footer";
@@ -92,5 +94,13 @@ const team = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default team;

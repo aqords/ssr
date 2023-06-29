@@ -5,33 +5,33 @@ interface Link {
 
 export const LinksForLearn: Link[] = [
   {
-    name: "About",
+    name: "about",
     path: "/about",
   },
   {
-    name: "How it works",
+    name: "how_it_works",
     path: "/howitworks",
   },
   {
-    name: "Manifesto",
+    name: "manifesto",
     path: "/manifesto",
   },
   {
-    name: "Whitepaper",
+    name: "whitepaper",
     path: "/whitepaper",
   },
 ];
 export const LinkForExplore: Link[] = [
   {
-    name: "Road map",
+    name: "road_map",
     path: "/roadmap",
   },
   {
-    name: "Team",
+    name: "team",
     path: "/team",
   },
   {
-    name: "Contact us",
+    name: "contact_us",
     path: "/contact",
   },
 ];

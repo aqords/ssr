@@ -2,6 +2,8 @@ import Image from "next/image";
 import Head from "next/head";
 import React from "react";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import Accordion from "../components/Accordion/Accordion";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
@@ -63,5 +65,13 @@ const HowWorks = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default HowWorks;

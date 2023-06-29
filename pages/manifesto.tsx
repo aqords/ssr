@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constant/WhyAqordsItems";
@@ -54,5 +56,13 @@ const Manifesto = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default Manifesto;

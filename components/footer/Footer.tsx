@@ -16,13 +16,9 @@ const Footer = () => {
         <div className=" flex flex-col items-start smx:items-center gap-[20px] md:items-start  md:flex-row  md:justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
           <div className="max-w-[270px] smx:max-w-full text-left smx:text-center md:text-left mb-[35px]">
             <h3 className="font-medium text-[32px] text-white mb-[10px]">
-              {t("Subscribe to our newsletter")}
+              {t("footer_subscribe")}
             </h3>
-            <p className="text-[#838383]">
-              {t(
-                "The latest news, articles, and resources, sent to your inbox weekly."
-              )}
-            </p>
+            <p className="text-[#838383]">{t("footer_lastest_news")}</p>
           </div>
 
           <form className="flex md:items-start gap-[16px] mb-[56px] md:mb-[0px] ">
@@ -30,10 +26,10 @@ const Footer = () => {
               name="email"
               autoComplete="email"
               type="text"
-              placeholder="Enter your email"
+              placeholder={t("footer_enter_email")}
               className="text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
             />
-            <FooterButton>{t("Subscribe")}</FooterButton>
+            <FooterButton>{t("footer_subscribe2")}</FooterButton>
           </form>
         </div>
 
@@ -43,9 +39,7 @@ const Footer = () => {
               <Image src={logo} alt="aqodrds logo" />
             </div>
             <p className="hidden md:block mb-[59px] text-[14px]">
-              {t(
-                "Empowering Carriers, Shippers and Freight Forwarders with Real-Time DEFI Payments"
-              )}
+              {t("footer_empowering")}
             </p>
             <div className="flex flex-start mb-[40px]">
               <Button
@@ -54,13 +48,13 @@ const Footer = () => {
               >
                 <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[17px] lg:mr-[25px] lg:gap-[18px] lg:text-[16px]">
                   <p className="text-[#838383] text-[12px] smx:text-[14px]">
-                    {t("Announcing our next round of funding.")}
+                    {t("footer_announcing")}
                   </p>
                   <Link
                     href="/invest"
                     className="font-normal text-[12px] smx:text-[14px]"
                   >
-                    {t("Read more →")}
+                    {t("footer_readmore")}
                   </Link>
                 </div>
               </Button>
@@ -70,7 +64,7 @@ const Footer = () => {
           <div className="mb-[20px] mr-[55px] sm:mr-0 sm md:mb-0 flex gap-[110px]">
             <div>
               <span className=" leading-[20px] block mb-[30px] font-bold">
-                {t("Learn")}
+                {t("footer_learn")}
               </span>
               <ul>
                 {LinksForLearn.map((obj) => (
@@ -79,7 +73,7 @@ const Footer = () => {
                     key={obj.path}
                   >
                     <Link className="text-[14px]" href={obj.path}>
-                      {t(`${obj.name}`)}
+                      {t(obj.name)}
                     </Link>
                   </li>
                 ))}
@@ -87,7 +81,7 @@ const Footer = () => {
             </div>
             <div>
               <span className=" leading-[20px] block mb-[30px] font-bold">
-                {t("Explore")}
+                {t("footer_explore")}
               </span>
               <ul>
                 {LinkForExplore.map((obj) => (
@@ -96,7 +90,7 @@ const Footer = () => {
                     key={obj.path}
                   >
                     <Link className="text-[14px]" href={obj.path}>
-                      {t(`${obj.name}`)}
+                      {t(obj.name)}
                     </Link>
                   </li>
                 ))}
@@ -107,7 +101,7 @@ const Footer = () => {
 
         <div>
           <p className="text-[12px] text-[#98a2b3] font-man">
-            {t("© 2023 AQORDS, Inc. All rights reserved.")}
+            {t("footer_rights")}
           </p>
         </div>
       </div>

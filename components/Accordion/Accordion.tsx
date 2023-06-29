@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
 
 import arrow from "../../public/assets/images/arrow-accordion.svg";
 
-interface db {
+interface AccordionProps {
   title: string;
   desc1: string;
   desc2: string;
 }
 
-const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
-  const { t } = useTranslation();
-
+const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = (boolean: boolean) => {
@@ -53,10 +50,10 @@ const Accordion: React.FC<db> = ({ title, desc1, desc2 }) => {
       >
         <div className="max-w-[624px] leading-8">
           <p className="font-man font-[300] text-[19px] mb-[30px] tracking-[0.2px]">
-            {t(`${desc1}`)}
+            {desc1}
           </p>
           <p className="font-man text-[15px] text-[#838383] tracking-[0.14px] ">
-            {t(`${desc2}`)}
+            {desc2}
           </p>
         </div>
         <div className="hidden lg:block w-[348px] h-[226px] bg-gray rounded-[20px]">

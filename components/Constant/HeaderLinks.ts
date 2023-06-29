@@ -10,62 +10,62 @@ interface Link {
 
 export const linksForDesktop: Link[] = [
   {
-    name: "Home",
+    name: "home",
     path: "/homepage",
   },
   {
-    name: "About",
+    name: "about",
     path: "/about",
   },
   {
-    name: "Manifesto",
+    name: "manifesto",
     path: "/manifesto",
   },
   {
-    name: "How it works",
+    name: "how_it_works",
     path: "/howitworks",
   },
   {
-    name: "Whitepaper",
+    name: "whitepaper",
     path: "/whitepaper",
   },
   {
-    name: "Team",
+    name: "team",
     path: "/team",
   },
   {
-    name: "Road map",
+    name: "road_map",
     path: "/roadmap",
   },
 ];
 export const linksForMobile: Link[] = [
   {
-    name: "How it does works?",
+    name: "how_it_does_works?",
     path: "/howitworks",
     bgLight:
       "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
   },
   {
-    name: "Manifesto",
+    name: "manifesto",
     path: "/manifesto",
     url: manifesto,
     bgLight:
       "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
-    name: "Whitepapper",
+    name: "whitepaper",
     path: "/whitepaper",
     bgLight:
       "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
   },
   {
-    name: "Road map",
+    name: "road_map",
     path: "/roadmap",
     bgLight:
       "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
-    name: "About US",
+    name: "about_us",
     path: "/about",
     url: about,
     bgLight:

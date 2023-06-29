@@ -1,6 +1,8 @@
 import React from "react";
-import { Head } from "next/document";
+import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -25,5 +27,13 @@ const whitepaper = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default whitepaper;
