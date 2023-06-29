@@ -6,6 +6,26 @@ import React, { useState, useEffect } from "react";
 
 const Whitepapper = () => {
   const { t } = useTranslation();
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY || window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const threshold = windowHeight * 1.5; // Пример: кнопка появляется при прокрутке на половину высоты окна
+
+      setShowButton(scrollPosition > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 900, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -39,7 +59,7 @@ const Whitepapper = () => {
       <section>
         <div className=" container py-[40px] lg:py-[120px]">
           <div className="flex flex-col items-center lg:flex-row gap-[40px] lg:gap-[20px] lg:items-start ">
-            <div className="“connect__list h-[800px] lg:h-[1000px] border-0 border-r-[1px] border-[#98A2B3] border-opacity-25 ”">
+            <div className="static lg:sticky lg:top-[10%]  connect__list h-[800px] lg:h-[1000px] border-0 lg:border-r-[1px] lg:border-[#98A2B3] lg:border-opacity-25 ">
               <h2 className="border-b-[1px] border-opacity-25 border-[#98A2B3]  text-[32px] pb-[40px] font-bold">
                 {t("Table of contents:")}
               </h2>
@@ -52,7 +72,7 @@ const Whitepapper = () => {
               </ul>
             </div>
 
-            <div className="max-w-[624px]">
+            <div className="relative ml-1/4 max-w-[624px]">
               {whitepapper.map((item) => (
                 <div className="sheaker border-b-[1px] border-opacity-25 border-[#98A2B3]">
                   <div className="mb-[40px]">
@@ -133,12 +153,11 @@ const Whitepapper = () => {
                   </div>
                 </div>
               ))}
-
               <div className="p-[24px] orangeb">
                 <h5 className="text-[24px] font-bold mb-[40px]">{t("Note")}</h5>
                 <p className="font-man block mb-[30px] text-[18px]">
                   {t(
-                    "This white paper provides a comprehensive understanding ofAQORDS, its features, benefits, and its potential torevolutionize the freight transportation industry."
+                    "This white paper provides a comprehensive understanding of AQORDS, its features, benefits, and its potential torevolutionize the freight transportation industry."
                   )}
                 </p>
                 <p className="font-man mb-[55px] text-[16px]  text-[#838383]">
@@ -149,6 +168,16 @@ const Whitepapper = () => {
               </div>
             </div>
           </div>
+          {showButton && (
+            <button
+              onClick={handleScrollToTop}
+              className={`fixed lg:hidden  bottom-10  right-1/3 transform -translate-x-1/7 -translate-y-1/2      text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
+                showButton ? "animate-fade-in" : "animate-fade-out"
+              }`}
+            >
+              {t("Move on top ↑")}
+            </button>
+          )}
         </div>
       </section>
     </>

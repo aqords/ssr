@@ -685,15 +685,15 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Users who actively utilize the AQORDS platform will have the opportunity to earn QOR tokens as rewards for their participation.",
               },
               {
-                title: null,
+                title: "",
                 text: "Various actions such as executing smart contracts, referring new users, providing feedback, and contributing to the platform's development may be eligible for token rewards.",
               },
               {
-                title: null,
+                title: "",
                 text: "The allocation and distribution of tokens as user incentives will be determined based on predefined criteria and guidelines to ensure fairness and encourage active engagement.",
               },
             ],
@@ -704,15 +704,15 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " AQORDS will collaborate with strategic partners, including shippers, carriers, freight forwarders, freight exchanges, and other participants within the supply chain industry.",
               },
               {
-                title: null,
+                title: "",
                 text: "Partners who integrate and utilize AQORDS platform services, contribute to its growth, or bring value to the ecosystem may receive QOR tokens as incentives.",
               },
               {
-                title: null,
+                title: "",
                 text: "The distribution of tokens to partners will be based on mutually agreed terms and performance metrics, encouraging strong partnerships and fostering a collaborative environment.",
               },
             ],
@@ -734,7 +734,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " The liquidity pool serves as a reservoir of funds that can be readily accessed to facilitate instant payments to carriers upon delivery. This eliminates delays in payment processing and enhances the overall efficiency of the platform.",
               },
             ],
@@ -745,7 +745,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "By offering instant payment capabilities, AQORDS can attract more carriers to join the platform. Carriers value prompt and reliable compensation, and having a well-funded liquidity pool ensures their trust and confidence in the platform.",
               },
             ],
@@ -756,7 +756,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "The liquidity pool acts as a reliable source of funds to support the platform's DeFi operations. It enables AQORDS to participate in decentralized lending, borrowing, and other financial activities seamlessly, leveraging the benefits of blockchain technology and enhancing liquidity management.",
               },
             ],
@@ -767,7 +767,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "A well-managed liquidity pool provides a buffer against market fluctuations and unexpected events. By maintaining sufficient reserves, AQORDS can mitigate the risk of insufficient funds, ensuring that carrier payments and other financial operations can be executed without disruption.",
               },
             ],
@@ -778,7 +778,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "A robust liquidity pool ensures the platform's long-term sustainability and growth. It provides the necessary financial resources to support the expansion of AQORDS' services, onboard more shippers and carriers, and foster a vibrant ecosystem within the freight transportation industry.",
               },
             ],
@@ -798,7 +798,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " To create the liquidity pool, AQORDS will allocate a portion of its token supply and other compatible digital assets to serve as the initial pool reserves. These assets will be strategically managed and deployed to ensure sufficient liquidity for carrier payments.",
               },
             ],
@@ -809,15 +809,15 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Yield Farming: Investors can stake their tokens in the liquidity pool and earn additional rewards in the form of yield farming. By contributing liquidity, they can participate in decentralized finance activities and earn a share of the transaction fees generated within the AQORDS ecosystem.",
               },
               {
-                title: null,
+                title: "",
                 text: "Token Rewards: AQORDS will introduce a governance token that grants holders certain rights and privileges within the platform. Investors who contribute to the liquidity pool will be eligible to receive these governance tokens as a reward for their participation and ongoing support.",
               },
               {
-                title: null,
+                title: "",
                 text: "Profit Sharing: AQORDS may implement a profit-sharing mechanism, where a portion of the transaction fees generated from carrier payments is distributed among liquidity providers in proportion to their stake in the pool. This serves as a continuous incentive for investors to contribute and maintain liquidity within the platform.",
               },
             ],
@@ -828,7 +828,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "The liquidity pool will leverage market-based pricing mechanisms to ensure fair and efficient allocation of rewards. These mechanisms may include algorithms that adjust the reward distribution based on supply and demand dynamics within the platform.",
               },
             ],
@@ -839,7 +839,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "AQORDS will adopt a decentralized governance model that empowers liquidity providers to actively participate in decision-making processes. This includes voting on important protocol upgrades, fee structures, and the allocation of rewards. By involving liquidity providers in governance, AQORDS ensures that their interests are aligned with the long-term success and sustainability of the platform.",
               },
             ],
@@ -850,7 +850,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "AQORDS will regularly assess and optimize the liquidity pool's performance to maintain an optimal balance of assets and liquidity. This may involve periodic rebalancing, risk management strategies, and the introduction of new assets that enhance liquidity provision and stability.",
               },
             ],
@@ -939,7 +939,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Operating in a centralized manner enables us to swiftly develop and launch the AQORDS platform, ensuring that it meets the needs of shippers, carriers, and freight exchanges.",
               },
             ],
@@ -950,7 +950,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Centralized operations provide greater control over the platform's functionality, user experience, and security measures, ensuring a seamless and reliable service for users.",
               },
             ],
@@ -961,7 +961,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "By delivering exceptional centralized services, AQORDS can establish a solid reputation as a trusted and efficient platform in the road freight transportation sector.",
               },
             ],
@@ -972,7 +972,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Centralized operations allow us to establish partnerships with key industry players, including shippers, carriers, and freight exchanges, fostering collaboration and expanding the platform's reach.",
               },
             ],
@@ -993,7 +993,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Transferring power to the AQORDS community allows for a more inclusive and participatory decision-making process. Community members have a say in the platform's governance, development, and future direction, creating a sense of ownership and fostering a stronger ecosystem.",
               },
             ],
@@ -1004,7 +1004,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Decentralization promotes transparency through open access to platform data, transaction history, and governance decisions. This transparency enhances trust among users, as they can verify the fairness and integrity of operations.",
               },
             ],
@@ -1015,7 +1015,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Decentralized systems are inherently more resilient and secure, as they distribute control and data across a network of participants. This reduces the risk of single points of failure and potential vulnerabilities.",
               },
             ],
@@ -1026,7 +1026,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " With power vested in the community, the AQORDS ecosystem can tap into the collective intelligence and diverse perspectives of its participants. This fosters innovation, encourages contributions, and enables scalability as the platform grows.",
               },
             ],
@@ -1037,7 +1037,7 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "By involving the community in decision-making and aligning incentives, the decentralized phase ensures the long-term sustainability and evolution of AQORDS. Community members become stakeholders with vested interests in the platform's success, fostering its continuous growth and improvement.",
               },
             ],
@@ -1057,15 +1057,15 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Form the AQORDS team comprising experts in supply chains, freight transportation, blockchain, and online marketplaces.",
               },
               {
-                title: null,
+                title: "",
                 text: "Develop and launch the AQORDS platform with centralized operations.",
               },
               {
-                title: null,
+                title: "",
                 text: "Establish partnerships with major shippers, freight forwarders, and other industry stakeholders.",
               },
             ],
@@ -1076,15 +1076,15 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Focus on user acquisition and onboarding of shippers, carriers, and freight exchanges.",
               },
               {
-                title: null,
+                title: "",
                 text: "Drive platform growth by providing reliable and efficient services, establishing trust with users, and expanding the user base across Europe.",
               },
               {
-                title: null,
+                title: "",
                 text: "Continuously improve platform features based on user feedback and market demands.",
               },
             ],
@@ -1095,11 +1095,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Cultivate a strong reputation as a trusted and innovative platform in the road freight transportation sector.",
               },
               {
-                title: null,
+                title: "",
                 text: "Forge strategic partnerships with key industry players to enhance service offerings, expand market reach, and foster collaboration.",
               },
             ],
@@ -1110,11 +1110,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Initiate the development of a decentralized governance framework for AQORDS.",
               },
               {
-                title: null,
+                title: "",
                 text: "Conduct research and engage the community to design a robust and inclusive governance model that aligns with the values of transparency, participation, and fairness.",
               },
             ],
@@ -1125,11 +1125,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Launch a token migration process to transition from the existing centralized system to a decentralized model.",
               },
               {
-                title: null,
+                title: "",
                 text: "Involve the AQORDS community in the migration process, providing them with opportunities for participation, input, and feedback.",
               },
             ],
@@ -1140,11 +1140,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Implement the finalized governance framework and establish the AQORDS DAO.",
               },
               {
-                title: null,
+                title: "",
                 text: "Transfer decision-making power and control from the founding team to the community through voting rights and participation mechanisms.",
               },
             ],
@@ -1155,11 +1155,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Encourage community members to actively participate in platform governance, proposal submission, and voting.",
               },
               {
-                title: null,
+                title: "",
                 text: "Foster a collaborative and inclusive environment where community members have a stake in the development, growth, and direction of AQORDS.",
               },
             ],
@@ -1170,11 +1170,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Achieve a fully functional DAO with decentralized decision-making, resource allocation, and platform governance.",
               },
               {
-                title: null,
+                title: "",
                 text: " Continuously enhance the DAO mechanisms and processes based on community feedback and emerging industry trends.",
               },
             ],
@@ -1185,11 +1185,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: "Expand the AQORDS platform, targeting new markets and regions.",
               },
               {
-                title: null,
+                title: "",
                 text: "Forge alliances with other blockchain-based supply chain and logistics platforms to create interoperability and enhance the global freight transportation ecosystem.",
               },
             ],
@@ -1200,11 +1200,11 @@ const whitepapper = [
             b_title: null,
             list: [
               {
-                title: null,
+                title: "",
                 text: " Foster a culture of innovation within the AQORDS community, encouraging the development of new features, services, and integrations.",
               },
               {
-                title: null,
+                title: "",
                 text: "Ensure the long-term sustainability and growth of AQORDS by adapting to evolving market needs and emerging technologies.",
               },
             ],
