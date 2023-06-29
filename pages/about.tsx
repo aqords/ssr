@@ -7,7 +7,7 @@ import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import InfoAboutblock from "../components/AboutUsblock/InfoAboutblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import aboutusbg from "../public/assets/images/about-bg.svg";
+import aboutusbg from "../public/assets/images/aboutbg.png";
 
 const about = () => {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const about = () => {
   return (
     <div>
       <Head>
-        <title>{t("About")}</title>
+        <title>{t("Aqords - About Us")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>

@@ -46,7 +46,7 @@ export const NavigationblockData: Data[] = [
     title: "Our team",
     desc: "We are a team of visionaries, technologists, and industry experts dedicated to revolutionizing the freight transportation landscape through blockchain innovation.",
     bgLight:
-      "absolute md:opacity-40 md:background-light md:top-[287px] md:left-[-233px] md:w-[556px] md:h-[556px]",
+      "absolute md:opacity-40 md:background-light md:top-[317px] md:left-[-233px] md:w-[556px] md:h-[556px]",
     href: Routes[5].path,
   },
 ];
