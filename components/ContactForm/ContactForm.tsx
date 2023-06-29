@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 
-import FooterButton from "../Upperblock/UI/Button/FooterButton";
+import FooterButton from "../UI/Button/FooterButton";
 
 const ContactForm = () => {
   const { t } = useTranslation();

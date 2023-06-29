@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Upperblock/UI/Button/Button";
+import Button from "../UI/Button/Button";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 

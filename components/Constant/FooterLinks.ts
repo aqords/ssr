@@ -1,3 +1,5 @@
+import { Routes } from "../Constant/Routes";
+
 interface Link {
   name: string;
   path: string;
@@ -6,32 +8,32 @@ interface Link {
 export const LinksForLearn: Link[] = [
   {
     name: "About",
-    path: "/about",
+    path: Routes[1].path,
   },
   {
     name: "How it works",
-    path: "/howitworks",
+    path: Routes[3].path,
   },
   {
     name: "Manifesto",
-    path: "/manifesto",
+    path: Routes[2].path,
   },
   {
     name: "Whitepaper",
-    path: "/whitepaper",
+    path: Routes[4].path,
   },
 ];
 export const LinkForExplore: Link[] = [
   {
     name: "Road map",
-    path: "/roadmap",
+    path: Routes[6].path,
   },
   {
     name: "Team",
-    path: "/team",
+    path: Routes[5].path,
   },
   {
     name: "Contact us",
-    path: "/contact",
+    path: Routes[7].path,
   },
 ];

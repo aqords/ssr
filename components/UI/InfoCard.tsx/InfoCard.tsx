@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Button from "../Button/Button";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 interface ComponentProps {
   title: string;
   desc: string;
+  href: string;
   img?: string;
   imgStyle?: string;
   imgWrapper?: string;
@@ -15,6 +17,7 @@ interface ComponentProps {
 const InfoCard: React.FC<ComponentProps> = ({
   title,
   desc,
+  href,
   img,
   imgStyle,
   imgWrapper,
@@ -54,15 +57,17 @@ const InfoCard: React.FC<ComponentProps> = ({
           <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px] mt-[15px]">
             {t(`${clampString(desc)}`)}
           </p>
-          <Button
-            outsideGradient={
-              "hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
-            }
-          >
-            <button className="mx-[110px] my-[10px] md:mx-[55px] md:my-[10px] md:text-[20px] font-man">
-              {t("View more")}
-            </button>
-          </Button>
+          <Link href={href}>
+            <Button
+              outsideGradient={
+                "hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+              }
+            >
+              <p className="mx-[110px] my-[10px] md:mx-[55px] md:my-[10px] md:text-[20px] font-man">
+                {t("View more")}
+              </p>
+            </Button>
+          </Link>
         </div>
         {bgLight ? <div className={bgLight}></div> : ""}
       </div>

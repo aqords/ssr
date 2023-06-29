@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-import InfoCard from "../Upperblock/UI/InfoCard.tsx/InfoCard";
+import InfoCard from "../UI/InfoCard.tsx/InfoCard";
 import { NavigationblockData } from "../Constant/NavigationblockConst";
 
 const Navigationblock = () => {
@@ -37,6 +37,7 @@ const Navigationblock = () => {
           <InfoCard
             title={NavigationblockData[0].title}
             desc={NavigationblockData[0].desc}
+            href={NavigationblockData[0].href}
             bgLight={NavigationblockData[0].bgLight}
           />
           <div
@@ -64,6 +65,7 @@ const Navigationblock = () => {
             <InfoCard
               title={NavigationblockData[1].title}
               desc={NavigationblockData[1].desc}
+              href={NavigationblockData[1].href}
               img={NavigationblockData[1].url}
               imgStyle={
                 "relative top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
@@ -84,6 +86,7 @@ const Navigationblock = () => {
               <InfoCard
                 title={NavigationblockData[2].title}
                 desc={NavigationblockData[2].desc}
+                href={NavigationblockData[2].href}
               />
             )}
             {currentLocation.includes("roadmap") ? (
@@ -92,6 +95,7 @@ const Navigationblock = () => {
               <InfoCard
                 title={NavigationblockData[3].title}
                 desc={NavigationblockData[3].desc}
+                href={NavigationblockData[3].href}
               />
             )}
           </div>
@@ -114,6 +118,7 @@ const Navigationblock = () => {
             title={NavigationblockData[4].title}
             desc={NavigationblockData[4].desc}
             img={NavigationblockData[4].url}
+            href={NavigationblockData[4].href}
             imgStyle={
               "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
             }
@@ -131,6 +136,7 @@ const Navigationblock = () => {
               title={NavigationblockData[5].title}
               desc={NavigationblockData[5].desc}
               bgLight={NavigationblockData[5].bgLight}
+              href={NavigationblockData[5].href}
             />
           </>
         )}

@@ -1,11 +1,11 @@
 import React from "react";
-import { Head } from "next/document";
+import Head from "next/head";
 import { useTranslation } from "next-i18next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
-import WhitePapperHead from "../components/WhitepapperBlock/WhitePapperHead";
+import WhitePaperHead from "../components/WhitepapperBlock/PaperHead";
 
 const whitepaper = () => {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ const whitepaper = () => {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <WhitePapperHead />
+      <WhitePaperHead />
       <Navigationblock />
       <Footer />
     </>

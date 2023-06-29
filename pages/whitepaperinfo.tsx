@@ -1,8 +1,8 @@
 import React from "react";
-import { Head } from "next/document";
+import Head from "next/head";
 import { useTranslation } from "next-i18next";
 
-import Whitepapper from "../components/WhitepapperBlock/WhitePepperInfo";
+import Whitepaper from "../components/WhitepapperBlock/PaperInfo";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
@@ -18,7 +18,7 @@ const whitepapperinfo = () => {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <Whitepapper />
+      <Whitepaper />
       <Footer />
     </>
   );

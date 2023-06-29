@@ -8,7 +8,7 @@ import { linksForDesktop, linksForMobile } from "../Constant/HeaderLinks";
 import logo from "../../public/assets/images/logo.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
 import closeburg from "../../public/assets/images/close-burger.svg";
-import Button from "../Upperblock/UI/Button/Button";
+import Button from "../UI/Button/Button";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       <nav>
         {isOpenBurger ? (
-          <ul className="flex flex-col gap-[12px] w-[100%] h-[100vh] container">
+          <ul className="scroll-auto flex flex-col gap-[12px] container">
             {linksForMobile.map((obj) => {
               return (
                 <Link
