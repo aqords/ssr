@@ -1,8 +1,9 @@
+import React from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+
 import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
 import whitepapper from "../Constant/WhitePapper";
-import React, { useState, useEffect } from "react";
 
 const Whitepapper = () => {
   const { t } = useTranslation();

@@ -8,7 +8,11 @@ export default function Home({ image }: any) {
   return (
     <>
       <Head>
-        <title>{t("Homepage")}</title>
+        <title>
+          {t(
+            "Aqords - Empowering Carriers, Shippers and Freight Forwarders with Real-Time DEFI Payments"
+          )}
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>

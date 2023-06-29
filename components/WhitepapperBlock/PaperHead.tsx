@@ -1,9 +1,11 @@
 import React from "react";
-import Button from "../UI/Button/Button";
-import circle from "/public/assets/images/circle.png";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
+
+import { Routes } from "../Constant/Routes";
+import Button from "../UI/Button/Button";
+import circle from "/public/assets/images/circle.png";
 
 const WhitePapperHead = () => {
   const { t } = useTranslation();
@@ -43,7 +45,7 @@ const WhitePapperHead = () => {
               >
                 <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
                   <Link
-                    href="/whitepapperinfo"
+                    href={Routes[9].path}
                     className="font-man font-normal text-[16px]"
                   >
                     {t("Open whitepaper")}

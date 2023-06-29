@@ -7,6 +7,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
 
   const [name, setName] = useState("");
+  const [nameError, setNameError] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [subject, setSubject] = useState("");
@@ -14,19 +15,16 @@ const ContactForm = () => {
   const [text, setText] = useState("");
   const [textError, setTextError] = useState("");
 
-  const validateForm = (): void => {
-    name !== "" &&
-    email !== "" &&
-    subject !== "" &&
-    text !== "" &&
-    emailError === "" &&
-    subjectError === "" &&
-    textError === ""
-      ? console.log("done")
-      : console.log("error");
+  const nameHandler = (name: string) => {
+    setName(name);
+    if (name.length === 0) {
+      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+    } else if (name.length < 2) {
+      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+    } else {
+      setNameError("");
+    }
   };
-
-  const sendForm = () => {};
 
   const emailHandler = (email: string) => {
     setEmail(email);
@@ -47,6 +45,9 @@ const ContactForm = () => {
     setSubject(subject);
     if (subject.length > 50) {
       setSubjectError(`${t("Max characters limit")}`);
+    }
+    if (subject.length < 10) {
+      setSubjectError(`${t("Subject must be min. 10 characters.")}`);
     } else {
       setSubjectError("");
     }
@@ -56,8 +57,32 @@ const ContactForm = () => {
     setText(text);
     if (text.length > 255) {
       setTextError(`${t("Max characters limit")}`);
+    }
+    if (text.length < 10) {
+      setTextError(`${t("Your message must contain min. 10 characters.")}`);
     } else {
       setTextError("");
+    }
+  };
+
+  const validateForm = (): void => {
+    nameHandler(name);
+    emailHandler(email);
+    textHandler(text);
+    subjectHandler(subject);
+    if (
+      nameError === "" &&
+      emailError === "" &&
+      subjectError === "" &&
+      textError === ""
+    ) {
+      setName("");
+      setEmail("");
+      setSubject("");
+      setText("");
+      console.log("done");
+    } else {
+      console.log("error");
     }
   };
 
@@ -81,36 +106,49 @@ const ContactForm = () => {
         <p className="font-man text-[16px] md:text-[20px] mt-[-10px]">
           support@aqords.com
         </p>
-        <span className="block absolute top-[-50px] right-[-40px] w-[0px] lg:w-[1px] h-[463px] bg-neutral-700 my-[10px]"></span>
+        <span className="block absolute top-[-50px] right-[-40px] w-[0px] lg:w-[1px] h-[491px] bg-neutral-700 my-[10px]"></span>
       </div>
       <div className="relative font-man text-[15px] w-full lg:max-w-[575px] ">
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
-        <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[10px] mt-[-5px]">
-          <label className="flex flex-col text-[#6B7280] text-[12px] ">
+        <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[20px] mt-[-5px]">
+          <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
             <p>
               {t("Enter your email")}
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
-              onChange={(e) => setName(e.target.value)}
+              value={name}
+              onChange={(e) => nameHandler(e.target.value)}
               placeholder={t("Write your name")}
-              className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
+              className={`border-[1px]   ${
+                nameError ? "border-[#F44A77]" : ""
+              } hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               type="text"
             />
+            {nameError ? (
+              <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
+                {nameError}
+              </span>
+            ) : (
+              ""
+            )}
           </label>
-          <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
+          <label className="relative flex flex-col text-[#6B7280] text-[12px]">
             <p>
               {t("E-mail address where the answer will be sent")}
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
-              onBlur={(e) => emailHandler(e.target.value)}
-              className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
+              value={email}
+              onChange={(e) => emailHandler(e.target.value)}
+              className={`border-[1px]   ${
+                emailError ? "border-[#F44A77]" : ""
+              }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               placeholder="write your email"
               type="email"
             />
-            {emailError && email !== "" ? (
-              <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+            {emailError ? (
+              <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
                 {emailError}
               </span>
             ) : (
@@ -118,59 +156,65 @@ const ContactForm = () => {
             )}
           </label>
         </div>
-        <label className="relative flex flex-col text-[#6B7280] text-[12px] py-[5px] mb-[10px] mt-[-5px]">
+        <label className="relative flex flex-col text-[#6B7280] text-[12px] py-[5px] mb-[20px] mt-[-5px]">
           <p>
             {t("Message subject")} <span className="text-[#F44A77]"> *</span>
           </p>
           <input
+            value={subject}
             onChange={(e) => subjectHandler(e.target.value)}
-            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]"
+            className={`border-[1px]   ${
+              subjectError ? "border-[#F44A77]" : ""
+            } border hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
             placeholder={t("Write a subject")}
             type="text"
           />
-          {subjectError && subject !== "" ? (
-            <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+          {subjectError ? (
+            <span className="absolute bottom-[-25px] left-[0px] text-[#F44A77]">
               {subjectError}
             </span>
           ) : (
             ""
           )}
           <span
-            className={`block absolute top-[43px] right-[13px] text-[15px] ${
+            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px] absolute top-[52px] right-[13px] text-[15px] ${
               subject.length > 50 ? "text-[#F44A77]" : ""
             }`}
           >
             {subject.length} / 50
           </span>
         </label>
-        <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px]">
+        <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
           <p>
             {t("Message")} <span className="text-[#F44A77]"> *</span>
           </p>
           <textarea
+            value={text}
             onChange={(e) => textHandler(e.target.value)}
-            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] mb-[20px] h-[120px]"
+            className={`border-[1px]   ${
+              textError ? "border-[#F44A77]" : ""
+            } border  hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
             placeholder={t("Write your message")}
           />
-          {textError && text !== "" ? (
-            <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+          {textError ? (
+            <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
               {textError}
             </span>
           ) : (
             ""
           )}
           <span
-            className={`block absolute top-[114px] right-[13px] text-[15px] ${
+            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px]  absolute top-[114px] right-[13px] text-[15px] ${
               text.length > 255 ? "text-[#F44A77]" : ""
             }`}
           >
             {text.length} / 255
           </span>
         </label>
-        <div className="flex justify-end">
+        <div className="flex justify-end mt-[10px]">
           <FooterButton
             onClick={validateForm}
-            style="font-normal  font-man py-[12px] w-full smx:w-auto px-[20px] smx:px-[40px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px]"
+            style="font-normal  font-man py-[12px] w-full smx:w-auto px-[20px] smx:px-[40px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px] mt-[15px]"
           >
             <span className="w-[100%]">{t("Send message")}</span>
           </FooterButton>

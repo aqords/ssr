@@ -1,11 +1,13 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { useTranslation } from "next-i18next";
+
+import { Routes } from "../Constant/Routes";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
-import Image from "next/image";
 import logo from "../../public/assets/images/logoaqords.svg";
-import Link from "next/link";
 import { LinksForLearn, LinkForExplore } from "../Constant/FooterLinks";
-import { useTranslation } from "next-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -57,7 +59,7 @@ const Footer = () => {
                     {t("Announcing our next round of funding.")}
                   </p>
                   <Link
-                    href="/invest"
+                    href={Routes[8].path}
                     className="font-normal text-[12px] smx:text-[14px]"
                   >
                     {t("Read more →")}
