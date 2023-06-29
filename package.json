@@ -9,7 +9,8 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node --max-old-space-size=2048 server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@types/react-gtm-module": "^2.0.1",
