@@ -3,6 +3,7 @@ import Image from "next/image";
 import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
 import whitepapper from "../Constant/WhitePapper";
 import React, { useState, useEffect } from "react";
+import NodeCard from "../UI/InfoCard.tsx/NodeCard";
 
 const Whitepapper = () => {
   const { t } = useTranslation();
@@ -134,19 +135,11 @@ const Whitepapper = () => {
                 </div>
               ))}
 
-              <div className="p-[24px] orangeb">
-                <h5 className="text-[24px] font-bold mb-[40px]">{t("Note")}</h5>
-                <p className="font-man block mb-[30px] text-[18px]">
-                  {t(
-                    "This white paper provides a comprehensive understanding ofAQORDS, its features, benefits, and its potential torevolutionize the freight transportation industry."
-                  )}
-                </p>
-                <p className="font-man mb-[55px] text-[16px]  text-[#838383]">
-                  {t(
-                    " It serves as a guide for stakeholders, investors, and industry participants who are interested in understanding the underlying technology, principles, and future prospects of AQORDS. Join us on this exciting journey as we reshape the world of freight transportation through blockchain innovation."
-                  )}
-                </p>
-              </div>
+              <NodeCard
+                title="Note"
+                desc1="This white paper provides a comprehensive understanding of AQORDS, its features, benefits, and its potential to revolutionize the freight transportation industry."
+                desc2="It serves as a guide for stakeholders, investors, and industry participants who are interested in understanding the underlying technology, principles, and future prospects of AQORDS. Join us on this exciting journey as we reshape the world of freight transportation through blockchain innovation."
+              />
             </div>
           </div>
         </div>
