@@ -115,7 +115,9 @@ const ContactForm = () => {
             <input
               onChange={(e) => nameHandler(e.target.value)}
               placeholder={t("Write your name")}
-              className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
+              className={`border-[1px]   ${
+                nameError ? "border-[#F44A77]" : ""
+              } border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               type="text"
             />
             {nameError ? (
@@ -133,7 +135,9 @@ const ContactForm = () => {
             </p>
             <input
               onBlur={(e) => emailHandler(e.target.value)}
-              className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]"
+              className={`border-[1px]   ${
+                emailError ? "border-[#F44A77]" : ""
+              } border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               placeholder="write your email"
               type="email"
             />
@@ -152,7 +156,9 @@ const ContactForm = () => {
           </p>
           <input
             onChange={(e) => subjectHandler(e.target.value)}
-            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]"
+            className={`border-[1px]   ${
+              nameError ? "border-[#F44A77]" : ""
+            } border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
             placeholder={t("Write a subject")}
             type="text"
           />
@@ -177,7 +183,9 @@ const ContactForm = () => {
           </p>
           <textarea
             onChange={(e) => textHandler(e.target.value)}
-            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]"
+            className={`border-[1px]   ${
+              nameError ? "border-[#F44A77]" : ""
+            } border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
             placeholder={t("Write your message")}
           />
           {textError ? (
