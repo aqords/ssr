@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { useTranslation } from "next-i18next";
 
+import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constant/HeaderLinks";
 import logo from "../../public/assets/images/logo.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
@@ -28,7 +28,11 @@ const Header = () => {
   const isMobile = useIsMobile();
 
   return isMobile ? (
-    <header className="relative mb-[35px] bg-black z-10">
+    <header
+      className={`overflow-y-scroll ${
+        isOpenBurger ? "h-[100vh]" : ""
+      } relative mb-[35px] bg-black z-10`}
+    >
       <div className="flex container justify-between items-center h-[60px] mb-[12px]">
         <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
           {isOpenBurger ? (
@@ -47,7 +51,7 @@ const Header = () => {
       </div>
       <nav>
         {isOpenBurger ? (
-          <ul className="scroll-auto flex flex-col gap-[12px] container">
+          <ul className="flex flex-col gap-[12px] container">
             {linksForMobile.map((obj) => {
               return (
                 <Link
@@ -72,6 +76,13 @@ const Header = () => {
                 </Link>
               );
             })}
+
+            <>
+              <span className="block h-[1px] w-full span-gradient my-[32px]"></span>
+              <p className="text-center text-[12px] text-[#98a2b3] font-man mb-[32px]">
+                {t("© 2023 AQORDS, Inc. All rights reserved.")}
+              </p>
+            </>
           </ul>
         ) : (
           ""
