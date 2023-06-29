@@ -66,9 +66,11 @@ const ContactForm = () => {
   };
 
   const validateForm = (): void => {
-    if (name === "" || email === "" || subject === "" || text === "") {
-      console.log("error");
-    } else if (
+    nameHandler(name);
+    emailHandler(email);
+    textHandler(text);
+    subjectHandler(subject);
+    if (
       nameError === "" &&
       emailError === "" &&
       subjectError === "" &&
@@ -100,7 +102,7 @@ const ContactForm = () => {
         <p className="font-man text-[16px] md:text-[20px] mt-[-10px]">
           support@aqords.com
         </p>
-        <span className="block absolute top-[-50px] right-[-40px] w-[0px] lg:w-[1px] h-[463px] bg-neutral-700 my-[10px]"></span>
+        <span className="block absolute top-[-50px] right-[-40px] w-[0px] lg:w-[1px] h-[491px] bg-neutral-700 my-[10px]"></span>
       </div>
       <div className="relative font-man text-[15px] w-full lg:max-w-[575px] ">
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
@@ -117,7 +119,7 @@ const ContactForm = () => {
               type="text"
             />
             {nameError ? (
-              <span className="absolute bottom-[-10px] left-[0px] text-[#F44A77]">
+              <span className="text-[#F44A77] leading-[30px] mb-[-10px] sm:leading-[30px] sm:mb-[-20px]">
                 {nameError}
               </span>
             ) : (
@@ -136,7 +138,7 @@ const ContactForm = () => {
               type="email"
             />
             {emailError ? (
-              <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+              <span className="text-[#F44A77] leading-[30px] mb-[-20px]">
                 {emailError}
               </span>
             ) : (
@@ -155,7 +157,7 @@ const ContactForm = () => {
             type="text"
           />
           {subjectError ? (
-            <span className="absolute bottom-[-30px] right-[0px] text-[#F44A77]">
+            <span className="text-[#F44A77] leading-[30px] mb-[-20px]">
               {subjectError}
             </span>
           ) : (
@@ -175,11 +177,11 @@ const ContactForm = () => {
           </p>
           <textarea
             onChange={(e) => textHandler(e.target.value)}
-            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] mb-[20px] h-[120px]"
+            className="border border-transparent hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]"
             placeholder={t("Write your message")}
           />
           {textError ? (
-            <span className="absolute bottom-[-10px] left-[0px] text-[#F44A77]">
+            <span className="text-[#F44A77] leading-[30px] mb-[-20px]">
               {textError}
             </span>
           ) : (
@@ -196,7 +198,7 @@ const ContactForm = () => {
         <div className="flex justify-end">
           <FooterButton
             onClick={validateForm}
-            style="font-normal  font-man py-[12px] w-full smx:w-auto px-[20px] smx:px-[40px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px]"
+            style="font-normal  font-man py-[12px] w-full smx:w-auto px-[20px] smx:px-[40px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px] mt-[15px]"
           >
             <span className="w-[100%]">{t("Send message")}</span>
           </FooterButton>
