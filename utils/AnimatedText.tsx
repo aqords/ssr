@@ -13,9 +13,10 @@ export default function AnimatedText({
   const [arrayText, setArrayText] = useState<string[]>([]);
   const [animationDelay, setAnimDelay] = useState(0);
 
-  const getRangomStringHomepage = (numberOfTextTyping: number) => {
-    setNumberOfTextTyping((prev) => (prev === 2 ? 0 : prev + 1));
-
+  const getNextText = (numberOfTextTyping: number) => {
+    numberOfTextTyping === 2
+      ? setNumberOfTextTyping(0)
+      : setNumberOfTextTyping(numberOfTextTyping + 1);
     const arrayString = [
       "Empowering Carriers, Shippers and Freight Forwarders with Real-Time DEFI Payments",
       "Streamlined Contract Execution and Payment Solutions for Supply Chains",
@@ -53,7 +54,7 @@ export default function AnimatedText({
   }
 
   function setNewText() {
-    const newRandomText = getRangomStringHomepage(numberOfTextTyping);
+    const newRandomText = getNextText(numberOfTextTyping);
     setArrayText(newRandomText.split(""));
     setAnimDelay((0.1 + newRandomText.length / 20) * 1000);
     setTimeout(() => {
@@ -61,20 +62,29 @@ export default function AnimatedText({
     }, animationDelay);
   }
 
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  setTimeout(() => {
+    setStartAnimation(true);
+  }, 1000);
+
   return (
     <>
       <p className={styles}>
-        {arrayText.map((i, index) => {
-          const delay = (0.1 + index / 20) * 1000;
-          if (index === arrayText.length - 1) {
-            if (!reverse) {
-              setTimeout(() => {
-                setReverse(true);
-              }, animationDelay + 2000);
-            }
-          }
-          return <AnimatedLetter delay={delay} letter={i} key={delay} />;
-        })}
+        {startAnimation
+          ? arrayText.map((i, index) => {
+              const delay = (0.1 + index / 20) * 1000;
+              if (index === arrayText.length - 1) {
+                if (!reverse) {
+                  setTimeout(() => {
+                    setReverse(true);
+                  }, animationDelay + 3000);
+                }
+              }
+              return <AnimatedLetter delay={delay} letter={i} key={delay} />;
+            })
+          : ""}
+
         <span className="animetedSpan">|</span>
       </p>
     </>
