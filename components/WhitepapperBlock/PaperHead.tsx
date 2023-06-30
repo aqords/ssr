@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Routes } from "../Constant/Routes";
+import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import circle from "/public/assets/images/circle.png";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import WhyAqordsItem from "./WhyAqordsItem";
-import { renderObject } from "../Constant/WhyAqordsItems";
+import { renderObject } from "../Constants/WhyAqordsItems";
 
 interface WhyAqordsListProps {
   itemsArray: renderObject[];

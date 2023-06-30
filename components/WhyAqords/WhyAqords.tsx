@@ -3,7 +3,7 @@ import WhyAqordsList from "./WhyAqordsList";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import { useTranslation } from "next-i18next";
-import { renderObject } from "../Constant/WhyAqordsItems";
+import { renderObject } from "../Constants/WhyAqordsItems";
 
 interface WhyAqordsProps {
   itemsArray: renderObject[];

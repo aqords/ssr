@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
-import whitepapper from "../Constant/WhitePapper";
+import whitepapper from "../Constants/WhitePapper";
 
 const Whitepapper = () => {
   const { t } = useTranslation();

@@ -22,9 +22,9 @@ const contact = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        title="contact_page_title1"
-        desc1="contact_page_desc1"
-        desc2="contact_page_desc2"
+        title={t("contact_page_title1")}
+        desc1={t("contact_page_desc1")}
+        desc2={t("contact_page_desc2")}
         blockStyle="bg-[#0A090F] h-[479px] lg:h-[560px]"
       />
       <section className="bg-[#19191A]">

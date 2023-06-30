@@ -7,7 +7,7 @@ import { GetStaticPropsContext } from "next";
 import Upperblock from "../components/Upperblock/Upperblock";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import WhyAqords from "../components/WhyAqords/WhyAqords";
-import { whyAqordsList } from "../components/Constant/WhyAqordsItems";
+import { whyAqordsList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer.Component";
 

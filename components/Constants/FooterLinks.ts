@@ -1,4 +1,4 @@
-import { Routes } from "../Constant/Routes";
+import { Routes } from "./Routes";
 
 interface Link {
   name: string;

@@ -1,6 +1,6 @@
 import bull from "../../public/assets/images/bull.svg";
 import planet from "../../public/assets/images/planet.svg";
-import { Routes } from "../Constant/Routes";
+import { Routes } from "./Routes";
 
 interface Data {
   title: string;

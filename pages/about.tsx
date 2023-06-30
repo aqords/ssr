@@ -25,9 +25,9 @@ const about = () => {
       <Header />
       <BlockWithBackground
         blockStyle="relative overflow-hidden items-start  h-[479px] lg:h-[807px]"
-        title={"about_page_title1"}
-        desc1={"about_page_desc1"}
-        desc2={"about_page_desc2"}
+        title={t("about_page_title1")}
+        desc1={t("about_page_desc1")}
+        desc2={t("about_page_desc2")}
         img={aboutusbg}
         imgStyle="absolute z-[-1] top-[65%]   smx:top-[50%]  sm:top-[0%]  lg:top-[10%]  xl:top-[-12%]xl  2xl:top-[-12%]  w-[1920px]  left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[0px]"
       />

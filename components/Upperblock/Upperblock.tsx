@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
-import { Routes } from "../Constant/Routes";
+import { Routes } from "../Constants/Routes";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import AnimatedText from "../../utils/AnimatedText";

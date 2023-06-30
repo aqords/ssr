@@ -96,7 +96,7 @@ const ContactForm = () => {
           {t("contact_form_desc1")}
         </p>
         <p className="font-man text-[#838383] text-[14px] md:text-[16px] mb-[40px] md:mb-[100px] leading-[25px]">
-          {t("ontact_form_desc2")}
+          {t("contact_form_desc2")}
         </p>
         <p className="font-man text-[#838383] text-[14px] md:text-[16px] md:mb-[20px]">
           {t("contact_email_address")}

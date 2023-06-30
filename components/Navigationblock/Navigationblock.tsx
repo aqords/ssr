@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import InfoCard from "../UI/InfoCard.tsx/InfoCard";
-import { NavigationblockData } from "../Constant/NavigationblockConst";
+import { NavigationblockData } from "../Constants/NavigationblockConst";
 
 const Navigationblock = () => {
   const currentLocation = useRouter().pathname.split("/");

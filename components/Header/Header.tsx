@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
-import { linksForDesktop, linksForMobile } from "../Constant/HeaderLinks";
+import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
 import logo from "../../public/assets/images/logo.svg";
 import burger from "../../public/assets/images/burger-btn.svg";
 import closeburg from "../../public/assets/images/close-burger.svg";

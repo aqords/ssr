@@ -10,7 +10,7 @@ import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import Footer from "../components/Footer/Footer.Component";
 import Header from "../components/Header/Header";
-import { HowItWorksData } from "../components/Constant/HowItWorks";
+import { HowItWorksData } from "../components/Constants/HowItWorks";
 
 const HowWorks = () => {
   const { t } = useTranslation();
@@ -39,18 +39,18 @@ const HowWorks = () => {
           return (
             <>
               <Accordion
-                title={obj.title}
-                desc1={obj.desc1}
-                desc2={obj.desc2}
+                title={t(`${obj.title}`)}
+                desc1={t(`${obj.desc1}`)}
+                desc2={t(`${obj.desc2}`)}
               />
             </>
           );
         })}
       </section>
       <BlockWithBackground
-        title={"howitworks_page_title2"}
-        desc1={"howitworks_page_desc2"}
-        desc2={"howitworks_page_desc3"}
+        title={t("howitworks_page_title2")}
+        desc1={t("howitworks_page_desc2")}
+        desc2={t("howitworks_page_desc3")}
       />
       <Navigationblock />
       <Footer />

@@ -11,7 +11,7 @@ import BlockWithBackground from "../components/BlockWithBackground/BlockWithBack
 import {
   detailInvestList,
   whyInvestList,
-} from "../components/Constant/WhyAqordsItems";
+} from "../components/Constants/WhyAqordsItems";
 import WhyAqordsList from "../components/WhyAqords/WhyAqordsList";
 
 const invest = () => {

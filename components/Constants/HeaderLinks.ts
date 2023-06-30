@@ -1,6 +1,6 @@
 import manifesto from "../../public/assets/images/manifesto-btn.svg";
 import about from "../../public/assets/images/aboutus-btn.svg";
-import { Routes } from "../Constant/Routes";
+import { Routes } from "./Routes";
 
 interface Link {
   name: string;

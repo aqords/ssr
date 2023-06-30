@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
-import { Routes } from "../Constant/Routes";
+import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
 import logo from "../../public/assets/images/logoaqords.svg";
-import { LinksForLearn, LinkForExplore } from "../Constant/FooterLinks";
+import { LinksForLearn, LinkForExplore } from "../Constants/FooterLinks";
 
 const Footer = () => {
   const { t } = useTranslation();

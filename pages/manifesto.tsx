@@ -5,7 +5,7 @@ import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import { ManifestList } from "../components/Constant/WhyAqordsItems";
+import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Footer from "../components/Footer/Footer.Component";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
