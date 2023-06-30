@@ -18,9 +18,9 @@ const ContactForm = () => {
   const nameHandler = (name: string) => {
     setName(name);
     if (name.length === 0) {
-      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+      setNameError(`${t("form_characters_error_min_name")}`);
     } else if (name.length < 2) {
-      setNameError(`${t("Your name must contain min. 2 characters.")}`);
+      setNameError(`${t("form_characters_error_min_name")}`);
     } else {
       setNameError("");
     }
@@ -37,17 +37,17 @@ const ContactForm = () => {
     ) {
       setEmailError("");
     } else {
-      setEmailError(`${t("Enter a valid email")}`);
+      setEmailError(t("form_email_error"));
     }
   };
 
   const subjectHandler = (subject: string) => {
     setSubject(subject);
     if (subject.length > 50) {
-      setSubjectError(`${t("Max characters limit")}`);
+      setSubjectError(`${t("form_characters_error")}`);
     }
     if (subject.length < 10) {
-      setSubjectError(`${t("Subject must be min. 10 characters.")}`);
+      setSubjectError(`${t("form_characters_error_min_sub")}`);
     } else {
       setSubjectError("");
     }
@@ -56,10 +56,10 @@ const ContactForm = () => {
   const textHandler = (text: string) => {
     setText(text);
     if (text.length > 255) {
-      setTextError(`${t("Max characters limit")}`);
+      setTextError(`${t("form_characters_error")}`);
     }
     if (text.length < 10) {
-      setTextError(`${t("Your message must contain min. 10 characters.")}`);
+      setTextError(`${t("form_characters_error_min_mes")}`);
     } else {
       setTextError("");
     }
@@ -90,18 +90,16 @@ const ContactForm = () => {
     <div className="bg-black mt-[40px] mb-[40px] md:mb-[80px] border-[1px] border-neutral-700 rounded-[20px] p-[12px] md:p-[40px] flex flex-col lg:flex-row gap-[50px] justify-between">
       <div className="max-w-[348px] relative">
         <p className="text-[32px] md:text-[36px] mb-[20px] mt-[25px] md:mt-[8px]">
-          {t("Get in touch")}
+          {t("contact_form_title")}
         </p>
         <p className="font-man text-[16px] md:text-[20px] mb-[15px] md:mb-[30px]">
-          {t("Ask your questions and leave your feedback.")}
+          {t("contact_form_desc1")}
         </p>
         <p className="font-man text-[#838383] text-[14px] md:text-[16px] mb-[40px] md:mb-[100px] leading-[25px]">
-          {t(
-            "We will be more than happy to reply back with any info you might need."
-          )}
+          {t("ontact_form_desc2")}
         </p>
         <p className="font-man text-[#838383] text-[14px] md:text-[16px] md:mb-[20px]">
-          {t("Email address:")}
+          {t("contact_email_address")}
         </p>
         <p className="font-man text-[16px] md:text-[20px] mt-[-10px]">
           support@aqords.com
@@ -113,13 +111,13 @@ const ContactForm = () => {
         <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[20px] mt-[-5px]">
           <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
             <p>
-              {t("Enter your email")}
+              {t("contact_enter_name")}
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
               value={name}
               onChange={(e) => nameHandler(e.target.value)}
-              placeholder={t("Write your name")}
+              placeholder={t("contact_write_name")}
               className={`border-[1px]   ${
                 nameError ? "border-[#F44A77]" : ""
               } hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
@@ -135,7 +133,7 @@ const ContactForm = () => {
           </label>
           <label className="relative flex flex-col text-[#6B7280] text-[12px]">
             <p>
-              {t("E-mail address where the answer will be sent")}
+              {t("contact_enter_email")}
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
@@ -144,7 +142,7 @@ const ContactForm = () => {
               className={`border-[1px]   ${
                 emailError ? "border-[#F44A77]" : ""
               }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
-              placeholder="write your email"
+              placeholder={t("contact_write_email")}
               type="email"
             />
             {emailError ? (
@@ -158,7 +156,8 @@ const ContactForm = () => {
         </div>
         <label className="relative flex flex-col text-[#6B7280] text-[12px] py-[5px] mb-[20px] mt-[-5px]">
           <p>
-            {t("Message subject")} <span className="text-[#F44A77]"> *</span>
+            {t("contact_message_subject")}{" "}
+            <span className="text-[#F44A77]"> *</span>
           </p>
           <input
             value={subject}
@@ -166,7 +165,7 @@ const ContactForm = () => {
             className={`border-[1px]   ${
               subjectError ? "border-[#F44A77]" : ""
             } border hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
-            placeholder={t("Write a subject")}
+            placeholder={t("contact_write_subject")}
             type="text"
           />
           {subjectError ? (
@@ -186,7 +185,7 @@ const ContactForm = () => {
         </label>
         <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
           <p>
-            {t("Message")} <span className="text-[#F44A77]"> *</span>
+            {t("contact_message")} <span className="text-[#F44A77]"> *</span>
           </p>
           <textarea
             value={text}
@@ -194,7 +193,7 @@ const ContactForm = () => {
             className={`border-[1px]   ${
               textError ? "border-[#F44A77]" : ""
             } border  hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
-            placeholder={t("Write your message")}
+            placeholder={t("contact_write_message")}
           />
           {textError ? (
             <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
@@ -216,7 +215,7 @@ const ContactForm = () => {
             onClick={validateForm}
             style="font-normal  font-man py-[12px] w-full smx:w-auto px-[20px] smx:px-[40px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px] mt-[15px]"
           >
-            <span className="w-[100%]">{t("Send message")}</span>
+            <span className="w-[100%]">{t("contact_send_message")}</span>
           </FooterButton>
         </div>
       </div>

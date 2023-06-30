@@ -2,6 +2,8 @@ import Image from "next/image";
 import Head from "next/head";
 import React from "react";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import Accordion from "../components/Accordion/Accordion";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
@@ -15,7 +17,7 @@ const HowWorks = () => {
   return (
     <>
       <Head>
-        <title>{t("Aqords - How it works")}</title>
+        <title>{t("howitworks_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
@@ -24,12 +26,10 @@ const HowWorks = () => {
       <section className="container relative">
         <article className="mb-[80px] lg:mt-[120px]">
           <h2 className="font-bold tracking-[-1.5px] text-[32px] lg:text-[48px] mb-[40px]">
-            {t("How it works")}
+            {t("howitworks_page_title1")}
           </h2>
           <p className="font-man lg:text-[20px] tracking-[0.3px] leading-8 mb-[40px] lg:mb-[80px]">
-            {t(
-              "At AQORDS, we are developing a user-friendly and efficient platform that simplifies the freight transportation process through the power of blockchain technology. Our goal is to provide a seamless and transparent experience for all parties involved, from shippers and carriers to freight exchange platforms."
-            )}
+            {t("howitworks_page_desc1")}
           </p>
           <div className="h-[375px] w-full rounded-[20px] bg-gray ">
             {/* <Image /> */}
@@ -48,20 +48,22 @@ const HowWorks = () => {
         })}
       </section>
       <BlockWithBackground
-        title={
-          "To get started, shippers and carriers can easily integrate their existing systems or applications with the AQORDS platform."
-        }
-        desc1={
-          "Our seamless integration process ensures a smooth transition and minimal disruption to your current operations"
-        }
-        desc2={
-          "We also collaborate with major freight exchange platforms to enhance connectivity and expand your network of potential business partners."
-        }
+        title={"howitworks_page_title2"}
+        desc1={"howitworks_page_desc2"}
+        desc2={"howitworks_page_desc3"}
       />
       <Navigationblock />
       <Footer />
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default HowWorks;

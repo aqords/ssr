@@ -41,10 +41,8 @@ const Upperblock = () => {
             outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
           >
             <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
-              <p className="text-[#838383]">
-                {t("Announcing our next round of funding.")}
-              </p>
-              <p className="font-normal"> {t("Read more →")}</p>
+              <p className="text-[#838383]">{t("footer_announcing")}</p>
+              <p className="font-normal"> {t("footer_readmore")}</p>
             </div>
           </Button>
         </Link>
@@ -66,12 +64,10 @@ const Upperblock = () => {
         className={isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}
       >
         <h2 className="text-[32px]  leading-[40px] lg:text-[48px] font-bold tracking-[-1.5px] mb-[40px] mt-[130px]">
-          {t("Discover the Future of Freight Transportation")}
+          {t("upper_title1")}
         </h2>
         <p className="font-man text-[16px] lg:text-[20px] lg:mb-[79px] mb-[39px]">
-          {t(
-            "  At AQORDS, we embark on a transformative journey to revolutionize the freight transportation industry by harnessing the immense potential of blockchain technology."
-          )}
+          {t("upper_desc1")}
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
           <Image
@@ -81,18 +77,12 @@ const Upperblock = () => {
           />
           <div>
             <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 md:w-[440px]">
-              {t(`Our cutting-edge platform empowers instant, verifiable, and
-            highly secure transactions, ushering in an era of
-            transparency, trust, and operational efficiency across global supply chains.
-            `)}
+              {t("upper_desc2")}
             </p>
             <br />
             <br />
             <p className="font-man text-[16px] lg:text-[19px] text-[#838383] tracking-[-0.14px]  leading-[24px] lg:leading-8 md:w-[440px]">
-              {t(` Whether you represent a shipper, carrier, or a distinguished player
-            in the realm of freight exchanges, AQORDS presents a comprehensive
-            solution meticulously tailored to your unique requirements.
-            `)}
+              {t("upper_desc3")}
             </p>
           </div>
         </div>

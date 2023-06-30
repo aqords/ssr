@@ -51,11 +51,9 @@ const InfoCard: React.FC<ComponentProps> = ({
           {img ? <Image src={img} className={imgStyle} alt="" /> : ""}
         </div>
         <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
-          <h3 className="text-[32px] mb-[2px] md:text-[40px]">
-            {t(`${title}`)}
-          </h3>
+          <h3 className="text-[32px] mb-[2px] md:text-[40px]">{t(title)}</h3>
           <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px] mt-[15px]">
-            {t(`${clampString(desc)}`)}
+            {t(clampString(desc))}
           </p>
           <Link href={href}>
             <Button
@@ -64,7 +62,7 @@ const InfoCard: React.FC<ComponentProps> = ({
               }
             >
               <p className="mx-[110px] my-[10px] md:mx-[55px] md:my-[10px] md:text-[20px] font-man">
-                {t("View more")}
+                {t("infocard_view")}
               </p>
             </Button>
           </Link>

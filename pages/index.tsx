@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import Homepage from "./homepage";
 
@@ -8,11 +10,7 @@ export default function Home({ image }: any) {
   return (
     <>
       <Head>
-        <title>
-          {t(
-            "Aqords - Empowering Carriers, Shippers and Freight Forwarders with Real-Time DEFI Payments"
-          )}
-        </title>
+        <title>{t("home_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
@@ -20,4 +18,12 @@ export default function Home({ image }: any) {
       <Homepage />
     </>
   );
+}
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
 }

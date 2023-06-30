@@ -11,38 +11,38 @@ interface Link {
 
 export const linksForDesktop: Link[] = [
   {
-    name: "Home",
-    path: Routes[0].path,
+    name: "home",
+    path: "/homepage",
   },
   {
-    name: "About",
-    path: Routes[1].path,
+    name: "about",
+    path: "/about",
   },
   {
-    name: "Manifesto",
-    path: Routes[2].path,
+    name: "manifesto",
+    path: "/manifesto",
   },
   {
-    name: "How it works",
-    path: Routes[3].path,
+    name: "how_it_works",
+    path: "/howitworks",
   },
   {
-    name: "Whitepaper",
-    path: Routes[4].path,
+    name: "whitepaper",
+    path: "/whitepaper",
   },
   {
-    name: "Team",
-    path: Routes[5].path,
+    name: "team",
+    path: "/team",
   },
   {
-    name: "Road map",
-    path: Routes[6].path,
+    name: "road_map",
+    path: "/roadmap",
   },
 ];
 export const linksForMobile: Link[] = [
   {
-    name: "Home",
-    path: Routes[0].path,
+    name: "how_it_does_works?",
+    path: "/howitworks",
     bgLight:
       "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
   },
@@ -54,29 +54,30 @@ export const linksForMobile: Link[] = [
       "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
   },
   {
-    name: "Manifesto",
-    path: Routes[2].path,
+    name: "manifesto",
+    path: "/manifesto",
     url: manifesto,
     bgLight:
       "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
   },
   {
-    name: "How it does works?",
-    path: Routes[3].path,
+    name: "whitepaper",
+    path: "/whitepaper",
     bgLight:
       "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
   },
 
   {
-    name: "Whitepapper",
-    path: Routes[4].path,
+    name: "road_map",
+    path: "/roadmap",
     bgLight:
       "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
   },
 
   {
-    name: "Our team",
-    path: Routes[5].path,
+    name: "about_us",
+    path: "/about",
+    url: about,
     bgLight:
       "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
   },

@@ -48,14 +48,14 @@ const WhyAqordsItem = ({
           />
 
           <h3 className="text-2xl md:text-[40px]  font-bold text-white  leading-[64px] tracking-[-0.05rem] ">
-            {t(`${title}`)}
+            {t(title)}
           </h3>
         </div>
         <p className=" font-man mb-[25px] font-normal md:mb-[38px] md:text-[20px] tracking-[-0.4px] leading-[1.9rem]">
-          {t(`${description}`)}
+          {t(description)}
         </p>
         <p className="text-gray font-man font-normal text-base tracking-[-0.3px] leading-[1.63rem]">
-          {t(`${text}`)}
+          {t(text)}
         </p>
       </div>
     </li>

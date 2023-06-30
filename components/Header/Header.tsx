@@ -46,7 +46,7 @@ const Header = () => {
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
-          <button className="px-[30px]">{t("Connect wallet")}</button>
+          <button className="px-[30px]">{t("connect_wallet")}</button>
         </Button>
       </div>
       <nav>
@@ -59,7 +59,7 @@ const Header = () => {
                   href={obj.path}
                   className="font-man relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
                 >
-                  <p>{t(`${obj.name}`)}</p>
+                  <p>{t(obj.name)}</p>
 
                   {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
 
@@ -68,7 +68,7 @@ const Header = () => {
                   ) : (
                     ""
                   )}
-                  {obj.name === "About US" ? (
+                  {obj.name === "About Us" ? (
                     <div className="absolute top-[-90px] right-[-80px] w-[183px] h-[183px] opacity-40 background-light"></div>
                   ) : (
                     ""
@@ -109,7 +109,7 @@ const Header = () => {
                 key={obj.path}
                 className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent  hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
               >
-                <Link href={obj.path}>{t(`${obj.name}`)}</Link>
+                <Link href={obj.path}>{t(obj.name)}</Link>
               </li>
             );
           })}
@@ -120,7 +120,7 @@ const Header = () => {
           }
         >
           <button className="px-[30px] font-man text-sm">
-            {t("Connect wallet")}
+            {t("connect_wallet")}
           </button>
         </Button>
       </nav>

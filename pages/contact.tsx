@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import getServerSideTranslations from "../utils/getServerSideTranslations";
+import { GetStaticPropsContext } from "next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -13,38 +15,32 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>{t("Aqords - Contact Us")}</title>
+        <title>{t("contact_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
       <BlockWithBackground
-        title="Contact Us"
-        desc1="We would love to hear from you!"
-        desc2="If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Our dedicated team is here to assist you."
+        title="contact_page_title1"
+        desc1="contact_page_desc1"
+        desc2="contact_page_desc2"
         blockStyle="bg-[#0A090F] h-[479px] lg:h-[560px]"
       />
       <section className="bg-[#19191A]">
         <div className="container py-[40px] md:py-[120px]">
           <p className=" md:text-[20px] max-w-[532px] font-man mb-[40px]">
-            {t(
-              "Please fill out the contact form below and we will get back to you as soon as possible."
-            )}
+            {t("contact_page_desc3")}
           </p>
           <p className="text-[14px] leading-[25px] tracking-[0.3px] text-[#838383] font-man">
-            {t("We value your input and look forward to connecting with you.")}
+            {t("contact_page_desc4")}
           </p>
           <ContactForm />
           <p className="md:text-[20px] leading-[25px]   font-man mb-[45px]">
-            {t(
-              "We are excited to announce the launch of AQORDS pre-sale, an exclusive opportunity for early investors to participate in our groundbreaking logistics and supply chain platform."
-            )}
+            {t("contact_page_desc5")}
           </p>
           <p className="text-[14px] leading-[25px] tracking-[0.3px] text-[#838383] font-man">
-            {t(
-              "As a pre-sale investor, you will have the chance to be part of the future of freight transportation."
-            )}
+            {t("contact_page_desc6")}
           </p>
         </div>
       </section>
@@ -53,5 +49,13 @@ const contact = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      ...(await getServerSideTranslations(locale)),
+    },
+  };
+}
 
 export default contact;
