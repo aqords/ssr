@@ -1,18 +1,14 @@
 const whitepapper = [
   {
     id: "section1",
-    mainTitle: "1. Introduction",
-    text1:
-      "The transportation industry plays a critical role in global commerce, facilitating the movement of goods across borders and connecting businesses to markets. However, this industry faces various challenges such as inefficient processes, lack of transparency, delayed payments, and disputes.",
-    text2:
-      "To overcome these obstacles and drive innovation, there is a growing need for transformative solutions that can revolutionize the freight transportation landscape. In this context, blockchain technology emerges as a promising enabler, offering enhanced security, transparency, and efficiency. This white paper explores the application of blockchain in the freight transportation industry and introduces AQORDS as a groundbreaking platform that leverages this technology to redefine the way contracts are executed, payments are processed, and trust is established between stakeholders.",
+    mainTitle: "wpconst_sec1_title1",
+    text1: "wpconst_sec1_text1",
+    text2: "wpconst_sec1_text2",
     body: [
       {
-        subtitle: "1.1 The Freight Transportation Landscape",
-        text1:
-          "The freight transportation landscape is a complex ecosystem involving multiple parties, including shippers, carriers, freight forwarders, freight exchanges, and supply chain partners. Traditionally, this industry has relied on manual processes, paper-based documentation, and fragmented systems, leading to inefficiencies, delays, and increased costs. ",
-        text2:
-          "The increasing volume of global trade and the need for faster, more reliable transportation solutions have highlighted the urgency for innovation. The traditional methods of contract execution, payment processing, and dispute resolution have proven to be inadequate, hindering the growth and sustainability of the industry.",
+        subtitle: "wpconst_sec1_body_subtitle1",
+        text1: "wpconst_sec1_body_text1",
+        text2: "wpconst_sec1_body_text2",
 
         text3: null,
         text4: null,
@@ -26,14 +22,12 @@ const whitepapper = [
         ],
       },
       {
-        subtitle: "1.2 The Need for Innovation",
-        text1:
-          "The Need for Innovation The need for innovation in the freight transportation industry has become imperative to address the existing challenges and unlock new opportunities. Stakeholders are seeking solutions that can streamline processes, improve transparency, enhance security, and enable faster and more efficient transactions. ",
+        subtitle: "wpconst_sec1_body_subtitle2",
+        text1: "wpconst_sec1_body_text3",
 
         text3: null,
         text4: null,
-        text2:
-          "These characteristics make blockchain an ideal solution for addressing the challenges faced by the freight transportation industry. Blockchain technology can enable trustless transactions, automate processes through smart contracts, enhance track-and-trace capabilities, and provide a secure and auditable record of all interactions. AQORDS harnesses the power of blockchain to transform the freight transportation landscape and unlock new possibilities for stakeholders.",
+        text2: "wpconst_sec1_body_text4",
         underlist: [
           {
             title: null,
@@ -44,11 +38,9 @@ const whitepapper = [
         ],
       },
       {
-        subtitle: "1.3 The Role of Blockchain",
-        text1:
-          "Blockchain technology has emerged as a disruptive force in various industries, offering unique features that can revolutionize the way transactions are conducted, recorded, and verified. By leveraging decentralized networks, cryptographic algorithms, and consensus mechanisms, blockchain provides a secure, transparent, and immutable infrastructure for executing and recording transactions. These characteristics make blockchain an ideal solution for addressing the challenges faced by the freight transportation industry. ",
-        text2:
-          "Blockchain technology can enable trustless transactions, automate processes through smart contracts, enhance track-and-trace capabilities, and provide a secure and auditable record of all interactions. AQORDS harnesses the power of blockchain to transform the freight transportation landscape and unlock new possibilities for stakeholders.",
+        subtitle: "wpconst_sec1_body_subtitle3",
+        text1: "wpconst_sec1_body_text5",
+        text2: "wpconst_sec1_body_text6",
 
         text3: null,
         text4: null,
@@ -65,7 +57,7 @@ const whitepapper = [
   },
   {
     id: "section2",
-    mainTitle: "2. AQORDS Technology",
+    mainTitle: "wpconst_sec2_title1",
     text1: null,
     text2: null,
     body: [

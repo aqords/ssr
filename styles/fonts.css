@@ -8,6 +8,7 @@
     url("../public/assets/Fonts/AmpleSoftPro-Bold.woff") format("woff"),
     url("../public/assets/Fonts/AmpleSoftPro-Bold.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -20,6 +21,7 @@
     url("../public/assets/Fonts/AmpleSoftPro-Medium.woff2") format("woff2"),
     url("../public/assets/Fonts/AmpleSoftPro-Medium.woff") format("woff"),
     url("../public/assets/Fonts/AmpleSoftPro-Medium.ttf") format("truetype");
+  font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
@@ -72,6 +74,7 @@
     url("../public/assets/Fonts/AmpleSoftPro-Regular.woff2") format("woff2"),
     url("../public/assets/Fonts/AmpleSoftPro-Regular.woff") format("woff"),
     url("../public/assets/Fonts/AmpleSoftPro-Regular.ttf") format("truetype");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -80,6 +83,7 @@
   font-family: "Manrope";
   src: local("Manrope-Regular"),
     url("../public/assets/Fonts/Manrope-Regular.ttf") format("truetype");
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
@@ -94,6 +98,7 @@
   font-family: "Manrope";
   src: local("Manrope-Medium"),
     url("../public/assets/Fonts/Manrope-Medium.ttf") format("truetype");
+  font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
@@ -101,6 +106,7 @@
   font-family: "Manrope";
   src: local("Manrope-Light"),
     url("../public/assets/Fonts/Manrope-Light.ttf") format("truetype");
+  font-display: swap;
   font-weight: 300;
   font-style: normal;
 }
@@ -115,6 +121,7 @@
   font-family: "Manrope";
   src: local("Manrope-Bold"),
     url("../public/assets/Fonts/Manrope-Bold.ttf") format("truetype");
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
 }

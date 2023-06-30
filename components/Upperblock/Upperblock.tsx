@@ -48,8 +48,10 @@ const Upperblock = () => {
         </Link>
 
         <Image
+          sizes="50vw"
           className="mt-[100px] mb-[39px]"
           src={aqordsLogo}
+          priority
           alt="AQORDS Logo"
         />
         <AnimatedText
@@ -71,8 +73,10 @@ const Upperblock = () => {
         </p>
         <div className="flex justify-center gap-[35px] lg:gap-[105px] flex-wrap">
           <Image
+            sizes="50vw"
             className="rounded-[20px] w-[447px] h-[auto] md:w-[532px] md:h-[352px]"
             src={truck2}
+            priority
             alt="turck2"
           />
           <div>
@@ -88,6 +92,7 @@ const Upperblock = () => {
         </div>
       </section>
       <Image
+        sizes="50vw"
         className="absolute px-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck1"

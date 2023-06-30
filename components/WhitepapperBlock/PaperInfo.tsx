@@ -45,7 +45,7 @@ const Whitepapper = () => {
               </p>
             </div>
             <div className="mt-[40px] ">
-              <Image src={whitepapperimg} alt="image" />
+              <Image sizes="50vw" src={whitepapperimg} alt="image" />
             </div>
           </div>
         </div>

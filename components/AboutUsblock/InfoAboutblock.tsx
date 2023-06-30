@@ -24,6 +24,7 @@ const InfoAboutblock = () => {
           <Image
             className="absolute px-[12px]  left-1/2 transform -translate-x-1/2 "
             alt="gradient"
+            sizes="50vw"
             src={gradient1}
             width={1084}
             height={375}
@@ -44,6 +45,7 @@ const InfoAboutblock = () => {
               className="hidden lg:block"
               alt="gradient2"
               src={gradient2}
+              sizes="50vw"
               width={440}
               height={576}
             />

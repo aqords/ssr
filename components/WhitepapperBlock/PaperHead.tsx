@@ -50,6 +50,7 @@ const WhitePapperHead = () => {
           </div>
           <div className="w-full ">
             <Image
+              sizes="50vw"
               className="rounded-[20px] lg:rounded-none"
               src={circle}
               // className="absolute top-0  right-[15%] h-[580px] "

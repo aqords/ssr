@@ -326,7 +326,7 @@
 
 "@next/env@12.3.2-canary.43":
   version "12.3.2-canary.43"
-  resolved "https://registry.npmjs.org/@next/env/-/env-12.3.2-canary.43.tgz"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.3.2-canary.43.tgz#a2b9dde22166ddc9419b40ab9bba5c01d4e4d97f"
   integrity sha512-Sb+EIjatpJ6MGPxM4vbOu1Psq7ARCPtmJCDAFGSQMDz4PZbPK649pzdj8D7SlFgZNdKMcr33urKutbGR4s6hUQ==
 
 "@next/eslint-plugin-next@13.1.1":
@@ -335,6 +335,11 @@
   integrity sha512-SBrOFS8PC3nQ5aeZmawJkjKkWjwK9RoxvBSv/86nZp0ubdoVQoko8r8htALd9ufp16NhacCdqhu9bzZLDWtALQ==
   dependencies:
     glob "7.1.7"
+
+"@next/font@^13.4.7":
+  version "13.4.7"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.4.7.tgz#32f9e2c4a856e23370d2be4b46eddaccce11b88d"
+  integrity sha512-l28ifb3pjKznQeXmiCD5VXkmqdpMrcUQMr4ZChAgTKrjckl/aGyRLOIlL/ABhTHmzMujdt/TTWUsdABArNK5gA==
 
 "@next/swc-android-arm-eabi@12.3.2-canary.43":
   version "12.3.2-canary.43"
@@ -353,7 +358,7 @@
 
 "@next/swc-darwin-x64@12.3.2-canary.43":
   version "12.3.2-canary.43"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.3.2-canary.43.tgz"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-12.3.2-canary.43.tgz#14e3723419d72cb00c24d5549fc6aa5ed83d79d1"
   integrity sha512-cWrlfaIx2WkFfl5+TGf09zvgNsij8cTOJ5io1ILHzKt9rTOrr39tK5jk5HYfF5QhKVS4Dw2GHUj7L74xEKqznA==
 
 "@next/swc-freebsd-x64@12.3.2-canary.43":
@@ -446,7 +451,7 @@
 
 "@swc/helpers@0.4.11":
   version "0.4.11"
-  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.11.tgz"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.11.tgz#db23a376761b3d31c26502122f349a21b592c8de"
   integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
   dependencies:
     tslib "^2.4.0"
@@ -1789,31 +1794,6 @@ i18next@^21.8.13:
   dependencies:
     "@babel/runtime" "^7.17.2"
 
-i18next@^23.2.3:
-  version "23.2.3"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.2.3.tgz#d89930f0ce343fad2bee0d3c2188f42171a91cdd"
-  integrity sha512-5spO7L0rNmW0jFuNhz+gfirlFt1anle4mTy4+gFkgsH0+T3R5++4oncBrzeKa7v8pweRyGBoGmOpboqlxovg6A==
-  dependencies:
-    "@babel/runtime" "^7.22.5"
-iconv-lite@^0.6.2:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.6.3.tgz#a52f80bf38da1952eb5c681790719871a1a72501"
-  integrity sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==
-  dependencies:
-    safer-buffer ">= 2.1.2 < 3.0.0"
-
-ieee754@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
-  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
-
-ignore-walk@^6.0.0:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/ignore-walk/-/ignore-walk-6.0.3.tgz#0fcdb6decaccda35e308a7b0948645dd9523b7bb"
-  integrity sha512-C7FfFoTA+bI10qfeydT8aZbvr91vAEU+2W5BZUlzPec47oNb07SsOfwYrtxuvOYdUApPP/Qlh4DtAO51Ekk2QA==
-  dependencies:
-    minimatch "^9.0.0"
-
 ignore@^5.2.0:
   version "5.2.4"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.4.tgz"
@@ -2388,7 +2368,7 @@ next-i18next@^11.0.0:
 
 next@12.3.2-canary.43:
   version "12.3.2-canary.43"
-  resolved "https://registry.npmjs.org/next/-/next-12.3.2-canary.43.tgz"
+  resolved "https://registry.yarnpkg.com/next/-/next-12.3.2-canary.43.tgz#5ca70f0f948a5712c367bef7fd0f38cfcd94152f"
   integrity sha512-NgKLhMndPIL2DJEPfzONjSLpW+pl4YFzRp/DhYMgtYjOi5auYoM0SA9f3IJBN39PsFuyfNgJkTxiHtQ6q/T1MA==
   dependencies:
     "@next/env" "12.3.2-canary.43"
@@ -3331,7 +3311,7 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
 
 styled-jsx@5.1.0:
   version "5.1.0"
-  resolved "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-5.1.0.tgz#4a5622ab9714bd3fcfaeec292aa555871f057563"
   integrity sha512-/iHaRJt9U7T+5tp6TRelLnqBqiaIT0HsO0+vgyj8hK2KUk7aejFqRrumqPUlAqDwAj8IbS/1hk3IhBAAK/FCUQ==
   dependencies:
     client-only "0.0.1"
@@ -3512,7 +3492,7 @@ uri-js@^4.2.2:
 
 use-sync-external-store@1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 util-deprecate@^1.0.2:

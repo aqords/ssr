@@ -36,9 +36,14 @@ const Header = () => {
       <div className="flex container justify-between items-center h-[60px] mb-[12px]">
         <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
           {isOpenBurger ? (
-            <Image className="scale-305" src={closeburg} alt="menu" />
+            <Image
+              sizes="50vw"
+              className="scale-305"
+              src={closeburg}
+              alt="menu"
+            />
           ) : (
-            <Image src={burger} alt="menu" />
+            <Image sizes="50vw" src={burger} alt="menu" />
           )}
         </button>
         <Button
@@ -64,7 +69,12 @@ const Header = () => {
                   {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
 
                   {obj.url ? (
-                    <Image className="m-[-19px]" src={obj.url} alt="logo" />
+                    <Image
+                      sizes="50vw"
+                      className="m-[-19px]"
+                      src={obj.url}
+                      alt="logo"
+                    />
                   ) : (
                     ""
                   )}
@@ -98,7 +108,13 @@ const Header = () => {
         >
           <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
             <div className="rounded-[8px] w-full bg-black p-[1px]">
-              <Image src={logo} width={52} height={50} alt="aqords logo" />
+              <Image
+                sizes="50vw"
+                src={logo}
+                width={52}
+                height={50}
+                alt="aqords logo"
+              />
             </div>
           </div>
         </Link>

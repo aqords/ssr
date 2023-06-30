@@ -35,6 +35,7 @@ const WhyAqordsItem = ({
         <div className="md:mb-[60px] mb-[30px]">
           <Image
             src={topicon}
+            sizes="50vw"
             className=" tracking-[-0.04em] font-light text-6xl w-[16px] h-[30px] md:w-[35px] md:h-[48px]
           "
             alt="number icon"
@@ -44,6 +45,7 @@ const WhyAqordsItem = ({
           <Image
             src={icon}
             alt="icon"
+            sizes="50vw"
             className="w-[38px] h-[40px] md:w-[76px] md:h-[78px]"
           />
 

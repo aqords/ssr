@@ -16,7 +16,12 @@ const TeamCard = ({ img, name, position, skills, desc }: TeamCardProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-[60px] md:gap-[116px] mb-[60px] md:mb-[110px]">
       {img ? (
-        <Image className="w-[160px] h-[160px]" src={img} alt="avatar" />
+        <Image
+          sizes="50vw"
+          className="w-[160px] h-[160px]"
+          src={img}
+          alt="avatar"
+        />
       ) : (
         ""
       )}

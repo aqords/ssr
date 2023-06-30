@@ -71,7 +71,7 @@ const Footer = () => {
               <ul>
                 {LinksForLearn.map((obj) => (
                   <li
-                    className=" leading-[42px] md:leading-[27px] lg:leading-[20px] mb-[12px] font-man mb-[12px] leading-[20px] text-[#A1A1A6] bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% hover:gradient-brown-yellow hover:cursor-pointer"
+                    className="md:leading-[27px] lg:leading-[20px] mb-[12px] font-man leading-[20px] text-[#A1A1A6] bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% hover:gradient-brown-yellow hover:cursor-pointer"
                     key={obj.path}
                   >
                     <Link className="text-[14px]" href={obj.path}>
