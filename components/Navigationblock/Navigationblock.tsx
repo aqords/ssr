@@ -66,7 +66,7 @@ const Navigationblock = () => {
               desc={NavigationblockData[1].desc}
               img={NavigationblockData[1].url}
               imgStyle={
-                "relative top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
+                "relative flex justify-between top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
               }
               imgWrapper={
                 "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"

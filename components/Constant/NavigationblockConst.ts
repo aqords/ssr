@@ -18,6 +18,7 @@ export const NavigationblockData: Data[] = [
   {
     title: "navblock2_title",
     desc: "navblock2_desc",
+    url: planet,
   },
   {
     title: "navblock3_title",

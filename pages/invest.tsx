@@ -26,9 +26,9 @@ const invest = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        title="Invest in AQORDS Pre-Sale"
-        desc1="We are excited to announce the launch of AQORDS pre-sale, an exclusive opportunity for early investors to participate in our groundbreaking logistics and supply chain platform."
-        desc2="As a pre-sale investor, you will have the chance to be part of the future of freight transportation and benefit from our innovative solutions."
+        title="invest_page_title1"
+        desc1="invest_page_desc1"
+        desc2="invest_page_desc2"
         blockStyle="bg-gray h-[479px] lg:h-[807px]"
       />
       <div className="bg-[#19191A]">
@@ -43,8 +43,8 @@ const invest = () => {
         <WhyAqordsList itemsArray={detailInvestList} />
       </div>
       <BlockWithBackground
-        title="Take the first step towards becoming an investor in AQORDS by contacting us today."
-        desc1="Together, let's shape the future of logistics and supply chain management."
+        title="invest_page_title2"
+        desc1="invest_page_desc3"
         blockStyle="bg-gray h-[390px] lg:h-[807px]"
       />
       <Navigationblock />
