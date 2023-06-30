@@ -26,9 +26,9 @@ const invest = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        title="invest_page_title1"
-        desc1="invest_page_desc1"
-        desc2="invest_page_desc2"
+        title={t("invest_page_title1")}
+        desc1={t("invest_page_desc1")}
+        desc2={t("invest_page_desc2")}
         blockStyle="bg-gray h-[479px] lg:h-[807px]"
       />
       <div className="bg-[#19191A]">
@@ -43,8 +43,8 @@ const invest = () => {
         <WhyAqordsList itemsArray={detailInvestList} />
       </div>
       <BlockWithBackground
-        title="invest_page_title2"
-        desc1="invest_page_desc3"
+        title={t("invest_page_title2")}
+        desc1={t("invest_page_desc3")}
         blockStyle="bg-gray h-[390px] lg:h-[807px]"
       />
       <Navigationblock />

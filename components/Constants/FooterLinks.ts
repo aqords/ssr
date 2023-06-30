@@ -8,32 +8,32 @@ interface Link {
 export const LinksForLearn: Link[] = [
   {
     name: "about",
-    path: "/about",
+    path: Routes[1].path,
   },
   {
     name: "how_it_works",
-    path: "/howitworks",
+    path: Routes[3].path,
   },
   {
     name: "manifesto",
-    path: "/manifesto",
+    path: Routes[2].path,
   },
   {
     name: "whitepaper",
-    path: "/whitepaper",
+    path: Routes[4].path,
   },
 ];
 export const LinkForExplore: Link[] = [
   {
     name: "road_map",
-    path: "/roadmap",
+    path: Routes[6].path,
   },
   {
     name: "team",
-    path: "/team",
+    path: Routes[5].path,
   },
   {
     name: "contact_us",
-    path: "/contact",
+    path: Routes[7].path,
   },
 ];

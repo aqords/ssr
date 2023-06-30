@@ -68,7 +68,7 @@ const Header = () => {
                   ) : (
                     ""
                   )}
-                  {obj.name === "About Us" ? (
+                  {obj.name === "about" ? (
                     <div className="absolute top-[-90px] right-[-80px] w-[183px] h-[183px] opacity-40 background-light"></div>
                   ) : (
                     ""

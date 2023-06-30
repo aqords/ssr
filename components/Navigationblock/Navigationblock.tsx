@@ -66,20 +66,17 @@ const Navigationblock = () => {
               title={NavigationblockData[1].title}
               desc={NavigationblockData[1].desc}
               href={NavigationblockData[1].href}
+              flex={"flex flex-col justify-between"}
               img={NavigationblockData[1].url}
               imgStyle={
-                "relative flex justify-between top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
+                "relative  top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
               }
               imgWrapper={
                 "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
               }
             />
           )}
-          <div
-            className={`flex ${
-              currentLocation.includes("manifesto") ? "flex-col" : "flex-col"
-            } gap-[18px] flex-wrap`}
-          >
+          <div className={`flex flex-col gap-[18px] flex-wrap`}>
             {currentLocation.includes("whitepaper") ? (
               ""
             ) : (

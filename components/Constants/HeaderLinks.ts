@@ -12,79 +12,76 @@ interface Link {
 export const linksForDesktop: Link[] = [
   {
     name: "home",
-    path: "/homepage",
+    path: Routes[0].path,
   },
   {
     name: "about",
-    path: "/about",
+    path: Routes[1].path,
   },
   {
     name: "manifesto",
-    path: "/manifesto",
+    path: Routes[2].path,
   },
   {
     name: "how_it_works",
-    path: "/howitworks",
+    path: Routes[3].path,
   },
   {
     name: "whitepaper",
-    path: "/whitepaper",
+    path: Routes[4].path,
   },
   {
     name: "team",
-    path: "/team",
+    path: Routes[5].path,
   },
   {
     name: "road_map",
-    path: "/roadmap",
+    path: Routes[6].path,
   },
 ];
 export const linksForMobile: Link[] = [
   {
-    name: "how_it_does_works?",
-    path: "/howitworks",
+    name: "home",
+    path: Routes[0].path,
     bgLight:
-      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
   },
   {
-    name: "About US",
+    name: "about",
     path: Routes[1].path,
     url: about,
     bgLight:
-      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-40 background-light",
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
   },
   {
     name: "manifesto",
-    path: "/manifesto",
+    path: Routes[2].path,
     url: manifesto,
     bgLight:
-      "absolute top-[90px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light",
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
+  },
+  {
+    name: "how_it_does_works",
+    path: Routes[3].path,
+    bgLight:
+      "absolute top-[40px] left-[-115px] w-[181px] h-[316px] opacity-50 background-light",
   },
   {
     name: "whitepaper",
-    path: "/whitepaper",
+    path: Routes[4].path,
     bgLight:
-      "absolute top-[100px] left-[-85px] w-[181px] h-[193px] opacity-40 background-light ",
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
   },
-
+  {
+    name: "team",
+    path: Routes[5].path,
+    bgLight:
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
+  },
   {
     name: "road_map",
-    path: "/roadmap",
-    bgLight:
-      "absolute top-[70px] left-[-50px] w-[181px] h-[92px] opacity-40 background-light",
-  },
-
-  {
-    name: "about_us",
-    path: "/about",
-    url: about,
-    bgLight:
-      "absolute top-[50px] left-[-65px] w-[181px] h-[316px] opacity-40 background-light",
-  },
-  {
-    name: "Road map",
     path: Routes[6].path,
     bgLight:
-      "absolute top-[70px] left-[-75px] w-[181px] h-[316px] opacity-40 background-light",
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
   },
 ];

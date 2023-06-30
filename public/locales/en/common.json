@@ -128,6 +128,10 @@
   "detail_invest3_text": "Our team is ready to assist you and provide the necessary information to help you get started.",
   "form_email_error": "Enter a valid email",
   "form_characters_error": "Max characters limit",
+  "form_characters_error_min_sub": "Subject must be min. 10 characters.",
+  "form_characters_error_min_mes": "Your message must contain min. 10 characters.",
+  "form_characters_error_min_name": "Your name must contain min. 2 characters.",
+  "why_invest": "Why Invest in AQORDS?",
   "contact_form_title": "Get in touch",
   "contact_form_desc1": "Ask your questions and leave your feedback.",
   "contact_form_desc2": "We will be more than happy to reply back with any info you might need.",
@@ -214,7 +218,6 @@
   "team_page_desc5": "We are dedicated to creating a culture of excellence, innovation,and continuous learning within AQORDS. Our team is fueled by a passion for disruptive technologies and a commitment to delivering exceptional value to our users.",
   "team_page_desc6": "Together, we are shaping the future of freight transportation and unlocking new possibilities for the industry.",
   "team_page_desc7": "TJoin us on this exciting journey as we revolutionize the way supply chains operate and pave the way for a more efficient, transparent,and secure future.",
-
   "infocard_view": "View more",
   "info_about_block_desc1": "Driven by our passion for disruptive technologies, we have embarked on a remarkable journey to create a decentralized smart contract platform specifically designed for the needs of the freight transportation industry. Our team combines extensive experience in supply chains, blockchain technology, decentralized finance (DeFi), and online marketplaces, enabling us to tackle the complex challenges faced by the industry head-on.",
   "info_about_block_desc2": "As trailblazers in this field, we understand the pain points and inefficiencies that plague traditional freight transportation processes. Outdated systems, manual paperwork, delayed payments, and a lack of transparency have long hindered the industry's potential. That's why we set out to develop a platform that transforms these challenges into opportunities for growth, operational excellence, and financial empowerment.",
