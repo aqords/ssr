@@ -16,7 +16,7 @@ const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
   desc2,
   img,
   imgStyle,
-  blockStyle = "bg-gray h-[479px] lg:h-[807px]",
+  blockStyle = "bg-gray ",
 }) => {
   return (
     <section className={blockStyle}>

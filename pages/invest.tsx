@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer.Component";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
@@ -34,7 +34,7 @@ const invest = () => {
       <div className="bg-[#19191A]">
         <div className="container py-[40px] md:py-[130px]">
           <h3 className="md:text-[48px] text-[32px] font-bold tracking-[-1.5px] md:mb-[10px]">
-            Why Invest in AQORDS?
+            {t("why_invest")}
           </h3>
           <WhyAqordsList itemsArray={whyInvestList} />
         </div>

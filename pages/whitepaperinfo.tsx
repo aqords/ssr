@@ -4,9 +4,9 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import Whitepapper from "../components/WhitepapperBlock/WhitePepperInfo";
+import Whitepaper from "../components/WhitepapperBlock/PaperInfo";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer.Component";
 
 const whitepapperinfo = () => {
   const { t } = useTranslation();
@@ -20,7 +20,7 @@ const whitepapperinfo = () => {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <Whitepapper />
+      <Whitepaper />
       <Footer />
     </>
   );

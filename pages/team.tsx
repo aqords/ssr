@@ -5,7 +5,7 @@ import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 import Image from "next/image";
 
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer.Component";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";

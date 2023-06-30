@@ -1,9 +1,11 @@
 import React from "react";
-import Button from "../UI/Button/Button";
-import circle from "/public/assets/images/circle.png";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
+
+import { Routes } from "../Constant/Routes";
+import Button from "../UI/Button/Button";
+import circle from "/public/assets/images/circle.png";
 
 const WhitePapperHead = () => {
   const { t } = useTranslation();
@@ -35,9 +37,9 @@ const WhitePapperHead = () => {
                   "hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
                 }
               >
-                <button className="mx-[102px] sm:mx-[54px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
+                <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
                   <Link
-                    href="/whitepapperinfo"
+                    href={Routes[9].path}
                     className="font-man font-normal text-[16px]"
                   >
                     {t("whitepaper_open")}

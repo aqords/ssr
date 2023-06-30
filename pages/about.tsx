@@ -4,12 +4,12 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import InfoAboutblock from "../components/AboutUsblock/InfoAboutblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import aboutusbg from "../public/assets/images/about-bg.svg";
+import aboutusbg from "../public/assets/images/aboutbg.png";
+import Footer from "../components/Footer/Footer.Component";
+import Header from "../components/Header/Header";
 
 const about = () => {
   const { t } = useTranslation();

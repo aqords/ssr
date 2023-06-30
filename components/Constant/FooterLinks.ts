@@ -1,3 +1,5 @@
+import { Routes } from "../Constant/Routes";
+
 interface Link {
   name: string;
   path: string;
