@@ -34,12 +34,7 @@ const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
         </div>
       </div>
       {img ? (
-        <Image
-          className={imgStyle}
-          src={img}
-          sizes="50vw"
-          alt="backgroundimage"
-        />
+        <Image className={imgStyle} priority src={img} alt="backgroundimage" />
       ) : (
         ""
       )}

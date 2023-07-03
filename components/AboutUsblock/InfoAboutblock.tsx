@@ -24,7 +24,6 @@ const InfoAboutblock = () => {
           <Image
             className="absolute px-[12px]  left-1/2 transform -translate-x-1/2 "
             alt="gradient"
-            sizes="50vw"
             src={gradient1}
             width={1084}
             height={375}
@@ -55,9 +54,9 @@ const InfoAboutblock = () => {
         <div className="bg-[#202020] ">
           <div className=" py-[48px] lg:py-[92px] container">
             <div className="max-w-[440px]">
-              <h1 className="leading-[2.8rem] lg:leading-[3.8rem]   font-bold text-[32px] lg:text-[48px]  mb-[30px] tracking-[-1.5px]">
+              <h2 className="leading-[2.8rem] lg:leading-[3.8rem]   font-bold text-[32px] lg:text-[48px]  mb-[30px] tracking-[-1.5px]">
                 {t("info_about_block_desc5")}
-              </h1>
+              </h2>
               <p className="font-normal text-[16px] lg:text-[20px] font-man max-w-[532px] leading-6 md:leading-8 tracking-[-0.42px] ">
                 {t("info_about_block_desc6")}
               </p>

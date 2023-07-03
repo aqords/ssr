@@ -94,22 +94,22 @@
   font-weight: 600;
   font-style: normal;
 } */
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: local("Manrope-Medium"),
     url("../public/assets/Fonts/Manrope-Medium.ttf") format("truetype");
   font-display: swap;
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Manrope";
   src: local("Manrope-Light"),
     url("../public/assets/Fonts/Manrope-Light.ttf") format("truetype");
   font-display: swap;
   font-weight: 300;
   font-style: normal;
-}
+} */
 /* @font-face {
   font-family: "Manrope";
   src: local("Manrope-ExtraLight"),
@@ -117,11 +117,11 @@
   font-weight: 200;
   font-style: normal;
 } */
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: local("Manrope-Bold"),
     url("../public/assets/Fonts/Manrope-Bold.ttf") format("truetype");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-}
+} */

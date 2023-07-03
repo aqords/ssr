@@ -6,7 +6,7 @@ import { GetStaticPropsContext } from "next";
 
 import Whitepaper from "../components/WhitepapperBlock/PaperInfo";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 
 const whitepapperinfo = () => {
   const { t } = useTranslation();

@@ -8,7 +8,7 @@ import { GetStaticPropsContext } from "next";
 import Accordion from "../components/Accordion/Accordion";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import { HowItWorksData } from "../components/Constants/HowItWorks";
 

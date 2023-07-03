@@ -18,7 +18,7 @@ const Whitepapper = () => {
       setShowButton(scrollPosition > threshold);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,9 +32,9 @@ const Whitepapper = () => {
     <>
       <section className="container">
         <div className="container pt-[0px] pb-[0px] smx:pt-[60px] smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
-          <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
+          <h2 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_info_title1")}
-          </h1>
+          </h2>
           <div className="flex flex-col items-center lg:flex-row lg:justify-between">
             <div className=" max-w-[525px]">
               <p className="font-man text-[18px] lg:text-[20px] leading-[1.5rem] lg:leading-[2rem] lg:tracking-[-0.45px] mb-[35px]">

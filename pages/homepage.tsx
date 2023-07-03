@@ -9,7 +9,7 @@ import Navigationblock from "../components/Navigationblock/Navigationblock";
 import WhyAqords from "../components/WhyAqords/WhyAqords";
 import { whyAqordsList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 
 const Homepage = () => {
   const { t } = useTranslation();

@@ -29,7 +29,7 @@ const Footer = () => {
               autoComplete="email"
               type="text"
               placeholder={t("footer_enter_email")}
-              className="text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
+              className="focus:focusInput text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
             />
             <FooterButton>{t("footer_subscribe2")}</FooterButton>
           </form>

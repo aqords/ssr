@@ -8,7 +8,7 @@ import Navigationblock from "../components/Navigationblock/Navigationblock";
 import InfoAboutblock from "../components/AboutUsblock/InfoAboutblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import aboutusbg from "../public/assets/images/aboutbg.png";
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const about = () => {

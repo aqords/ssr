@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import WhitePaperHead from "../components/WhitepapperBlock/PaperHead";

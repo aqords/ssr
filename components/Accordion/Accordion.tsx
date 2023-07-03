@@ -35,7 +35,7 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
           }   from-[#b5713f]  to-[#c6b38a] p-[1px]`}
         >
           <Image
-            className={`duration-500 rotate-${isOpen ? "180" : "0"}`}
+            className={`duration-500 ${isOpen ? "rotate-180" : "rotate-0"}`}
             src={arrow}
             sizes="50vw"
             alt="arrow-button"

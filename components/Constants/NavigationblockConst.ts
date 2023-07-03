@@ -1,12 +1,13 @@
+import { StaticImageData } from "next/image";
 import bull from "../../public/assets/images/bull.svg";
-import planet from "../../public/assets/images/planet.svg";
+import planet from "../../public/assets/images/planet.png";
 import { Routes } from "./Routes";
 
 interface Data {
   title: string;
   desc: string;
   href: string;
-  url?: string;
+  url?: StaticImageData;
   bgLight?: string;
 }
 

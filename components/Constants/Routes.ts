@@ -6,7 +6,7 @@ interface Routes {
 export const Routes = [
   {
     name: "Home",
-    path: "/homepage",
+    path: "/",
   },
   {
     name: "About",
