@@ -23,10 +23,10 @@ const roadmap = () => {
         <Header />
         <BlockWithBackground
           title="Roadmap"
-          desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          desc1=""
           desc2="
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-          blockStyle="bg-primary h-[479px] lg:h-[760px] mt-[-30px]"
+       "
+          blockStyle="bg-primary h-[250px] lg:h-[600px] mt-[-30px]"
         />
         <RoadMap />
         <Navigationblock />
