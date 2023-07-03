@@ -121,9 +121,11 @@ const Navigationblock = () => {
             img={NavigationblockData[4].url}
             href={NavigationblockData[4].href}
             imgStyle={
-              "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
+              "relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[0px] lg:top-[0px]"
             }
-            imgWrapper={"w-[274px] h-[318px] scale-[0.85] lg:scale-[1]"}
+            imgWrapper={
+              "w-[274px] md:w-[574px] h-[318px] scale-[0.85] lg:scale-[1]"
+            }
             flex={"flex flex-col items-end md:items-start  lg:flex-row-reverse"}
             bgLight={NavigationblockData[4].bgLight}
           />
