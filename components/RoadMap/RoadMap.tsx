@@ -187,7 +187,7 @@ const RoadMap = () => {
 
         <div
           ref={elementRef2}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[39%] ${
+          className={`absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%] ${
             isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
           }`}
         >
@@ -203,7 +203,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef3}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] ${
+          className={`absolute top-[39%] sml:top-[36%] sm:top-[36%] md:top-[8%] ${
             isScrolled["el-3"] ? "el-3 visible" : "el-3 original"
           }`}
         >
@@ -244,7 +244,7 @@ const RoadMap = () => {
         )} */}
         <div
           ref={elementRef4}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] ${
+          className={`absolute top-[69%] sml:top-[67%] sm:top-[69%] md:top-[70%] ${
             isScrolled["el-4"] ? "el-4 visible" : "el-4 original"
           }`}
         >
@@ -347,7 +347,7 @@ const RoadMap = () => {
 
         <div
           ref={elementRef6}
-          className={`absolute z-[-1] top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] ${
+          className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[8%] ${
             isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
           }`}
         >
@@ -363,7 +363,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef7}
-          className={` absolute z-[-1] top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[37%] ${
+          className={` absolute  top-[35%] sml:top-[33%] sm:top-[34%] md:top-[37%] ${
             isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
           }`}
         >
@@ -379,7 +379,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef8}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[68%] ${
+          className={`absolute top-[65%] sml:top-[63%] sm:top-[67%] md:top-[68%] ${
             isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
           }`}
         >
@@ -477,11 +477,11 @@ const RoadMap = () => {
           // }}
           // id="target-element"
         >
-          <Image src={fullline1} alt="fullline" />
+          <Image src={fullline2} alt="fullline" />
         </div>
         <div
           ref={elementRef10}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[11%] ${
+          className={`absolute top-[10%] sml:top-[4%] sm:top-[5%] md:top-[11%] ${
             isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
@@ -497,7 +497,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef11}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[49%] ${
+          className={`absolute top-[46%] sml:top-[43%] sm:top-[49%] md:top-[52%] lg:top-[49%] ${
             isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
           }`}
         >
@@ -562,12 +562,12 @@ const RoadMap = () => {
           // }}
           // id="target-element"
         >
-          <Image src={fullline1} alt="fullline" />
+          <Image src={fullline2} alt="fullline" />
         </div>
 
         <div
           ref={elementRef10}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[7%] ${
+          className={`absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[7%]  ${
             isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
@@ -583,7 +583,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef11}
-          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[31%] ${
+          className={`absolute top-[27%] sml:top-[27%] sm:top-[29%] md:top-[33%] lg:top-[31%] ${
             isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
           }`}
         >
