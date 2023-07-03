@@ -81,6 +81,14 @@ body {
       opacity: 1;
     }
   }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .animetedText {
     animation: move-text-color 0.5s forwards;
     opacity: 0;
@@ -119,5 +127,16 @@ body {
     display: block;
     height: 50vh;
     margin-top: -50vh;
+  }
+  .left-bg {
+    background: var(
+      --roadmap-vertical-grad,
+      linear-gradient(
+        100deg,
+        #b4703e 0%,
+        #bc9163 47.92%,
+        rgba(198, 179, 138, 0) 100%
+      )
+    );
   }
 }

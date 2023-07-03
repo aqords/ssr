@@ -26,7 +26,7 @@ const roadmap = () => {
           desc1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           desc2="
         Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-          blockStyle="bg-primary h-[479px] lg:h-[807px] mt-[-30px]"
+          blockStyle="bg-primary h-[479px] lg:h-[550px] mt-[-30px]"
         />
         <RoadMap />
         <Navigationblock />

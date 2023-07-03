@@ -1,12 +1,17 @@
-import React from "react";
 import Image from "next/image";
-
-import Button from "../UI/Button/Button";
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
-import left1 from "../../public/assets/images/svgleft1.svg";
-import left2 from "../../public/assets/images/svgleft2.svg";
-import left3 from "../../public/assets/images/svgleft3.svg";
-import left4 from "../../public/assets/images/svgleft4.svg";
+import left1 from "../../public/assets/images/left1.svg";
+import React, { useEffect, useState, useRef } from "react";
+import ScrollToggle from "../../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../../utils/hooks/useScrollChange";
+// import left2 from "../../public/assets/images/svgleft2.svg";
+// import left3 from "../../public/assets/images/svgleft3.svg";
+// import left4 from "../../public/assets/images/svgleft4.svg";
+import fullline1 from "../../public/assets/images/fullline1.svg";
+import fullline2 from "../../public/assets/images/fullline2.svg";
+import linevector1 from "../../public/assets/images/linevector1.svg";
+import bgvector from "../../public/assets/images/bgvector.svg";
+import opacvector from "../../public/assets/images/opacvector.svg";
 
 const firstphase = [
   {
@@ -86,12 +91,174 @@ const firdphase = [
 ];
 
 const RoadMap = () => {
+  const isScrolled = ScrollToggle({
+    targetClasses: [
+      "el-1",
+      "el-2",
+      "el-3",
+      "el-4",
+      "el-5",
+      "el-6",
+      "el-7",
+      "el-8",
+      "el-9",
+      "el-10",
+      "el-11",
+      "el-12",
+      "el-13",
+    ],
+    visibleClass: "visible",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef2 = useRef<HTMLDivElement>(null);
+  const elementRef3 = useRef<HTMLDivElement>(null);
+  const elementRef4 = useRef<HTMLDivElement>(null);
+  const elementRef5 = useRef<HTMLDivElement>(null);
+  const elementRef6 = useRef<HTMLDivElement>(null);
+  const elementRef7 = useRef<HTMLDivElement>(null);
+  const elementRef8 = useRef<HTMLDivElement>(null);
+  const elementRef9 = useRef<HTMLDivElement>(null);
+  const elementRef10 = useRef<HTMLDivElement>(null);
+  const elementRef11 = useRef<HTMLDivElement>(null);
+  const elementRef12 = useRef<HTMLDivElement>(null);
+  const elementRef13 = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRefs: [
+      elementRef,
+      elementRef2,
+      elementRef3,
+      elementRef4,
+      elementRef5,
+      elementRef6,
+      elementRef7,
+      elementRef8,
+      elementRef9,
+      elementRef10,
+      elementRef11,
+      elementRef12,
+      elementRef13,
+    ],
+    className: "original",
+  });
+
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY;
+  //   const targetPosition = document.getElementById("target-element").offsetTop;
+  //   const windowHeight = window.innerHeight;
+
+  //   if (scrollPosition > targetPosition - windowHeight / 2) {
+  //     setIsVisible(true);
+
+  //     // Установка задержки перед появлением картинки
+  //     // 300 миллисекунд (0.3 секунды)
+  //   } else {
+  //     setIsVisible(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <div className="max-w-[806px]  ">
-      <div className="relative">
-        <div className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px]">
-          <Image src={left1} alt="left1" />
+      <div className="relative ">
+        <div
+          ref={elementRef}
+          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
+            isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
+          }`}
+          // style={{
+          //   opacity: isVisible ? 1 : 0,
+          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
+          //   transition: "opacity 0.5s, transform 1s",
+          // }}
+          // id="target-element"
+        >
+          <Image src={fullline1} alt="fullline" />
         </div>
+
+        <div
+          ref={elementRef2}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[39%] ${
+            isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        </div>
+        <div
+          ref={elementRef3}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] ${
+            isScrolled["el-3"] ? "el-3 visible" : "el-3 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        </div>
+        {/* {showImage && (
+          <Image
+            ref={elementRef6}
+            className={isScrolled["el-6"] ? "el-6 visible" : "el-6 original"}
+            style={{
+              opacity: showImage ? 1 : 0,
+              animation: `${showImage ? "fade-in 1s" : ""}`,
+            }}
+            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        )}
+
+        {showImage && (
+          <Image
+            style={{
+              opacity: showImage ? 1 : 0,
+              animation: `${showImage ? "fade-in 3s" : ""}`,
+            }}
+            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[39%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        )} */}
+        <div
+          ref={elementRef4}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] ${
+            isScrolled["el-4"] ? "el-4 visible" : "el-4 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        </div>
+
         <div className="relative ml-[36px] sm:ml-[90px]">
           <ul>
             {firstphase.map((item) => (
@@ -130,9 +297,103 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="absolute top-[-130px] sml:top-[-175px]  sm:top-[-175px] md:top-[-120px]">
-          <Image src={left2} alt="left2" />
+        <div
+          ref={elementRef5}
+          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
+            isScrolled["el-5"] ? "el-5 visible" : "el-5 original"
+          }`}
+          // style={{
+          //   opacity: isVisible ? 1 : 0,
+          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
+          //   transition: "opacity 0.5s, transform 1s",
+          // }}
+          // id="target-element"
+        >
+          <Image src={fullline1} alt="fullline" />
         </div>
+        {/* {showImage && (
+          <Image
+            style={{
+              opacity: showImage ? 1 : 0,
+              animation: `${showImage ? "fade-in 1s" : ""}`,
+            }}
+            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[7%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        )}
+        {showImage && (
+          <Image
+            style={{
+              opacity: showImage ? 1 : 0,
+              animation: `${showImage ? "fade-in 3s" : ""}`,
+            }}
+            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[37%] "
+            src={bgvector}
+            alt="linevector1"
+          />
+        )}
+        {showImage && (
+          <Image
+            style={{
+              opacity: showImage ? 1 : 0,
+              animation: `${showImage ? "fade-in 5s" : ""}`,
+            }}
+            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[68%] "
+            src={opacvector}
+            alt="linevector1"
+          />
+        )} */}
+
+        <div
+          ref={elementRef6}
+          className={`absolute z-[-1] top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] ${
+            isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={linevector1}
+            alt="linevector1"
+          />
+        </div>
+        <div
+          ref={elementRef7}
+          className={` absolute z-[-1] top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[37%] ${
+            isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={bgvector}
+            alt="linevector1"
+          />
+        </div>
+        <div
+          ref={elementRef8}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[68%] ${
+            isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={opacvector}
+            alt="linevector1"
+          />
+        </div>
+
         <div className="mb-[165px] sm:mb-[363px] ml-[36px] sm:ml-[90px]">
           <div className="mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px]">
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px]">
@@ -204,9 +465,53 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="absolute top-[-135px] sml:top-[-130px] smx:top-[-180px] sm:top-[-180px] md:top-[-120px]">
-          <Image src={left3} alt="left3" />
+        <div
+          ref={elementRef9}
+          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[60%] ${
+            isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
+          }`}
+          // style={{
+          //   opacity: isVisible ? 1 : 0,
+          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
+          //   transition: "opacity 0.5s, transform 1s",
+          // }}
+          // id="target-element"
+        >
+          <Image src={fullline1} alt="fullline" />
         </div>
+        <div
+          ref={elementRef10}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[11%] ${
+            isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={opacvector}
+            alt="linevector1"
+          />
+        </div>
+        <div
+          ref={elementRef11}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[49%] ${
+            isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={opacvector}
+            alt="linevector1"
+          />
+        </div>
+
         <div className="ml-[36px] sm:ml-[90px]">
           <ul>
             {thirdphase.map((item) => (
@@ -245,8 +550,52 @@ const RoadMap = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="absolute top-[-135px] sml:top-[-130px] smx:top-[-180px] sm:top-[-182px] md:top-[-120px]">
-          <Image src={left4} alt="left4" />
+        <div
+          ref={elementRef9}
+          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[110%] ${
+            isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
+          }`}
+          // style={{
+          //   opacity: isVisible ? 1 : 0,
+          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
+          //   transition: "opacity 0.5s, transform 1s",
+          // }}
+          // id="target-element"
+        >
+          <Image src={fullline1} alt="fullline" />
+        </div>
+
+        <div
+          ref={elementRef10}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[7%] ${
+            isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={opacvector}
+            alt="linevector1"
+          />
+        </div>
+        <div
+          ref={elementRef11}
+          className={`absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[31%] ${
+            isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={opacvector}
+            alt="linevector1"
+          />
         </div>
         <div className="ml-[36px] sm:ml-[90px]">
           <ul>
