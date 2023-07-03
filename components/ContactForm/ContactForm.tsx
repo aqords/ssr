@@ -80,9 +80,9 @@ const ContactForm = () => {
       setEmail("");
       setSubject("");
       setText("");
-      console.log("done");
+      // console.log("done");
     } else {
-      console.log("error");
+      // console.log("error");
     }
   };
 
@@ -110,7 +110,7 @@ const ContactForm = () => {
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
         <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[20px] mt-[-5px]">
           <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
-            <p>
+            <p className="text-[#ffffff]">
               {t("contact_enter_name")}
               <span className="text-[#F44A77]"> *</span>
             </p>
@@ -132,7 +132,7 @@ const ContactForm = () => {
             )}
           </label>
           <label className="relative flex flex-col text-[#6B7280] text-[12px]">
-            <p>
+            <p className="text-[#ffffff]">
               {t("contact_enter_email")}
               <span className="text-[#F44A77]"> *</span>
             </p>
@@ -155,8 +155,8 @@ const ContactForm = () => {
           </label>
         </div>
         <label className="relative flex flex-col text-[#6B7280] text-[12px] py-[5px] mb-[20px] mt-[-5px]">
-          <p>
-            {t("contact_message_subject")}{" "}
+          <p className="text-[#ffffff]">
+            {t("contact_message_subject")}
             <span className="text-[#F44A77]"> *</span>
           </p>
           <input
@@ -184,7 +184,7 @@ const ContactForm = () => {
           </span>
         </label>
         <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
-          <p>
+          <p className="text-[#ffffff]">
             {t("contact_message")} <span className="text-[#F44A77]"> *</span>
           </p>
           <textarea

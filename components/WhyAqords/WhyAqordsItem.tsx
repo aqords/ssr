@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
+import Image from "next/image";
+import { useTranslation } from "next-i18next";
+
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-import { useTranslation } from "next-i18next";
 import { renderObject } from "../Constants/WhyAqordsItems";
-import Image from "next/image";
 
 const WhyAqordsItem = ({
   topicon,

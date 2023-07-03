@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
@@ -12,6 +13,8 @@ import Button from "../UI/Button/Button";
 
 const Header = () => {
   const { t } = useTranslation();
+
+  const currentLocation = useRouter().pathname.split("/");
 
   const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
 
@@ -46,13 +49,13 @@ const Header = () => {
             <Image sizes="50vw" src={burger} alt="menu" />
           )}
         </button>
-        <Button
+        {/* <Button
           outsideGradient={
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
           <button className="px-[30px]">{t("connect_wallet")}</button>
-        </Button>
+        </Button> */}
       </div>
       <nav>
         {isOpenBurger ? (
@@ -123,14 +126,18 @@ const Header = () => {
             return (
               <li
                 key={obj.path}
-                className="text-sm font-man text-white bg-clip-text hover:text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] border-transparent  hover:border-b-[1px] hover:gradient-brown-yellow hover:cursor-pointer"
+                className={`  ${
+                  obj.path.slice(1) === currentLocation[1]
+                    ? "font-[500] bg-clip-text text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] gradient-brown-yellow "
+                    : "text-[#B3B3B3] hover:text-[#E5E5E5]"
+                } text-sm font-man hover:cursor-pointer `}
               >
                 <Link href={obj.path}>{t(obj.name)}</Link>
               </li>
             );
           })}
         </ul>
-        <Button
+        {/* <Button
           outsideGradient={
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
@@ -138,7 +145,8 @@ const Header = () => {
           <button className="px-[30px] font-man text-sm">
             {t("connect_wallet")}
           </button>
-        </Button>
+        </Button> */}
+        <div className="lg:px-[85px]"></div>
       </nav>
     </header>
   );

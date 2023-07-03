@@ -28,9 +28,9 @@ const WhitePapperHead = () => {
       <section className="relative bg-black lg:bg-[#19191A]">
         <div className="container h-auto lg:h-[580px] flex flex-col-reverse  lg:flex-row lg:items-center ">
           <div className="  xl:max-w-[531px]">
-            <h1 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
+            <h2 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
               {t("whitepaper_desc3")}
-            </h1>
+            </h2>
             <div className="flex justify-center lg:justify-start mb-[40px]">
               <Button
                 outsideGradient={
@@ -50,7 +50,6 @@ const WhitePapperHead = () => {
           </div>
           <div className="w-full ">
             <Image
-              sizes="50vw"
               className="rounded-[20px] lg:rounded-none"
               src={circle}
               // className="absolute top-0  right-[15%] h-[580px] "

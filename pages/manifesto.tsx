@@ -4,16 +4,21 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
+import { useIsMobile } from "../utils/hooks/useMobile/useIsMobile";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import WhyAqords from "../components/WhyAqords/WhyAqordsList";
-import manifesto from "../public/assets/images/manifesto-background.png";
+import manifesto from "../public/assets/images/manifesto-background1.png";
+import manifestoMob from "../public/assets/images/manifesto-mobile.png";
 
 const Manifesto = () => {
   const { t } = useTranslation();
+
+  const isMobile = useIsMobile();
+
   return (
     <>
       <Head>
@@ -28,8 +33,8 @@ const Manifesto = () => {
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={manifesto}
-        imgStyle="absolute top-[65%] right-[-40%] sm:top-[45%] sm:right-[-30%] lg:top-[0%] lg:right-[-63%] xl:top-[-12%] xl:right-[-43%] 2xl:top-[-12%] 2xl:right-[-25%]"
+        img={isMobile ? manifestoMob : manifesto}
+        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-40%] lg:top-[0%] lg:right-[-10%] xl:top-[0%] xl:right-[0%] 2xl:top-[0%] 2xl:right-[0%]"
       />
       <div className="bg-second">
         <div className="container">

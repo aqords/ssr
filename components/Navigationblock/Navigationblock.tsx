@@ -1,11 +1,15 @@
 import React, { useRef } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import InfoCard from "../UI/InfoCard.tsx/InfoCard";
 import { NavigationblockData } from "../Constants/NavigationblockConst";
 
 const Navigationblock = () => {
+  const { t } = useTranslation();
+
   const currentLocation = useRouter().pathname.split("/");
 
   const isScrolled = ScrollToggle({
@@ -36,7 +40,7 @@ const Navigationblock = () => {
         >
           <InfoCard
             title={NavigationblockData[0].title}
-            desc={NavigationblockData[0].desc}
+            desc={t(`${NavigationblockData[0].desc}`)}
             href={NavigationblockData[0].href}
             bgLight={NavigationblockData[0].bgLight}
           />
@@ -64,15 +68,15 @@ const Navigationblock = () => {
           ) : (
             <InfoCard
               title={NavigationblockData[1].title}
-              desc={NavigationblockData[1].desc}
+              desc={t(`${NavigationblockData[1].desc}`)}
               href={NavigationblockData[1].href}
-              flex={"flex flex-col justify-between"}
+              flex={"flex flex-col justify-between overflow-hidden"}
               img={NavigationblockData[1].url}
               imgStyle={
-                "relative  top-[-20px] left-[105px]  md:left-[260px] lg:left-[60px]"
+                "relative  top-[-20px] left-[105px]  md:left-[240px] lg:left-[60px]"
               }
               imgWrapper={
-                "w-[274px] h-[318px] sm:w-auto sm:h-auto scale-[1.7] sm:scale-[1]"
+                "w-[274px] h-[328px] sm:w-[410px] sm:h-[348px] mt-[20px] ml-[19px] scale-[1.7] sm:scale-[1.2]"
               }
             />
           )}
@@ -82,7 +86,7 @@ const Navigationblock = () => {
             ) : (
               <InfoCard
                 title={NavigationblockData[2].title}
-                desc={NavigationblockData[2].desc}
+                desc={t(`${NavigationblockData[2].desc}`)}
                 href={NavigationblockData[2].href}
               />
             )}
@@ -91,7 +95,7 @@ const Navigationblock = () => {
             ) : (
               <InfoCard
                 title={NavigationblockData[3].title}
-                desc={NavigationblockData[3].desc}
+                desc={t(`${NavigationblockData[3].desc}`)}
                 href={NavigationblockData[3].href}
               />
             )}
@@ -113,7 +117,7 @@ const Navigationblock = () => {
         ) : (
           <InfoCard
             title={NavigationblockData[4].title}
-            desc={NavigationblockData[4].desc}
+            desc={t(`${NavigationblockData[4].desc}`)}
             img={NavigationblockData[4].url}
             href={NavigationblockData[4].href}
             imgStyle={
@@ -131,7 +135,7 @@ const Navigationblock = () => {
             <span className="block h-[0px] my-[60px]"></span>
             <InfoCard
               title={NavigationblockData[5].title}
-              desc={NavigationblockData[5].desc}
+              desc={t(`${NavigationblockData[5].desc}`)}
               bgLight={NavigationblockData[5].bgLight}
               href={NavigationblockData[5].href}
             />

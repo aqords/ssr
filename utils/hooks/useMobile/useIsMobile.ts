@@ -6,7 +6,7 @@ export const IsSsrMobileContext = createContext(false);
 export const useIsMobile = () => {
   const isSsrMobile = useContext(IsSsrMobileContext);
   const { width: windowWidth } = useWindowSize();
-  const isBrowserMobile = !!windowWidth && windowWidth < 770;
+  const isBrowserMobile = !!windowWidth && windowWidth < 768;
 
   return isSsrMobile || isBrowserMobile;
 };
@@ -28,7 +28,7 @@ export const useWindowSize = () => {
       });
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize, { passive: true });
 
     // Call handler right away so state gets updated with initial window size
     handleResize();

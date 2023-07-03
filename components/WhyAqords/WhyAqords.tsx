@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
+import { useTranslation } from "next-i18next";
+import Image from "next/image";
+
 import WhyAqordsList from "./WhyAqordsList";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-import { useTranslation } from "next-i18next";
 import { renderObject } from "../Constants/WhyAqordsItems";
+import truck from "../../public/assets/images/truck.png";
 
 interface WhyAqordsProps {
   itemsArray: renderObject[];
@@ -46,7 +49,12 @@ const WhyAqords = ({ itemsArray }: WhyAqordsProps) => {
         </div>
       </section>
 
-      <section className=" bg-no-repeat bg-cover  bg-[url('../public/assets/images/truck.png')] sm:bg-center ">
+      <section className="relative overflow-hidden">
+        <Image
+          className="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover"
+          src={truck}
+          alt="truck"
+        />
         <div className="container">
           <div className="  py-[22%] w-full md:max-w-[530px]">
             <div

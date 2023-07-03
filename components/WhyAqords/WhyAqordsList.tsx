@@ -1,4 +1,5 @@
 import React from "react";
+
 import WhyAqordsItem from "./WhyAqordsItem";
 import { renderObject } from "../Constants/WhyAqordsItems";
 
