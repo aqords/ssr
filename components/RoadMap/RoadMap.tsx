@@ -1,7 +1,9 @@
 import Image from "next/image";
+import React, { useRef } from "react";
+import { useTranslation } from "next-i18next";
+
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
 import left1 from "../../public/assets/images/left1.svg";
-import React, { useEffect, useState, useRef } from "react";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 // import left2 from "../../public/assets/images/svgleft2.svg";
@@ -12,85 +14,12 @@ import fullline2 from "../../public/assets/images/fullline2.svg";
 import linevector1 from "../../public/assets/images/linevector1.svg";
 import bgvector from "../../public/assets/images/bgvector.svg";
 import opacvector from "../../public/assets/images/opacvector.svg";
-
-const firstphase = [
-  {
-    title: "Phase 1: Inception and Research (Q2 2022 - Q4 2022)",
-    roadmaplist: [
-      {
-        buttontext: "Done",
-        title: "Q2 2022",
-        subtitle:
-          "Assembling the AQORDS team consisting of experts in supply chains, freight transportation, blockchain, and decentralized finance (DeFi).",
-        description: "Setting up the foundational structure for the project.",
-      },
-      {
-        buttontext: "Done",
-        title: "Q3 2022",
-        subtitle:
-          "Conducting extensive market research to understand the dynamics of the European road freight transportation industry.",
-        description:
-          "Conceptualizing and refining the vision for the AQORDS platform.",
-      },
-      {
-        buttontext: "Done",
-        title: "Q4 2022",
-        subtitle: "Finalizing the initial platform architecture and design. ",
-        description: "Initiating the development phase.",
-      },
-    ],
-  },
-];
-
-const thirdphase = [
-  {
-    title: "Phase 3: Pre-Sale and Platform Enhancements (Q3 2023 - Q4 2023).",
-    roadmaplist: [
-      {
-        buttontext: "To do",
-        title: "Q3 2023",
-        subtitle:
-          "Launching the pre-sale phase to secure strategic investments for platform development and liquidity pool formation. ",
-        description:
-          "Engaging with potential investors and conducting token sales.",
-      },
-      {
-        buttontext: "To do",
-        title: "Q2 2023",
-        subtitle:
-          "Initiating integration with the first freight exchange, Qoobus.",
-        description:
-          "Collaborating with Qoobus to establish seamless connectivity and data interoperability between AQORDS and the Qoobus platform. This integration aims to provide a testing environment for our Proof of Concept (first transaction).",
-      },
-    ],
-  },
-];
-
-const firdphase = [
-  {
-    title: "Phase 4: Platform Launch and Expansion (Q1 2024 - onward).",
-    roadmaplist: [
-      {
-        buttontext: "To do",
-        title: "Q1 2024",
-        subtitle:
-          "Officially launching the AQORDS platform in the European road freight transportation market.",
-        description:
-          "Onboarding initial shippers, carriers, and freight forwarders to start utilizing the platform.",
-      },
-      {
-        buttontext: "To do",
-        title: "Beyond Q1 2024",
-        subtitle:
-          "Continuously expanding the user base and network effect of AQORDS.",
-        description:
-          "Enhancing platform features and functionalities based on user feedback and market demands. Exploring strategic partnerships and collaborations to expand into new European markets and foster global growth.",
-      },
-    ],
-  },
-];
+import { firstphase, thirdphase, fourthphase } from "../Constants/RoadMapTexts";
+import Button from "../UI/Button/Button";
 
 const RoadMap = () => {
+  const { t } = useTranslation();
+
   const isScrolled = ScrollToggle({
     targetClasses: [
       "el-1",
@@ -168,7 +97,7 @@ const RoadMap = () => {
   //   };
   // }, []);
   return (
-    <div className="max-w-[806px]  ">
+    <div className="max-w-[806px]">
       <div className="relative ">
         <div
           ref={elementRef}
@@ -261,31 +190,33 @@ const RoadMap = () => {
 
         <div className="relative ml-[36px] sm:ml-[90px]">
           <ul>
-            {firstphase.map((item) => (
-              <li className="mb-[165px] sm:mb-[360px]">
+            {firstphase.map((item, id) => (
+              <li key={id} className="mb-[165px] sm:mb-[360px]">
                 <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px] ">
-                  {item.title}
+                  {t(`${item.title}`)}
                 </h1>
                 <ul>
-                  {item.roadmaplist.map((item) => (
-                    <li className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
-                      <div className="w-[120px]">
-                        <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                          <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                            {item.buttontext}
-                          </div>
-                        </div>
-                      </div>
+                  {item.roadmaplist.map((item, id) => (
+                    <li
+                      key={id}
+                      className="mb-[85px] sm:mb-[135px] lg:mb-[120px]"
+                    >
+                      <Button
+                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                        insideGradient="rounded-full bg-black p-[1px] justify-center items-center"
+                      >
+                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
+                      </Button>
 
                       <div className="w-[316px] sm:w-[716px]">
                         <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {item.title}
+                          {t(`${item.title}`)}
                         </h2>
                         <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-                          {item.subtitle}
+                          {t(`${item.subtitle}`)}
                         </h3>
                         <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {item.description}
+                          {t(`${item.description}`)}
                         </p>
                       </div>
                     </li>
@@ -397,26 +328,24 @@ const RoadMap = () => {
         <div className="mb-[165px] sm:mb-[363px] ml-[36px] sm:ml-[90px]">
           <div className="mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px]">
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px]">
-              Phase 2: Development and Testing (Q1 2023 - Q2 2023).
+              {t("roadmap_text27")}
             </h1>
             <div className="w-[120px]">
               <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
                 <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                  Done
+                  {t("roadmap_text2")}
                 </div>
               </div>
             </div>
             <div className="w-[316px] lg:w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                Q1 2023
+                {t("roadmap_text28")}
               </h2>
               <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-                Commencing the development of the AQORDS platform.
+                {t("roadmap_text29")}
               </h3>
               <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                Building the core features, including smart contracts,
-                track-and-trace functionality, and dispute resolution
-                mechanisms.
+                {t("roadmap_text30")}
               </p>
             </div>
           </div>
@@ -424,42 +353,37 @@ const RoadMap = () => {
             <div className="w-[145px] sm:w-[120px]">
               <div className="ml-[25px] sm:ml-0 rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
                 <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-gradient-to-br from-[#ADA785] to-[#8D794C] p-[1px]">
-                  In progress
+                  {t("roadmap_text31")}
                 </div>
               </div>
             </div>
             <div className="w-[316px] sm:w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                Q2 2023
+                {t("roadmap_text17")}
               </h2>
               <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-                Initiating integration with the first freight exchange, Qoobus.
+                {t("roadmap_text32")}
               </h3>
               <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                Collaborating with Qoobus to establish seamless connectivity and
-                data interoperability between AQORDS and the Qoobus platform.
-                This integration aims to provide a testing environment for our
-                Proof of Concept (first transaction).
+                {t("roadmap_text33")}
               </p>
             </div>
           </div>
           <div className="w-[316px] sm:w-[716px]">
-            <div className="w-[120px]">
-              <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                  To do
-                </div>
-              </div>
-            </div>
+            <Button
+              outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+              insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+            >
+              <p className="text-[12px]">{t("roadmap_text13")}</p>
+            </Button>
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-              Q3 2022
+              {t("roadmap_text6")}
             </h2>
             <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-              Conducting internal testing and refinement of the AQORDS platform.
+              {t("roadmap_text34")}
             </h3>
             <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-              Collaborating with select partners and stakeholders for alpha
-              testing and gathering valuable feedback for improvements.
+              {t("roadmap_text35")}
             </p>
           </div>
         </div>
@@ -514,31 +438,33 @@ const RoadMap = () => {
 
         <div className="ml-[36px] sm:ml-[90px]">
           <ul>
-            {thirdphase.map((item) => (
-              <li className="mb-[165px] sm:mb-[360px]">
+            {thirdphase.map((item, id) => (
+              <li key={id} className="mb-[165px] sm:mb-[360px]">
                 <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[85px] lg:mb-[120px] md:mb-[60px] tracking-[-1.5px] ">
-                  {item.title}
+                  {t(`${item.title}`)}
                 </h1>
                 <ul>
-                  {item.roadmaplist.map((item) => (
-                    <li className="mb-[35px] sm:mb-[85px] lg:mb-[65px]">
-                      <div className="w-[120px]">
-                        <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                          <div className=" leading-[20px] text-[12px] text-center rounded-full w-full  bg-black  p-[1px]">
-                            {item.buttontext}
-                          </div>
-                        </div>
-                      </div>
+                  {item.roadmaplist.map((item, id) => (
+                    <li
+                      key={id}
+                      className="mb-[35px] sm:mb-[85px] lg:mb-[65px]"
+                    >
+                      <Button
+                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                        insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                      >
+                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
+                      </Button>
 
                       <div className="w-[316px] sm:w-[716px]">
                         <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {item.title}
+                          {t(`${item.title}`)}
                         </h2>
                         <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
-                          {item.subtitle}
+                          {t(`${item.subtitle}`)}
                         </h3>
                         <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {item.description}
+                          {t(`${item.description}`)}
                         </p>
                       </div>
                     </li>
@@ -599,31 +525,33 @@ const RoadMap = () => {
         </div>
         <div className="ml-[36px] sm:ml-[90px]">
           <ul>
-            {firdphase.map((item) => (
-              <li className="mb-[120px]">
+            {fourthphase.map((item, id) => (
+              <li key={id} className="mb-[120px]">
                 <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[123px] tracking-[-1.5px] ">
-                  {item.title}
+                  {t(`${item.title}`)}
                 </h1>
                 <ul>
-                  {item.roadmaplist.map((item) => (
-                    <li className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]">
-                      <div className="w-[120px]">
-                        <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                          <div className=" leading-[20px] text-[12px] text-center rounded-full w-full  bg-black  p-[1px]">
-                            {item.buttontext}
-                          </div>
-                        </div>
-                      </div>
+                  {item.roadmaplist.map((item, id) => (
+                    <li
+                      key={id}
+                      className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]"
+                    >
+                      <Button
+                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                        insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                      >
+                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
+                      </Button>
 
                       <div className="w-[316px] sm:w-[716px]">
                         <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {item.title}
+                          {t(`${item.title}`)}
                         </h2>
                         <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
-                          {item.subtitle}
+                          {t(`${item.subtitle}`)}
                         </h3>
                         <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {item.description}
+                          {t(`${item.description}`)}
                         </p>
                       </div>
                     </li>
@@ -633,9 +561,9 @@ const RoadMap = () => {
             ))}
           </ul>
           <NodeCard
-            title="Note"
-            desc1="This roadmap provides a general overview of the timeline for AQORDS development, including the pre-sale phase."
-            desc2="Actual dates and milestones may be subject to adjustments based on various factors, including market conditions, regulatory requirements, and technological advancements. AQORDS remains committed to delivering a robust and innovative platform that revolutionizes the road freight transportation industry."
+            title={t(`${"wpnodecard_text1"}`)}
+            desc1={t(`${"roadmap_text36"}`)}
+            desc2={t(`${"roadmap_text37"}`)}
           />
         </div>
       </div>

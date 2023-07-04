@@ -77,16 +77,16 @@ const Whitepapper = () => {
                       key={item.id}
                       className="anchor-heading title__border text-[32px] mb-[40px] font-bold"
                     >
-                      {t(item.mainTitle)}
+                      {t(`${item.mainTitle}`)}
                     </h2>
                     {item.text1 && (
                       <p className="font-man block mb-[30px] text-[20px]">
-                        {t(item.text1)}
+                        {t(`${item.text1}`)}
                       </p>
                     )}
                     {item.text2 && (
                       <p className=" font-man text-[16px]  text-[#838383]">
-                        {t(item.text2)}
+                        {t(`${item.text2}`)}
                       </p>
                     )}
                   </div>
@@ -94,35 +94,39 @@ const Whitepapper = () => {
                     {item.body.map((el) => (
                       <div className="mb-[70px]">
                         <h3 className="text-[24px] font-bold mb-[30px]">
-                          {t(el.subtitle)}
+                          {t(`${el.subtitle}`)}
                         </h3>
                         {el.text1 && (
                           <p className="font-man block mb-[30px] text-[18px]">
-                            {t(el.text1)}
+                            {t(`${el.text1}`)}
                           </p>
                         )}
                         {el.text2 && (
                           <p className="font-man mb-[55px] text-[16px]  text-[#838383]">
-                            {t(el.text2)}
+                            {t(`${el.text2}`)}
                           </p>
                         )}
                         {el.text3 && (
                           <p className="font-man font-bold block mb-[30px] text-[18px]">
-                            {t(el.text3)}
+                            {t(`${el.text3}`)}
                           </p>
                         )}
                         {el.text4 && (
                           <p className="font-man block mb-[30px] text-[18px]">
-                            {t(el.text4)}
+                            {t(`${el.text4}`)}
                           </p>
                         )}
                         {el.underlist &&
                           el.underlist.map((item) => (
                             <ul>
                               <li>
-                                {item.title && <h3>{t(item.title)}</h3>}
-                                {item.a_title && <h3>{t(item.a_title)}</h3>}
-                                {item.b_title && <h3>{t(item.b_title)}</h3>}
+                                {item.title && <h3>{t(`${item.title}`)}</h3>}
+                                {item.a_title && (
+                                  <h3>{t(`${item.a_title}`)}</h3>
+                                )}
+                                {item.b_title && (
+                                  <h3>{t(`${item.b_title}`)}</h3>
+                                )}
                                 {item.list && (
                                   <ul className="list-disc text-[#838383]">
                                     {item.list.map((target) => (
@@ -131,7 +135,7 @@ const Whitepapper = () => {
                                           {t(`${target.title}`)}
                                         </h4>
                                         <p className="font-man text-[14px]">
-                                          {t(target.text)}
+                                          {t(`${target.text}`)}
                                         </p>
                                       </li>
                                     ))}
@@ -147,9 +151,9 @@ const Whitepapper = () => {
               ))}
 
               <NodeCard
-                title="Note"
-                desc1="This white paper provides a comprehensive understanding of AQORDS, its features, benefits, and its potential to revolutionize the freight transportation industry."
-                desc2="It serves as a guide for stakeholders, investors, and industry participants who are interested in understanding the underlying technology, principles, and future prospects of AQORDS. Join us on this exciting journey as we reshape the world of freight transportation through blockchain innovation."
+                title={t("wpnodecard_text1")}
+                desc1={t("wpnodecard_text2")}
+                desc2={t("wpnodecard_text3")}
               />
             </div>
           </div>
@@ -160,7 +164,7 @@ const Whitepapper = () => {
                 showButton ? "animate-fade-in" : "animate-fade-out"
               }`}
             >
-              {t("Move on top ↑")}
+              {t("wpnodecard_text4")}
             </button>
           )}
         </div>

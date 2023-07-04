@@ -26,8 +26,7 @@ const roadmap = () => {
         <BlockWithBackground
           title="Roadmap"
           desc1=""
-          desc2="
-       "
+          desc2=""
           blockStyle="bg-primary h-[250px] lg:h-[600px] mt-[-30px]"
         />
         <RoadMap />

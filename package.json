@@ -25,6 +25,7 @@
     "leaflet": "^1.6.0",
     "lodash": "^4.17.21",
     "mobile-detect": "^1.4.5",
+    "moment": "^2.29.4",
     "next": "12.3.2-canary.43",
     "next-i18next": "^11.0.0",
     "postcss": "^8.4.21",

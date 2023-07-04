@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import moment from "moment";
 
 import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
@@ -103,7 +104,7 @@ const Footer = () => {
 
         <div>
           <p className="text-[12px] text-[#98a2b3] font-man">
-            {t("footer_rights")}
+            {"© " + moment().year() + " " + `${t("footer_rights")}`}
           </p>
         </div>
       </div>

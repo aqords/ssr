@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import moment from "moment";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
@@ -93,7 +94,7 @@ const Header = () => {
             <>
               <span className="block h-[1px] w-full span-gradient my-[32px]"></span>
               <p className="text-center text-[12px] text-[#98a2b3] font-man mb-[32px]">
-                {t("© 2023 AQORDS, Inc. All rights reserved.")}
+                {"© " + moment().year() + " " + `${t("footer_rights")}`}
               </p>
             </>
           </ul>
