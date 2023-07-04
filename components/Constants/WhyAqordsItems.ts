@@ -13,8 +13,8 @@ import seven from "public/assets/images/seven.svg";
 import lock from "public/assets/images/lock.svg";
 
 export interface renderObject {
-  topicon: string;
-  icon: string;
+  topicon?: string;
+  icon?: string;
   title: string;
   description: string;
   text: string;
@@ -111,22 +111,16 @@ export const ManifestList: renderObject[] = [
 
 export const whyInvestList: renderObject[] = [
   {
-    topicon: one,
-    icon: guardian,
     title: "why_invest1_title",
     description: "why_invest1_desc",
     text: "why_invest1_text",
   },
   {
-    topicon: two,
-    icon: mexa,
     title: "why_invest2_title",
     description: "why_invest2_desc",
     text: "why_invest2_text",
   },
   {
-    topicon: three,
-    icon: wallet,
     title: "why_invest3_title",
     description: "why_invest3_desc",
     text: "why_invest3_text",
@@ -135,22 +129,16 @@ export const whyInvestList: renderObject[] = [
 
 export const detailInvestList: renderObject[] = [
   {
-    topicon: one,
-    icon: guardian,
     title: "detail_invest1_title",
     description: "detail_invest1_desc",
     text: "detail_invest1_text",
   },
   {
-    topicon: two,
-    icon: mexa,
     title: "detail_invest2_title",
     description: "detail_invest2_desc",
     text: "detail_invest2_text",
   },
   {
-    topicon: three,
-    icon: wallet,
     title: "detail_invest3_title",
     description: "detail_invest3_desc",
     text: "detail_invest3_text",

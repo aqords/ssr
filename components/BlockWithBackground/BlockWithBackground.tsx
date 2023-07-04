@@ -10,14 +10,14 @@ interface BlockWithBackgroundProps {
   blockStyle?: string;
 }
 
-const BlockWithBackground: React.FC<BlockWithBackgroundProps> = ({
+const BlockWithBackground = ({
   title,
   desc1,
   desc2,
   img,
   imgStyle,
   blockStyle = "bg-gray ",
-}) => {
+}: BlockWithBackgroundProps) => {
   return (
     <section className={blockStyle}>
       <div className="container flex lg:h-full items-center">
