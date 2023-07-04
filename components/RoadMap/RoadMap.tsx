@@ -35,6 +35,10 @@ const RoadMap = () => {
       "el-11",
       "el-12",
       "el-13",
+      "el-14",
+      "el-15",
+      "el-16",
+      "el-17",
     ],
     visibleClass: "visible",
   });
@@ -52,6 +56,10 @@ const RoadMap = () => {
   const elementRef11 = useRef<HTMLDivElement>(null);
   const elementRef12 = useRef<HTMLDivElement>(null);
   const elementRef13 = useRef<HTMLDivElement>(null);
+  const elementRef14 = useRef<HTMLDivElement>(null);
+  const elementRef15 = useRef<HTMLDivElement>(null);
+  const elementRef16 = useRef<HTMLDivElement>(null);
+  const elementRef17 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
     elementRefs: [
@@ -68,6 +76,10 @@ const RoadMap = () => {
       elementRef11,
       elementRef12,
       elementRef13,
+      elementRef14,
+      elementRef15,
+      elementRef16,
+      elementRef17,
     ],
     className: "original",
   });
@@ -113,7 +125,6 @@ const RoadMap = () => {
         >
           <Image src={fullline1} alt="fullline" />
         </div>
-
         <div
           ref={elementRef2}
           className={`absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%] ${
@@ -187,7 +198,6 @@ const RoadMap = () => {
             alt="linevector1"
           />
         </div>
-
         <div className="relative ml-[36px] sm:ml-[90px]">
           <ul>
             {firstphase.map((item, id) => (
@@ -275,7 +285,6 @@ const RoadMap = () => {
             alt="linevector1"
           />
         )} */}
-
         <div
           ref={elementRef6}
           className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[8%] ${
@@ -326,7 +335,12 @@ const RoadMap = () => {
         </div>
 
         <div className="mb-[165px] sm:mb-[363px] ml-[36px] sm:ml-[90px]">
-          <div className="mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px]">
+          <div
+            ref={elementRef16}
+            className={` mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px] ${
+              isScrolled["el-16"] ? "el-16 visible" : "el-16 original"
+            }`}
+          >
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px]">
               {t("roadmap_text27")}
             </h1>
@@ -349,7 +363,12 @@ const RoadMap = () => {
               </p>
             </div>
           </div>
-          <div className="mb-[23px] sm:mb-[140px]  lg:mb-[103px]">
+          <div
+            ref={elementRef14}
+            className={` mb-[23px] sm:mb-[140px] lg:mb-[103px] ${
+              isScrolled["el-14"] ? "el-14 visible" : "el-14 original"
+            }`}
+          >
             <div className="w-[145px] sm:w-[120px]">
               <div className="ml-[25px] sm:ml-0 rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
                 <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-gradient-to-br from-[#ADA785] to-[#8D794C] p-[1px]">
@@ -369,13 +388,19 @@ const RoadMap = () => {
               </p>
             </div>
           </div>
-          <div className="w-[316px] sm:w-[716px]">
-            <Button
-              outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
-              insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
-            >
-              <p className="text-[12px]">{t("roadmap_text13")}</p>
-            </Button>
+          <div
+            ref={elementRef15}
+            className={` w-[316px] sm:w-[716px] ${
+              isScrolled["el-15"] ? "el-15 visible" : "el-15 original"
+            }`}
+          >
+            <div className="w-[120px]">
+              <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
+                <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
+                  To do
+                </div>
+              </div>
+            </div>
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
               {t("roadmap_text6")}
             </h2>

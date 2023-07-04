@@ -144,6 +144,16 @@ const Whitepapper = () => {
                               </li>
                             </ul>
                           ))}
+                        {el.text5 && (
+                          <p className="font-man block mb-[30px] text-[18px]">
+                            {t(el.text5)}
+                          </p>
+                        )}
+                        {el.text6 && (
+                          <p className="font-man  text-[14px]  text-[#838383]">
+                            {t(el.text6)}
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>

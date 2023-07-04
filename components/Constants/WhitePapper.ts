@@ -20,6 +20,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec1_body_subtitle2",
@@ -36,6 +38,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec1_body_subtitle3",
@@ -52,6 +56,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -62,7 +68,7 @@ const whitepapper = [
     text2: null,
     body: [
       {
-        subtitle: "wpconst_sec2_body_text1",
+        subtitle: "wpconst_sec2_body_subtitle1",
         text1: "wpconst_sec2_body_text1",
         text2: "wpconst_sec2_body_text2",
 
@@ -76,6 +82,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec2_body_subtitle2",
@@ -117,6 +125,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec2_body_subtitle3",
@@ -154,6 +164,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -177,6 +189,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec3_body_subtitle2",
@@ -192,6 +206,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec3_body_subtitle3",
@@ -207,6 +223,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
 
       {
@@ -223,6 +241,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec3_body_subtitle5",
@@ -238,6 +258,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -261,6 +283,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_sec4_body_subtitle2",
@@ -276,6 +300,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text3",
@@ -291,6 +317,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text6",
@@ -306,6 +334,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -329,6 +359,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text15",
@@ -344,6 +376,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -367,6 +401,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text22",
@@ -431,6 +467,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: "wpconst_text235",
+        text6: null,
       },
       {
         subtitle: "wpconst_text48",
@@ -446,6 +484,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text51",
@@ -614,7 +654,7 @@ const whitepapper = [
             list: [
               {
                 title: "wpconst_text115",
-                text: " wpconst_text116",
+                text: "wpconst_text116",
               },
               {
                 title: "wpconst_text117",
@@ -622,11 +662,13 @@ const whitepapper = [
               },
               {
                 title: "wpconst_text119",
-                text: " wpconst_text120",
+                text: "wpconst_text120",
               },
             ],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text121",
@@ -674,6 +716,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: "wpconst_text236",
+        text6: null,
       },
       {
         subtitle: "wpconst_text131",
@@ -738,6 +782,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text145",
@@ -810,6 +856,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: "wpconst_text237",
+        text6: null,
       },
     ],
   },
@@ -833,6 +881,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text162",
@@ -848,6 +898,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text165",
@@ -863,6 +915,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
@@ -924,6 +978,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text181",
@@ -988,6 +1044,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: "wpconst_text238",
+        text6: "wpconst_text239",
       },
       {
         subtitle: "wpconst_text194",
@@ -1155,6 +1213,8 @@ const whitepapper = [
             ],
           },
         ],
+        text5: "wpconst_text240",
+        text6: null,
       },
     ],
   },
@@ -1178,6 +1238,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text231",
@@ -1194,6 +1256,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
       {
         subtitle: "wpconst_text233",
@@ -1210,6 +1274,8 @@ const whitepapper = [
             list: [],
           },
         ],
+        text5: null,
+        text6: null,
       },
     ],
   },
