@@ -397,7 +397,7 @@ const RoadMap = () => {
             <div className="w-[120px]">
               <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
                 <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                  To do
+                {t("roadmap_text13")}
                 </div>
               </div>
             </div>
