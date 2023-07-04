@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import moment from "moment";
+import Web3 from "web3";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
@@ -30,6 +31,24 @@ const Header = () => {
   }, [isOpenBurger]);
 
   const isMobile = useIsMobile();
+
+  let web3;
+
+  const connectWalletHandler = async () => {
+    if (
+      typeof window !== "undefined" &&
+      typeof window.ethereum !== "undefined"
+    ) {
+      try {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        web3 = new Web3(window.ethereum);
+      } catch (err: any) {
+        console.log(err.message);
+      }
+    } else {
+      console.log("Error install Metamask");
+    }
+  };
 
   return isMobile ? (
     <header
@@ -138,16 +157,19 @@ const Header = () => {
             );
           })}
         </ul>
-        {/* <Button
+        <Button
           outsideGradient={
             "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
-          <button className="px-[30px] font-man text-sm">
+          <button
+            onClick={connectWalletHandler}
+            className="px-[30px] font-man text-sm"
+          >
             {t("connect_wallet")}
           </button>
-        </Button> */}
-        <div className="lg:px-[85px]"></div>
+        </Button>
+        {/* <div className="lg:px-[85px]"></div> */}
       </nav>
     </header>
   );
