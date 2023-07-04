@@ -7,10 +7,10 @@ interface ComponentProps {
 const Button: React.FC<ComponentProps> = ({
   children,
   insideGradient = "rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]",
-  outsideGradient = "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]",
+  outsideGradient = "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:btn-hover-gradient",
 }) => {
   return (
-    <div className={`${outsideGradient} hover:btn-hover-gradient `}>
+    <div className={`${outsideGradient}`}>
       <div className={`flex h-full w-full  ${insideGradient}`}>{children}</div>
     </div>
   );

@@ -34,7 +34,7 @@ const WhitePapperHead = () => {
             <div className="flex justify-center lg:justify-start mb-[40px]">
               <Button
                 outsideGradient={
-                  "hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+                  "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
                 }
               >
                 <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">

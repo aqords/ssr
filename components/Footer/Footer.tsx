@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="flex flex-start mb-[40px]">
               <Button
                 insideGradient="rounded-full bg-black"
-                outsideGradient="hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
+                outsideGradient="hover:btn-hover-gradient hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
               >
                 <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[17px] lg:mr-[25px] lg:gap-[18px] lg:text-[16px]">
                   <p className="text-[#838383] text-[12px] smx:text-[14px]">

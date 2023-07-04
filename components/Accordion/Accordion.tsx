@@ -18,7 +18,7 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
   };
 
   return (
-    <div className="">
+    <section>
       <button
         className={`tracking-[-0.6px] text-[24px] lg:text-[32px] text-[${
           isOpen ? "#fff" : "#838383"
@@ -30,7 +30,7 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
           insideGradient={
             "rounded-[10px] bg-gradient-to-r from-[#27241d]  to-[#252118] px-[13px] py-[17px]"
           }
-          outsideGradient={`rounded-[10px] ${
+          outsideGradient={`rounded-[10px] hover:btn-hover-gradient ${
             isOpen ? "bg-gradient-to-l" : "bg-gradient-to-r"
           }   from-[#b5713f]  to-[#c6b38a] p-[1px]`}
         >
@@ -62,7 +62,7 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
         </div>
       </div>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25 my-[39.5px]"></span>
-    </div>
+    </section>
   );
 };
 

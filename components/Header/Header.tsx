@@ -52,7 +52,7 @@ const Header = () => {
         </button>
         {/* <Button
           outsideGradient={
-            "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
+            "hover:btn-hover-gradient rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
           <button className="px-[30px]">{t("connect_wallet")}</button>
@@ -140,7 +140,7 @@ const Header = () => {
         </ul>
         {/* <Button
           outsideGradient={
-            "rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
+            "hover:btn-hover-gradient rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
         >
           <button className="px-[30px] font-man text-sm">

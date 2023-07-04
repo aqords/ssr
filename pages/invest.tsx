@@ -72,7 +72,7 @@ const invest = () => {
               </div>
             );
           })}
-          <Button outsideGradient="rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] w-[158px] h-[42px] hover:cursor-pointer">
+          <Button outsideGradient="hover:btn-hover-gradient rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] w-[158px] h-[42px] hover:cursor-pointer">
             <div className="px-[30px] text-[20px] mt-[3px]">
               {t(`contact_us`)}
             </div>
