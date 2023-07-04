@@ -30,8 +30,8 @@ const roadmap = () => {
         />
         <RoadMap />
         <Navigationblock />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
