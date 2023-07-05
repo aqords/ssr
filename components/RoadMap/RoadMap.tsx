@@ -400,11 +400,12 @@ const RoadMap = () => {
             }`}
           >
             <div className="w-[120px]">
-              <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                  {t("roadmap_text13")}
-                </div>
-              </div>
+              <Button
+                outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+              >
+                <p className="text-[12px]">{t("roadmap_text13")}</p>
+              </Button>
             </div>
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
               {t("roadmap_text6")}
@@ -587,7 +588,7 @@ const RoadMap = () => {
         <div className="ml-[36px] sm:ml-[90px]">
           <div
             ref={elementRef30}
-            className={` ${
+            className={`${
               isScrolled["el-30"] ? "el-30 visible" : "el-30 original"
             }`}
           >
