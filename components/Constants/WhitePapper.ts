@@ -1,4 +1,36 @@
-const whitepapper = [
+interface WhitepaperSection {
+  id: string;
+  mainTitle: string;
+  text1: string | null;
+  text2: string | null;
+  body: WhitepaperSectionBody[];
+}
+
+interface WhitepaperSectionBody {
+  id?: string;
+  subtitle: string;
+  text1: string | null;
+  text2: string | null;
+  text3: string | null;
+  text4: string | null;
+  underlist: WhitepaperSectionUnderlist[];
+  text5: string | null;
+  text6: string | null;
+}
+
+interface WhitepaperSectionUnderlist {
+  title: string | null;
+  a_title: string | null;
+  b_title: string | null;
+  list: WhitepaperListItem[];
+}
+
+interface WhitepaperListItem {
+  title: string;
+  text: string;
+}
+
+const whitepapper: WhitepaperSection[] = [
   {
     id: "section1",
     mainTitle: "wpconst_sec1_title1",
@@ -12,7 +44,7 @@ const whitepapper = [
 
         text3: null,
         text4: null,
-        lunderlist: [
+        underlist: [
           {
             title: null,
             a_title: null,
@@ -488,6 +520,7 @@ const whitepapper = [
         text6: null,
       },
       {
+        id: "tokendist",
         subtitle: "wpconst_text51",
         text1: null,
         text2: null,
@@ -1230,7 +1263,7 @@ const whitepapper = [
         text2: null,
         text3: null,
         text4: null,
-        lunderlist: [
+        underlist: [
           {
             title: null,
             a_title: null,

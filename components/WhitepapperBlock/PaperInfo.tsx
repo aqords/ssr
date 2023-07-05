@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+import Link from "next/link";
 
 import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
 import whitepapper from "../Constants/WhitePapper";
@@ -93,9 +94,18 @@ const Whitepapper = () => {
                   <div>
                     {item.body.map((el) => (
                       <div className="mb-[70px]">
-                        <h3 className="text-[24px] font-bold mb-[30px]">
-                          {t(`${el.subtitle}`)}
-                        </h3>
+                        {el.id ? (
+                          <h3
+                            id={el.id}
+                            className="anchor-heading text-[24px] font-bold mb-[30px]"
+                          >
+                            {t(`${el.subtitle}`)}
+                          </h3>
+                        ) : (
+                          <h3 className="text-[24px] font-bold mb-[30px]">
+                            {t(`${el.subtitle}`)}
+                          </h3>
+                        )}
                         {el.text1 && (
                           <p className="font-man block mb-[30px] text-[18px]">
                             {t(`${el.text1}`)}

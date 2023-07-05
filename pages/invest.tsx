@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
+import { Routes } from "../components/Constants/Routes";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
@@ -15,6 +16,7 @@ import {
 import investBg from "../public/assets/images/invest.png";
 import investBull from "../public/assets/images/investBull.png";
 import Button from "../components/UI/Button/Button";
+import Link from "next/link";
 
 const invest = () => {
   const { t } = useTranslation();
@@ -32,8 +34,8 @@ const invest = () => {
         desc1={t("invest_page_desc1")}
         desc2={t("invest_page_desc2")}
         img={investBg}
-        imgStyle="absolute top-[10px] right-[0px] z-[-10]"
-        blockStyle="relative h-[479px] lg:h-[807px]"
+        imgStyle="absolute scale-[2]  top-[420px] left-[-180px] sm:scale-[1.5] sm:top-[320px] sm:left-[-110px] md:scale-[1] md:top-[240px] md:left-[0px] lg:h-[819px] lg:object-cover  lg:top-[10px]  lg:right-[0px] z-[-10]"
+        blockStyle="relative h-[700px] lg:h-[819px] overflow-hidden"
       />
       <div className="bg-[#19191A]">
         <div className="container py-[40px] md:py-[130px]">
@@ -58,20 +60,86 @@ const invest = () => {
           <h3 className="md:text-[48px] text-[32px] font-bold tracking-[-1.5px] md:mb-[95px]">
             {t("detail_invest")}
           </h3>
-          {detailInvestList.map((obj, id) => {
-            return (
-              <div className="mb-[73px]">
-                <p className="text-[24px] font-bold mt-[16px] mb-[11px] tracking-[-1.5px]">
-                  <span className="mr-[15px]">·</span>
-                  {t(`${obj.title}`)}
-                </p>
-                <p className="font-man tracking-[-0.35px] mb-[15px]">
-                  {t(`${obj.description}`)}
-                </p>
-                <p className="font-man text-[#838383]">{t(`${obj.text}`)}</p>
-              </div>
-            );
-          })}
+          <div className="mb-[73px]">
+            <p className="text-[24px] font-bold mt-[16px] mb-[11px] tracking-[-1.5px]">
+              <span className="mr-[15px]">·</span>
+              {t(`detail_invest1_title`)}
+            </p>
+            <p className="font-man tracking-[-0.35px] mb-[15px]">
+              {t(`detail_invest1_desc`)}
+            </p>
+            <p className="font-man text-[#838383]">
+              {t(`detail_invest1_text`)}
+            </p>
+          </div>
+          <div className="mb-[73px]">
+            <p className="text-[24px] font-bold mt-[16px] mb-[11px] tracking-[-1.5px]">
+              <span className="mr-[15px]">·</span>
+              {t(`detail_invest2_title`)}
+            </p>
+            <p className="font-man tracking-[-0.35px] mb-[15px]">
+              {t(`detail_invest2_desc`)} &nbsp;
+              {
+                <Link
+                  className="text-[#5682FA] underline"
+                  href={Routes[4].path}
+                >
+                  {t("white_paper")}
+                </Link>
+              }
+              &nbsp;
+              {
+                <Link
+                  className="text-[#5682FA] underline ml-[3px]"
+                  href={Routes[10].path}
+                >
+                  {t("pitch_deck")}
+                </Link>
+              }
+              &nbsp;
+              {
+                <Link
+                  className="text-[#5682FA] underline ml-[3px]"
+                  href={Routes[6].path}
+                >
+                  {t("road_map2")}
+                </Link>
+              }
+              &nbsp;
+              {
+                <Link
+                  className="text-[#5682FA] underline ml-[3px]"
+                  href={Routes[11].path}
+                >
+                  {t("tokenomics")}
+                </Link>
+              }
+              &nbsp; and &nbsp;
+              {
+                <Link
+                  className="text-[#5682FA] underline ml-[3px]"
+                  href={Routes[12].path}
+                >
+                  {t("token distribution")}
+                </Link>
+              }
+            </p>
+            <p className="font-man text-[#838383]">
+              {t(`detail_invest2_text`)}
+            </p>
+          </div>
+          <div className="mb-[73px]">
+            <p className="text-[24px] font-bold mt-[16px] mb-[11px] tracking-[-1.5px]">
+              <span className="mr-[15px]">·</span>
+              {t(`detail_invest3_title`)}
+            </p>
+            <p className="font-man tracking-[-0.35px] mb-[15px]">
+              {t(`detail_invest3_desc`)}
+            </p>
+            <p className="font-man text-[#838383]">
+              {t(`detail_invest3_text`)}
+            </p>
+          </div>
           <Button outsideGradient="hover:btn-hover-gradient rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] w-[158px] h-[42px] hover:cursor-pointer">
             <div className="px-[30px] text-[20px] mt-[3px]">
               {t(`contact_us`)}
@@ -81,11 +149,23 @@ const invest = () => {
       </div>
       <BlockWithBackground
         title={t("invest_page_title2")}
-        desc1={t("invest_page_desc3")}
-        desc2={t("invest_page_desc4")}
+        desc1={
+          <div className="">
+            {t("invest_page_desc3")}
+            <br />
+            <br />
+            {t("invest_page_desc4")}
+            <Link
+              className="text-[#5682FA] underline"
+              href="mailto:mihail@aqords.com"
+            >
+              mihail@aqords.com
+            </Link>
+          </div>
+        }
         img={investBull}
-        imgStyle="absolute top-[0px] right-[0px] "
-        blockStyle="relative h-[390px] lg:h-[807px]"
+        imgStyle="w-[353px] h-[232px]  rounded-[14px] scale-[1.5]"
+        blockStyle="relative h-[570px] lg:h-[807px] "
       />
       <Navigationblock />
       <Footer />

@@ -44,4 +44,16 @@ export const Routes = [
     name: "Whitepaperinfo",
     path: "/whitepaperinfo",
   },
+  {
+    name: "Pitch deck",
+    path: "https://deck.aqords.com/#/",
+  },
+  {
+    name: "Tokenomics",
+    path: "/whitepaperinfo#section6",
+  },
+  {
+    name: "Token distribution",
+    path: "/whitepaperinfo#tokendist",
+  },
 ];

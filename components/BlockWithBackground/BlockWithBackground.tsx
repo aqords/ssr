@@ -3,8 +3,8 @@ import Image, { StaticImageData } from "next/image";
 
 interface BlockWithBackgroundProps {
   title: string;
-  desc1?: string;
-  desc2?: string;
+  desc1?: JSX.Element;
+  desc2?: JSX.Element;
   img?: StaticImageData;
   imgStyle?: string;
   blockStyle?: string;
