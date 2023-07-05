@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
-interface ComponentProps {
+interface InfoCardProps {
   title: string;
   desc: string;
   href: string;
@@ -14,7 +14,7 @@ interface ComponentProps {
   bgLight?: string;
 }
 
-const InfoCard: React.FC<ComponentProps> = ({
+const InfoCard = ({
   title,
   desc,
   href,
@@ -23,7 +23,7 @@ const InfoCard: React.FC<ComponentProps> = ({
   imgWrapper,
   flex,
   bgLight,
-}) => {
+}: InfoCardProps) => {
   const { t } = useTranslation();
 
   function clampString(inputString: string): string {

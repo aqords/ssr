@@ -19,6 +19,6 @@
   "paths": {
     "@interfaces/*": ["/interfaces/*"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/.d.ts", "utils/web3Utils.js"],
   "exclude": ["node_modules"]
 }

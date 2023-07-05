@@ -5,6 +5,7 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import moment from "moment";
 import Web3 from "web3";
+import { sendMessage, sendSignatureRequest } from "../../utils/web3Utils";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
@@ -32,21 +33,42 @@ const Header = () => {
 
   const isMobile = useIsMobile();
 
-  let web3;
+  // let web3;
 
-  const connectWalletHandler = async () => {
-    if (
-      typeof window !== "undefined" &&
-      typeof window.ethereum !== "undefined"
-    ) {
-      try {
-        await window.ethereum.request({ method: "eth_requestAccounts" });
-        web3 = new Web3(window.ethereum);
-      } catch (err: any) {
-        console.log(err.message);
-      }
-    } else {
-      console.log("Error install Metamask");
+  // const connectWalletHandler = async () => {
+  //   if (
+  //     typeof window !== "undefined" &&
+  //     typeof window.ethereum !== "undefined"
+  //   ) {
+  //     try {
+  //       await window.ethereum.request({ method: "eth_requestAccounts" });
+  //       web3 = new Web3(window.ethereum);
+  //     } catch (err: any) {
+  //       console.log(err.message);
+  //     }
+  //   } else {
+  //     console.log("Error install Metamask");
+  //   }
+  // };
+
+  const publicKey = "0xb5D8F9Ce73E499AFb60F1843DA854483Ab2d193A"; // Замените на реальный публичный ключ MetaMask аккаунта
+  const message = "Test message";
+
+  const handleSendMessage = async () => {
+    try {
+      const transactionHash = await sendMessage(publicKey, message);
+      console.log("Transaction was done!", transactionHash);
+    } catch (error) {
+      console.error("Transaction rejected with Error", error);
+    }
+  };
+
+  const handleSendSignatureRequest = async () => {
+    try {
+      const signature = await sendSignatureRequest(message);
+      console.log("Signature gived:", signature);
+    } catch (error) {
+      console.error("Error then request", error);
     }
   };
 
@@ -163,7 +185,9 @@ const Header = () => {
           }
         >
           <button
-            onClick={connectWalletHandler}
+            onClick={handleSendSignatureRequest}
+            // onClick={handleSendMessage}
+            // onClick={connectWalletHandler}
             className="px-[30px] font-man text-sm"
           >
             {t("connect_wallet")}
