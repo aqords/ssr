@@ -30,8 +30,8 @@ const roadmap = () => {
           blockStyle="bg-primary h-[250px] lg:h-[600px] mt-[-30px]"
         />
         <RoadMap />
-        <Navigationblock />
       </div>
+      <Navigationblock />
       <Footer />
     </>
   );
