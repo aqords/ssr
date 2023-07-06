@@ -34,7 +34,7 @@ const Upperblock = () => {
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
       ></div>
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col items-center mt-[35px] sm:mt-[0px]">
         <Link href={Routes[8].path}>
           <Button
             insideGradient="rounded-full bg-black"

@@ -7,8 +7,8 @@ interface BlockWithBackgroundProps {
   desc2?: JSX.Element;
   img?: StaticImageData;
   imgStyle?: string;
-  imgStyleWrapper?: string;
   blockStyle?: string;
+  blockStyle2?: string;
 }
 
 const BlockWithBackground = ({
@@ -17,13 +17,13 @@ const BlockWithBackground = ({
   desc2,
   img,
   imgStyle,
-  imgStyleWrapper,
   blockStyle,
+  blockStyle2 = "container flex lg:h-full items-center",
 }: BlockWithBackgroundProps) => {
   return (
     <section className={blockStyle}>
-      <div className="container flex lg:h-full items-center">
-        <div className="max-w-[532px] ">
+      <div className={blockStyle2}>
+        <div className="max-w-[532px]">
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {title}
           </h3>
@@ -35,18 +35,11 @@ const BlockWithBackground = ({
           </p>
         </div>
       </div>
-      <div className={imgStyleWrapper}>
-        {img ? (
-          <Image
-            className={imgStyle}
-            priority
-            src={img}
-            alt="backgroundimage"
-          />
-        ) : (
-          ""
-        )}
-      </div>
+      {img ? (
+        <Image className={imgStyle} priority src={img} alt="backgroundimage" />
+      ) : (
+        ""
+      )}
     </section>
   );
 };

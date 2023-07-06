@@ -37,8 +37,8 @@ const invest = () => {
         desc1={t("invest_page_desc1")}
         desc2={t("invest_page_desc2")}
         img={investBg}
-        imgStyle="absolute scale-[2]  top-[420px] left-[-180px] sm:scale-[1.5] sm:top-[320px] sm:left-[-110px] md:scale-[1] md:top-[240px] md:left-[0px] lg:h-[819px] lg:object-cover  lg:top-[10px]  lg:right-[0px] z-[-10]"
-        blockStyle="relative h-[700px] lg:h-[819px] overflow-hidden"
+        imgStyle="absolute scale-[2]  bottom-[80px] left-[-180px] sm:scale-[1.5] sm:bottom-[67px] sm:left-[-160px] md:scale-[1] md:bottom-[0px] md:left-[0px] lg:h-[819px] lg:object-cover  lg:top-[10px]  lg:right-[0px] z-[-10]"
+        blockStyle="relative h-[700px] md:h-[610px] lg:h-[819px] overflow-hidden"
       />
       <div className="bg-[#19191A]">
         <div className="container py-[40px] md:py-[130px]">
@@ -168,7 +168,7 @@ const invest = () => {
         }
         img={investBull}
         imgStyle="lg:absolute top-[0px] lg:right-[-190px] 2xl:right-[-140px]"
-        blockStyle="relative h-[575px] sml:h-[595px] smx:h-[620px] sm:h-[700px] md:h-[780px] overflow-hidden"
+        blockStyle="relative h-[575px] sml:h-[595px] smx:h-[620px] sm:h-[700px] md:h-[780px] overflow-hidden "
       />
       <Navigationblock />
       <Footer />

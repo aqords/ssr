@@ -35,7 +35,7 @@ const Header = () => {
     <header
       className={`overflow-y-scroll ${
         isOpenBurger ? "h-[100vh]" : ""
-      } relative mb-[35px] bg-black z-10`}
+      } relative bg-black z-10`}
     >
       <div className="flex container justify-between items-center h-[48px] mb-[12px]">
         <button className="ml-[3px] mt-[10px]" onClick={(e) => toggleBurger()}>

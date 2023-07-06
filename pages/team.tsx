@@ -32,7 +32,7 @@ const team = () => {
         title={t("team_page_title1")}
         desc1={t("team_page_desc1")}
         desc2={t("team_page_desc2")}
-        blockStyle="bg-primary h-[479px] lg:h-[807px] mt-[-30px]"
+        blockStyle="bg-primary h-[479px] lg:h-[807px]"
       />
       <div className="bg-[#19191A]">
         <section className="container flex flex-col mt-[40px]">

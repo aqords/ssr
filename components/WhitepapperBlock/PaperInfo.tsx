@@ -32,7 +32,7 @@ const PaperInfo = () => {
   return (
     <>
       <section className="container">
-        <div className="container pt-[0px] pb-[0px] smx:pt-[60px] smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
+        <div className="container pt-[0px] pb-[0px]  smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
           <h2 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_info_title1")}
           </h2>

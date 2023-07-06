@@ -15,7 +15,6 @@ import manifesto from "../public/assets/images/manifesto-background1.png";
 import manifestoMob from "../public/assets/images/manifesto-mobile.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 
-
 const Manifesto = () => {
   const { t } = useTranslation();
 
@@ -34,12 +33,12 @@ const Manifesto = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        blockStyle="relative h-[580px] lg:h-[807px] overflow-hidden mt-[-40px]"
+        blockStyle="relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden"
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
         img={isMobile ? manifestoMob : manifesto}
-        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-40%] lg:top-[0%] lg:right-[-10%] xl:top-[0%] xl:right-[0%] 2xl:top-[0%] 2xl:right-[0%]"
+        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
       />
       <div className="bg-second">
         <div className="container">
