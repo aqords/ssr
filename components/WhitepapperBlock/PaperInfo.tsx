@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import Link from "next/link";
 
-import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
 import whitepapper from "../Constants/WhitePapper";
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
+import wpbull from "/public/assets/images/wpbull.jpg";
 
-const Whitepapper = () => {
+const PaperInfo = () => {
   const { t } = useTranslation();
   const [showButton, setShowButton] = useState(false);
 
@@ -46,8 +45,8 @@ const Whitepapper = () => {
                 {t("whitepaper_info_desc2")}
               </p>
             </div>
-            <div className="mt-[40px] ">
-              <Image sizes="50vw" src={whitepapperimg} alt="image" />
+            <div className="mt-[40px] rounded-[20px] overflow-hidden">
+              <Image sizes="50vw" src={wpbull} alt="image" />
             </div>
           </div>
         </div>
@@ -192,4 +191,4 @@ const Whitepapper = () => {
     </>
   );
 };
-export default Whitepapper;
+export default PaperInfo;

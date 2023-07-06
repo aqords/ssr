@@ -49,16 +49,13 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
             : "max-h-0 opacity-0 unvisible"
         }`}
       >
-        <div className="max-w-[624px] leading-8">
+        <div className=" leading-8">
           <p className="font-man font-[300] text-[19px] mb-[30px] tracking-[0.2px]">
             {desc1}
           </p>
           <p className="font-man text-[15px] text-[#838383] tracking-[0.14px] ">
             {desc2}
           </p>
-        </div>
-        <div className="hidden lg:block w-[348px] h-[226px] bg-gray rounded-[20px]">
-          {/* <Image /> */}
         </div>
       </div>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25 my-[39.5px]"></span>

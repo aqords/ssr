@@ -24,7 +24,10 @@ const invest = () => {
     <>
       <Head>
         <title>{t("invest_title")}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"
+        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
@@ -164,8 +167,8 @@ const invest = () => {
           </div>
         }
         img={investBull}
-        imgStyle="w-[353px] h-[232px]  rounded-[14px] scale-[1.5]"
-        blockStyle="relative h-[570px] lg:h-[807px] "
+        imgStyle="lg:absolute top-[0px] lg:right-[-190px] 2xl:right-[-140px]"
+        blockStyle="relative h-[575px] sml:h-[595px] smx:h-[620px] sm:h-[700px] md:h-[780px] overflow-hidden"
       />
       <Navigationblock />
       <Footer />

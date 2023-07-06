@@ -37,12 +37,12 @@ const Header = () => {
         isOpenBurger ? "h-[100vh]" : ""
       } relative mb-[35px] bg-black z-10`}
     >
-      <div className="flex container justify-between items-center h-[60px] mb-[12px]">
-        <button className="ml-[2px]" onClick={(e) => toggleBurger()}>
+      <div className="flex container justify-between items-center h-[48px] mb-[12px]">
+        <button className="ml-[3px] mt-[10px]" onClick={(e) => toggleBurger()}>
           {isOpenBurger ? (
             <Image
               sizes="50vw"
-              className="scale-305"
+              className="scale-[1.3] ml-[5px]"
               src={closeburg}
               alt="menu"
             />
@@ -66,7 +66,7 @@ const Header = () => {
                 <Link
                   key={obj.path}
                   href={obj.path}
-                  className="font-man relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
+                  className="relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
                 >
                   <p>{t(obj.name)}</p>
 
@@ -75,7 +75,7 @@ const Header = () => {
                   {obj.url ? (
                     <Image
                       sizes="50vw"
-                      className="m-[-19px]"
+                      className="absolute right-[0px]"
                       src={obj.url}
                       alt="logo"
                     />

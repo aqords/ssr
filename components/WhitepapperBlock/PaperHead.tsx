@@ -7,12 +7,12 @@ import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import circle from "/public/assets/images/circle.png";
 
-const WhitePapperHead = () => {
+const PapperHead = () => {
   const { t } = useTranslation();
   return (
     <>
       <section>
-        <div className="container py-[40px] lg:py-[120px]">
+        <div className="container pb-[40px] sm:py-[40px] lg:py-[120px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_title1")}
           </h1>
@@ -62,4 +62,4 @@ const WhitePapperHead = () => {
   );
 };
 
-export default WhitePapperHead;
+export default PapperHead;

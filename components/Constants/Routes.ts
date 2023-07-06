@@ -56,4 +56,8 @@ export const Routes = [
     name: "Token distribution",
     path: "/whitepaperinfo#tokendist",
   },
+  {
+    name: "FAQ",
+    path: "/faq",
+  },
 ];

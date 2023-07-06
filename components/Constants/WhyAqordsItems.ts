@@ -11,6 +11,8 @@ import fife from "public/assets/images/fife.svg";
 import six from "public/assets/images/six.svg";
 import seven from "public/assets/images/seven.svg";
 import lock from "public/assets/images/lock.svg";
+import statistics from "public/assets/images/statisticsicon.svg";
+import people from "public/assets/images/peopleicon.svg";
 
 export interface renderObject {
   topicon?: string;
@@ -95,14 +97,14 @@ export const ManifestList: renderObject[] = [
   },
   {
     topicon: six,
-    icon: tepi,
+    icon: statistics,
     title: "manifest_list6_title",
     description: "manifest_list6_desc",
     text: "manifest_list6_text",
   },
   {
     topicon: seven,
-    icon: lock,
+    icon: people,
     title: "manifest_list7_title",
     description: "manifest_list7_desc",
     text: "manifest_list7_text",

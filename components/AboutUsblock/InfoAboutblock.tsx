@@ -1,10 +1,11 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
-
-import gradient1 from "/public/assets/images/gradientimg.svg";
-import gradient2 from "/public/assets/images/gradientimg2.svg";
 import Image from "next/image";
-import bull from "/public/assets/images/bull.svg";
+
+import BlockWithBackground from "../BlockWithBackground/BlockWithBackground";
+import worldinhands from "/public/assets/images/worldinhands.jpg";
+import codebg from "/public/assets/images/codebg.jpg";
+import truck from "/public/assets/images/truck.jpg";
 
 const InfoAboutblock = () => {
   const { t } = useTranslation();
@@ -12,19 +13,19 @@ const InfoAboutblock = () => {
   return (
     <>
       <section className="relative">
-        <div className="container relative  pt-[60px] sm:pt-[0px] md:pt-[30px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
-          <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
+        <div className="container relative   sm:pt-[0px] md:pt-[30px] lg:pt-[60px]  pb-[130px] lg:pb-[187px]">
+          <p className="font-normal text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px] mb-[30px]">
             {t("info_about_block_desc1")}
           </p>
-          <p className="font-normal  text-[#838383] text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px]  mb-[60px] md:mb-[80px] ">
+          <p className="font-normal text-[16px] lg:text-[20px]  font-man  leading-[24px] md:leading-[32px] tracking-[-0.14px]  mb-[60px] md:mb-[80px] ">
             {t("info_about_block_desc2")}
           </p>
         </div>
         <div className="container relative top-[-170px]">
           <Image
-            className="absolute px-[12px]  left-1/2 transform -translate-x-1/2 "
-            alt="gradient"
-            src={gradient1}
+            className="absolute   left-1/2 transform -translate-x-1/2 rounded-[20px]"
+            alt="code example"
+            src={codebg}
             width={1084}
             height={375}
           />
@@ -41,9 +42,9 @@ const InfoAboutblock = () => {
               </p>
             </div>
             <Image
-              className="hidden lg:block"
-              alt="gradient2"
-              src={gradient2}
+              className="hidden lg:block rounded-[20px]"
+              alt="world in hands"
+              src={worldinhands}
               sizes="50vw"
               width={440}
               height={576}
@@ -51,27 +52,13 @@ const InfoAboutblock = () => {
           </div>
         </div>
 
-        <div className="bg-[#202020] ">
-          <div className=" py-[48px] lg:py-[92px] container">
-            <div className="max-w-[440px]">
-              <h2 className="leading-[2.8rem] lg:leading-[3.8rem]   font-bold text-[32px] lg:text-[48px]  mb-[30px] tracking-[-1.5px]">
-                {t("info_about_block_desc5")}
-              </h2>
-              <p className="font-normal text-[16px] lg:text-[20px] font-man max-w-[532px] leading-6 md:leading-8 tracking-[-0.42px] ">
-                {t("info_about_block_desc6")}
-              </p>
-            </div>
-          </div>
-          {/* <div className="w-[274px] h-[318px] scale-[0.85] lg:scale-[1]">
-          <Image
-            className=" relative left-[-70px] top-[-60px] max-w-none md:relative md:left-[385px] lg:left-[-135px] lg:top-[0px]"
-            alt="bull"
-            src={bull}
-            width={440}
-            height={576}
-          />
-        </div> */}
-        </div>
+        <BlockWithBackground
+          img={truck}
+          imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
+          title={t("info_about_block_desc5")}
+          desc1={t("info_about_block_desc6")}
+          blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
+        />
       </section>
     </>
   );

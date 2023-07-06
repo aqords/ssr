@@ -109,7 +109,7 @@ const ContactForm = () => {
       <div className="relative font-man text-[15px] w-full lg:max-w-[575px] ">
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
         <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[20px] mt-[-5px]">
-          <label className="relative flex flex-col text-[#6B7280] text-[12px] ">
+          <label className="relative flex flex-col text-[#6B7280] text-[12px] mb-[20px] sm:mb-[0px]">
             <p className="text-[#ffffff]">
               {t("contact_enter_name")}
               <span className="text-[#F44A77]"> *</span>

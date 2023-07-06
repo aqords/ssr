@@ -29,7 +29,7 @@ const Upperblock = () => {
   });
 
   return (
-    <div className="container sm:pt-[100px] pt-[12px] relative pb-[150px] sm:pb-[130px] md:pb-[170px] lg:pb-[270px]">
+    <div className="container sm:pt-[100px] pt-[0px] relative pb-[150px] sm:pb-[130px] md:pb-[170px] lg:pb-[270px]">
       <div
         className="
       absolute lg:top-[-1091px] lg:left-[-572px] w-[975px] h-[975px] opacity-20 background-light z-[-10] top-[-951px] left-[-612px]"
@@ -40,7 +40,7 @@ const Upperblock = () => {
             insideGradient="rounded-full bg-black"
             outsideGradient="hover:btn-hover-gradient hover:cursor-pointer rounded-full bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]"
           >
-            <div className="text-[12px] mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
+            <div className="text-[12px] mx-[41px] sm:mx-[32px] flex gap-[5px] lg:ml-[70px] lg:mr-[90px] lg:gap-[22px] lg:text-[16px]">
               <p className="text-[#838383]">{t("footer_announcing")}</p>
               <p className="font-normal"> {t("footer_readmore")}</p>
             </div>
@@ -49,7 +49,7 @@ const Upperblock = () => {
 
         <Image
           sizes="50vw"
-          className="mt-[100px] mb-[39px]"
+          className="mt-[120px] mb-[80px] sm:mt-[100px] sm:mb-[40px]"
           src={aqordsLogo}
           priority
           alt="AQORDS Logo"
@@ -57,7 +57,7 @@ const Upperblock = () => {
         <AnimatedText
           text="Empowering Carriers, Shippers and Freight Forwarders with Real-Time
           DEFI Payments"
-          styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[85px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
+          styles="text-[32px]  leading-[40px] font-[400] lg:text-[24px] max-w-[585px] h-[160px] lg:h-[69px] lg:text-center mb-[75px] sm:mb-[120px] sm:h-[100px] smx:h-[120px] tracking-[-1.5px] lg:tracking-[-0.3px]"
         />
       </section>
       <span className="block h-[1px] w-full span-gradient mt-[13px]"></span>

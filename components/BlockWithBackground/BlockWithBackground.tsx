@@ -2,11 +2,12 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface BlockWithBackgroundProps {
-  title: string;
+  title?: string;
   desc1?: JSX.Element;
   desc2?: JSX.Element;
   img?: StaticImageData;
   imgStyle?: string;
+  imgStyleWrapper?: string;
   blockStyle?: string;
 }
 
@@ -16,12 +17,13 @@ const BlockWithBackground = ({
   desc2,
   img,
   imgStyle,
-  blockStyle = "bg-gray ",
+  imgStyleWrapper,
+  blockStyle,
 }: BlockWithBackgroundProps) => {
   return (
     <section className={blockStyle}>
       <div className="container flex lg:h-full items-center">
-        <div className="max-w-[624px] pt-[40px]">
+        <div className="max-w-[532px] ">
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {title}
           </h3>
@@ -33,11 +35,18 @@ const BlockWithBackground = ({
           </p>
         </div>
       </div>
-      {img ? (
-        <Image className={imgStyle} priority src={img} alt="backgroundimage" />
-      ) : (
-        ""
-      )}
+      <div className={imgStyleWrapper}>
+        {img ? (
+          <Image
+            className={imgStyle}
+            priority
+            src={img}
+            alt="backgroundimage"
+          />
+        ) : (
+          ""
+        )}
+      </div>
     </section>
   );
 };

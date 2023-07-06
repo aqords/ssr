@@ -8,6 +8,7 @@
   "roadmap_title": "Aqords - Road Map",
   "team_title": "Aqords - Team",
   "whitepaper_title": "Aqords - Whitepaper",
+  "faq_title": "Aqords - Frequently Asked Questions (FAQ)",
   "connect_wallet": "Connect wallet",
   "home": "Home",
   "about": "About",
@@ -225,7 +226,7 @@
   "team_page_desc4": "With a deep understanding of the challenges and opportunities in the freight transportation space, our team is committed to developing innovative solutions that transform the way contracts are executed, payments are processed, and trust is established between parties.",
   "team_page_desc5": "We are dedicated to creating a culture of excellence, innovation,and continuous learning within AQORDS. Our team is fueled by a passion for disruptive technologies and a commitment to delivering exceptional value to our users.",
   "team_page_desc6": "Together, we are shaping the future of freight transportation and unlocking new possibilities for the industry.",
-  "team_page_desc7": "TJoin us on this exciting journey as we revolutionize the way supply chains operate and pave the way for a more efficient, transparent,and secure future.",
+  "team_page_desc7": "Join us on this exciting journey as we revolutionize the way supply chains operate and pave the way for a more efficient, transparent,and secure future.",
   "infocard_view": "View more",
   "info_about_block_desc1": "Driven by our passion for disruptive technologies, we have embarked on a remarkable journey to create a decentralized smart contract platform specifically designed for the needs of the freight transportation industry. Our team combines extensive experience in supply chains, blockchain technology, decentralized finance (DeFi), and online marketplaces, enabling us to tackle the complex challenges faced by the industry head-on.",
   "info_about_block_desc2": "As trailblazers in this field, we understand the pain points and inefficiencies that plague traditional freight transportation processes. Outdated systems, manual paperwork, delayed payments, and a lack of transparency have long hindered the industry's potential. That's why we set out to develop a platform that transforms these challenges into opportunities for growth, operational excellence, and financial empowerment.",
@@ -579,5 +580,6 @@
   "wpconst_text238": "Transferring power to the AQORDS community is essential to foster a more democratic and resilient platform that truly serves the needs and interests of its users.",
   "wpconst_text239": "By embracing decentralization, we promote fairness, transparency, and innovation, creating an ecosystem where participants can actively contribute to and shape the future of AQORDS.",
   "wpconst_text240": "By following this roadmap, AQORDS will gradually transition from a centralized entity to a fully functional DAO, empowering the community and enabling decentralized decision-making within the platform.",
-  "wpconst_text241": "gnificant strides in transforming the way freight transportation contracts are executed, payments are processed, and trust is established. One of the key impacts of AQORDS on the freight transportation landscape is the elimination of traditional inefficiencies and delays associated with paper-based processes. By digiti"
+  "wpconst_text241": "gnificant strides in transforming the way freight transportation contracts are executed, payments are processed, and trust is established. One of the key impacts of AQORDS on the freight transportation landscape is the elimination of traditional inefficiencies and delays associated with paper-based processes. By digiti",
+  "faq": "FAQ"
 }

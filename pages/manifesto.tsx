@@ -13,6 +13,8 @@ import Navigationblock from "../components/Navigationblock/Navigationblock";
 import WhyAqords from "../components/WhyAqords/WhyAqordsList";
 import manifesto from "../public/assets/images/manifesto-background1.png";
 import manifestoMob from "../public/assets/images/manifesto-mobile.png";
+import truck3 from "/public/assets/images/truck3.jpg";
+
 
 const Manifesto = () => {
   const { t } = useTranslation();
@@ -23,13 +25,16 @@ const Manifesto = () => {
     <>
       <Head>
         <title>{t("manifesto_title")}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"
+        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
       <BlockWithBackground
-        blockStyle="relative h-[580px] lg:h-[807px] overflow-hidden "
+        blockStyle="relative h-[580px] lg:h-[807px] overflow-hidden mt-[-40px]"
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
@@ -45,8 +50,11 @@ const Manifesto = () => {
         </div>
       </div>
       <BlockWithBackground
+        img={truck3}
+        imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
         title={t("manifesto_page_title2")}
         desc1={t("manifesto_page_desc4")}
+        blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
       />
       <Navigationblock />
       <Footer />

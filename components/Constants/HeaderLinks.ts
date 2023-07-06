@@ -1,4 +1,4 @@
-import manifesto from "../../public/assets/images/manifesto-btn.svg";
+import manifesto from "../../public/assets/images/manifesto-btn.png";
 import about from "../../public/assets/images/aboutus-btn.svg";
 import { Routes } from "./Routes";
 
@@ -80,6 +80,12 @@ export const linksForMobile: Link[] = [
   },
   {
     name: "road_map",
+    path: Routes[6].path,
+    bgLight:
+      "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
+  },
+  {
+    name: "faq",
     path: Routes[6].path,
     bgLight:
       "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
