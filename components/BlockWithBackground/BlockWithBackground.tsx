@@ -9,6 +9,7 @@ interface BlockWithBackgroundProps {
   imgStyle?: string;
   blockStyle?: string;
   blockStyle2?: string;
+  blockStyle3?: string;
 }
 
 const BlockWithBackground = ({
@@ -19,11 +20,12 @@ const BlockWithBackground = ({
   imgStyle,
   blockStyle,
   blockStyle2 = "container flex lg:h-full items-center",
+  blockStyle3 = "max-w-[532px]",
 }: BlockWithBackgroundProps) => {
   return (
     <section className={blockStyle}>
       <div className={blockStyle2}>
-        <div className="max-w-[532px]">
+        <div className={blockStyle3}>
           <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {title}
           </h3>
@@ -35,10 +37,8 @@ const BlockWithBackground = ({
           </p>
         </div>
       </div>
-      {img ? (
+      {img && (
         <Image className={imgStyle} priority src={img} alt="backgroundimage" />
-      ) : (
-        ""
       )}
     </section>
   );

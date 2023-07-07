@@ -31,9 +31,7 @@ const Navigationblock = () => {
 
   return (
     <div className="container py-[30px] md:py-[100px]">
-      {currentLocation.includes("howitworks") ? (
-        ""
-      ) : (
+      {!currentLocation.includes("howitworks") && (
         <div
           ref={elementRef4}
           className={isScrolled["el-4"] ? "el-4 visible" : "el-4 original"}
@@ -58,14 +56,11 @@ const Navigationblock = () => {
       >
         <div
           className={`${
-            currentLocation.includes("manifesto")
-              ? ""
-              : "flex flex-wrap lg:flex-nowrap gap-[16px]"
+            !currentLocation.includes("manifesto") &&
+            "flex flex-wrap lg:flex-nowrap gap-[16px]"
           } gap-[18px] flex-wrap`}
         >
-          {currentLocation.includes("manifesto") ? (
-            ""
-          ) : (
+          {!currentLocation.includes("manifesto") && (
             <InfoCard
               title={NavigationblockData[1].title}
               desc={t(`${NavigationblockData[1].desc}`)}
@@ -81,18 +76,14 @@ const Navigationblock = () => {
             />
           )}
           <div className={`flex flex-col gap-[18px] flex-wrap`}>
-            {currentLocation.includes("whitepaper") ? (
-              ""
-            ) : (
+            {!currentLocation.includes("whitepaper") && (
               <InfoCard
                 title={NavigationblockData[2].title}
                 desc={t(`${NavigationblockData[2].desc}`)}
                 href={NavigationblockData[2].href}
               />
             )}
-            {currentLocation.includes("roadmap") ? (
-              ""
-            ) : (
+            {!currentLocation.includes("roadmap") && (
               <InfoCard
                 title={NavigationblockData[3].title}
                 desc={t(`${NavigationblockData[3].desc}`)}
@@ -112,9 +103,7 @@ const Navigationblock = () => {
         ref={elementRef2}
         className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}
       >
-        {currentLocation.includes("about") ? (
-          ""
-        ) : (
+        {!currentLocation.includes("about") && (
           <InfoCard
             title={NavigationblockData[4].title}
             desc={t(`${NavigationblockData[4].desc}`)}
@@ -130,9 +119,7 @@ const Navigationblock = () => {
             bgLight={NavigationblockData[4].bgLight}
           />
         )}
-        {currentLocation.includes("team") ? (
-          ""
-        ) : (
+        {!currentLocation.includes("team") && (
           <>
             <span className="block h-[0px] my-[60px]"></span>
             <InfoCard

@@ -13,8 +13,8 @@ interface AccordionProps {
 const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleAccordion = (boolean: boolean) => {
-    setIsOpen(!boolean);
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -23,7 +23,7 @@ const Accordion = ({ title, desc1, desc2 }: AccordionProps) => {
         className={`tracking-[-0.6px] text-[24px] lg:text-[32px] text-[${
           isOpen ? "#fff" : "#838383"
         }]  hover:text-[#fff] w-full flex justify-between items-center `}
-        onClick={() => toggleAccordion(isOpen)}
+        onClick={toggleAccordion}
       >
         {title}
         <Button

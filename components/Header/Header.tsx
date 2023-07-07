@@ -17,10 +17,10 @@ const Header = () => {
 
   const currentLocation = useRouter().pathname.split("/");
 
-  const [isOpenBurger, setIsOpenBureger] = useState<boolean>(false);
+  const [isOpenBurger, setIsOpenBurger] = useState<boolean>(false);
 
   const toggleBurger = () => {
-    isOpenBurger ? setIsOpenBureger(false) : setIsOpenBureger(true);
+    setIsOpenBurger(!isOpenBurger);
   };
 
   useEffect(() => {
@@ -33,12 +33,12 @@ const Header = () => {
 
   return isMobile ? (
     <header
-      className={`overflow-y-scroll ${
+      className={` overflow-y-scroll ${
         isOpenBurger ? "h-[100vh]" : ""
-      } relative bg-black z-10`}
+      } fixed w-[100vw]  bg-black z-10`}
     >
-      <div className="flex container justify-between items-center h-[48px] mb-[12px]">
-        <button className="ml-[3px] mt-[10px]" onClick={(e) => toggleBurger()}>
+      <div className="flex container justify-between items-center h-[48px] mb-[12px] ">
+        <button className="ml-[3px] mt-[10px]" onClick={toggleBurger}>
           {isOpenBurger ? (
             <Image
               sizes="50vw"
@@ -59,7 +59,7 @@ const Header = () => {
         </Button> */}
       </div>
       <nav>
-        {isOpenBurger ? (
+        {isOpenBurger && (
           <ul className="flex flex-col gap-[12px] container">
             {linksForMobile.map((obj) => {
               return (
@@ -70,22 +70,18 @@ const Header = () => {
                 >
                   <p>{t(obj.name)}</p>
 
-                  {obj.bgLight ? <div className={obj.bgLight}></div> : ""}
+                  {obj.bgLight && <div className={obj.bgLight}></div>}
 
-                  {obj.url ? (
+                  {obj.url && (
                     <Image
                       sizes="50vw"
                       className="absolute right-[0px]"
                       src={obj.url}
                       alt="logo"
                     />
-                  ) : (
-                    ""
                   )}
-                  {obj.name === "about" ? (
+                  {obj.name === "about" && (
                     <div className="absolute top-[-90px] right-[-80px] w-[183px] h-[183px] opacity-40 background-light"></div>
-                  ) : (
-                    ""
                   )}
                 </Link>
               );
@@ -98,47 +94,42 @@ const Header = () => {
               </p>
             </>
           </ul>
-        ) : (
-          ""
         )}
       </nav>
     </header>
   ) : (
-    <header className="container">
-      <nav className="flex items-center justify-between h-[96px]">
-        <Link
-          href="/"
-          className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer xl:mr-[120px] ml-[2px]"
-        >
-          <div className="rounded-[8px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-            <div className="rounded-[8px] w-full bg-black p-[1px]">
-              <Image
-                sizes="50vw"
-                src={logo}
-                width={52}
-                height={50}
-                alt="aqords logo"
-              />
-            </div>
-          </div>
-        </Link>
-        <ul className="flex gap-[10px] lg:gap-[34px]">
-          {linksForDesktop.map((obj) => {
-            return (
-              <li
-                key={obj.path}
-                className={`  ${
-                  obj.path.slice(1) === currentLocation[1]
-                    ? "font-[500] bg-clip-text text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] gradient-brown-yellow "
-                    : "text-[#B3B3B3] hover:text-[#E5E5E5]"
-                } text-sm font-man hover:cursor-pointer `}
-              >
-                <Link href={obj.path}>{t(obj.name)}</Link>
-              </li>
-            );
-          })}
-        </ul>
-        {/* <Button
+    <header className="w-full  fixed left-1/2 transform -translate-x-1/2 z-[10] bg-black">
+      <div className="container ">
+        <nav className=" flex items-center justify-between h-[96px]">
+          <Link
+            href="/"
+            className="flex max-w-screen-sm items-center justify-center hover:cursor-pointer xl:mr-[120px] ml-[2px]"
+          >
+            <Image
+              sizes="50vw"
+              src={logo}
+              width={52}
+              height={50}
+              alt="aqords logo"
+            />
+          </Link>
+          <ul className="flex gap-[10px] lg:gap-[34px]">
+            {linksForDesktop.map((obj) => {
+              return (
+                <li
+                  key={obj.path}
+                  className={`  ${
+                    obj.path.slice(1) === currentLocation[1]
+                      ? "font-[500] bg-clip-text text-transparent bg-gradient-to-tl from-[#C6B38A] from-0% via-[#F3C691] via-46% to-[#B4703E] to-100% border-b-[1px] gradient-brown-yellow "
+                      : "text-[#B3B3B3] hover:text-[#E5E5E5]"
+                  } text-sm font-man hover:cursor-pointer `}
+                >
+                  <Link href={obj.path}>{t(obj.name)}</Link>
+                </li>
+              );
+            })}
+          </ul>
+          {/* <Button
           outsideGradient={
             "hover:btn-hover-gradient rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] hover:cursor-pointer"
           }
@@ -147,8 +138,8 @@ const Header = () => {
             {t("connect_wallet")}
           </button>
         </Button> */}
-        <div className="lg:px-[85px]"></div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 };

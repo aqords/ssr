@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 
 import FooterButton from "../UI/Button/FooterButton";
@@ -15,12 +15,13 @@ const ContactForm = () => {
   const [text, setText] = useState("");
   const [textError, setTextError] = useState("");
 
+  const RegExp =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   const nameHandler = (name: string) => {
     setName(name);
-    if (name.length === 0) {
-      setNameError(`${t("form_characters_error_min_name")}`);
-    } else if (name.length < 2) {
-      setNameError(`${t("form_characters_error_min_name")}`);
+    if (name.length < 2 && name !== "") {
+      setNameError(t("form_characters_error_min_name"));
     } else {
       setNameError("");
     }
@@ -28,13 +29,7 @@ const ContactForm = () => {
 
   const emailHandler = (email: string) => {
     setEmail(email);
-    if (
-      String(email)
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        )
-    ) {
+    if (email === "" || String(email).toLowerCase().match(RegExp)) {
       setEmailError("");
     } else {
       setEmailError(t("form_email_error"));
@@ -44,10 +39,9 @@ const ContactForm = () => {
   const subjectHandler = (subject: string) => {
     setSubject(subject);
     if (subject.length > 50) {
-      setSubjectError(`${t("form_characters_error")}`);
-    }
-    if (subject.length < 10) {
-      setSubjectError(`${t("form_characters_error_min_sub")}`);
+      setSubjectError(t("form_characters_error"));
+    } else if (subject.length < 10 && subject.length !== 0) {
+      setSubjectError(t("form_characters_error_min_sub"));
     } else {
       setSubjectError("");
     }
@@ -56,33 +50,59 @@ const ContactForm = () => {
   const textHandler = (text: string) => {
     setText(text);
     if (text.length > 255) {
-      setTextError(`${t("form_characters_error")}`);
-    }
-    if (text.length < 10) {
-      setTextError(`${t("form_characters_error_min_mes")}`);
+      setTextError(t("form_characters_error"));
+    } else if (text.length < 10 && text.length !== 0) {
+      setTextError(t("form_characters_error_min_mes"));
     } else {
       setTextError("");
     }
   };
 
   const validateForm = (): void => {
-    nameHandler(name);
-    emailHandler(email);
-    textHandler(text);
-    subjectHandler(subject);
-    if (
-      nameError === "" &&
-      emailError === "" &&
-      subjectError === "" &&
-      textError === ""
-    ) {
-      setName("");
-      setEmail("");
-      setSubject("");
-      setText("");
-      // console.log("done");
+    const message = {
+      name: "",
+      email: "",
+      subject: "",
+      text: "",
+    };
+
+    if (nameError === "" && name !== "") {
+      message.name = name;
     } else {
-      // console.log("error");
+      setNameError(t("form_characters_error_min_name"));
+    }
+
+    if (emailError === "" && email !== "") {
+      message.email = email;
+    } else {
+      setEmailError(t("form_email_error"));
+    }
+
+    if (subjectError === "" && subject !== "") {
+      message.subject = subject;
+    } else if (subject === "") {
+      setSubjectError(t("form_characters_error_min_sub"));
+    } else {
+      setSubjectError(t("form_characters_error"));
+    }
+
+    if (textError === "" && text !== "") {
+      message.text = text;
+    } else if (text === "") {
+      setTextError(t("form_characters_error_min_sub"));
+    } else {
+      setTextError(t("form_characters_error"));
+    }
+
+    if (
+      message.name !== "" &&
+      message.email !== "" &&
+      message.subject !== "" &&
+      message.text !== ""
+    ) {
+      // console.log(message);
+    } else {
+      // console.log("érror");
     }
   };
 
@@ -118,7 +138,7 @@ const ContactForm = () => {
               value={name}
               onChange={(e) => nameHandler(e.target.value)}
               placeholder={t("contact_write_name")}
-              className={`border-[1px]   ${
+              className={`border-[1px] border-transparent placeholder-[#6B7280] ${
                 nameError ? "border-[#F44A77]" : ""
               } hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               type="text"
@@ -137,9 +157,11 @@ const ContactForm = () => {
               <span className="text-[#F44A77]"> *</span>
             </p>
             <input
+              name="email"
               value={email}
+              autoComplete="email"
               onChange={(e) => emailHandler(e.target.value)}
-              className={`border-[1px]   ${
+              className={`border-[1px] border-transparent placeholder-[#6B7280]   ${
                 emailError ? "border-[#F44A77]" : ""
               }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
               placeholder={t("contact_write_email")}
@@ -162,9 +184,9 @@ const ContactForm = () => {
           <input
             value={subject}
             onChange={(e) => subjectHandler(e.target.value)}
-            className={`border-[1px]   ${
+            className={`border-[1px] border-transparent placeholder-[#6B7280]   ${
               subjectError ? "border-[#F44A77]" : ""
-            } border hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
+            }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
             placeholder={t("contact_write_subject")}
             type="text"
           />
@@ -190,9 +212,9 @@ const ContactForm = () => {
           <textarea
             value={text}
             onChange={(e) => textHandler(e.target.value)}
-            className={`border-[1px]   ${
+            className={`border-[1px] border-transparent  placeholder-[#6B7280]  ${
               textError ? "border-[#F44A77]" : ""
-            } border  hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
+            }   hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
             placeholder={t("contact_write_message")}
           />
           {textError ? (

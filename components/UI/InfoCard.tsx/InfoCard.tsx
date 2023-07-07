@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
-interface ComponentProps {
+interface InfoCardProps {
   title: string;
   desc: string;
   href: string;
@@ -14,7 +14,7 @@ interface ComponentProps {
   bgLight?: string;
 }
 
-const InfoCard: React.FC<ComponentProps> = ({
+const InfoCard = ({
   title,
   desc,
   href,
@@ -23,7 +23,7 @@ const InfoCard: React.FC<ComponentProps> = ({
   imgWrapper,
   flex,
   bgLight,
-}) => {
+}: InfoCardProps) => {
   const { t } = useTranslation();
 
   function clampString(inputString: string): string {
@@ -48,11 +48,7 @@ const InfoCard: React.FC<ComponentProps> = ({
     >
       <div className={`${flex ? `${flex}` : ""} relative`}>
         <div className={imgWrapper}>
-          {img ? (
-            <Image sizes="50vw" src={img} className={imgStyle} alt="" />
-          ) : (
-            ""
-          )}
+          {img && <Image sizes="50vw" src={img} className={imgStyle} alt="" />}
         </div>
         <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
           <h3 className="text-[32px] mb-[2px] md:text-[40px]">{t(title)}</h3>
@@ -71,7 +67,7 @@ const InfoCard: React.FC<ComponentProps> = ({
             </Button>
           </Link>
         </div>
-        {bgLight ? <div className={bgLight}></div> : ""}
+        {bgLight && <div className={bgLight}></div>}
       </div>
     </Button>
   );

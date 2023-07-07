@@ -133,14 +133,27 @@ const RoadMap = () => {
       <div className="relative ">
         <div
           ref={elementRef}
-          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
+          className={`absolute z-[-100] top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
             isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
           }`}
         >
           <Image src={fullline1} alt="fullline" />
         </div>
-        <div className="absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%]">
-          <Image src={linevector1} alt="linevector1" />
+        <div
+          ref={elementRef2}
+          className={`absolute  top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%] ${
+            isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
+          }`}
+        >
+          <Image
+            // style={{
+            //   opacity: showImage ? 1 : 0,
+            //   animation: `${showImage ? "fade-in 5s" : ""}`,
+            // }}
+            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
+            src={linevector1}
+            alt="linevector1"
+          />
         </div>
         <div
           ref={elementRef3}

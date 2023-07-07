@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
@@ -13,6 +13,29 @@ import { LinksForLearn, LinkForExplore } from "../Constants/FooterLinks";
 const Footer = () => {
   const { t } = useTranslation();
 
+  const RegExp =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const emailHandler = (email: string) => {
+    setEmail(email);
+    if (email === "" || String(email).toLowerCase().match(RegExp)) {
+      setEmailError("");
+    } else {
+      setEmailError(t("form_email_error"));
+    }
+  };
+
+  const validateForm = (): void => {
+    if (emailError === "" && email !== "") {
+      // console.log(email);
+    } else {
+      setEmailError(t("form_email_error"));
+    }
+  };
+
   return (
     <footer className="py-[60px] md:py-[115px] bg-second">
       <div className="container">
@@ -24,16 +47,26 @@ const Footer = () => {
             <p className="text-[#838383]">{t("footer_lastest_news")}</p>
           </div>
 
-          <form className="flex md:items-start gap-[16px] mb-[56px] md:mb-[0px] ">
+          <div className="relative flex md:items-start gap-[16px] mb-[56px] md:mb-[0px] ">
             <input
+              onChange={(e) => emailHandler(e.target.value)}
               name="email"
               autoComplete="email"
-              type="text"
+              type="email"
               placeholder={t("footer_enter_email")}
-              className="focus:focusInput text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px] font-cyr"
+              className="focus:focusInput text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px]"
             />
-            <FooterButton>{t("footer_subscribe2")}</FooterButton>
-          </form>
+            {emailError ? (
+              <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
+                {emailError}
+              </span>
+            ) : (
+              ""
+            )}
+            <FooterButton onClick={validateForm}>
+              {t("footer_subscribe2")}
+            </FooterButton>
+          </div>
         </div>
 
         <div className="flex flex-col-reverse items-center md:gap-3  md:items-start md:flex-row justify-between border-b border-opacity-25 border-[#98A2B3] mb-[18px]">
