@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
@@ -13,9 +13,24 @@ import TeamCard from "../components/TeamCard/TeamCard";
 import { teamList } from "../components/Constants/TeamList";
 import truck5 from "/public/assets/images/truck5.jpg";
 import teambridge from "/public/assets/images/teambridge.jpg";
+import ScrollToggle from "../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../utils/hooks/useScrollChange";
 
 const team = () => {
   const { t } = useTranslation();
+
+  const isScrolled = ScrollToggle({
+    targetClasses: ["el-1"],
+    visibleClass: "visible",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRefs: [elementRef],
+    className: "original",
+  });
+
   return (
     <>
       <Head>
@@ -36,12 +51,20 @@ const team = () => {
       />
       <div className="bg-[#19191A]">
         <section className="container flex flex-col mt-[40px]">
-          <h2 className="font-bold tracking-[-1.5px] text-[32px] lg:text-[48px] mb-[30px] md:mb-[47px] mt-[40px] md:mt-[120px]">
-            {t("team_page_title4")}
-          </h2>
-          <p className="text-[14px] md:text-[21px] mb-[30px] md:mb-[120px]">
-            {t("team_page_title2")}
-          </p>
+          <div
+            ref={elementRef}
+            className={`${
+              isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
+            }`}
+          >
+            <h2 className="font-bold tracking-[-1.5px] text-[32px] lg:text-[48px] mb-[30px] md:mb-[47px] mt-[40px] md:mt-[120px]">
+              {t("team_page_title4")}
+            </h2>
+            <p className="text-[14px] md:text-[21px] mb-[30px] md:mb-[120px]">
+              {t("team_page_title2")}
+            </p>
+          </div>
+
           {teamList.map((obj) => {
             return (
               <TeamCard
