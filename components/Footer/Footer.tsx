@@ -14,7 +14,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="py-[60px] md:py-[115px] bg-second">
+    <footer className="  py-[60px] md:py-[115px] bg-second">
       <div className="container">
         <div className=" flex flex-col items-start smx:items-center gap-[20px] md:items-start  md:flex-row  md:justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
           <div className="max-w-[270px] smx:max-w-full text-left smx:text-center md:text-left mb-[35px]">
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="text-[12px] text-[#98a2b3] font-man">
+          <p className="text-[12px] text-[#A1A1A6] font-man">
             {"© " + moment().year() + " " + `${t("footer_rights")}`}
           </p>
         </div>
