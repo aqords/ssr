@@ -307,11 +307,11 @@ const RoadMap = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[316px] lg:w-[716px]">
+            <div className="max-w-[316px] lg:w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                 {t("roadmap_text28")}
               </h2>
-              <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+              <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] max-w-[316px] sm:max-w-[716px]">
                 {t("roadmap_text29")}
               </h3>
               <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -332,11 +332,11 @@ const RoadMap = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[316px] sm:w-[716px]">
+            <div className="max-w-[316px] sm:max-w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                 {t("roadmap_text17")}
               </h2>
-              <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+              <h3 className="font-man  mb-[30px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] max-w-[316px] sm:max-w-[716px]">
                 {t("roadmap_text32")}
               </h3>
               <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -361,7 +361,7 @@ const RoadMap = () => {
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
               {t("roadmap_text6")}
             </h2>
-            <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+            <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] max-w-[316px] sm:max-w-[716px]">
               {t("roadmap_text34")}
             </h3>
             <p className="font-man text-[#838383]  text-[14px]  lg:text-[16px] tracking-[-0.3px] mb-[0px]">

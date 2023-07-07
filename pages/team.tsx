@@ -11,6 +11,8 @@ import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import TeamCard from "../components/TeamCard/TeamCard";
 import { teamList } from "../components/Constants/TeamList";
+import truck5 from "/public/assets/images/truck5.jpg";
+import teambridge from "/public/assets/images/teambridge.jpg";
 
 const team = () => {
   const { t } = useTranslation();
@@ -18,7 +20,10 @@ const team = () => {
     <>
       <Head>
         <title>{t("team_title")}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"
+        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
@@ -27,7 +32,7 @@ const team = () => {
         title={t("team_page_title1")}
         desc1={t("team_page_desc1")}
         desc2={t("team_page_desc2")}
-        blockStyle="bg-primary h-[479px] lg:h-[807px] mt-[-30px]"
+        blockStyle="bg-primary h-[479px] lg:h-[807px]"
       />
       <div className="bg-[#19191A]">
         <section className="container flex flex-col mt-[40px]">
@@ -52,9 +57,11 @@ const team = () => {
         </section>
       </div>
       <BlockWithBackground
+        img={teambridge}
+        imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
         title={t("team_page_title3")}
         desc1={t("team_page_desc3")}
-        blockStyle="bg-gray h-[375px] lg:h-[807px]"
+        blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
       />
       <div className="md:bg-[#19191A] md:py-[120px] py-[30px]">
         <div className="container flex flex-wrap md:flex-nowrap  justify-center  md:jutify-between gap-[40px] md:gap-[112px] mb-[40px]">
@@ -67,8 +74,8 @@ const team = () => {
               {t("team_page_desc5")}
             </p>
           </div>
-          <div className="bg-gray md:w-[440px] md:h-[286px] min-w-[350px] min-h-[230px] rounded-[20px]">
-            {/* <Image /> */}
+          <div className="md:w-[440px] md:h-[286px] min-w-[350px] min-h-[230px] rounded-[20px] overflow-hidden">
+            <Image src={truck5} alt="truck" />
           </div>
         </div>
         <div className="container">

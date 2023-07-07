@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-import whitepapperimg from "/public/assets/images/whitepapperimg.svg";
 import whitepapper from "../Constants/WhitePapper";
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
+import wpbull from "/public/assets/images/wpbull.jpg";
 
-const Whitepapper = () => {
+const PaperInfo = () => {
   const { t } = useTranslation();
   const [showButton, setShowButton] = useState(false);
 
@@ -32,7 +32,7 @@ const Whitepapper = () => {
   return (
     <>
       <section className="container">
-        <div className="container pt-[0px] pb-[0px] smx:pt-[60px] smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
+        <div className="container pt-[0px] pb-[0px]  smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
           <h2 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_info_title1")}
           </h2>
@@ -45,8 +45,8 @@ const Whitepapper = () => {
                 {t("whitepaper_info_desc2")}
               </p>
             </div>
-            <div className="mt-[40px] ">
-              <Image sizes="50vw" src={whitepapperimg} alt="image" />
+            <div className="mt-[40px] rounded-[20px] overflow-hidden">
+              <Image sizes="50vw" src={wpbull} alt="image" />
             </div>
           </div>
         </div>
@@ -93,9 +93,18 @@ const Whitepapper = () => {
                   <div>
                     {item.body.map((el) => (
                       <div className="mb-[70px]">
-                        <h3 className="text-[24px] font-bold mb-[30px]">
-                          {t(`${el.subtitle}`)}
-                        </h3>
+                        {el.id ? (
+                          <h3
+                            id={el.id}
+                            className="anchor-heading text-[24px] font-bold mb-[30px]"
+                          >
+                            {t(`${el.subtitle}`)}
+                          </h3>
+                        ) : (
+                          <h3 className="text-[24px] font-bold mb-[30px]">
+                            {t(`${el.subtitle}`)}
+                          </h3>
+                        )}
                         {el.text1 && (
                           <p className="font-man block mb-[30px] text-[18px]">
                             {t(`${el.text1}`)}
@@ -182,4 +191,4 @@ const Whitepapper = () => {
     </>
   );
 };
-export default Whitepapper;
+export default PaperInfo;

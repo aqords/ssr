@@ -14,6 +14,7 @@ module.exports = {
       screens: {
         smx: "500px",
         sml: "450px",
+        "3xl": "1720px",
       },
       spacing: {
         25: "6.25rem",

@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import ContactForm from "../components/ContactForm/ContactForm";
+import contactbull from "/public/assets/images/contactbull.svg";
 
 const contact = () => {
   const { t } = useTranslation();
@@ -16,16 +17,21 @@ const contact = () => {
     <>
       <Head>
         <title>{t("contact_title")}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"
+        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
       <BlockWithBackground
+        blockStyle="relative overflow-hidden items-start  h-[210px] md:h-[380px] lg:h-[558px]"
         title={t("contact_page_title1")}
         desc1={t("contact_page_desc1")}
         desc2={t("contact_page_desc2")}
-        blockStyle="bg-[#0A090F] h-[479px] lg:h-[560px]"
+        img={contactbull}
+        imgStyle="hidden md:block  absolute md:top-[0px]  md:right-[-250px] md:scale-[0.6] lg:scale-[1] lg:right-[-150px]  xl:right-[0px] "
       />
       <section className="bg-[#19191A]">
         <div className="container py-[40px] md:py-[120px]">

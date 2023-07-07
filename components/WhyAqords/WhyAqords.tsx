@@ -6,7 +6,7 @@ import WhyAqordsList from "./WhyAqordsList";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import { renderObject } from "../Constants/WhyAqordsItems";
-import truck from "../../public/assets/images/truck.png";
+import truck from "../../public/assets/images/truck.jpg";
 
 interface WhyAqordsProps {
   itemsArray: renderObject[];
