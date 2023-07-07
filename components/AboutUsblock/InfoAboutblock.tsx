@@ -33,7 +33,7 @@ const InfoAboutblock = () => {
 
         <div className="bg-[#19191A]">
           <div className="container  smx:pt-[60px] sm:pt-[80px]  md:pt-[160px] lg:pt-[267px]   pb-[40px]  lg:flex justify-between">
-            <div>
+            <div className="pt-[40px] sml:pt-0">
               <p className="font-normal text-[16px] lg:text-[20px] font-man lg:max-w-[532px] leading-[24px] lg:leading-[32px] tracking-[-0.14px] mb-[30px]">
                 {t("info_about_block_desc3")}
               </p>

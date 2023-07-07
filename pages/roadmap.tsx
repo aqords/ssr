@@ -39,8 +39,8 @@ const roadmap = () => {
       />
       <div className="container">
         <RoadMap />
-        <Navigationblock />
       </div>
+      <Navigationblock />
       <Footer />
     </>
   );

@@ -3,18 +3,14 @@ import React, { useRef } from "react";
 import { useTranslation } from "next-i18next";
 
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
-import left1 from "../../public/assets/images/left1.svg";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
-// import left2 from "../../public/assets/images/svgleft2.svg";
-// import left3 from "../../public/assets/images/svgleft3.svg";
-// import left4 from "../../public/assets/images/svgleft4.svg";
 import fullline1 from "../../public/assets/images/fullline1.svg";
 import fullline2 from "../../public/assets/images/fullline2.svg";
 import linevector1 from "../../public/assets/images/linevector1.svg";
 import bgvector from "../../public/assets/images/bgvector.svg";
 import opacvector from "../../public/assets/images/opacvector.svg";
-import { firstphase, thirdphase, fourthphase } from "../Constants/RoadMapTexts";
+import { thirdphase, fourthphase } from "../Constants/RoadMapTexts";
 import Button from "../UI/Button/Button";
 
 const RoadMap = () => {
@@ -39,6 +35,22 @@ const RoadMap = () => {
       "el-15",
       "el-16",
       "el-17",
+      "el-18",
+      "el-19",
+      "el-20",
+      "el-21",
+      "el-22",
+      "el-23",
+      "el-24",
+      "el-25",
+      "el-26",
+      "el-27",
+      "el-28",
+      "el-29",
+      "el-30",
+      "el-31",
+      "el-32",
+      "el-33",
     ],
     visibleClass: "visible",
   });
@@ -60,6 +72,22 @@ const RoadMap = () => {
   const elementRef15 = useRef<HTMLDivElement>(null);
   const elementRef16 = useRef<HTMLDivElement>(null);
   const elementRef17 = useRef<HTMLDivElement>(null);
+  const elementRef18 = useRef<HTMLDivElement>(null);
+  const elementRef19 = useRef<HTMLDivElement>(null);
+  const elementRef20 = useRef<HTMLDivElement>(null);
+  const elementRef21 = useRef<HTMLDivElement>(null);
+  const elementRef22 = useRef<HTMLDivElement>(null);
+  const elementRef23 = useRef<HTMLDivElement>(null);
+  const elementRef24 = useRef<HTMLDivElement>(null);
+  const elementRef25 = useRef<HTMLDivElement>(null);
+  const elementRef26 = useRef<HTMLDivElement>(null);
+  const elementRef27 = useRef<HTMLDivElement>(null);
+  const elementRef28 = useRef<HTMLDivElement>(null);
+  const elementRef29 = useRef<HTMLDivElement>(null);
+  const elementRef30 = useRef<HTMLDivElement>(null);
+  const elementRef31 = useRef<HTMLDivElement>(null);
+  const elementRef32 = useRef<HTMLDivElement>(null);
+  const elementRef33 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
     elementRefs: [
@@ -80,34 +108,26 @@ const RoadMap = () => {
       elementRef15,
       elementRef16,
       elementRef17,
+      elementRef18,
+      elementRef19,
+      elementRef20,
+      elementRef21,
+      elementRef22,
+      elementRef23,
+      elementRef24,
+      elementRef25,
+      elementRef26,
+      elementRef27,
+      elementRef28,
+      elementRef29,
+      elementRef30,
+      elementRef31,
+      elementRef32,
+      elementRef33,
     ],
     className: "original",
   });
 
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // const handleScroll = () => {
-  //   const scrollPosition = window.scrollY;
-  //   const targetPosition = document.getElementById("target-element").offsetTop;
-  //   const windowHeight = window.innerHeight;
-
-  //   if (scrollPosition > targetPosition - windowHeight / 2) {
-  //     setIsVisible(true);
-
-  //     // Установка задержки перед появлением картинки
-  //     // 300 миллисекунд (0.3 секунды)
-  //   } else {
-  //     setIsVisible(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   return (
     <div className="max-w-[806px]">
       <div className="relative ">
@@ -116,12 +136,6 @@ const RoadMap = () => {
           className={`absolute z-[-100] top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
             isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline1} alt="fullline" />
         </div>
@@ -147,96 +161,100 @@ const RoadMap = () => {
             isScrolled["el-3"] ? "el-3 visible" : "el-3 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={linevector1}
-            alt="linevector1"
-          />
+          <Image src={linevector1} alt="linevector1" />
         </div>
-        {/* {showImage && (
-          <Image
-            ref={elementRef6}
-            className={isScrolled["el-6"] ? "el-6 visible" : "el-6 original"}
-            style={{
-              opacity: showImage ? 1 : 0,
-              animation: `${showImage ? "fade-in 1s" : ""}`,
-            }}
-            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[8%] "
-            src={linevector1}
-            alt="linevector1"
-          />
-        )}
-
-        {showImage && (
-          <Image
-            style={{
-              opacity: showImage ? 1 : 0,
-              animation: `${showImage ? "fade-in 3s" : ""}`,
-            }}
-            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[39%] "
-            src={linevector1}
-            alt="linevector1"
-          />
-        )} */}
         <div
           ref={elementRef4}
           className={`absolute top-[69%] sml:top-[67%] sm:top-[69%] md:top-[70%] ${
             isScrolled["el-4"] ? "el-4 visible" : "el-4 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={linevector1}
-            alt="linevector1"
-          />
+          <Image src={linevector1} alt="linevector1" />
         </div>
-        <div className="relative ml-[36px] sm:ml-[90px]">
-          <ul>
-            {firstphase.map((item, id) => (
-              <li key={id} className="mb-[165px] sm:mb-[360px]">
-                <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px] ">
-                  {t(`${item.title}`)}
-                </h1>
-                <ul>
-                  {item.roadmaplist.map((item, id) => (
-                    <li
-                      key={id}
-                      className="mb-[85px] sm:mb-[135px] lg:mb-[120px]"
-                    >
-                      <Button
-                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
-                        insideGradient="rounded-full bg-black p-[1px] justify-center items-center"
-                      >
-                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
-                      </Button>
 
-                      <div className="max-w-[316px] sm:max-w-[716px]">
-                        <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {t(`${item.title}`)}
-                        </h2>
-                        <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] max-w-[316px] sm:max-w-[716px]">
-                          {t(`${item.subtitle}`)}
-                        </h3>
-                        <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {t(`${item.description}`)}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
+        <div className="relative ml-[36px] sm:ml-[90px]">
+          <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px] ">
+            {t("roadmap_text1")}
+          </h1>
+          <div className="mb-[165px] sm:mb-[360px]">
+            <div className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
+              <Button
+                outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                insideGradient="rounded-full bg-black p-[1px] justify-center items-center"
+              >
+                <p className="text-[12px]">{t("roadmap_text2")}</p>
+              </Button>
+
+              <div className="w-[316px] sm:w-[716px]">
+                <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                  {t("roadmap_text3")}
+                </h2>
+                <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                  {t("roadmap_text4")}
+                </h3>
+                <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                  {t("roadmap_text5")}
+                </p>
+              </div>
+            </div>
+            <div
+              ref={elementRef16}
+              className={` ${
+                isScrolled["el-16"] ? "el-16 visible" : "el-16 original"
+              }`}
+            >
+              <div className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-black p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text2")}</p>
+                </Button>
+
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text6")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                    {t("roadmap_text7")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text8")}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              ref={elementRef17}
+              className={` ${
+                isScrolled["el-17"] ? "el-17 visible" : "el-17 original"
+              }`}
+            >
+              <div className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-black p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text2")}</p>
+                </Button>
+
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text9")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                    {t("roadmap_text10")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text11")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="relative">
         <div
           ref={elementRef5}
@@ -252,54 +270,14 @@ const RoadMap = () => {
         >
           <Image src={fullline1} alt="fullline" />
         </div>
-        {/* {showImage && (
-          <Image
-            style={{
-              opacity: showImage ? 1 : 0,
-              animation: `${showImage ? "fade-in 1s" : ""}`,
-            }}
-            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[7%] "
-            src={linevector1}
-            alt="linevector1"
-          />
-        )}
-        {showImage && (
-          <Image
-            style={{
-              opacity: showImage ? 1 : 0,
-              animation: `${showImage ? "fade-in 3s" : ""}`,
-            }}
-            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[37%] "
-            src={bgvector}
-            alt="linevector1"
-          />
-        )}
-        {showImage && (
-          <Image
-            style={{
-              opacity: showImage ? 1 : 0,
-              animation: `${showImage ? "fade-in 5s" : ""}`,
-            }}
-            className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[68%] "
-            src={opacvector}
-            alt="linevector1"
-          />
-        )} */}
+
         <div
           ref={elementRef6}
           className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[8%] ${
             isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={linevector1}
-            alt="linevector1"
-          />
+          <Image src={linevector1} alt="linevector1" />
         </div>
         <div
           ref={elementRef7}
@@ -307,15 +285,7 @@ const RoadMap = () => {
             isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={bgvector}
-            alt="linevector1"
-          />
+          <Image src={bgvector} alt="linevector1" />
         </div>
         <div
           ref={elementRef8}
@@ -323,27 +293,26 @@ const RoadMap = () => {
             isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={opacvector}
-            alt="linevector1"
-          />
+          <Image src={opacvector} alt="linevector1" />
         </div>
 
         <div className="mb-[165px] sm:mb-[363px] ml-[36px] sm:ml-[90px]">
           <div
-            ref={elementRef16}
-            className={` mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px] ${
-              isScrolled["el-16"] ? "el-16 visible" : "el-16 original"
+            ref={elementRef18}
+            className={` ${
+              isScrolled["el-18"] ? "el-18 visible" : "el-18 original"
             }`}
           >
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px]">
               {t("roadmap_text27")}
             </h1>
+          </div>
+          <div
+            ref={elementRef23}
+            className={` mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px] ${
+              isScrolled["el-23"] ? "el-23 visible" : "el-23 original"
+            }`}
+          >
             <div className="w-[120px]">
               <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
                 <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
@@ -364,9 +333,9 @@ const RoadMap = () => {
             </div>
           </div>
           <div
-            ref={elementRef14}
+            ref={elementRef24}
             className={` mb-[23px] sm:mb-[140px] lg:mb-[103px] ${
-              isScrolled["el-14"] ? "el-14 visible" : "el-14 original"
+              isScrolled["el-24"] ? "el-24 visible" : "el-24 original"
             }`}
           >
             <div className="w-[145px] sm:w-[120px]">
@@ -389,17 +358,18 @@ const RoadMap = () => {
             </div>
           </div>
           <div
-            ref={elementRef15}
-            className={` max-w-[316px] sm:max-w-[716px] ${
-              isScrolled["el-15"] ? "el-15 visible" : "el-15 original"
+            ref={elementRef20}
+            className={` w-[316px] sm:w-[716px] ${
+              isScrolled["el-20"] ? "el-20 visible" : "el-20 original"
             }`}
           >
             <div className="w-[120px]">
-              <div className="rounded-full mb-[26px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px]">
-                <div className=" leading-[20px] text-[12px] text-center rounded-full w-full bg-black p-[1px]">
-                  {t("roadmap_text13")}
-                </div>
-              </div>
+              <Button
+                outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+              >
+                <p className="text-[12px]">{t("roadmap_text13")}</p>
+              </Button>
             </div>
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
               {t("roadmap_text6")}
@@ -413,6 +383,7 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
+
       <div className="relative">
         <div
           ref={elementRef9}
@@ -430,7 +401,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef10}
-          className={`absolute top-[10%] sml:top-[4%] sm:top-[5%] md:top-[11%] ${
+          className={`absolute z-[-1] top-[10%] sml:top-[4%] sm:top-[5%] md:top-[11%] ${
             isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
@@ -446,7 +417,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef11}
-          className={`absolute top-[46%] sml:top-[43%] sm:top-[49%] md:top-[52%] lg:top-[49%] ${
+          className={`absolute z-[-1] top-[49%] sml:top-[46%] sm:top-[49%] md:top-[52%] lg:top-[51%] ${
             isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
           }`}
         >
@@ -462,130 +433,178 @@ const RoadMap = () => {
         </div>
 
         <div className="ml-[36px] sm:ml-[90px]">
-          <ul>
-            {thirdphase.map((item, id) => (
-              <li key={id} className="mb-[165px] sm:mb-[360px]">
-                <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[85px] lg:mb-[120px] md:mb-[60px] tracking-[-1.5px] ">
-                  {t(`${item.title}`)}
-                </h1>
-                <ul>
-                  {item.roadmaplist.map((item, id) => (
-                    <li
-                      key={id}
-                      className="mb-[35px] sm:mb-[85px] lg:mb-[65px]"
-                    >
-                      <Button
-                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
-                        insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
-                      >
-                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
-                      </Button>
+          <div
+            ref={elementRef19}
+            className={` ${
+              isScrolled["el-19"] ? "el-19 visible" : "el-19 original"
+            }`}
+          >
+            <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[85px] lg:mb-[120px] md:mb-[60px] tracking-[-1.5px] ">
+              {t("roadmap_text12")}
+            </h1>
+          </div>
+          <div className="mb-[165px] sm:mb-[360px]">
+            <div
+              ref={elementRef25}
+              className={` ${
+                isScrolled["el-25"] ? "el-25 visible" : "el-25 original"
+              }`}
+            >
+              <div className="mb-[35px] sm:mb-[85px] lg:mb-[65px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text13")}</p>
+                </Button>
 
-                      <div className="max-w-[316px] sm:max-w-[716px]">
-                        <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {t(`${item.title}`)}
-                        </h2>
-                        <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:max-w-[716px]">
-                          {t(`${item.subtitle}`)}
-                        </h3>
-                        <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {t(`${item.description}`)}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text14")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                    {t("roadmap_text15")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text16")}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              ref={elementRef26}
+              className={` ${
+                isScrolled["el-26"] ? "el-26 visible" : "el-26 original"
+              }`}
+            >
+              <div className="mb-[35px] sm:mb-[85px] lg:mb-[65px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text13")}</p>
+                </Button>
+
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text14")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                    {t("roadmap_text15")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text16")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="relative">
         <div
-          ref={elementRef9}
-          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[110%] ${
-            isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
+          ref={elementRef27}
+          className={`absolute  top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[110%] ${
+            isScrolled["el-27"] ? "el-27 visible" : "el-27 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline2} alt="fullline" />
         </div>
-
         <div
-          ref={elementRef10}
-          className={`absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[7%]  ${
-            isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
+          ref={elementRef28}
+          className={`absolute z-[-1] top-[6%] sml:top-[2%] sm:top-[3%] md:top-[7%]  ${
+            isScrolled["el-28"] ? "el-28 visible" : "el-28 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={opacvector}
-            alt="linevector1"
-          />
+          <Image src={opacvector} alt="linevector1" />
         </div>
         <div
-          ref={elementRef11}
-          className={`absolute top-[27%] sml:top-[27%] sm:top-[29%] md:top-[33%] lg:top-[31%] ${
-            isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
+          ref={elementRef29}
+          className={`absolute z-[-1] top-[28%] sml:top-[28%] sm:top-[30%] md:top-[33%] lg:top-[32%] ${
+            isScrolled["el-29"] ? "el-29 visible" : "el-29 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={opacvector}
-            alt="linevector1"
-          />
+          <Image src={opacvector} alt="linevector1" />
         </div>
         <div className="ml-[36px] sm:ml-[90px]">
-          <ul>
-            {fourthphase.map((item, id) => (
-              <li key={id} className="mb-[120px]">
-                <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[123px] tracking-[-1.5px] ">
-                  {t(`${item.title}`)}
-                </h1>
-                <ul>
-                  {item.roadmaplist.map((item, id) => (
-                    <li
-                      key={id}
-                      className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]"
-                    >
-                      <Button
-                        outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
-                        insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
-                      >
-                        <p className="text-[12px]">{t(`${item.buttontext}`)}</p>
-                      </Button>
+          <div
+            ref={elementRef30}
+            className={`${
+              isScrolled["el-30"] ? "el-30 visible" : "el-30 original"
+            }`}
+          >
+            <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[123px] tracking-[-1.5px] ">
+              {t("roadmap_text20")}
+            </h1>
+          </div>
 
-                      <div className="max-w-[316px] sm:max-w-[716px]">
-                        <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                          {t(`${item.title}`)}
-                        </h2>
-                        <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:max-w-[716px]">
-                          {t(`${item.subtitle}`)}
-                        </h3>
-                        <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                          {t(`${item.description}`)}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
+          <div className="mb-[120px]">
+            <div
+              ref={elementRef31}
+              className={` ${
+                isScrolled["el-31"] ? "el-31 visible" : "el-31 original"
+              }`}
+            >
+              <div className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text13")}</p>
+                </Button>
+
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text21")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                    {t("roadmap_text22")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text23")}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              ref={elementRef32}
+              className={` ${
+                isScrolled["el-32"] ? "el-32 visible" : "el-32 original"
+              }`}
+            >
+              <div className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]">
+                <Button
+                  outsideGradient="mb-[26px] rounded-full  bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[1px] w-[121px] h-[25px]"
+                  insideGradient="rounded-full bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px] justify-center items-center"
+                >
+                  <p className="text-[12px]">{t("roadmap_text13")}</p>
+                </Button>
+
+                <div className="w-[316px] sm:w-[716px]">
+                  <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
+                    {t("roadmap_text21")}
+                  </h2>
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                    {t("roadmap_text22")}
+                  </h3>
+                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+                    {t("roadmap_text23")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          ref={elementRef33}
+          className={` ${
+            isScrolled["el-33"] ? "el-33 visible" : "el-33 original"
+          }`}
+        >
           <NodeCard
+            margin="ml-[18px] sm:ml-[90px]"
+            width="max-w-[716px]"
             title={t(`${"wpnodecard_text1"}`)}
             desc1={t(`${"roadmap_text36"}`)}
             desc2={t(`${"roadmap_text37"}`)}
