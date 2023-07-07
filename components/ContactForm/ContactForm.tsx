@@ -140,7 +140,7 @@ const ContactForm = () => {
               placeholder={t("contact_write_name")}
               className={`border-[1px] border-transparent placeholder-[#6B7280] ${
                 nameError ? "border-[#F44A77]" : ""
-              } hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
+              } hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
               type="text"
             />
             {nameError ? (
@@ -163,7 +163,7 @@ const ContactForm = () => {
               onChange={(e) => emailHandler(e.target.value)}
               className={`border-[1px] border-transparent placeholder-[#6B7280]   ${
                 emailError ? "border-[#F44A77]" : ""
-              }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[15px]`}
+              }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
               placeholder={t("contact_write_email")}
               type="email"
             />
@@ -186,7 +186,7 @@ const ContactForm = () => {
             onChange={(e) => subjectHandler(e.target.value)}
             className={`border-[1px] border-transparent placeholder-[#6B7280]   ${
               subjectError ? "border-[#F44A77]" : ""
-            }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px]`}
+            }  hover:border-[#737373] hover:border-[1px] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[16px]`}
             placeholder={t("contact_write_subject")}
             type="text"
           />
@@ -214,7 +214,7 @@ const ContactForm = () => {
             onChange={(e) => textHandler(e.target.value)}
             className={`border-[1px] border-transparent  placeholder-[#6B7280]  ${
               textError ? "border-[#F44A77]" : ""
-            }   hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[15px] h-[120px]`}
+            }   hover:border-[#737373] hover:border-[1px] focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[16px] h-[120px]`}
             placeholder={t("contact_write_message")}
           />
           {textError ? (

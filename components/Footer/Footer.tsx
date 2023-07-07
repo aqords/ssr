@@ -54,7 +54,7 @@ const Footer = () => {
               autoComplete="email"
               type="email"
               placeholder={t("footer_enter_email")}
-              className="focus:focusInput text-white text-sm w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px]"
+              className="focus:focusInput text-white text-[16px] w-[224px] leading-[19px] placeholder-[#6B7280] bg-white bg-opacity-5 rounded-[6px]  px-[12px] py-[12px]"
             />
             {emailError ? (
               <span className="absolute bottom-[-30px] left-[0px] text-[#F44A77]">
