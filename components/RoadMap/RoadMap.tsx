@@ -113,7 +113,7 @@ const RoadMap = () => {
       <div className="relative ">
         <div
           ref={elementRef}
-          className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
+          className={`absolute z-[-100] top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
             isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
           }`}
           // style={{
@@ -127,7 +127,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef2}
-          className={`absolute top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%] ${
+          className={`absolute  top-[6%] sml:top-[2%] sm:top-[3%] md:top-[39%] ${
             isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
           }`}
         >

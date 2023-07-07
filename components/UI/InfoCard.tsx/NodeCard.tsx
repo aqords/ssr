@@ -5,7 +5,7 @@ interface NodeCardProps {
   desc1?: string;
   desc2?: string;
 }
-const NodeCard: React.FC<NodeCardProps> = ({ title, desc1, desc2 }) => {
+const NodeCard = ({ title, desc1, desc2 }: NodeCardProps) => {
   return (
     <div className="p-[24px] orangeb">
       <h5 className="text-[24px] font-bold mb-[40px]">{title}</h5>
