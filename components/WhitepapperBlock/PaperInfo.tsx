@@ -55,7 +55,7 @@ const PaperInfo = () => {
       <section>
         <div className=" container py-[40px] lg:py-[120px]">
           <div className="flex flex-col items-center lg:flex-row gap-[40px] lg:gap-[20px] lg:items-start ">
-            <div className="static lg:sticky lg:top-[10%]  connect__list h-[800px] lg:h-[1000px] border-0 lg:border-r-[1px] lg:border-[#98A2B3] lg:border-opacity-25 ">
+            <div className="z-[100] static lg:sticky lg:top-[10%]  connect__list h-[800px] lg:h-[1000px] border-0 lg:border-r-[1px] lg:border-[#98A2B3] lg:border-opacity-25 ">
               <h2 className="border-b-[1px] border-opacity-25 border-[#98A2B3]  text-[32px] pb-[40px] font-bold">
                 {t("whitepaper_info_title2")}
               </h2>
@@ -179,7 +179,7 @@ const PaperInfo = () => {
           {showButton && (
             <button
               onClick={handleScrollToTop}
-              className={`fixed lg:hidden  bottom-10  right-1/3 transform -translate-x-1/7 -translate-y-1/2      text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
+              className={`fixed lg:hidden   bottom-10  right-[29%] transform -translate-x-1/6 -translate-y-1/2      text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
                 showButton ? "animate-fade-in" : "animate-fade-out"
               }`}
             >
