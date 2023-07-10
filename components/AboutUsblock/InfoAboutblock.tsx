@@ -79,18 +79,13 @@ const InfoAboutblock = () => {
           </div>
         </div>
 
-        <div
-          ref={elementRef2}
-          className={`${isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}`}
-        >
-          <BlockWithBackground
-            img={truck}
-            imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
-            title={t("info_about_block_desc5")}
-            desc1={t("info_about_block_desc6")}
-            blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
-          />
-        </div>
+        <BlockWithBackground
+          img={truck}
+          imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
+          title={t("info_about_block_desc5")}
+          desc1={t("info_about_block_desc6")}
+          blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
+        />
       </section>
     </>
   );
