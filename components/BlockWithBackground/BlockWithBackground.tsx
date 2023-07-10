@@ -38,7 +38,13 @@ const BlockWithBackground = ({
         </div>
       </div>
       {img && (
-        <Image className={imgStyle} priority src={img} alt="backgroundimage" />
+        <Image
+          sizes="50vw"
+          className={imgStyle}
+          priority
+          src={img}
+          alt="backgroundimage"
+        />
       )}
     </section>
   );

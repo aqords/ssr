@@ -32,7 +32,7 @@ const roadmap = () => {
         desc2={t("Ut enim ad minim veniam, quis nostrud exercitation ullamco.")}
         blockStyle="relative  md:h-[558px] overflow-hidden sm:p-[40px] md:p-[0px]"
         blockStyle2="container flex h-full items-center sm:mb-[100px]"
-        blockStyle3="max-w-[712px] mt-[50px] md:mt-[-70px]"
+        blockStyle3="max-w-[712px] mt-[70px] md:mt-[-70px]"
       />
       <div className="container">
         <RoadMap />

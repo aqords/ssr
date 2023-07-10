@@ -185,7 +185,7 @@ const RoadMap = () => {
                 <p className="text-[12px]">{t("roadmap_text2")}</p>
               </Button>
 
-              <div className="w-[316px] sm:w-[716px]">
+              <div className="w-[316px] md:w-[716px]">
                 <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                   {t("roadmap_text3")}
                 </h2>

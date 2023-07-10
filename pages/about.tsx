@@ -24,7 +24,7 @@ const about = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        blockStyle="relative overflow-hidden items-start  h-[610px] md:h-[580px]  lg:h-[800px] mt-[-40px] sm:mt-[0px]"
+        blockStyle="relative overflow-hidden items-start  h-[610px] md:h-[580px]  lg:h-[800px] mt-[-40px] sm:mt-[0px] pt-[120px] lg:pt-[0px]"
         title={t("about_page_title1")}
         desc1={t("about_page_desc1")}
         desc2={t("about_page_desc2")}

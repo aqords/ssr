@@ -33,7 +33,7 @@ const Manifesto = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        blockStyle="relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden"
+        blockStyle="relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden pt-[120px] lg:pt-[0px]"
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}

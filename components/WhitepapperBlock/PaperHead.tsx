@@ -11,7 +11,7 @@ const PapperHead = () => {
   const { t } = useTranslation();
   return (
     <>
-      <section>
+      <section className="pt-[80px] md:pt-[120px] lg:pt-[0px]">
         <div className="container pb-[40px]  lg:py-[120px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_title1")}
@@ -52,6 +52,7 @@ const PapperHead = () => {
             <Image
               className="rounded-[20px] lg:rounded-none"
               src={circle}
+              priority
               // className="absolute top-0  right-[15%] h-[580px] "
               alt="borderlight"
             />
