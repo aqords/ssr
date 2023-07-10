@@ -129,7 +129,7 @@ const RoadMap = () => {
   });
 
   return (
-    <div className="max-w-[806px]">
+    <div className="py-[120px] max-w-[806px]">
       <div className="relative ">
         <div
           ref={elementRef}
