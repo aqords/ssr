@@ -7,13 +7,7 @@ interface NodeCardProps {
   width?: string;
   margin?: string;
 }
-const NodeCard: React.FC<NodeCardProps> = ({
-  title,
-  desc1,
-  desc2,
-  width,
-  margin,
-}) => {
+const NodeCard = ({ title, desc1, desc2, width, margin }: NodeCardProps) => {
   return (
     <div className={`p-[24px] orangeb ${width} ${margin}`}>
       <h5 className="text-[24px] font-bold mb-[40px]">{title}</h5>
