@@ -33,21 +33,26 @@ const Header = () => {
 
   return isMobile ? (
     <header
-      className={` overflow-y-scroll ${
+      className={`overflow-y-scroll ${
         isOpenBurger ? "h-[100vh]" : ""
       } fixed top-[0px] left-[0px] w-[100vw]  bg-black z-10`}
     >
-      <div className="flex container justify-between items-center h-[48px] mb-[12px] ">
-        <button className="ml-[3px] mt-[10px]" onClick={toggleBurger}>
+      <div className="flex justify-between items-center h-[48px] mb-[12px]  ">
+        <button className="w-[60px] h-[60px]" onClick={toggleBurger}>
           {isOpenBurger ? (
             <Image
               sizes="50vw"
-              className="scale-[1.3] ml-[5px]"
+              className="scale-[1.5] ml-[20px] mt-[9px]"
               src={closeburg}
               alt="menu"
             />
           ) : (
-            <Image sizes="50vw" src={burger} alt="menu" />
+            <Image
+              className="ml-[15px] mt-[9px]"
+              sizes="50vw"
+              src={burger}
+              alt="menu"
+            />
           )}
         </button>
         {/* <Button
@@ -98,7 +103,7 @@ const Header = () => {
       </nav>
     </header>
   ) : (
-    <header className="w-full  fixed left-1/2 transform -translate-x-1/2 z-[10] bg-black">
+    <header className="w-full  fixed top-[0px]  left-1/2 transform -translate-x-1/2 z-[10] bg-black">
       <div className="container ">
         <nav className=" flex items-center justify-between h-[96px]">
           <Link

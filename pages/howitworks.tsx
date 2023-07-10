@@ -44,13 +44,13 @@ const HowWorks = () => {
         </article>
         {HowItWorksData.map((obj) => {
           return (
-            <>
+            <div key={obj.title}>
               <Accordion
                 title={t(`${obj.title}`)}
                 desc1={t(`${obj.desc1}`)}
                 desc2={t(`${obj.desc2}`)}
               />
-            </>
+            </div>
           );
         })}
       </section>
