@@ -92,8 +92,8 @@ const team = () => {
       <div className="md:bg-[#19191A] md:py-[120px] py-[30px]">
         <div
           ref={elementRef2}
-          className={` ${
-            isScrolled["el-2"] ? "el-2 rightvisible " : "el-2 original "
+          className={`${
+            isScrolled["el-2"] ? "el-2 visible " : "el-2 original "
           }`}
         >
           <div className="container flex flex-wrap md:flex-nowrap  justify-center  md:jutify-between gap-[40px] md:gap-[112px] mb-[40px]">
