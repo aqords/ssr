@@ -555,12 +555,6 @@ const RoadMap = () => {
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
                     {t("roadmap_text23")}
                   </p>
-                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text23")}
-                  </p>
-                  <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text23")}
-                  </p>
                 </div>
               </div>
             </div>
