@@ -216,10 +216,10 @@ const RoadMap = () => {
                     {t("roadmap_text6")}
                   </h2>
                   <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-                    {t("roadmap_text7")}
+                    {t("roadmap_text10")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text8")}
+                    {t("roadmap_text11")}
                   </p>
                 </div>
               </div>
@@ -261,12 +261,6 @@ const RoadMap = () => {
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
             isScrolled["el-5"] ? "el-5 visible" : "el-5 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline1} alt="fullline" />
         </div>
@@ -320,7 +314,7 @@ const RoadMap = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-[316px] lg:w-[716px]">
+            <div className="max-w-[316px] lg:max-w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                 {t("roadmap_text28")}
               </h2>
@@ -372,7 +366,7 @@ const RoadMap = () => {
               </Button>
             </div>
             <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-              {t("roadmap_text6")}
+              {t("roadmap_text14")}
             </h2>
             <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] max-w-[316px] sm:max-w-[716px]">
               {t("roadmap_text34")}
@@ -390,12 +384,6 @@ const RoadMap = () => {
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[60%] ${
             isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline2} alt="fullline" />
         </div>
@@ -487,13 +475,13 @@ const RoadMap = () => {
 
                 <div className="w-[316px] sm:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                    {t("roadmap_text14")}
+                    {t("roadmap_text244")}
                   </h2>
                   <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
-                    {t("roadmap_text15")}
+                    {t("roadmap_text246")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text16")}
+                    {t("roadmap_text247")}
                   </p>
                 </div>
               </div>
@@ -583,18 +571,22 @@ const RoadMap = () => {
 
                 <div className="w-[316px] sm:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                    {t("roadmap_text21")}
+                    {t("roadmap_text245")}
                   </h2>
                   <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
-                    {t("roadmap_text22")}
+                    {t("roadmap_text248")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text23")}
+                    {t("roadmap_text249")}
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <p className="block  font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px] ">
+            Exploring strategic partnerships and collaborations to expand into
+            new European markets and foster global growth.
+          </p>
         </div>
         <div
           ref={elementRef33}
