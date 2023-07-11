@@ -177,11 +177,11 @@ const RoadMap = () => {
                 <p className="text-[12px]">{t("roadmap_text2")}</p>
               </Button>
 
-              <div className="w-[316px] sm:w-[716px]">
+              <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                 <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                   {t("roadmap_text3")}
                 </h2>
-                <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] md:w-[615px] lg:w-[716px]">
                   {t("roadmap_text4")}
                 </h3>
                 <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -203,11 +203,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text2")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text6")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text7")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -230,11 +230,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text2")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text9")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text10")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -306,7 +306,7 @@ const RoadMap = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-[316px] lg:w-[716px]">
+            <div className="max-w-[316px] md:w-[615px] lg:w-[716px]">
               <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                 {t("roadmap_text28")}
               </h2>
@@ -345,7 +345,7 @@ const RoadMap = () => {
           </div>
           <div
             ref={elementRef20}
-            className={` w-[316px] sm:w-[716px] ${
+            className={` w-[316px] md:w-[615px] lg:w-[716px] ${
               isScrolled["el-20"] ? "el-20 visible" : "el-20 original"
             }`}
           >
@@ -422,11 +422,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text13")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text14")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text15")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -449,11 +449,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text13")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text14")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text15")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -518,11 +518,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text13")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text21")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text22")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
@@ -545,11 +545,11 @@ const RoadMap = () => {
                   <p className="text-[12px]">{t("roadmap_text13")}</p>
                 </Button>
 
-                <div className="w-[316px] sm:w-[716px]">
+                <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
                     {t("roadmap_text21")}
                   </h2>
-                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px]">
+                  <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text22")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">

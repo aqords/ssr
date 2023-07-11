@@ -12,6 +12,7 @@ import BlockWithBackground from "../components/BlockWithBackground/BlockWithBack
 import TeamCard from "../components/TeamCard/TeamCard";
 import { teamList } from "../components/Constants/TeamList";
 import truck5 from "/public/assets/images/truck5.jpg";
+import teambg from "/public/assets/images/teambg.jpg";
 import teambridge from "/public/assets/images/teambridge.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../utils/hooks/useScrollChange";
@@ -35,7 +36,7 @@ const team = () => {
   });
 
   return (
-    <>
+    <div className="pt-[20px] sm:pt-[96px]">
       <Head>
         <title>{t("team_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,8 +48,12 @@ const team = () => {
         title={t("team_page_title1")}
         desc1={t("team_page_desc1")}
         desc2={t("team_page_desc2")}
-        blockStyle="bg-primary h-[479px] lg:h-[807px]"
+        img={teambg}
+        imgStyle="absolute object-center object-cover top-[250px] right-[0px] h-[220px] sm:h-[320px] smx:h-[400px] smx:mt-[30px] lg:h-[800px] lg:object-center  lg:top-[0px]  lg:right-[0px] z-[-10]"
+        blockStyle="relative h-[460px] smx:h-[660px] lg:h-[819px] overflow-hidden"
+        blockStyle2="container flex lg:h-full items-center mb-[30px]"
       />
+
       <div className="bg-[#19191A]">
         <section className="container flex flex-col mt-[40px]">
           <div
@@ -125,7 +130,7 @@ const team = () => {
       </div>
       <Navigationblock />
       <Footer />
-    </>
+    </div>
   );
 };
 

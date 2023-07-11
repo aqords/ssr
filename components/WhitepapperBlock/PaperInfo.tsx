@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import whitepapper from "../Constants/WhitePapper";
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
-import wpbull from "/public/assets/images/wpbull.jpg";
+import wpbull from "/public/assets/images/wpbull1.svg";
 
 const PaperInfo = () => {
   const { t } = useTranslation();
@@ -30,9 +30,9 @@ const PaperInfo = () => {
   };
 
   return (
-    <>
+    <div className="pt-[76px] md:pt-[96px]">
       <section className="container">
-        <div className="container pt-[0px] pb-[0px]  smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
+        <div className="pt-[0px] pb-[0px]  smx:pb-[40px] lg:pt-[120px] lg:pb-[85px]">
           <h2 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_info_title1")}
           </h2>
@@ -46,7 +46,13 @@ const PaperInfo = () => {
               </p>
             </div>
             <div className="mt-[40px] rounded-[20px] overflow-hidden">
-              <Image sizes="50vw" src={wpbull} alt="image" />
+              <Image
+                sizes="50vw"
+                width={440}
+                height={350}
+                src={wpbull}
+                alt="image"
+              />
             </div>
           </div>
         </div>
@@ -61,7 +67,10 @@ const PaperInfo = () => {
               </h2>
               <ul className="w-[350px] smx:w-[450px]">
                 {whitepapper.map((item) => (
-                  <li className="border-b-[1px] border-opacity-25 border-[#98A2B3] leading-[42px] text-[20px] tracking-[-0.4px] text-[#838383] hover:text-white active:text-white py-[16px]">
+                  <li
+                    key={item.id}
+                    className="border-b-[1px] border-opacity-25 border-[#98A2B3] leading-[42px] text-[20px] tracking-[-0.4px] text-[#838383] hover:text-white active:text-white py-[16px]"
+                  >
                     <a href={`#${item.id}`}> {t(`${item.mainTitle}`)}</a>
                   </li>
                 ))}
@@ -70,11 +79,13 @@ const PaperInfo = () => {
 
             <div className="relative ml-1/4 max-w-[624px]">
               {whitepapper.map((item) => (
-                <div className="sheaker border-b-[1px] border-opacity-25 border-[#98A2B3]">
+                <div
+                  key={item.id}
+                  className="sheaker border-b-[1px] border-opacity-25 border-[#98A2B3]"
+                >
                   <div className="mb-[40px]">
                     <h2
                       id={item.id}
-                      key={item.id}
                       className="anchor-heading title__border text-[32px] mb-[40px] font-bold"
                     >
                       {t(`${item.mainTitle}`)}
@@ -91,8 +102,8 @@ const PaperInfo = () => {
                     )}
                   </div>
                   <div>
-                    {item.body.map((el) => (
-                      <div className="mb-[70px]">
+                    {item.body.map((el, id) => (
+                      <div key={id} className="mb-[70px]">
                         {el.id ? (
                           <h3
                             id={el.id}
@@ -126,8 +137,8 @@ const PaperInfo = () => {
                           </p>
                         )}
                         {el.underlist &&
-                          el.underlist.map((item) => (
-                            <ul>
+                          el.underlist.map((item, id) => (
+                            <ul key={id}>
                               <li>
                                 {item.title && <h3>{t(`${item.title}`)}</h3>}
                                 {item.a_title && (
@@ -138,8 +149,11 @@ const PaperInfo = () => {
                                 )}
                                 {item.list && (
                                   <ul className="list-disc text-[#838383]">
-                                    {item.list.map((target) => (
-                                      <li className="ml-[25px] mb-[20px]">
+                                    {item.list.map((target, id) => (
+                                      <li
+                                        key={id}
+                                        className="ml-[25px] mb-[20px]"
+                                      >
                                         <h4 className="text-white">
                                           {t(`${target.title}`)}
                                         </h4>
@@ -188,7 +202,7 @@ const PaperInfo = () => {
           )}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 export default PaperInfo;

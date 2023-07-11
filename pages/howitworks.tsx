@@ -25,7 +25,7 @@ const HowWorks = () => {
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
-      <section className="container relative lg:pt-[120px]">
+      <section className="container relative pt-[80px] md:pt-[120px]">
         <article className="mb-[80px] ">
           <h2 className="font-bold tracking-[-1.5px] text-[32px] lg:text-[48px] mb-[40px]">
             {t("howitworks_page_title1")}
@@ -37,19 +37,20 @@ const HowWorks = () => {
             <Image
               className="h-[247px] sm:h-auto object-cover"
               src={truck4}
+              priority
               alt="truck"
             />
           </div>
         </article>
         {HowItWorksData.map((obj) => {
           return (
-            <>
+            <div key={obj.title}>
               <Accordion
                 title={t(`${obj.title}`)}
                 desc1={t(`${obj.desc1}`)}
                 desc2={t(`${obj.desc2}`)}
               />
-            </>
+            </div>
           );
         })}
       </section>

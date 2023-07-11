@@ -14,7 +14,7 @@ import roadmapimg from "/public/assets/images/roadmap.jpg";
 const roadmap = () => {
   const { t } = useTranslation();
   return (
-    <>
+    <div className="pt-[20px] sm:pt-[96px]">
       <Head>
         <title>{t("roadmap_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,7 @@ const roadmap = () => {
         imgStyle="relative rounded-[20px] p-[12px] sm:rounded-[0px] sm:p-[0px] sm:absolute  sm:min-h-[807px] sm:min-w-[1280px] top-0 object-cover  z-[-10] left-1/2 transform -translate-x-1/2"
         title={t("road_map")}
         desc1={t(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         )}
         desc2={t("Ut enim ad minim veniam, quis nostrud exercitation ullamco.")}
         blockStyle="relative  md:h-[558px] overflow-hidden sm:p-[40px] md:p-[0px]"
@@ -39,7 +39,7 @@ const roadmap = () => {
       </div>
       <Navigationblock />
       <Footer />
-    </>
+    </div>
   );
 };
 

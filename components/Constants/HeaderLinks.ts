@@ -86,7 +86,7 @@ export const linksForMobile: Link[] = [
   },
   {
     name: "faq",
-    path: Routes[6].path,
+    path: Routes[13].path,
     bgLight:
       "absolute top-[40px] left-[-75px] w-[181px] h-[316px] opacity-50 background-light",
   },

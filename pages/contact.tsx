@@ -14,7 +14,7 @@ import contactbull from "/public/assets/images/contactbull.svg";
 const contact = () => {
   const { t } = useTranslation();
   return (
-    <>
+    <div className="pt-[70px] md:pt-[96px]">
       <Head>
         <title>{t("contact_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +49,7 @@ const contact = () => {
       </section>
       <Navigationblock />
       <Footer />
-    </>
+    </div>
   );
 };
 
