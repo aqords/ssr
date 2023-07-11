@@ -75,8 +75,6 @@ const Header = () => {
                 >
                   <p>{t(obj.name)}</p>
 
-                  {obj.bgLight && <div className={obj.bgLight}></div>}
-
                   {obj.url && (
                     <Image
                       sizes="50vw"
@@ -84,9 +82,6 @@ const Header = () => {
                       src={obj.url}
                       alt="logo"
                     />
-                  )}
-                  {obj.name === "about" && (
-                    <div className="absolute top-[-90px] right-[-80px] w-[183px] h-[183px] opacity-40 background-light"></div>
                   )}
                 </Link>
               );

@@ -45,6 +45,7 @@ const team = () => {
       </Head>
       <Header />
       <BlockWithBackground
+        priority={true}
         title={t("team_page_title1")}
         desc1={t("team_page_desc1")}
         desc2={t("team_page_desc2")}

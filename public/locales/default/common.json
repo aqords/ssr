@@ -590,5 +590,17 @@
   "roadmap_text248": "Continuously expand the user base and network effect of AQORDS.",
   "roadmap_text249": "Enhance platform features and functionalities based on user feedback and market demands.",
   "roadmap_text250": "Exploring strategic partnerships and collaborations to expand intonew European markets and foster global growth.",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "faq_maintitle1": "Frequently Asked Questions (FAQ)",
+  "faq_title1": "What is AQORDS?",
+  "faq_text1": "AQORDS is a decentralized logistics platform that leverages blockchain technology to streamline and enhance the freight industry. It facilitates secure and efficient transactions, provides transparency in the supply chain, and offers instant payment capabilities.",
+  "faq_title2": "How does AQORDS work?",
+  "faq_text2": "AQORDS utilizes smart contracts to automate and enforce agreements between shippers, carriers, and other supply chain partners. It integrates with freight exchanges to connect users with available shipping capacity. The platform also incorporates track-and-trace functionality, dispute resolution mechanisms, and data privacy measures.",
+  "faq_title3": "What is the purpose of the QOR token?",
+  "faq_text3": "The QOR token is the native cryptocurrency of the AQORDS platform. It serves multiple purposes, including accessing premium features like advanced smart contract functionalities, extending payment terms, and participating in the governance of the platform.",
+  "faq_title4": "How is the AQORDS platform secured?",
+  "faq_text4": "AQORDS leverages the security features provided by blockchain technology. The platform utilizes cryptographic algorithms to ensure the integrity and immutability of data. Additionally, smart contracts are audited and undergo rigorous testing to minimize vulnerabilities.",
+  "faq_title5": "How will AQORDS transition from a centralized company to a decentralized autonomous organization (DAO)?",
+  "faq_title6": "How can I contact AQORDS for further inquiries?",
+  "faq_text6": "For any further questions or inquiries, please visit our Contact Us page. You can find our contact details, including email and social media channels, where you can reach out to our team. We are always happy to assist you and provide the information you need."
 }

@@ -47,7 +47,7 @@ const PaperInfo = () => {
             </div>
             <div className="mt-[40px] rounded-[20px] overflow-hidden">
               <Image
-                sizes="50vw"
+                priority={true}
                 width={440}
                 height={350}
                 src={wpbull}

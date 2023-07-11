@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
 
 import WhyAqordsList from "./WhyAqordsList";
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../../utils/hooks/useScrollChange";
 import { renderObject } from "../Constants/WhyAqordsItems";
 import truck from "../../public/assets/images/truck.jpg";
+import BlockWithBackground from "../BlockWithBackground/BlockWithBackground";
 
 interface WhyAqordsProps {
   itemsArray: renderObject[];
@@ -14,17 +14,16 @@ interface WhyAqordsProps {
 
 const WhyAqords = ({ itemsArray }: WhyAqordsProps) => {
   const { t } = useTranslation();
+
   const isScrolled = ScrollToggle({
-    targetClasses: ["el-1", "el-2", "el-3"],
+    targetClasses: ["el-1"],
     visibleClass: "visible",
   });
 
   const elementRef = useRef<HTMLDivElement>(null);
-  const elementRef2 = useRef<HTMLDivElement>(null);
-  const elementRef3 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
-    elementRefs: [elementRef, elementRef2, elementRef3],
+    elementRefs: [elementRef],
     className: "original",
   });
 
@@ -49,33 +48,13 @@ const WhyAqords = ({ itemsArray }: WhyAqordsProps) => {
         </div>
       </section>
 
-      <section className="relative overflow-hidden">
-        <Image
-          className="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover"
-          src={truck}
-          alt="truck"
-        />
-        <div className="container">
-          <div className="  py-[22%] w-full md:max-w-[530px]">
-            <div
-              ref={elementRef2}
-              className={isScrolled["el-2"] ? "el-2 visible" : "el-2 original"}
-            >
-              <h3 className="tracking-[-1.5px]md:max-w-[537px] text-2xl leading-10 md:leading-[59px] font-bold  md:text-[48px] mb-[30px]">
-                {t("why_aqords_desc2")}
-              </h3>
-            </div>
-            <div
-              ref={elementRef3}
-              className={isScrolled["el-3"] ? "el-3 visible" : "el-3 original"}
-            >
-              <p className=" tracking-[-0.14px] font-man  font-normal md:text-[20px] text-base leading-[24px]  md:leading-[32px] ">
-                {t("why_aqords_desc3")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BlockWithBackground
+        img={truck}
+        imgStyle="absolute  min-h-[807px] min-w-[1280px] top-0 left-0  lg:right-0  m-auto object-cover z-[-10]"
+        title={t("why_aqords_desc2")}
+        desc1={t("why_aqords_desc3")}
+        blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
+      />
     </>
   );
 };

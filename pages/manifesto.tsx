@@ -47,6 +47,7 @@ const Manifesto = () => {
       </Head>
       <Header />
       <BlockWithBackground
+        priority={true}
         blockStyle="relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden pt-[120px] lg:pt-[0px]"
         blockStyle3="max-w-[532px] mt-[-120px]"
         title={t("manifesto_page_title1")}

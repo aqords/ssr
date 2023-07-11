@@ -35,9 +35,9 @@ const HowWorks = () => {
           </p>
           <div className="w-full  rounded-[20px] overflow-hidden">
             <Image
+              priority={true}
               className="h-[247px] sm:h-auto object-cover"
               src={truck4}
-              priority
               alt="truck"
             />
           </div>
