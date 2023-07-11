@@ -193,7 +193,7 @@ const PaperInfo = () => {
           {showButton && (
             <button
               onClick={handleScrollToTop}
-              className={`fixed lg:hidden   bottom-10  right-[29%] transform -translate-x-1/6 -translate-y-1/2      text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
+              className={`fixed lg:hidden   bottom-10  right-[29%] sm:right-[37%] md:right-[39%] transform -translate-x-1/6 -translate-y-1/2   text-[16px] font-semibold font-man bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] text-[#0A090F]   px-[35px] py-[8px] rounded-[10px]  border-none outline-none cursor-pointer ${
                 showButton ? "animate-fade-in" : "animate-fade-out"
               }`}
             >
