@@ -13,63 +13,75 @@ const PapperHead = () => {
   const { t } = useTranslation();
 
   const isScrolled = ScrollToggle({
-    targetClasses: ["el-1", "el-2", "el-3"],
+    targetClasses: ["el-1", "el-2"],
     visibleClass: "visible",
   });
 
   const elementRef = useRef<HTMLDivElement>(null);
   const elementRef2 = useRef<HTMLDivElement>(null);
-  const elementRef3 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
-    elementRefs: [elementRef, elementRef2, elementRef3],
+    elementRefs: [elementRef, elementRef2],
     className: "original",
   });
   return (
     <>
       <section className="pt-[80px] md:pt-[120px] lg:pt-[0px]">
-        <div className="container pb-[40px]  lg:py-[120px]">
+        <div className="container pb-[40px] lg:py-[120px]">
           <h1 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
             {t("whitepaper_title1")}
           </h1>
           <p className="font-man text-[15px] lg:text-[20px] leading-[1.5rem] lg:leading-[2rem] lg:tracking-[-0.45px] mb-[35px]">
             {t("whitepaper_desc1")}
           </p>
-          <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
+          <p className="font-man text-[#838383] text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
             {t("whitepaper_desc2")}
           </p>
         </div>
       </section>
 
       <section className="relative bg-black lg:bg-[#19191A]">
-        <div className="container h-auto lg:h-[580px] flex flex-col-reverse  lg:flex-row lg:items-center ">
+        <div className="container h-auto lg:h-[580px] flex flex-col-reverse lg:flex-row lg:items-center ">
           <div className="  xl:max-w-[531px]">
-            <h2 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
-              {t("whitepaper_desc3")}
-            </h2>
-            <div className="flex justify-center lg:justify-start mb-[40px]">
-              <Link
-                href={Routes[9].path}
-                className="font-man font-normal text-[16px]"
-              >
-                <Button
-                  outsideGradient={
-                    "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
-                  }
+            <div
+              ref={elementRef}
+              className={`${
+                isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
+              }`}
+            >
+              <h2 className="leading-0 lg:leading-[1.8rem] font-bold text-[32px] lg:text-[24px] mt-[50px] mb-[40px] tracking-[-1.5px]">
+                {t("whitepaper_desc3")}
+              </h2>
+            </div>
+            <div
+              ref={elementRef2}
+              className={`${
+                isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
+              }`}
+            >
+              <div className="flex justify-center lg:justify-start mb-[40px]">
+                <Link
+                  href={Routes[9].path}
+                  className="font-man font-normal text-[16px]"
                 >
-                  <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
-                    {t("whitepaper_open")}
-                  </button>
-                </Button>
-              </Link>
+                  <Button
+                    outsideGradient={
+                      "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f] to-[#c6b38a] p-[2px]"
+                    }
+                  >
+                    <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
+                      {t("whitepaper_open")}
+                    </button>
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="w-full ">
+          <div className="w-full">
             <Image
               className="rounded-[20px] lg:rounded-none"
               src={circle}
-              priority
-              // className="absolute top-0  right-[15%] h-[580px] "
+              priority={true}
               alt="borderlight"
             />
           </div>

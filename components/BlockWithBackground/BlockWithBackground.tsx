@@ -12,6 +12,7 @@ interface BlockWithBackgroundProps {
   blockStyle?: string;
   blockStyle2?: string;
   blockStyle3?: string;
+  priority?: boolean;
 }
 
 const BlockWithBackground = ({
@@ -23,6 +24,7 @@ const BlockWithBackground = ({
   blockStyle,
   blockStyle2 = "container flex lg:h-full items-center",
   blockStyle3 = "max-w-[532px]",
+  priority = false,
 }: BlockWithBackgroundProps) => {
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1"],
@@ -43,7 +45,7 @@ const BlockWithBackground = ({
           ref={elementRef}
           className={`${isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}`}
         >
-          <div className="max-w-[532px]">
+          <div className={blockStyle3}>
             <h3 className="font-bold text-[29px] lg:text-[44px] lg:tracking-[0.3px] leading-[2.2rem] lg:leading-[3.7rem] mb-[30px]">
               {title}
             </h3>
@@ -58,9 +60,9 @@ const BlockWithBackground = ({
       </div>
       {img && (
         <Image
-          sizes="50vw"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
           className={imgStyle}
-          priority
+          priority={priority}
           src={img}
           alt="backgroundimage"
         />

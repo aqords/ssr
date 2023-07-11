@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import bull from "../../public/assets/images/bull.svg";
-import planet from "../../public/assets/images/planet.png";
+import planet from "../../public/assets/images/planet1.png";
 import { Routes } from "./Routes";
 
 interface Data {

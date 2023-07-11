@@ -23,6 +23,7 @@ const roadmap = () => {
       </Head>
       <Header />
       <BlockWithBackground
+        priority={true}
         img={roadmapimg}
         imgStyle="relative rounded-[20px] p-[12px] sm:rounded-[0px] sm:p-[0px] sm:absolute  sm:min-h-[807px] sm:min-w-[1280px] top-0 object-cover  z-[-10] left-1/2 transform -translate-x-1/2"
         title={t("road_map")}

@@ -23,6 +23,7 @@ const contact = () => {
       </Head>
       <Header />
       <BlockWithBackground
+        priority={true}
         blockStyle="relative overflow-hidden items-start  h-[210px] md:h-[380px] lg:h-[558px]"
         title={t("contact_page_title1")}
         desc1={t("contact_page_desc1")}

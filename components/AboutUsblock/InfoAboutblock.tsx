@@ -49,11 +49,10 @@ const InfoAboutblock = () => {
         >
           <div className="container relative top-[-170px]">
             <Image
-              className="absolute   left-1/2 transform -translate-x-1/2 rounded-[20px]"
+              quality={100}
+              className="absolute left-1/2 transform -translate-x-1/2 rounded-[20px]"
               alt="code example"
               src={codebg}
-              width={1084}
-              height={375}
             />
           </div>
 
@@ -71,7 +70,6 @@ const InfoAboutblock = () => {
                 className="hidden lg:block rounded-[20px]"
                 alt="world in hands"
                 src={worldinhands}
-                sizes="50vw"
                 width={440}
                 height={576}
               />
