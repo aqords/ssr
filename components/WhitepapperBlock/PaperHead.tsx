@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,9 +6,25 @@ import Image from "next/image";
 import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import circle from "/public/assets/images/circle.png";
+import ScrollToggle from "../../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../../utils/hooks/useScrollChange";
 
 const PapperHead = () => {
   const { t } = useTranslation();
+
+  const isScrolled = ScrollToggle({
+    targetClasses: ["el-1", "el-2", "el-3"],
+    visibleClass: "visible",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef2 = useRef<HTMLDivElement>(null);
+  const elementRef3 = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRefs: [elementRef, elementRef2, elementRef3],
+    className: "original",
+  });
   return (
     <>
       <section>
@@ -28,24 +44,38 @@ const PapperHead = () => {
       <section className="relative bg-black lg:bg-[#19191A]">
         <div className="container h-auto lg:h-[580px] flex flex-col-reverse  lg:flex-row lg:items-center ">
           <div className="  xl:max-w-[531px]">
-            <h2 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
-              {t("whitepaper_desc3")}
-            </h2>
-            <div className="flex justify-center lg:justify-start mb-[40px]">
-              <Button
-                outsideGradient={
-                  "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
-                }
-              >
-                <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
-                  <Link
-                    href={Routes[9].path}
-                    className="font-man font-normal text-[16px]"
-                  >
-                    {t("whitepaper_open")}
-                  </Link>
-                </button>
-              </Button>
+            <div
+              ref={elementRef}
+              className={`${
+                isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
+              }`}
+            >
+              <h2 className="leading-0 lg:leading-[1.8rem]   font-bold text-[32px] lg:text-[24px] mt-[50px]   mb-[40px] tracking-[-1.5px]">
+                {t("whitepaper_desc3")}
+              </h2>
+            </div>
+            <div
+              ref={elementRef2}
+              className={`${
+                isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
+              }`}
+            >
+              <div className="flex justify-center lg:justify-start mb-[40px]">
+                <Button
+                  outsideGradient={
+                    "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px]"
+                  }
+                >
+                  <button className="mx-[102px] sm:mx-[65px] my-[10px]  md:my-[10px] md:text-[20px] font-man">
+                    <Link
+                      href={Routes[9].path}
+                      className="font-man font-normal text-[16px]"
+                    >
+                      {t("whitepaper_open")}
+                    </Link>
+                  </button>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="w-full ">

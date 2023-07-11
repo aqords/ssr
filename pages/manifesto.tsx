@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
@@ -14,9 +14,23 @@ import WhyAqords from "../components/WhyAqords/WhyAqordsList";
 import manifesto from "../public/assets/images/manifesto-background1.png";
 import manifestoMob from "../public/assets/images/manifesto-mobile.png";
 import truck3 from "/public/assets/images/truck3.jpg";
+import ScrollToggle from "../utils/hooks/ScrollToggle";
+import useScrollClassChange from "../utils/hooks/useScrollChange";
 
 const Manifesto = () => {
   const { t } = useTranslation();
+
+  const isScrolled = ScrollToggle({
+    targetClasses: ["el-1"],
+    visibleClass: "visible",
+  });
+
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useScrollClassChange({
+    elementRefs: [elementRef],
+    className: "original",
+  });
 
   const isMobile = useIsMobile();
 
@@ -42,9 +56,17 @@ const Manifesto = () => {
       />
       <div className="bg-second">
         <div className="container">
-          <h2 className="text-[32px] lg:text-[48px] max-w-[680px] font-bold pt-[40px] lg:pt-[123px] pb-[0px] lg:pb-[5px] tracking-[-1.5px] leading-[3.34rem]">
-            {t("manifesto_page_desc3")}
-          </h2>
+          <div
+            ref={elementRef}
+            className={`${
+              isScrolled["el-1"] ? "el-1 visible" : "el-1 original"
+            }`}
+          >
+            <h2 className="text-[32px] lg:text-[48px] max-w-[680px] font-bold pt-[40px] lg:pt-[123px] pb-[0px] lg:pb-[5px] tracking-[-1.5px] leading-[3.34rem]">
+              {t("manifesto_page_desc3")}
+            </h2>
+          </div>
+
           <WhyAqords itemsArray={ManifestList} />
         </div>
       </div>

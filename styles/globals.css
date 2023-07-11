@@ -69,6 +69,16 @@ body {
     transform: translateY(0px);
   }
 
+  .rightvisible {
+    opacity: 1;
+    transition: all 1.2s;
+    transform: translateX(0px);
+  }
+  .rightoriginal {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
   .original {
     opacity: 0;
     transform: translateY(50px);
