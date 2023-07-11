@@ -145,15 +145,7 @@ const RoadMap = () => {
             isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={linevector1}
-            alt="linevector1"
-          />
+          <Image src={linevector1} alt="linevector1" />
         </div>
         <div
           ref={elementRef3}
@@ -261,19 +253,13 @@ const RoadMap = () => {
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
             isScrolled["el-5"] ? "el-5 visible" : "el-5 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline1} alt="fullline" />
         </div>
 
         <div
           ref={elementRef6}
-          className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[8%] ${
+          className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[7%]  ${
             isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
           }`}
         >
@@ -281,7 +267,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef7}
-          className={` absolute  top-[35%] sml:top-[33%] sm:top-[34%] md:top-[37%] ${
+          className={` absolute  top-[35%] sml:top-[33%] sm:top-[35%] md:top-[37%] lg:top-[40%] ${
             isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
           }`}
         >
@@ -289,7 +275,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef8}
-          className={`absolute top-[65%] sml:top-[63%] sm:top-[67%] md:top-[68%] ${
+          className={`absolute top-[65%] sml:top-[63%] sm:top-[68%] md:top-[69%] ${
             isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
           }`}
         >
@@ -390,12 +376,6 @@ const RoadMap = () => {
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[60%] ${
             isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
           }`}
-          // style={{
-          //   opacity: isVisible ? 1 : 0,
-          //   transform: `translateY(${isVisible ? "0" : "-100%"})`,
-          //   transition: "opacity 0.5s, transform 1s",
-          // }}
-          // id="target-element"
         >
           <Image src={fullline2} alt="fullline" />
         </div>
@@ -405,15 +385,7 @@ const RoadMap = () => {
             isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={opacvector}
-            alt="linevector1"
-          />
+          <Image src={opacvector} alt="linevector1" />
         </div>
         <div
           ref={elementRef11}
@@ -421,15 +393,7 @@ const RoadMap = () => {
             isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
           }`}
         >
-          <Image
-            // style={{
-            //   opacity: showImage ? 1 : 0,
-            //   animation: `${showImage ? "fade-in 5s" : ""}`,
-            // }}
-            // className="absolute top-[-120px] sml:top-[-170px] sm:top-[-175px] md:top-[70%] "
-            src={opacvector}
-            alt="linevector1"
-          />
+          <Image src={opacvector} alt="linevector1" />
         </div>
 
         <div className="ml-[36px] sm:ml-[90px]">
