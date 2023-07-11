@@ -51,6 +51,7 @@ const RoadMap = () => {
       "el-31",
       "el-32",
       "el-33",
+      "el-34",
     ],
     visibleClass: "visible",
   });
@@ -88,6 +89,7 @@ const RoadMap = () => {
   const elementRef31 = useRef<HTMLDivElement>(null);
   const elementRef32 = useRef<HTMLDivElement>(null);
   const elementRef33 = useRef<HTMLDivElement>(null);
+  const elementRef34 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
     elementRefs: [
@@ -124,6 +126,7 @@ const RoadMap = () => {
       elementRef31,
       elementRef32,
       elementRef33,
+      elementRef34,
     ],
     className: "original",
   });
@@ -575,10 +578,16 @@ const RoadMap = () => {
               </div>
             </div>
           </div>
-          <p className="block  font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px] ">
-            Exploring strategic partnerships and collaborations to expand into
-            new European markets and foster global growth.
-          </p>
+          <div
+            ref={elementRef34}
+            className={` ${
+              isScrolled["el-34"] ? "el-34 visible" : "el-34 original"
+            }`}
+          >
+            <p className="block  font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px] ">
+              {t("roadmap_text250")}
+            </p>
+          </div>
         </div>
         <div
           ref={elementRef33}
