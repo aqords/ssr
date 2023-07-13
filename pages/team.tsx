@@ -35,7 +35,7 @@ const team = () => {
   });
 
   return (
-    <div className="pt-[20px] sm:pt-[96px]">
+    <div className="pt-[80px] sm:pt-[96px]">
       <Head>
         <title>{t("team_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
