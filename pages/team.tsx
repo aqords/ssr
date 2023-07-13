@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import TeamCard from "../components/TeamCard/TeamCard";
 import { teamList } from "../components/Constants/TeamList";
@@ -129,7 +128,6 @@ const team = () => {
           </div>
         </div>
       </div>
-      <Navigationblock />
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ import { GetStaticPropsContext } from "next";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
+
 import { faqcontent } from "../components/Constants/Faq";
 
 const Faq = () => {
@@ -47,7 +47,7 @@ const Faq = () => {
           </div>
         </div>
       </section>
-      <Navigationblock />
+
       <Footer />
     </>
   );
