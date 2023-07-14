@@ -77,4 +77,8 @@ export const linksForMobile: Link[] = [
     name: "faq",
     path: Routes[13].path,
   },
+  {
+    name: "contact_us",
+    path: Routes[7].path,
+  },
 ];

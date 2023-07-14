@@ -129,7 +129,7 @@ const ContactForm = () => {
       <div className="relative font-man text-[15px] w-full lg:max-w-[575px] ">
         <span className="block  absolute top-[-25px] right-[0px] lg:h-[0px] h-[1px] w-full bg-neutral-700 my-[10px]"></span>
         <div className="sm:flex flew-wrap gap-[10px] justify-between mb-[20px] mt-[-5px]">
-          <label className="relative flex flex-col text-[#6B7280] text-[12px] mb-[20px] sm:mb-[0px]">
+          <label className="relative flex flex-col text-[#CFD6E4] text-[12px] mb-[20px] sm:mb-[0px]">
             <p className="text-[#ffffff]">
               {t("contact_enter_name")}
               <span className="text-[#F44A77]"> *</span>
@@ -138,9 +138,9 @@ const ContactForm = () => {
               value={name}
               onChange={(e) => nameHandler(e.target.value)}
               placeholder={t("contact_write_name")}
-              className={`border-[1px]  placeholder-[#6B7280] ${
-                nameError ? "border-[#F44A77]" : "border-transparent"
-              } hover:border-[#737373] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
+              className={`border-[1px]  placeholder-[#CFD6E4] ${
+                nameError ? "border-[#F44A77]" : "border-[#737373]"
+              } hover:border-[#ffffff] focus:focusInput bg-[#040403] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
               type="text"
             />
             {nameError ? (
@@ -151,7 +151,7 @@ const ContactForm = () => {
               ""
             )}
           </label>
-          <label className="relative flex flex-col text-[#6B7280] text-[12px]">
+          <label className="relative flex flex-col text-[#CFD6E4] text-[12px]">
             <p className="text-[#ffffff]">
               {t("contact_enter_email")}
               <span className="text-[#F44A77]"> *</span>
@@ -161,9 +161,9 @@ const ContactForm = () => {
               value={email}
               autoComplete="email"
               onChange={(e) => emailHandler(e.target.value)}
-              className={`border-[1px] placeholder-[#6B7280]   ${
-                emailError ? "border-[#F44A77]" : "border-transparent "
-              }  hover:border-[#737373]  focus:focusInput bg-[#222221] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
+              className={`border-[1px] placeholder-[#CFD6E4]   ${
+                emailError ? "border-[#F44A77]" : "border-[#737373] "
+              }  hover:border-[#ffffff]  focus:focusInput bg-[#040403] rounded-[6px] px-[12px] sm:w-[276px] py-[5px] text-[16px]`}
               placeholder={t("contact_write_email")}
               type="email"
             />
@@ -176,7 +176,7 @@ const ContactForm = () => {
             )}
           </label>
         </div>
-        <label className="relative flex flex-col text-[#6B7280] text-[12px] py-[5px] mb-[20px] mt-[-5px]">
+        <label className="relative flex flex-col text-[#CFD6E4] text-[12px] py-[5px] mb-[20px] mt-[-5px]">
           <p className="text-[#ffffff]">
             {t("contact_message_subject")}
             <span className="text-[#F44A77]"> *</span>
@@ -184,9 +184,9 @@ const ContactForm = () => {
           <input
             value={subject}
             onChange={(e) => subjectHandler(e.target.value)}
-            className={`border-[1px]  placeholder-[#6B7280]   ${
-              subjectError ? "border-[#F44A77]" : "border-transparent"
-            }  hover:border-[#737373] focus:focusInput bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[16px]`}
+            className={`border-[1px]  placeholder-[#CFD6E4]   ${
+              subjectError ? "border-[#F44A77]" : "border-[#737373]"
+            }  hover:border-[#ffffff] focus:focusInput bg-[#040403] rounded-[6px] px-[12px] py-[7px] text-[16px]`}
             placeholder={t("contact_write_subject")}
             type="text"
           />
@@ -198,23 +198,23 @@ const ContactForm = () => {
             ""
           )}
           <span
-            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px] absolute top-[52px] right-[13px] text-[15px] ${
+            className={`block bg-[#040403] rounded-[5px] px-[3px] leading-[20px] absolute top-[52px] right-[13px] text-[15px] ${
               subject.length > 50 ? "text-[#F44A77]" : ""
             }`}
           >
             {subject.length} / 50
           </span>
         </label>
-        <label className="relative flex flex-col text-[#6B7280] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
+        <label className="relative flex flex-col text-[#CFD6E4] text-[12px] mt-[-5px] mb-[10px] sm:mb-[0px]">
           <p className="text-[#ffffff]">
             {t("contact_message")} <span className="text-[#F44A77]"> *</span>
           </p>
           <textarea
             value={text}
             onChange={(e) => textHandler(e.target.value)}
-            className={`border-[1px]  placeholder-[#6B7280]  ${
-              textError ? "border-[#F44A77]" : "border-transparent"
-            }   hover:border-[#737373]  focus:focusInput resize-none bg-[#222221] rounded-[6px] px-[12px] py-[7px] text-[16px] h-[120px]`}
+            className={`border-[1px]  placeholder-[#CFD6E4]  ${
+              textError ? "border-[#F44A77]" : "border-[#737373]"
+            }   hover:border-[#ffffff]  focus:focusInput resize-none bg-[#040403] rounded-[6px] px-[12px] py-[7px] text-[16px] h-[120px]`}
             placeholder={t("contact_write_message")}
           />
           {textError ? (
@@ -225,7 +225,7 @@ const ContactForm = () => {
             ""
           )}
           <span
-            className={`block bg-[#222221] rounded-[5px] px-[3px] leading-[20px]  absolute top-[114px] right-[13px] text-[15px] ${
+            className={`block bg-[#040403] rounded-[5px] px-[3px] leading-[20px]  absolute top-[114px] right-[13px] text-[15px] ${
               text.length > 255 ? "text-[#F44A77]" : ""
             }`}
           >

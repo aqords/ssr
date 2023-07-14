@@ -15,12 +15,16 @@ import Button from "../UI/Button/Button";
 const Header = () => {
   const { t } = useTranslation();
 
-  const currentLocation = useRouter().pathname.split("/");
+  const currentLocation = useRouter().pathname.slice(1);
 
   const [isOpenBurger, setIsOpenBurger] = useState<boolean>(false);
 
   const toggleBurger = () => {
     setIsOpenBurger(!isOpenBurger);
+  };
+
+  const closeBurgerWhenNoRedirect = (path: string) => {
+    currentLocation === path.slice(1) ? setIsOpenBurger(!isOpenBurger) : "";
   };
 
   useEffect(() => {
@@ -69,6 +73,7 @@ const Header = () => {
             {linksForMobile.map((obj) => {
               return (
                 <Link
+                  onClick={() => closeBurgerWhenNoRedirect(obj.path)}
                   key={obj.path}
                   href={obj.path}
                   className="relative overflow-hidden text-[20px] px-[20px] h-[80px] mobile-button-color w-[100%] rounded-[20px] text-white hover:cursor-pointer  flex justify-between items-center "
