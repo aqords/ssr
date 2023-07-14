@@ -190,13 +190,13 @@ const RoadMap = () => {
 
                 <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                    {t("roadmap_text6")}
+                    {t("roadmap_text251")}
                   </h2>
                   <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] sm:w-[716px]">
-                    {t("roadmap_text10")}
+                    {t("roadmap_text252")}
                   </h3>
                   <p className="font-man text-[#838383]  text-[14px] leading-[1.3rem] lg:leading-[2rem] lg:text-[16px] tracking-[-0.3px] mb-[0px]">
-                    {t("roadmap_text11")}
+                    {t("roadmap_text253")}
                   </p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ const RoadMap = () => {
 
                 <div className="w-[316px] md:w-[615px] lg:w-[716px]">
                   <h2 className="text-[40px] font-bold tracking-[-0.8px] leading-[64px] mb-[10px]">
-                    {t("roadmap_text9")}
+                    {t("roadmap_text6")}
                   </h2>
                   <h3 className="font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[316px] md:w-[615px] lg:w-[716px]">
                     {t("roadmap_text10")}
