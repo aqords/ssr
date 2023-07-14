@@ -31,9 +31,9 @@ const Faq = () => {
             <ul>
               {faqcontent.map((obj, id) => {
                 return (
-                  <li>
-                    <p className=" font-man text-[24px] mb-[35px] tracking-[0.75px]">
-                      <span className=" font-bold  mr-[8px]">{id + 1}.</span>
+                  <li key={id}>
+                    <p className="font-man font-bold text-[24px] mb-[35px] tracking-[0.75px]">
+                      <span className="mr-[8px]">{id + 1}.</span>
                       {t(`${obj.title}`)}
                     </p>
 

@@ -53,6 +53,7 @@ const InfoAboutblock = () => {
               className="absolute left-1/2 transform -translate-x-1/2 rounded-[20px]"
               alt="code example"
               src={codebg}
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
             />
           </div>
 
