@@ -98,7 +98,7 @@ const Header = () => {
       </nav>
     </header>
   ) : (
-    <header className="w-full  fixed top-[0px]  left-1/2 transform -translate-x-1/2 z-[10] bg-black">
+    <header className="hidden w-full md:block fixed top-[0px]  left-1/2 transform -translate-x-1/2 z-[10] bg-black">
       <div className="container ">
         <nav className=" flex items-center justify-between h-[96px]">
           <Link
