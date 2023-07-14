@@ -139,6 +139,11 @@ const PaperInfo = () => {
                         {el.underlist &&
                           el.underlist.map((item, id) => (
                             <ul key={id}>
+                              {item.head__title && (
+                                <h3 className="font-man font-bold block mb-[30px] text-[18px]">
+                                  {t(`${item.head__title}`)}
+                                </h3>
+                              )}
                               <li>
                                 {item.title && <h3>{t(`${item.title}`)}</h3>}
                                 {item.a_title && (

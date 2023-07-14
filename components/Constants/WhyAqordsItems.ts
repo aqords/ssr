@@ -39,9 +39,9 @@ export const whyAqordsList: renderObject[] = [
   {
     topicon: three,
     icon: arrow,
-    title: "why_aqords3_title",
-    description: "why_aqords3_desc",
-    text: "why_aqords3_text",
+    title: "why_aqords5_title",
+    description: "why_aqords5_desc",
+    text: "why_aqords5_text",
   },
   {
     topicon: four,
@@ -53,9 +53,9 @@ export const whyAqordsList: renderObject[] = [
   {
     topicon: fife,
     icon: wallet,
-    title: "why_aqords5_title",
-    description: "why_aqords5_desc",
-    text: "why_aqords5_text",
+    title: "why_aqords3_title",
+    description: "why_aqords3_desc",
+    text: "why_aqords3_text",
   },
 ];
 
