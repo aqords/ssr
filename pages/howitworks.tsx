@@ -6,7 +6,7 @@ import { GetStaticPropsContext } from "next";
 import Image from "next/image";
 
 import Accordion from "../components/Accordion/Accordion";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
+
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -62,7 +62,7 @@ const HowWorks = () => {
         desc2={t("howitworks_page_desc3")}
         blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
       />
-      <Navigationblock />
+
       <Footer />
     </>
   );

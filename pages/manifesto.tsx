@@ -9,7 +9,7 @@ import BlockWithBackground from "../components/BlockWithBackground/BlockWithBack
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
+
 import WhyAqords from "../components/WhyAqords/WhyAqordsList";
 import manifesto from "../public/assets/images/manifesto-background1.png";
 import manifestoMob from "../public/assets/images/manifesto-mobile.png";
@@ -79,7 +79,6 @@ const Manifesto = () => {
         desc1={t("manifesto_page_desc4")}
         blockStyle="relative h-[478px] md:h-[810px] overflow-hidden py-[40px] flex"
       />
-      <Navigationblock />
       <Footer />
     </div>
   );

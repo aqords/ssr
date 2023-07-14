@@ -6,7 +6,7 @@ import { GetStaticPropsContext } from "next";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
+
 import { faqcontent } from "../components/Constants/Faq";
 
 const Faq = () => {
@@ -22,7 +22,7 @@ const Faq = () => {
       <Header />
       <section>
         <div className="container">
-          <h2 className="pt-[120px] pb-[60px] md:pt-[212px] md:pb-[135px] text-[32px] md:text-[48px] tracking-[-0.45px]">
+          <h2 className="font-bold pt-[120px] pb-[60px] md:pt-[212px] md:pb-[135px] text-[32px] md:text-[48px] tracking-[-0.45px]">
             {t("faq_maintitle1")}
           </h2>
         </div>
@@ -32,12 +32,12 @@ const Faq = () => {
               {faqcontent.map((obj, id) => {
                 return (
                   <li>
-                    <p className="font-man font-bold text-[24px] mb-[35px] tracking-[0.75px]">
-                      <span className="mr-[8px]">{id + 1}.</span>
+                    <p className=" font-man text-[24px] mb-[35px] tracking-[0.75px]">
+                      <span className=" font-bold  mr-[8px]">{id + 1}.</span>
                       {t(`${obj.title}`)}
                     </p>
 
-                    <p className="font-man text-[20px] mb-[60px] tracking-[-0.35px]">
+                    <p className="  font-man text-[20px] mb-[60px] tracking-[-0.35px]">
                       {obj.desc && t(`${obj.desc}`)}
                     </p>
                   </li>
@@ -47,7 +47,7 @@ const Faq = () => {
           </div>
         </div>
       </section>
-      <Navigationblock />
+
       <Footer />
     </>
   );
