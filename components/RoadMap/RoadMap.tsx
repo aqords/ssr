@@ -46,12 +46,6 @@ const RoadMap = () => {
       "el-26",
       "el-27",
       "el-28",
-      "el-29",
-      "el-30",
-      "el-31",
-      "el-32",
-      "el-33",
-      "el-34",
     ],
     visibleClass: "visible",
   });
@@ -84,12 +78,6 @@ const RoadMap = () => {
   const elementRef26 = useRef<HTMLDivElement>(null);
   const elementRef27 = useRef<HTMLDivElement>(null);
   const elementRef28 = useRef<HTMLDivElement>(null);
-  const elementRef29 = useRef<HTMLDivElement>(null);
-  const elementRef30 = useRef<HTMLDivElement>(null);
-  const elementRef31 = useRef<HTMLDivElement>(null);
-  const elementRef32 = useRef<HTMLDivElement>(null);
-  const elementRef33 = useRef<HTMLDivElement>(null);
-  const elementRef34 = useRef<HTMLDivElement>(null);
 
   useScrollClassChange({
     elementRefs: [
@@ -121,12 +109,6 @@ const RoadMap = () => {
       elementRef26,
       elementRef27,
       elementRef28,
-      elementRef29,
-      elementRef30,
-      elementRef31,
-      elementRef32,
-      elementRef33,
-      elementRef34,
     ],
     className: "original",
   });
@@ -144,7 +126,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef2}
-          className={`absolute  top-[7%] sml:top-[2%] sm:top-[3%] md:top-[39%]  ${
+          className={`absolute  top-[7%] sml:top-[2%] sm:top-[3%] md:top-[41%]  ${
             isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
           }`}
         >
@@ -152,7 +134,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef3}
-          className={`absolute top-[40%] sml:top-[37%] sm:top-[36%] md:top-[8%] ${
+          className={`absolute top-[40%] sml:top-[37%] sm:top-[39%] md:top-[8%] ${
             isScrolled["el-3"] ? "el-3 visible" : "el-3 original"
           }`}
         >
@@ -193,9 +175,9 @@ const RoadMap = () => {
               </div>
             </div>
             <div
-              ref={elementRef16}
+              ref={elementRef5}
               className={` ${
-                isScrolled["el-16"] ? "el-16 visible" : "el-16 original"
+                isScrolled["el-5"] ? "el-5 visible" : "el-5 original"
               }`}
             >
               <div className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
@@ -220,9 +202,9 @@ const RoadMap = () => {
               </div>
             </div>
             <div
-              ref={elementRef17}
+              ref={elementRef6}
               className={` ${
-                isScrolled["el-17"] ? "el-17 visible" : "el-17 original"
+                isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
               }`}
             >
               <div className="mb-[85px] sm:mb-[135px] lg:mb-[120px]">
@@ -252,34 +234,34 @@ const RoadMap = () => {
 
       <div className="relative">
         <div
-          ref={elementRef5}
+          ref={elementRef7}
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[120%] ${
-            isScrolled["el-5"] ? "el-5 visible" : "el-5 original"
+            isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
           }`}
         >
           <Image src={fullline1} alt="fullline" />
         </div>
 
         <div
-          ref={elementRef6}
+          ref={elementRef8}
           className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[7%]  ${
-            isScrolled["el-6"] ? "el-6 visible" : "el-6 original"
+            isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
           }`}
         >
           <Image src={linevector1} alt="linevector1" />
         </div>
         <div
-          ref={elementRef7}
-          className={` absolute  top-[35%] sml:top-[33%] sm:top-[35%] md:top-[37%] ${
-            isScrolled["el-7"] ? "el-7 visible" : "el-7 original"
+          ref={elementRef9}
+          className={` absolute  top-[35%] sml:top-[33%] sm:top-[33%] md:top-[37%] ${
+            isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
           }`}
         >
           <Image src={bgvector} alt="linevector1" />
         </div>
         <div
-          ref={elementRef8}
-          className={`absolute top-[65%] sml:top-[64%] sm:top-[68%] md:top-[69%]  ${
-            isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
+          ref={elementRef10}
+          className={`absolute top-[65%] sml:top-[64%] sm:top-[65%] md:top-[68%]  ${
+            isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
           <Image src={opacvector} alt="linevector1" />
@@ -287,9 +269,9 @@ const RoadMap = () => {
 
         <div className="mb-[165px] sm:mb-[363px] ml-[36px] sm:ml-[90px]">
           <div
-            ref={elementRef18}
+            ref={elementRef11}
             className={` ${
-              isScrolled["el-18"] ? "el-18 visible" : "el-18 original"
+              isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
             }`}
           >
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[120px] tracking-[-1.5px]">
@@ -297,9 +279,9 @@ const RoadMap = () => {
             </h1>
           </div>
           <div
-            ref={elementRef23}
+            ref={elementRef12}
             className={` mb-[75px] sm:mb-[100px] md:mb-[95px] lg:mb-[120px] ${
-              isScrolled["el-23"] ? "el-23 visible" : "el-23 original"
+              isScrolled["el-12"] ? "el-12 visible" : "el-12 original"
             }`}
           >
             <div className="w-[120px]">
@@ -322,9 +304,9 @@ const RoadMap = () => {
             </div>
           </div>
           <div
-            ref={elementRef24}
+            ref={elementRef13}
             className={` mb-[23px] sm:mb-[140px] lg:mb-[103px] ${
-              isScrolled["el-24"] ? "el-24 visible" : "el-24 original"
+              isScrolled["el-13"] ? "el-13 visible" : "el-13 original"
             }`}
           >
             <div className="w-[145px] sm:w-[120px]">
@@ -347,9 +329,9 @@ const RoadMap = () => {
             </div>
           </div>
           <div
-            ref={elementRef20}
+            ref={elementRef14}
             className={` w-[316px] md:w-[615px] lg:w-[716px] ${
-              isScrolled["el-20"] ? "el-20 visible" : "el-20 original"
+              isScrolled["el-14"] ? "el-14 visible" : "el-14 original"
             }`}
           >
             <div className="w-[120px]">
@@ -375,25 +357,25 @@ const RoadMap = () => {
 
       <div className="relative">
         <div
-          ref={elementRef9}
+          ref={elementRef15}
           className={`absolute top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[60%] ${
-            isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
+            isScrolled["el-15"] ? "el-15 visible" : "el-15 original"
           }`}
         >
           <Image src={fullline2} alt="fullline" />
         </div>
         <div
-          ref={elementRef10}
-          className={`absolute z-[-1] top-[10%] sml:top-[5%] sm:top-[5%] md:top-[11%] ${
-            isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
+          ref={elementRef16}
+          className={`absolute z-[-1] top-[10%] sml:top-[11%] smx:top-[5%] sm:top-[5%] md:top-[11%] ${
+            isScrolled["el-16"] ? "el-16 visible" : "el-16 original"
           }`}
         >
           <Image src={opacvector} alt="linevector1" />
         </div>
         <div
-          ref={elementRef11}
-          className={`absolute z-[-1] top-[49%] sml:top-[45%] sm:top-[49%] md:top-[52%] lg:top-[49%] ${
-            isScrolled["el-11"] ? "el-11 visible" : "el-11 original"
+          ref={elementRef17}
+          className={`absolute z-[-1] top-[49%] sml:top-[49%] smx:top-[45%] sm:top-[49%] md:top-[50%] lg:top-[49%] ${
+            isScrolled["el-17"] ? "el-17 visible" : "el-17 original"
           }`}
         >
           <Image src={opacvector} alt="linevector1" />
@@ -401,9 +383,9 @@ const RoadMap = () => {
 
         <div className="ml-[36px] sm:ml-[90px]">
           <div
-            ref={elementRef19}
+            ref={elementRef18}
             className={` ${
-              isScrolled["el-19"] ? "el-19 visible" : "el-19 original"
+              isScrolled["el-18"] ? "el-18 visible" : "el-18 original"
             }`}
           >
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[85px] lg:mb-[120px] md:mb-[60px] tracking-[-1.5px] ">
@@ -412,9 +394,9 @@ const RoadMap = () => {
           </div>
           <div className="mb-[165px] sm:mb-[360px]">
             <div
-              ref={elementRef25}
+              ref={elementRef19}
               className={` ${
-                isScrolled["el-25"] ? "el-25 visible" : "el-25 original"
+                isScrolled["el-19"] ? "el-19 visible" : "el-19 original"
               }`}
             >
               <div className="mb-[35px] sm:mb-[85px] lg:mb-[65px]">
@@ -439,9 +421,9 @@ const RoadMap = () => {
               </div>
             </div>
             <div
-              ref={elementRef26}
+              ref={elementRef20}
               className={` ${
-                isScrolled["el-26"] ? "el-26 visible" : "el-26 original"
+                isScrolled["el-20"] ? "el-20 visible" : "el-20 original"
               }`}
             >
               <div className="mb-[35px] sm:mb-[85px] lg:mb-[65px]">
@@ -471,34 +453,34 @@ const RoadMap = () => {
 
       <div className="relative">
         <div
-          ref={elementRef27}
+          ref={elementRef21}
           className={`absolute  top-[-60px] sml:top-[-170px] sm:top-[-175px] md:top-[-120px] w-[3px] h-[110%] ${
-            isScrolled["el-27"] ? "el-27 visible" : "el-27 original"
+            isScrolled["el-21"] ? "el-21 visible" : "el-21 original"
           }`}
         >
           <Image src={fullline2} alt="fullline" />
         </div>
         <div
-          ref={elementRef28}
+          ref={elementRef22}
           className={`absolute z-[-1] top-[5%] sml:top-[2%] sm:top-[2%] md:top-[7%]  ${
-            isScrolled["el-28"] ? "el-28 visible" : "el-28 original"
+            isScrolled["el-22"] ? "el-22 visible" : "el-22 original"
           }`}
         >
           <Image src={opacvector} alt="linevector1" />
         </div>
         <div
-          ref={elementRef29}
-          className={`absolute z-[-1] top-[26%] sml:top-[25%] sm:top-[28%] md:top-[31%] lg:top-[30%] ${
-            isScrolled["el-29"] ? "el-29 visible" : "el-29 original"
+          ref={elementRef23}
+          className={`absolute z-[-1] top-[26%] sml:top-[25%] sm:top-[30%] md:top-[31%] lg:top-[30%] ${
+            isScrolled["el-23"] ? "el-23 visible" : "el-23 original"
           }`}
         >
           <Image src={opacvector} alt="linevector1" />
         </div>
         <div className="ml-[36px] sm:ml-[90px]">
           <div
-            ref={elementRef30}
+            ref={elementRef24}
             className={`${
-              isScrolled["el-30"] ? "el-30 visible" : "el-30 original"
+              isScrolled["el-24"] ? "el-24 visible" : "el-24 original"
             }`}
           >
             <h1 className="leading-normal md:leading-[58px] md:text-[48px] text-[32px] font-bold mb-[80px] md:mb-[123px] tracking-[-1.5px] ">
@@ -508,9 +490,9 @@ const RoadMap = () => {
 
           <div className="mb-[120px]">
             <div
-              ref={elementRef31}
+              ref={elementRef25}
               className={` ${
-                isScrolled["el-31"] ? "el-31 visible" : "el-31 original"
+                isScrolled["el-25"] ? "el-25 visible" : "el-25 original"
               }`}
             >
               <div className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]">
@@ -535,9 +517,9 @@ const RoadMap = () => {
               </div>
             </div>
             <div
-              ref={elementRef32}
+              ref={elementRef26}
               className={` ${
-                isScrolled["el-32"] ? "el-32 visible" : "el-32 original"
+                isScrolled["el-26"] ? "el-26 visible" : "el-26 original"
               }`}
             >
               <div className="mb-[40px] sm:mb-[110px] md:mb-[85px] lg:mb-[55px]">
@@ -563,9 +545,9 @@ const RoadMap = () => {
             </div>
           </div>
           <div
-            ref={elementRef34}
+            ref={elementRef27}
             className={` ${
-              isScrolled["el-34"] ? "el-34 visible" : "el-34 original"
+              isScrolled["el-27"] ? "el-27 visible" : "el-27 original"
             }`}
           >
             <p className="block  font-man  mb-[40px] text-[16px] md:text-[20px] leading-[1.5rem] lg:leading-[32px] lg:tracking-[-0.45px] w-[315px] sm:w-[716px] ">
@@ -574,9 +556,9 @@ const RoadMap = () => {
           </div>
         </div>
         <div
-          ref={elementRef33}
+          ref={elementRef28}
           className={` ${
-            isScrolled["el-33"] ? "el-33 visible" : "el-33 original"
+            isScrolled["el-28"] ? "el-28 visible" : "el-28 original"
           }`}
         >
           <NodeCard
