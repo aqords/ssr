@@ -15,6 +15,12 @@ const Faq = () => {
     <>
       <Head>
         <title>{t("faq_title")}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap"
+          rel="stylesheet"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
@@ -37,7 +43,7 @@ const Faq = () => {
                       {t(`${obj.title}`)}
                     </p>
 
-                    <p className="font-man text-[20px] mb-[60px] tracking-[-0.35px]">
+                    <p className="font-man font-[200] text-[20px] mb-[60px] tracking-[-0.35px]">
                       {obj.desc && t(`${obj.desc}`)}
                     </p>
                   </li>

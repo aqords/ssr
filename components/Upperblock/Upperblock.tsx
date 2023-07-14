@@ -29,7 +29,7 @@ const Upperblock = () => {
   });
 
   return (
-    <div className="container sm:pt-[100px] md:pt-[200px] pt-[100px] relative pb-[150px] sm:pb-[130px] md:pb-[170px] lg:pb-[270px]">
+    <div className="container sm:pt-[100px] md:pt-[200px] pt-[100px] relative pb-[150px] sm:pb-[130px] md:pb-[170px] lg:pb-[270px] ">
       <section className="flex flex-col items-center mt-[35px] sm:mt-[0px]">
         <Link href={Routes[8].path}>
           <Button
@@ -93,7 +93,7 @@ const Upperblock = () => {
 
       <Image
         sizes="50vw"
-        className="absolute mx-[12px] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
+        className="absolute sm:mx-[12px] scale-[0.9] lg:scale-[1] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck1"
       />
