@@ -39,9 +39,6 @@ const WhyAqords = ({ itemsArray }: WhyAqordsProps) => {
               <h2 className="  font-bold text-2xl md:text-[48px]  mb-[43px] tracking-[-1.5px]">
                 {t("why_aqords_title1")}
               </h2>
-              <p className="font-normal  text-base md:text-lg font-man max-w-[790px] leading-6 md:leading-8 tracking-[-0.42px] ">
-                {t("why_aqords_desc1")}
-              </p>
             </div>
           </div>
           <WhyAqordsList itemsArray={itemsArray} />

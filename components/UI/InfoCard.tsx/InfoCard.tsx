@@ -46,11 +46,14 @@ const InfoCard = ({
         "block rounded-[15px] bg-black mobile-button-color p-[1px]"
       }
     >
-      <div className={`${flex ? `${flex}` : ""} relative`}>
+      <div className={` ${flex ? `${flex}` : ""} relative`}>
         <div className={imgWrapper}>
           {img && <Image sizes="50vw" src={img} className={imgStyle} alt="" />}
         </div>
-        <div className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]">
+        <div
+          id="myDiv"
+          className="flex flex-col w-full items-start gap-[17px] md:gap-[37px] p-[20px] md:p-[40px]"
+        >
           <h3 className="text-[32px] mb-[2px] md:text-[40px]">{t(title)}</h3>
           <p className="md:text-[20px]  text-[#838383] font-man max-w-[700px] mt-[15px]">
             {clampString(desc)}
