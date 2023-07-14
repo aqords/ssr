@@ -15,7 +15,8 @@ import Button from "../UI/Button/Button";
 const Header = () => {
   const { t } = useTranslation();
 
-  const currentLocation = useRouter().pathname.slice(1);
+  const currentLocation = useRouter().pathname.split("/");
+  const currentLocationForBurger = useRouter().pathname.slice(1);
 
   const [isOpenBurger, setIsOpenBurger] = useState<boolean>(false);
 
@@ -24,7 +25,9 @@ const Header = () => {
   };
 
   const closeBurgerWhenNoRedirect = (path: string) => {
-    currentLocation === path.slice(1) ? setIsOpenBurger(!isOpenBurger) : "";
+    currentLocationForBurger === path.slice(1)
+      ? setIsOpenBurger(!isOpenBurger)
+      : "";
   };
 
   useEffect(() => {

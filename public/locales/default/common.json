@@ -609,6 +609,11 @@
   "faq_title4": "How is the AQORDS platform secured?",
   "faq_text4": "AQORDS leverages the security features provided by blockchain technology. The platform utilizes cryptographic algorithms to ensure the integrity and immutability of data. Additionally, smart contracts are audited and undergo rigorous testing to minimize vulnerabilities.",
   "faq_title5": "How will AQORDS transition from a centralized company to a decentralized autonomous organization (DAO)?",
-  "faq_title6": "How can I contact AQORDS for further inquiries?",
-  "faq_text6": "For any further questions or inquiries, please visit our Contact Us page. You can find our contact details, including email and social media channels, where you can reach out to our team. We are always happy to assist you and provide the information you need."
+  "faq_text5": "AQORDS has a roadmap in place that outlines the transition to a DAO. As the platform grows and matures, power will gradually shift from the founding team to the AQORDS community. This transition will be facilitated through the implementation of on-chain governance mechanisms, ensuring community involvement in decision-making processes.",
+  "faq_title6": "What measures are in place to prevent token inflation and market flooding?",
+  "faq_text6": "AQORDS has implemented a controlled token distribution model. Initially, a percentage of the tokens will be in circulation, while the remaining supply will be issued gradually over time in accordance with the growth of the platform. This controlled release mechanism helps prevent token inflation and ensures a balanced market supply.",
+  "faq_title7": "How can I contact AQORDS for further inquiries?",
+  "faq_text7": "For any further questions or inquiries, please visit our ",
+  "faq_text_next7": " page. You can find our contact details, including email and social media channels, where you can reach out to our team. We are always happy to assist you and provide the information you need.",
+  "faq_text8": "Please note that the information provided in this FAQ is for general guidance only. For more detailed information, we encourage you to refer to our official documentation and consult with our team."
 }

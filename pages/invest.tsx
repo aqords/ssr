@@ -202,7 +202,6 @@ const invest = () => {
           </div>
         </div>
       </div>
-
       <BlockWithBackground
         title={t("invest_page_title2")}
         desc1={
@@ -223,8 +222,6 @@ const invest = () => {
         imgStyle="lg:absolute top-[0px] lg:right-[-190px] 2xl:right-[-140px] z-[-10]"
         blockStyle="relative h-[575px] sml:h-[595px] smx:h-[620px] sm:h-[700px] md:h-[780px] overflow-hidden "
       />
-
-      <Navigationblock />
       <Footer />
     </div>
   );
