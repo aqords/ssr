@@ -3,11 +3,13 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import Link from "next/link";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 import { faqcontent } from "../components/Constants/Faq";
+import { Routes } from "../components/Constants/Routes";
 
 const Faq = () => {
   const { t } = useTranslation();
@@ -50,10 +52,23 @@ const Faq = () => {
                 );
               })}
             </ul>
+            <p className="font-man font-[200] text-[20px] mt-[-20px] mb-[60px] tracking-[-0.35px]">
+              {t("faq_text7")}
+              <Link
+                className="text-[#5682FA] underline cursor-pointer"
+                href={Routes[7].path}
+              >
+                {t("contact_us")}
+              </Link>
+              {t("faq_text_next7")}
+            </p>
+            <p className="font-man font-[200] text-[20px]  tracking-[-0.35px]">
+              {t("faq_text8")}
+            </p>
           </div>
         </div>
       </section>
-
+      <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </>
   );

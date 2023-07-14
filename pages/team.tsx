@@ -134,6 +134,7 @@ const team = () => {
           </div>
         </div>
       </div>
+      <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </div>
   );

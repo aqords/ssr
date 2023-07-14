@@ -17,10 +17,7 @@ const contact = () => {
     <div className="pt-[70px] md:pt-[96px]">
       <Head>
         <title>{t("contact_title")}</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -56,8 +53,8 @@ const contact = () => {
             {t("contact_page_desc6")}
           </p>
         </div>
-      </section>
-      <Navigationblock />
+      </section>{" "}
+      <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </div>
   );
