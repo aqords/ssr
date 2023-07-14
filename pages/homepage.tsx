@@ -4,12 +4,7 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import Upperblock from "../components/Upperblock/Upperblock";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
-import WhyAqords from "../components/WhyAqords/WhyAqords";
-import { whyAqordsList } from "../components/Constants/WhyAqordsItems";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Blockchaintest from "../components/Blockchaintest/Blockchaintest";
 
 const Homepage = () => {
   const { t } = useTranslation();
@@ -21,11 +16,7 @@ const Homepage = () => {
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
-      <Header />
-      <Upperblock />
-      <WhyAqords itemsArray={whyAqordsList} />
-      <Navigationblock />
-      <Footer />
+      <Blockchaintest />
     </>
   );
 };
