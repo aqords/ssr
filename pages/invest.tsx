@@ -128,6 +128,7 @@ const invest = () => {
                 <span className="mr-[15px]">·</span>
                 {t(`detail_invest2_title`)}
               </span>
+              <br />
               <span className="font-man tracking-[-0.35px] mb-[15px]">
                 {t(`detail_invest2_desc`)} &nbsp;
                 {
@@ -181,7 +182,7 @@ const invest = () => {
             </div>
             <div className="mb-[73px]">
               <span className="text-[24px] font-bold mt-[16px] mb-[11px] tracking-[-1.5px]">
-                <span className="mr-[15px]">·</span>
+                <span className=" mr-[15px]">·</span>
                 {t(`detail_invest3_title`)}
               </span>
               <p className="font-man tracking-[-0.35px] mb-[15px]">

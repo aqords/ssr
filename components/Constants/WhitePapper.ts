@@ -21,6 +21,7 @@ interface WhitepaperSectionBody {
 interface WhitepaperSectionUnderlist {
   head__title: string | null;
   title: string | null;
+  vika_title: string | null;
   a_title: string | null;
   b_title: string | null;
   list: WhitepaperListItem[];
@@ -49,6 +50,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -68,6 +70,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -87,6 +90,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -114,6 +118,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -133,6 +138,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -177,6 +183,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -224,6 +231,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -242,6 +250,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -260,6 +269,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -279,6 +289,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -297,6 +308,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -323,6 +335,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -341,6 +354,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -359,6 +373,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -377,6 +392,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -403,6 +419,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -421,6 +438,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -447,6 +465,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -465,6 +484,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -531,6 +551,7 @@ const whitepapper: WhitepaperSection[] = [
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: null,
             a_title: null,
             b_title: null,
@@ -551,6 +572,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text52",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -571,6 +593,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: "wpconst_text59",
             b_title: "wpconst_text60",
             list: [
@@ -603,6 +626,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text73",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -623,6 +647,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: "wpconst_text80",
             b_title: "wpconst_text81",
             list: [
@@ -643,6 +668,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text88",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -663,6 +689,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: "wpconst_text95",
             b_title: "wpconst_text96",
             list: [
@@ -691,6 +718,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text107",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -711,6 +739,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text114",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -742,6 +771,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text123",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -762,6 +792,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text127",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -793,6 +824,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text135",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -805,6 +837,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text137",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -817,6 +850,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text139",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -829,6 +863,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text141",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -841,6 +876,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text143",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -864,6 +900,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text146",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -876,7 +913,8 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text148",
-            a_title: "wpconst_text_out148",
+            vika_title: "wpconst_text_out148",
+            a_title: null,
             b_title: null,
             list: [
               {
@@ -896,6 +934,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text152",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -908,6 +947,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text154",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -920,6 +960,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text156",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -950,6 +991,7 @@ const whitepapper: WhitepaperSection[] = [
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: null,
             a_title: null,
             b_title: null,
@@ -969,6 +1011,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -987,6 +1030,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: null,
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [],
@@ -1012,7 +1056,9 @@ const whitepapper: WhitepaperSection[] = [
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text173",
+
             a_title: null,
             b_title: null,
             list: [
@@ -1024,6 +1070,7 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text175",
             a_title: null,
             b_title: null,
@@ -1036,6 +1083,7 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text177",
             a_title: null,
             b_title: null,
@@ -1048,6 +1096,7 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text179",
             a_title: null,
             b_title: null,
@@ -1071,6 +1120,7 @@ const whitepapper: WhitepaperSection[] = [
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text184",
             a_title: null,
             b_title: null,
@@ -1083,18 +1133,20 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
-            title: "",
+            vika_title: null,
+            title: "wpconst_text186",
             a_title: null,
             b_title: null,
             list: [
               {
-                title: "wpconst_text186",
+                title: "",
                 text: "wpconst_text187",
               },
             ],
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text188",
             a_title: null,
             b_title: null,
@@ -1107,6 +1159,7 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text190",
             a_title: null,
             b_title: null,
@@ -1119,6 +1172,7 @@ const whitepapper: WhitepaperSection[] = [
           },
           {
             head__title: null,
+            vika_title: null,
             title: "wpconst_text192",
             a_title: null,
             b_title: null,
@@ -1143,6 +1197,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: "wpconst_text195",
             title: "wpconst_text196",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1163,6 +1218,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text200",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1183,6 +1239,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text204",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1199,6 +1256,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: "wpconst_text_out196",
             title: "wpconst_text207",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1215,6 +1273,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text210",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1231,6 +1290,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text213",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1247,6 +1307,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text216",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1263,6 +1324,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: "wpconst_text_out197",
             title: "wpconst_text219",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1279,6 +1341,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text222",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1295,6 +1358,7 @@ const whitepapper: WhitepaperSection[] = [
           {
             head__title: null,
             title: "wpconst_text225",
+            vika_title: null,
             a_title: null,
             b_title: null,
             list: [
@@ -1324,11 +1388,12 @@ const whitepapper: WhitepaperSection[] = [
         subtitle: "wpconst_text229",
         text1: "wpconst_text230",
         text2: null,
-        text3: null,
-        text4: null,
+        text3: "wpconst_text_out231",
+        text4: "wpconst_text_out232",
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: null,
             a_title: null,
             b_title: null,
@@ -1342,31 +1407,32 @@ const whitepapper: WhitepaperSection[] = [
         subtitle: "wpconst_text231",
         text1: "wpconst_text232",
         text2: null,
-        text3: null,
-        text4: null,
-
+        text3: "wpconst_text_out233",
+        text4: "wpconst_text_out234",
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: null,
             a_title: null,
             b_title: null,
             list: [],
           },
         ],
-        text5: null,
+        text5: "wpconst_text_out237",
         text6: null,
       },
       {
         subtitle: "wpconst_text233",
         text1: "wpconst_text234",
         text2: null,
-        text3: null,
-        text4: null,
+        text3: "wpconst_text_out238",
+        text4: "wpconst_text_out239",
 
         underlist: [
           {
             head__title: null,
+            vika_title: null,
             title: null,
             a_title: null,
             b_title: null,
