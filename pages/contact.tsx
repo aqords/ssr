@@ -43,9 +43,6 @@ const contact = () => {
           <p className="md:text-[20px] leading-[25px]   font-man mb-[45px]">
             {t("contact_page_desc5")}
           </p>
-          <p className="text-[14px] leading-[25px] tracking-[0.3px] text-[#838383] font-man">
-            {t("contact_page_desc6")}
-          </p>
         </div>
       </section>
       <Navigationblock />

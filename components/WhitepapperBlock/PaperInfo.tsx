@@ -146,6 +146,11 @@ const PaperInfo = () => {
                               )}
                               <li>
                                 {item.title && <h3>{t(`${item.title}`)}</h3>}
+                                {item.vika_title && (
+                                  <h4 className="text-[#838383]">
+                                    {t(`${item.vika_title}`)}
+                                  </h4>
+                                )}
                                 {item.a_title && (
                                   <h3>{t(`${item.a_title}`)}</h3>
                                 )}
