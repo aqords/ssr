@@ -48,7 +48,7 @@ const Manifesto = () => {
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
           rel="stylesheet"
         />
-        <meta name="description" content="home_description" />
+        <meta name="description" content={t("manifesto_description")} />
         <meta name="theme-color" content="default"></meta>
       </Head>
       <Header />
