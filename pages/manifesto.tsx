@@ -9,6 +9,7 @@ import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
 
 import WhyAqords from "../components/WhyAqords/WhyAqordsList";
+import manifesto1 from "../public/assets/images/planet2.png";
 import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
@@ -58,8 +59,8 @@ const Manifesto = () => {
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={manifesto2}
-        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
+        img={manifesto1}
+        imgStyle="object-cover absolute md:relative bottom-[-10%] right-[0%] sm:top-[0%] sm:right-[0%]"
       />
       <div className="bg-second">
         <div className="container">
