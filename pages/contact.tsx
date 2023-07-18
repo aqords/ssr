@@ -57,6 +57,9 @@ const contact = () => {
               <SentForm isSentMessage={isSentMessage} />
             </div>
           )}
+          <p className="md:text-[20px] leading-[25px]   font-man mb-[45px]">
+            {t("contact_page_desc5")}
+          </p>
         </div>
       </section>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
