@@ -3,13 +3,12 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
-
-import WhyAqords from "../components/WhyAqords/WhyAqords";
-import Footer from "../components/Footer/Footer";
+import Footer from '../components/Footer/Footer'
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
-import manifesto1 from "../public/assets/images/planet2.png";
+
+import WhyAqords from "../components/WhyAqords/WhyAqordsList";
 import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
@@ -39,12 +38,6 @@ const Manifesto = () => {
           name="viewport"
           content="width=device-width, initial-scale=1.0 "
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Rubik:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
@@ -65,8 +58,8 @@ const Manifesto = () => {
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={manifesto1}
-        imgStyle="object-cover absolute md:relative bottom-[-10%] right-[0%] sm:top-[0%] sm:right-[0%]"
+        img={manifesto2}
+        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
       />
       <div className="bg-second">
         <div className="container">
