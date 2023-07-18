@@ -10,8 +10,7 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 import WhyAqords from "../components/WhyAqords/WhyAqordsList";
-import manifesto from "../public/assets/images/manifesto-background1.png";
-import manifestoMob from "../public/assets/images/manifesto-mobile.png";
+import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../utils/hooks/useScrollChange";
@@ -39,12 +38,6 @@ const Manifesto = () => {
           name="viewport"
           content="width=device-width, initial-scale=1.0 "
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Rubik:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"></meta>
       </Head>
@@ -56,7 +49,7 @@ const Manifesto = () => {
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={manifesto}
+        img={manifesto2}
         imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
       />
       <div className="bg-second">
