@@ -4,7 +4,6 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import { useIsMobile } from "../utils/hooks/useMobile/useIsMobile";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Footer from "../components/Footer/Footer";
@@ -32,8 +31,6 @@ const Manifesto = () => {
     className: "original",
   });
 
-  const isMobile = useIsMobile();
-
   return (
     <div className="pt-[76px] sm:pt-[96px]">
       <Head>
@@ -45,7 +42,7 @@ const Manifesto = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&family=Rubik:wght@500;700&display=swap"
           rel="stylesheet"
         />
         <meta name="description" content="home_description" />
@@ -59,7 +56,7 @@ const Manifesto = () => {
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={isMobile ? manifestoMob : manifesto}
+        img={manifesto}
         imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
       />
       <div className="bg-second">
