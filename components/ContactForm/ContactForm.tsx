@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 
 import FooterButton from "../UI/Button/FooterButton";
 import { IsSentMessageProps } from "../../interfaces/IsSentMessageProps";
+import sent from "/public/assets/images/sent.svg";
+import Button from "../UI/Button/Button";
 
 const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
   const { t } = useTranslation();
@@ -110,7 +113,7 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.body !== ""
     ) {
       // console.log(message);
-      // clearForm();
+      clearForm();
       setMessageSent(true);
     } else {
       // console.log("érror");
@@ -121,16 +124,22 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     <div className="bg-black mt-[40px] mb-[40px] md:mb-[80px] border-[1px] border-neutral-700 rounded-[20px] p-[12px] md:p-[40px] flex flex-col lg:flex-row gap-[50px] justify-between">
       {messageSent ? (
         <div>
-          <p className="text-[22px] mb-[16px]">{t("contact_sent_message")}</p>
-          <p className="text-[14px]">{t("contact_sent_thanks")}</p>
-          <FooterButton
-            onClick={() => setMessageSent(false)}
-            style="font-normal  font-man py-[10px] w-full smx:w-auto px-[20px] smx:px-[15px] bg-gradient-to-br from-[#ADA785] to-[#8D794C] rounded-[6px] leading-[19px] mt-[15px]"
-          >
-            <span className="w-[100%] text-[14px]">
-              {t("contact_send_another_message")}
-            </span>
-          </FooterButton>
+          <Image src={sent} alt="sent" />
+          <p className="text-[36px] mt-[40px] mb-[16px]">
+            {t("contact_sent_message")}
+          </p>
+          <p className="text-[20px] mb-[60px]">{t("contact_sent_thanks")}</p>
+          <button onClick={() => setMessageSent(false)}>
+            <Button
+              outsideGradient={
+                "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] w-[300px]"
+              }
+            >
+              <p className="ml-[40px] my-[10px] text-[20px] font-man">
+                {t("contact_send_another_message")}
+              </p>
+            </Button>
+          </button>
         </div>
       ) : (
         <>
