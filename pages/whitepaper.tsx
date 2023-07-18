@@ -3,10 +3,16 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import PaperHead from "../components/WhitepapperBlock/PaperHead";
+// import Header from "../components/Header/Header";
+// import PaperHead from "../components/WhitepapperBlock/PaperHead";
+
+const PaperHead = dynamic(
+  () => import("../components/WhitepapperBlock/PaperHead")
+);
+const Header = dynamic(() => import("../components/Header/Header"));
 
 const whitepaper = () => {
   const { t } = useTranslation();

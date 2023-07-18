@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 
 import ScrollToggle from "../../utils/hooks/ScrollToggle";
@@ -9,8 +8,6 @@ import { NavigationblockData } from "../Constants/NavigationblockConst";
 
 const Navigationblock = () => {
   const { t } = useTranslation();
-
-  const currentLocation = useRouter().pathname.split("/");
 
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1", "el-2", "el-3", "el-4", "el-5", "el-6"],

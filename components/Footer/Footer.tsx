@@ -7,7 +7,7 @@ import moment from "moment";
 import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
-import logo from "../../public/assets/images/logoaqords.svg";
+import logo from "../../public/assets/images/logoaqords.png";
 import { LinksForLearn, LinkForExplore } from "../Constants/FooterLinks";
 
 const Footer = () => {
