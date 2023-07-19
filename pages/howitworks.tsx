@@ -4,15 +4,18 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import Accordion from "../components/Accordion/Accordion";
-
-import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import { HowItWorksData } from "../components/Constants/HowItWorks";
 import truck from "/public/assets/images/truck.jpg";
 import truck4 from "/public/assets/images/truck4.jpg";
+
+const BlockWithBackground = dynamic(
+  () => import("../components/BlockWithBackground/BlockWithBackground")
+);
 
 const HowWorks = () => {
   const { t } = useTranslation();
