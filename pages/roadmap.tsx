@@ -6,7 +6,6 @@ import { GetStaticPropsContext } from "next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
 import RoadMap from "../components/RoadMap/RoadMap";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import roadmapimg from "/public/assets/images/roadmap.jpg";

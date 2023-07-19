@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import whitepapper from "../Constants/WhitePapper";
 import NodeCard from "../UI/InfoCard.tsx/NodeCard";
-import wpbull from "/public/assets/images/wpbull1.svg";
+import wpbull from "/public/assets/images/wpbull1.png";
 
 const PaperInfo = () => {
   const { t } = useTranslation();
@@ -47,7 +47,9 @@ const PaperInfo = () => {
             </div>
             <div className="mt-[40px] rounded-[20px] overflow-hidden">
               <Image
+                sizes="50vw"
                 priority={true}
+                className="object-cover"
                 width={440}
                 height={350}
                 src={wpbull}
@@ -140,9 +142,9 @@ const PaperInfo = () => {
                           el.underlist.map((item, id) => (
                             <ul key={id}>
                               {item.head__title && (
-                                <h3 className="font-man font-bold block mb-[30px] text-[18px]">
+                                <li className="font-man font-bold block mb-[30px] text-[18px]">
                                   {t(`${item.head__title}`)}
-                                </h3>
+                                </li>
                               )}
                               <li>
                                 {item.title && <h3>{t(`${item.title}`)}</h3>}
