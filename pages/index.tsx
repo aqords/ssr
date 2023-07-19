@@ -17,6 +17,7 @@ export default function Home({ image }: any) {
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
           rel="stylesheet"
         />
+        <meta name="description" content={t("home_description")} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="default"></meta>
       </Head>
