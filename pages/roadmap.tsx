@@ -6,10 +6,12 @@ import { GetStaticPropsContext } from "next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
-import RoadMap from "../components/RoadMap/RoadMap";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import roadmapimg from "/public/assets/images/roadmap.jpg";
+import dynamic from "next/dynamic";
+// import roadmapimg from "/public/assets/images/roadmap.jpg";
+import investBg from "../public/assets/images/invest.jpg";
+
+const RoadMap = dynamic(() => import("../components/RoadMap/RoadMap"));
 
 const roadmap = () => {
   const { t } = useTranslation();
@@ -24,7 +26,7 @@ const roadmap = () => {
       <Header />
       <BlockWithBackground
         priority={true}
-        img={roadmapimg}
+        img={investBg}
         imgStyle="relative rounded-[20px] p-[12px] sm:rounded-[0px] sm:p-[0px] sm:absolute  sm:min-h-[807px] sm:min-w-[1280px] top-0 object-cover  z-[-10] left-1/2 transform -translate-x-1/2"
         title={t("road_map")}
         desc1={t("roadmap_text242")}
