@@ -6,8 +6,6 @@ import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
 
 import Footer from "../components/Footer/Footer";
-// import Header from "../components/Header/Header";
-// import PaperHead from "../components/WhitepapperBlock/PaperHead";
 
 const PaperHead = dynamic(
   () => import("../components/WhitepapperBlock/PaperHead")
