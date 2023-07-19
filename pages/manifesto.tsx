@@ -4,11 +4,11 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
+import WhyAqords from "../components/WhyAqords/WhyAqords";
+import Footer from "../components/Footer/Footer";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
-
-import WhyAqords from "../components/WhyAqords/WhyAqordsList";
 import manifesto1 from "../public/assets/images/planet2.png";
 import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
