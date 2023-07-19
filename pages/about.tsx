@@ -3,12 +3,16 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
-import InfoAboutblock from "../components/AboutUsblock/InfoAboutblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import aboutusbg from "../public/assets/images/aboutusbg.png";
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+
+const InfoAboutblock = dynamic(
+  () => import("../components/AboutUsblock/InfoAboutblock")
+);
+const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const about = () => {
   const { t } = useTranslation();

@@ -3,13 +3,16 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import ContactForm from "../components/ContactForm/ContactForm";
+import Header from "../components/Header/Header";
 import contactbull from "/public/assets/images/contactbull.svg";
+
+const ContactForm = dynamic(
+  () => import("../components/ContactForm/ContactForm")
+);
+const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const contact = () => {
   const { t } = useTranslation();
@@ -44,7 +47,7 @@ const contact = () => {
             {t("contact_page_desc5")}
           </p>
         </div>
-      </section>{" "}
+      </section>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </div>

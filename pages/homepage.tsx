@@ -3,13 +3,17 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
 import Upperblock from "../components/Upperblock/Upperblock";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
-import WhyAqords from "../components/WhyAqords/WhyAqords";
 import { whyAqordsList } from "../components/Constants/WhyAqordsItems";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+
+const Footer = dynamic(() => import("../components/Footer/Footer"));
+const WhyAqords = dynamic(() => import("../components/WhyAqords/WhyAqords"));
+const Navigationblock = dynamic(
+  () => import("../components/Navigationblock/Navigationblock")
+);
 
 const Homepage = () => {
   const { t } = useTranslation();
