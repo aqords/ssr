@@ -4,7 +4,6 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import WhyAqords from "../components/WhyAqords/WhyAqords";
 import Footer from "../components/Footer/Footer";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
@@ -14,6 +13,7 @@ import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../utils/hooks/useScrollChange";
+import WhyAqordsList from "../components/WhyAqords/WhyAqordsList";
 
 const Manifesto = () => {
   const { t } = useTranslation();
@@ -73,7 +73,7 @@ const Manifesto = () => {
               {t("manifesto_page_desc3")}
             </h2>
           </div>
-          <WhyAqords itemsArray={ManifestList} />
+          <WhyAqordsList itemsArray={ManifestList} />
         </div>
       </div>
       <BlockWithBackground
