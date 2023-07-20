@@ -1,9 +1,10 @@
+@import url(./font.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Rubik";
+  font-family: "AmpleSoft Pro";
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;

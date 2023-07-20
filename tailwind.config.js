@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         man: ['"Manrope"'],
-        amp: ['"Rubik"'],
+        amp: "Rubik",
       },
       screens: {
         smx: "500px",
