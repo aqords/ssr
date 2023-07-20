@@ -59,19 +59,12 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     }
   };
 
-  const clearForm = () => {
-    setName("");
-    setEmail("");
-    setSubject("");
-    setText("");
-  };
-
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
     const message = {
       name: "",
       email: "",
       subject: "",
-      text: "",
+      body: "",
     };
 
     if (nameError === "" && name !== "") {
@@ -95,7 +88,7 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     }
 
     if (textError === "" && text !== "") {
-      message.text = text;
+      message.body = text;
     } else if (text === "") {
       setTextError(t("form_characters_error_min_sub"));
     } else {
@@ -106,11 +99,27 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.name !== "" &&
       message.email !== "" &&
       message.subject !== "" &&
-      message.text !== ""
+      message.body !== ""
     ) {
-      // console.log(message);
-      clearForm();
-      isSentMessage(true);
+      try {
+        const response = await fetch("http://api.aqords.com/contactus", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+
+      console.log(JSON.stringify(message));
     } else {
       // console.log("érror");
     }

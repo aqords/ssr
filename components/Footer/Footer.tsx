@@ -28,8 +28,30 @@ const Footer = () => {
     }
   };
 
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
+    const message = {
+      email,
+    };
     if (emailError === "" && email !== "") {
+      try {
+        const response = await fetch("https://173.212.197.236:80/subscribeme", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+
+      console.log(JSON.stringify(message));
       // console.log(email);
     } else {
       setEmailError(t("form_email_error"));
