@@ -27,6 +27,7 @@ const Homepage = () => {
       </Head>
       <Header />
       <Upperblock />
+
       <WhyAqords itemsArray={whyAqordsList} />
       <Navigationblock />
       <Footer />
