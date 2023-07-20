@@ -34,7 +34,7 @@ const Footer = () => {
     };
     if (emailError === "" && email !== "") {
       try {
-        const response = await fetch("http://173.212.197.236:80/subscribeme", {
+        const response = await fetch("https://173.212.197.236:80/subscribeme", {
           method: "POST",
           headers: {
             "content-type": "application/json",

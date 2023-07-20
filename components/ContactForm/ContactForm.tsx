@@ -61,14 +61,7 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     }
   };
 
-  const clearForm = () => {
-    setName("");
-    setEmail("");
-    setSubject("");
-    setText("");
-  };
-
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
     const message = {
       name: "",
       email: "",
@@ -110,9 +103,25 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.subject !== "" &&
       message.body !== ""
     ) {
-      // console.log(message);
-      clearForm();
-      isSentMessage(true);
+      try {
+        const response = await fetch("http://api.aqords.com/contactus", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+
+      console.log(JSON.stringify(message));
     } else {
       // console.log("érror");
     }
