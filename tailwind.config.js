@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        man: ['"Manrope"'],
-        amp: "Rubik",
+        man: "Manrope",
+        amp: "AmpleSoft Pro",
       },
       screens: {
         smx: "500px",
