@@ -42,21 +42,19 @@ const InfoAboutblock = () => {
             </p>
           </div>
         </div>
-
         <div
-          ref={elementRef}
+          ref={elementRef2}
           className={`${isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}`}
         >
           <div className="container relative top-[-170px]">
             <Image
-              quality={100}
               className="absolute left-1/2 transform -translate-x-1/2 rounded-[20px]"
               alt="code example"
               src={codebg}
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
+              loading="lazy"
             />
           </div>
-
           <div className="bg-[#19191A]">
             <div className="container  smx:pt-[60px] sm:pt-[80px]  md:pt-[160px] lg:pt-[267px]   pb-[40px]  lg:flex justify-between">
               <div className="pt-[40px] sml:pt-0">
@@ -73,6 +71,7 @@ const InfoAboutblock = () => {
                 src={worldinhands}
                 width={440}
                 height={576}
+                loading="lazy"
               />
             </div>
           </div>
