@@ -1,80 +1,18 @@
 @font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-Bold.eot");
-  src: local("AmpleSoftPro-Bold"),
-    url("../public/assets/Fonts/AmpleSoftPro-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-Bold.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-Bold.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-Medium.eot");
-  src: local("AmpleSoftPro-Medium"),
-    url("../public/assets/Fonts/AmpleSoftPro-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-Medium.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-Medium.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-Medium.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* @font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-Light.eot");
-  src: local("AmpleSoftPro-Light"),
-    url("../public/assets/Fonts/AmpleSoftPro-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-Light.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-Light.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-Thin.eot");
-  src: local("AmpleSoftPro-Thin"),
-    url("../public/assets/Fonts/AmpleSoftPro-Thin.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-Thin.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-Thin.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.eot");
-  src: local("AmpleSoftPro-ExtraLight"),
-    url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-} */
-
-@font-face {
-  font-family: "AmpleSoft Pro";
-  src: url("../public/assets/Fonts/AmpleSoftPro-Regular.eot");
-  src: local("AmpleSoftPro-Regular"),
-    url("../public/assets/Fonts/AmpleSoftPro-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/Fonts/AmpleSoftPro-Regular.woff2") format("woff2"),
-    url("../public/assets/Fonts/AmpleSoftPro-Regular.woff") format("woff"),
-    url("../public/assets/Fonts/AmpleSoftPro-Regular.ttf") format("truetype");
-  font-display: swap;
+  font-family: "Manrope";
+  src: local("Manrope");
+  src: url("../public/assets/Fonts/subset-Manrope-Regular.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AmpleSoft Pro";
+  src: local("AmpleSoft Pro");
+  src: url("../public/assets/Fonts/subset-AmpleSoftPro-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

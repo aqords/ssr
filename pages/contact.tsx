@@ -18,14 +18,8 @@ const contact = () => {
       <Head>
         <title>{t("contact_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
         <meta name="description" content={t("contact_description")} />
-        <meta name="theme-color" content="default"></meta>
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <BlockWithBackground
@@ -50,7 +44,7 @@ const contact = () => {
             {t("contact_page_desc5")}
           </p>
         </div>
-      </section>{" "}
+      </section>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </div>
