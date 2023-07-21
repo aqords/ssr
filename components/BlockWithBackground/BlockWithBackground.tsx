@@ -13,6 +13,7 @@ interface BlockWithBackgroundProps {
   blockStyle2?: string;
   blockStyle3?: string;
   priority?: boolean;
+  loading?: "lazy" | "eager" | undefined;
 }
 
 const BlockWithBackground = ({
@@ -25,6 +26,7 @@ const BlockWithBackground = ({
   blockStyle2 = "container flex lg:h-full items-center",
   blockStyle3 = "max-w-[532px]",
   priority = false,
+  loading = "lazy",
 }: BlockWithBackgroundProps) => {
   const isScrolled = ScrollToggle({
     targetClasses: ["el-1"],

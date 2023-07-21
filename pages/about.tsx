@@ -28,6 +28,7 @@ const about = () => {
       <Header />
       <BlockWithBackground
         priority={true}
+        loading={"eager"}
         blockStyle="relative overflow-hidden items-start  h-[610px] md:h-[580px]  lg:h-[800px] mt-[-40px] sm:mt-[0px] pt-[130px]"
         blockStyle3="max-w-[532px] mt-[-120px]"
         title={t("about_page_title1")}
