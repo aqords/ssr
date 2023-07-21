@@ -8,7 +8,6 @@ import { GetStaticPropsContext } from "next";
 import { Routes } from "../components/Constants/Routes";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { whyInvestList } from "../components/Constants/WhyAqordsItems";
 import investBg from "../public/assets/images/invest.jpg";
@@ -41,7 +40,7 @@ const invest = () => {
       <Head>
         <title>{t("invest_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="home_description" />
+        <meta name="robots" content="noindex" />
         <meta name="theme-color" content="default" />
       </Head>
       <Header />
