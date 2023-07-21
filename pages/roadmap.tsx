@@ -6,7 +6,6 @@ import { GetStaticPropsContext } from "next";
 
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
 import RoadMap from "../components/RoadMap/RoadMap";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import roadmapimg from "/public/assets/images/roadmap.jpg";
@@ -17,15 +16,9 @@ const roadmap = () => {
     <div className="pt-[20px] sm:pt-[96px]">
       <Head>
         <title>{t("roadmap_title")}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={t("roadmap_description")} />
-        <meta name="theme-color" content="default"></meta>
+        <meta name="description" content="home_description" />
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <BlockWithBackground

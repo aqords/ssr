@@ -3,13 +3,17 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
-import ContactForm from "../components/ContactForm/ContactForm";
 import contactbull from "/public/assets/images/contactbull.svg";
 import SentForm from "../components/ContactForm/SentForm";
+
+const ContactForm = dynamic(
+  () => import("../components/ContactForm/ContactForm")
+);
+const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const contact = () => {
   const { t } = useTranslation();
@@ -24,18 +28,11 @@ const contact = () => {
       <Head>
         <title>{t("contact_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
-        <meta name="description" content={t("contact_description")} />
-        <meta name="theme-color" content="default"></meta>
+        <meta name="description" content="home_description" />
+        <meta name="theme-color" content="default"/>
       </Head>
       <Header />
       <BlockWithBackground
-        priority={true}
         blockStyle="relative overflow-hidden items-start  h-[210px] md:h-[380px] lg:h-[558px]"
         title={t("contact_page_title1")}
         desc1={t("contact_page_desc1")}

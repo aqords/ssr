@@ -3,10 +3,14 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import PaperHead from "../components/WhitepapperBlock/PaperHead";
+
+const PaperHead = dynamic(
+  () => import("../components/WhitepapperBlock/PaperHead")
+);
+const Header = dynamic(() => import("../components/Header/Header"));
 
 const whitepaper = () => {
   const { t } = useTranslation();
@@ -15,15 +19,9 @@ const whitepaper = () => {
     <>
       <Head>
         <title>{t("whitepaper_title")}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={t("whitepaper_description")} />
-        <meta name="theme-color" content="default"></meta>
+        <meta name="description" content="home_description" />
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <PaperHead />

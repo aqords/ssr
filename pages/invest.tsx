@@ -8,7 +8,7 @@ import { GetStaticPropsContext } from "next";
 import { Routes } from "../components/Constants/Routes";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Navigationblock from "../components/Navigationblock/Navigationblock";
+
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { whyInvestList } from "../components/Constants/WhyAqordsItems";
 import investBg from "../public/assets/images/invest.jpg";
@@ -40,15 +40,9 @@ const invest = () => {
     <div className="pt-[70px] md:pt-[96px]">
       <Head>
         <title>{t("invest_title")}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="noindex"></meta>
-        <meta name="theme-color" content="default"></meta>
+        <meta name="description" content="home_description" />
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <BlockWithBackground
