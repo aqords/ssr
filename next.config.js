@@ -74,9 +74,8 @@ const nextConfig = {
       "@fullhuman/postcss-purgecss",
       {
         content: [
-          "./pages/**/*.{js,jsx,ts,tsx,css,scss}",
-          "./components/**/*.{js,jsx,ts,tsx,css,scss}",
-          "./styles/*.{css,scss}",
+          "./pages/**/*.{js,jsx,ts,tsx}",
+          "./components/**/*.{js,jsx,ts,tsx}",
         ],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: ["html", "body"],
