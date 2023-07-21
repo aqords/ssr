@@ -24,8 +24,8 @@ const HowWorks = () => {
       <Head>
         <title>{t("howitworks_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="home_description" />
-        <meta name="theme-color" content="default"/>
+        <meta name="description" content={t("howitworks_description")} />
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <section className="container relative pt-[80px] md:pt-[120px]">
