@@ -13,11 +13,6 @@ import SentForm from "../components/ContactForm/SentForm";
 const ContactForm = dynamic(() => import("../components/ContactForm/ContactForm"));
 const Footer = dynamic(() => import("../components/Footer/Footer"));
 
-const ContactForm = dynamic(
-  () => import("../components/ContactForm/ContactForm")
-);
-const Footer = dynamic(() => import("../components/Footer/Footer"));
-
 const contact = () => {
   const { t } = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
