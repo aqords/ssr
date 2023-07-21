@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 
 import FooterButton from "../UI/Button/FooterButton";
+import { IsSentMessageProps } from "../../interfaces/IsSentMessageProps";
 
-const ContactForm = () => {
+const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
   const { t } = useTranslation();
 
   const [name, setName] = useState("");
@@ -58,6 +59,13 @@ const ContactForm = () => {
     }
   };
 
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setText("");
+  };
+
   const validateForm = (): void => {
     const message = {
       name: "",
@@ -101,6 +109,8 @@ const ContactForm = () => {
       message.text !== ""
     ) {
       // console.log(message);
+      clearForm();
+      isSentMessage(true);
     } else {
       // console.log("érror");
     }
