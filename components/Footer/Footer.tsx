@@ -7,7 +7,7 @@ import moment from "moment";
 import { Routes } from "../Constants/Routes";
 import Button from "../UI/Button/Button";
 import FooterButton from "../UI/Button/FooterButton";
-import logo from "../../public/assets/images/logoaqords.svg";
+import logo from "../../public/assets/images/logoaqords.png";
 import { LinksForLearn, LinkForExplore } from "../Constants/FooterLinks";
 
 const Footer = () => {
@@ -28,8 +28,30 @@ const Footer = () => {
     }
   };
 
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
+    const message = {
+      email,
+    };
     if (emailError === "" && email !== "") {
+      try {
+        const response = await fetch("http://173.212.197.236:80/subscribeme", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+
+      console.log(JSON.stringify(message));
       // console.log(email);
     } else {
       setEmailError(t("form_email_error"));

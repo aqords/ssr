@@ -4,15 +4,13 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
-import { useIsMobile } from "../utils/hooks/useMobile/useIsMobile";
+import WhyAqords from "../components/WhyAqords/WhyAqords";
+import Footer from "../components/Footer/Footer";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
-import WhyAqords from "../components/WhyAqords/WhyAqordsList";
-import manifesto from "../public/assets/images/manifesto-background1.png";
-import manifestoMob from "../public/assets/images/manifesto-mobile.png";
+import manifesto1 from "../public/assets/images/planet2.png";
+import manifesto2 from "../public/assets/images/manifest-background2.png";
 import truck3 from "/public/assets/images/truck3.jpg";
 import ScrollToggle from "../utils/hooks/ScrollToggle";
 import useScrollClassChange from "../utils/hooks/useScrollChange";
@@ -32,8 +30,6 @@ const Manifesto = () => {
     className: "original",
   });
 
-  const isMobile = useIsMobile();
-
   return (
     <div className="pt-[76px] sm:pt-[96px]">
       <Head>
@@ -44,14 +40,23 @@ const Manifesto = () => {
       </Head>
       <Header />
       <BlockWithBackground
-        priority={true}
-        blockStyle="relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden pt-[120px] lg:pt-[0px]"
+        blockStyle="hidden md:block relative h-[580px] smx:h-[450px] lg:h-[807px] overflow-hidden pt-[120px] lg:pt-[0px] "
         blockStyle3="max-w-[532px] mt-[-120px]"
         title={t("manifesto_page_title1")}
         desc1={t("manifesto_page_desc1")}
         desc2={t("manifesto_page_desc2")}
-        img={isMobile ? manifestoMob : manifesto}
-        imgStyle="absolute top-[65%] right-[0%] sm:top-[65%] sm:right-[0%] md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[-0%]"
+        img={manifesto2}
+        imgStyle="relative md:absolute  md:top-[0%] md:right-[-25%] lg:top-[0%] lg:right-[0%] z-[-10]"
+      />
+      <BlockWithBackground
+        priority={true}
+        blockStyle="block md:hidden relative h-[580px] smx:h-[450px] overflow-hidden pt-[120px] "
+        blockStyle3="max-w-[532px] mt-[-120px]"
+        title={t("manifesto_page_title1")}
+        desc1={t("manifesto_page_desc1")}
+        desc2={t("manifesto_page_desc2")}
+        img={manifesto1}
+        imgStyle="object-cover absolute md:relative bottom-[-10%] right-[0%] sm:top-[0%] sm:right-[0%]"
       />
       <div className="bg-second">
         <div className="container">
@@ -65,7 +70,6 @@ const Manifesto = () => {
               {t("manifesto_page_desc3")}
             </h2>
           </div>
-
           <WhyAqords itemsArray={ManifestList} />
         </div>
       </div>
