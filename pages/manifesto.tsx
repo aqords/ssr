@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import getServerSideTranslations from "../utils/getServerSideTranslations";
 import { GetStaticPropsContext } from "next";
 
+import WhyAqords from "../components/WhyAqords/WhyAqords";
 import Footer from "../components/Footer/Footer";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import { ManifestList } from "../components/Constants/WhyAqordsItems";
@@ -70,7 +71,7 @@ const Manifesto = () => {
               {t("manifesto_page_desc3")}
             </h2>
           </div>
-          <WhyAqordsList itemsArray={ManifestList} />
+          <WhyAqords itemsArray={ManifestList} />
         </div>
       </div>
       <BlockWithBackground
