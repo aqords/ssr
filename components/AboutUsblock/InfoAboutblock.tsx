@@ -55,11 +55,6 @@ const InfoAboutblock = () => {
               loading="lazy"
             />
           </div>
-        </div>
-        <div
-          ref={elementRef}
-          className={`${isScrolled["el-1"] ? "el-1 visible" : "el-1 original"}`}
-        >
           <div className="bg-[#19191A]">
             <div className="container  smx:pt-[60px] sm:pt-[80px]  md:pt-[160px] lg:pt-[267px]   pb-[40px]  lg:flex justify-between">
               <div className="pt-[40px] sml:pt-0">
