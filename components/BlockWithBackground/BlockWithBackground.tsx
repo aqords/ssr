@@ -63,6 +63,7 @@ const BlockWithBackground = ({
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
           className={imgStyle}
           priority={priority}
+          loading="lazy"
           src={img}
           alt="backgroundimage"
         />
