@@ -17,8 +17,19 @@ export default function Home() {
       <Head>
         <title>{t("home_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
         <meta name="description" content="home_description" />
         <meta name="theme-color" content="default"/>
+=======
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap"
+          rel="stylesheet"
+        />
+        <meta name="description" content={t("home_description")} />
+        <meta name="theme-color" content="default"></meta>
+>>>>>>> 75a99d7... Merge branch 'add-meta-title-description' into DEV
       </Head>
       <Header />
       <Upperblock />
