@@ -10,7 +10,9 @@ import BlockWithBackground from "../components/BlockWithBackground/BlockWithBack
 import contactbull from "/public/assets/images/contactbull.svg";
 import SentForm from "../components/ContactForm/SentForm";
 
-const ContactForm = dynamic(() => import("../components/ContactForm/ContactForm"));
+const ContactForm = dynamic(
+  () => import("../components/ContactForm/ContactForm")
+);
 const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const contact = () => {
@@ -27,7 +29,7 @@ const contact = () => {
         <title>{t("contact_title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="home_description" />
-        <meta name="theme-color" content="default"/>
+        <meta name="theme-color" content="default" />
       </Head>
       <Header />
       <BlockWithBackground
