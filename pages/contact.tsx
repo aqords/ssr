@@ -10,9 +10,7 @@ import BlockWithBackground from "../components/BlockWithBackground/BlockWithBack
 import contactbull from "/public/assets/images/contactbull.svg";
 import SentForm from "../components/ContactForm/SentForm";
 
-const ContactForm = dynamic(
-  () => import("../components/ContactForm/ContactForm")
-);
+const ContactForm = dynamic(() => import("../components/ContactForm/ContactForm"));
 const Footer = dynamic(() => import("../components/Footer/Footer"));
 
 const contact = () => {
