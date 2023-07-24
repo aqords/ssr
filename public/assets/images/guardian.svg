@@ -1,16 +1,1 @@
-<svg width="72" height="80" viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.51006 12.3296C0 14.4811 0 20.8763 0 33.6666V39.9654C0 62.5177 16.9558 73.4619 27.5942 78.1091C30.4801 79.3697 31.923 80 36 80V0C32.7544 0 29.6199 1.07296 23.3509 3.21887L21.0596 4.00317C9.0333 8.11983 3.02013 10.1782 1.51006 12.3296Z" fill="url(#paint0_radial_169_2082)"/>
-<path opacity="0.5" d="M72 39.9654V33.6666C72 20.8763 72 14.4811 70.4899 12.3296C68.9799 10.1782 62.9667 8.11983 50.9404 4.00317L48.6491 3.21887C42.3801 1.07296 39.2456 0 36 0V80C40.077 80 41.5199 79.3697 44.4058 78.1091C55.0441 73.462 72 62.5177 72 39.9654Z" fill="url(#paint1_radial_169_2082)"/>
-<defs>
-<radialGradient id="paint0_radial_169_2082" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.6119 66.0441) rotate(-134.607) scale(50.7902 48.1153)">
-<stop stop-color="#C6B38A"/>
-<stop offset="0.463601" stop-color="#F3C691"/>
-<stop offset="1" stop-color="#B4703E"/>
-</radialGradient>
-<radialGradient id="paint1_radial_169_2082" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(82.6119 66.0441) rotate(-134.607) scale(50.7902 48.1153)">
-<stop stop-color="#C6B38A"/>
-<stop offset="0.463601" stop-color="#F3C691"/>
-<stop offset="1" stop-color="#B4703E"/>
-</radialGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="80" fill="none" xmlns:v="https://vecta.io/nano"><path fill-rule="evenodd" d="M1.51 12.33C0 14.481 0 20.876 0 33.667v6.299c0 22.552 16.956 33.497 27.594 38.144C30.48 79.37 31.923 80 36 80V0c-3.246 0-6.38 1.073-12.649 3.219l-2.291.784C9.033 8.12 3.02 10.178 1.51 12.33z" fill="url(#A)"/><path opacity=".5" d="M72 39.965v-6.299c0-12.79 0-19.186-1.51-21.337s-7.523-4.21-19.55-8.326l-2.291-.784C42.38 1.073 39.246 0 36 0v80c4.077 0 5.52-.63 8.406-1.891C55.044 73.462 72 62.518 72 39.965z" fill="url(#B)"/><defs><radialGradient id="A" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.6119 66.0441) rotate(-134.607) scale(50.7902 48.1153)"><stop stop-color="#c6b38a"/><stop offset=".464" stop-color="#f3c691"/><stop offset="1" stop-color="#b4703e"/></radialGradient><radialGradient id="B" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(82.6119 66.0441) rotate(-134.607) scale(50.7902 48.1153)"><stop stop-color="#c6b38a"/><stop offset=".464" stop-color="#f3c691"/><stop offset="1" stop-color="#b4703e"/></radialGradient></defs></svg>
