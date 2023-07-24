@@ -125,7 +125,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef2}
-          className={`absolute  top-[7%] sml:top-[2%] sm:top-[3%] md:top-[41%]  ${
+          className={`absolute  top-[7%] sml:top-[3%] sm:top-[3%] md:top-[39%] lg:top-[39%] ${
             isScrolled["el-2"] ? "el-2 visible" : "el-2 original"
           }`}
         >
@@ -133,7 +133,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef3}
-          className={`absolute top-[40%] sml:top-[37%] sm:top-[39%] md:top-[8%] ${
+          className={`absolute top-[39%] sml:top-[37%] sm:top-[38%] md:top-[8%]  ${
             isScrolled["el-3"] ? "el-3 visible" : "el-3 original"
           }`}
         >
@@ -141,7 +141,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef4}
-          className={`absolute top-[67%] sml:top-[66%] sm:top-[69%] md:top-[70%] lg:top-[69%] ${
+          className={`absolute top-[69%] sml:top-[68%] sm:top-[70%] md:top-[70%] lg:top-[69%] ${
             isScrolled["el-4"] ? "el-4 visible" : "el-4 original"
           }`}
         >
@@ -243,7 +243,7 @@ const RoadMap = () => {
 
         <div
           ref={elementRef8}
-          className={`absolute  top-[6%] sml:top-[3%] sm:top-[3%] md:top-[7%]  ${
+          className={`absolute  top-[6%] sml:top-[3%] sm:top-[2%] md:top-[7%]  ${
             isScrolled["el-8"] ? "el-8 visible" : "el-8 original"
           }`}
         >
@@ -251,7 +251,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef9}
-          className={` absolute  top-[35%] sml:top-[33%] sm:top-[33%] md:top-[37%] ${
+          className={` absolute  top-[35%] sml:top-[33%] sm:top-[31%] md:top-[35%] ${
             isScrolled["el-9"] ? "el-9 visible" : "el-9 original"
           }`}
         >
@@ -259,7 +259,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef10}
-          className={`absolute top-[65%] sml:top-[64%] sm:top-[65%] md:top-[68%]  ${
+          className={`absolute top-[65%] sml:top-[64%] sm:top-[67%] md:top-[68%]  ${
             isScrolled["el-10"] ? "el-10 visible" : "el-10 original"
           }`}
         >
@@ -373,7 +373,7 @@ const RoadMap = () => {
         </div>
         <div
           ref={elementRef17}
-          className={`absolute z-[-1] top-[49%] sml:top-[49%] smx:top-[45%] sm:top-[49%] md:top-[50%] lg:top-[49%] ${
+          className={`absolute z-[-1] top-[49%] sml:top-[49%] smx:top-[45%] sm:top-[49%] md:top-[52%] lg:top-[51%] ${
             isScrolled["el-17"] ? "el-17 visible" : "el-17 original"
           }`}
         >
