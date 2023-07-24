@@ -93,7 +93,7 @@ const Upperblock = () => {
 
       <Image
         sizes="50vw"
-        className="absolute sm:mx-[12px] scale-[0.9] lg:scale-[1] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
+        className="absolute sm:mx-[12px] scale-[0.9] lg:scale-[0.95] bottom-[-60px] sm:bottom-[-100px] md:bottom-[-125px] lg:bottom-[-185px] left-[0px] rounded-[20px]"
         src={truck1}
         alt="turck1"
       />
