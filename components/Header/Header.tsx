@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 import moment from "moment";
 
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
-import logo from "../../public/assets/images/logo.svg";
-import burger from "../../public/assets/images/burger-btn.svg";
-import closeburg from "../../public/assets/images/close-burger.svg";
+import logo from "../../public/assets/images/logo.png";
+import burger from "../../public/assets/images/burger-btn.png";
+import closeburg from "../../public/assets/images/close-burger.png";
 import Button from "../UI/Button/Button";
 
 const Header = () => {
