@@ -15,7 +15,6 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
   const [subjectError, setSubjectError] = useState("");
   const [text, setText] = useState("");
   const [textError, setTextError] = useState("");
-  const [messageSent, setMessageSent] = useState(false);
 
   const RegExp =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -67,12 +66,12 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     setText("");
   };
 
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
     const message = {
       name: "",
       email: "",
       subject: "",
-      text: "",
+      body: "",
     };
 
     if (nameError === "" && name !== "") {
@@ -96,7 +95,7 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     }
 
     if (textError === "" && text !== "") {
-      message.text = text;
+      message.body = text;
     } else if (text === "") {
       setTextError(t("form_characters_error_min_sub"));
     } else {
@@ -107,9 +106,25 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.name !== "" &&
       message.email !== "" &&
       message.subject !== "" &&
-      message.text !== ""
+      message.body !== ""
     ) {
-      // console.log(message);
+      try {
+        const response = await fetch("http://api.aqords.com/contactus", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
       clearForm();
       isSentMessage(true);
     } else {

@@ -28,9 +28,29 @@ const Footer = () => {
     }
   };
 
-  const validateForm = (): void => {
+  const validateForm = async (): Promise<void> => {
+    const message = {
+      email,
+    };
     if (emailError === "" && email !== "") {
-      // console.log(email);
+      try {
+        const response = await fetch("http://api.aqords.com/subscribeme", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(message),
+        });
+
+        if (response.ok) {
+          console.log("Request was successful!");
+        } else {
+          console.error("Request failed!");
+        }
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+      setEmail("");
     } else {
       setEmailError(t("form_email_error"));
     }
@@ -50,6 +70,7 @@ const Footer = () => {
           <div className="relative flex md:items-start gap-[16px] mb-[56px] md:mb-[0px] ">
             <input
               onChange={(e) => emailHandler(e.target.value)}
+              value={email}
               name="email"
               autoComplete="email"
               type="email"
