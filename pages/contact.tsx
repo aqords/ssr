@@ -8,8 +8,8 @@ import dynamic from "next/dynamic";
 import BlockWithBackground from "../components/BlockWithBackground/BlockWithBackground";
 import Header from "../components/Header/Header";
 import contactbull from "/public/assets/images/contactbull.svg";
-import SentForm from "../components/ContactForm/SentForm";
 
+const SentForm = dynamic(() => import("../components/ContactForm/SentForm"));
 const ContactForm = dynamic(
   () => import("../components/ContactForm/ContactForm")
 );
