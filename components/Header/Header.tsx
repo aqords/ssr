@@ -7,9 +7,9 @@ import moment from "moment";
 
 import { useIsMobile } from "../../utils/hooks/useMobile/useIsMobile";
 import { linksForDesktop, linksForMobile } from "../Constants/HeaderLinks";
-import logo from "../../public/assets/images/logo.svg";
-import burger from "../../public/assets/images/burger-btn.svg";
-import closeburg from "../../public/assets/images/close-burger.svg";
+import logo from "../../public/assets/images/logo.png";
+import burger from "../../public/assets/images/burger-btn.png";
+import closeburg from "../../public/assets/images/close-burger.png";
 import Button from "../UI/Button/Button";
 
 const Header = () => {
@@ -47,19 +47,9 @@ const Header = () => {
       <div className="flex justify-between items-center h-[48px] mb-[12px]  ">
         <button className="w-[60px] h-[60px]" onClick={toggleBurger}>
           {isOpenBurger ? (
-            <Image
-              sizes="50vw"
-              className="scale-[1.5] ml-[20px] mt-[9px]"
-              src={closeburg}
-              alt="menu"
-            />
+            <Image src={closeburg} alt="menu" />
           ) : (
-            <Image
-              className="ml-[15px] mt-[9px]"
-              sizes="50vw"
-              src={burger}
-              alt="menu"
-            />
+            <Image src={burger} alt="menu" />
           )}
         </button>
         {/* <Button
