@@ -107,7 +107,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-black mt-[40px] mb-[40px] md:mb-[80px] border-[1px] border-neutral-700 rounded-[20px] p-[12px] md:p-[40px] flex flex-col lg:flex-row gap-[50px] justify-between">
+    <div className="bg-black mt-[40px]  border-[1px] border-neutral-700 rounded-[20px] p-[12px] md:p-[40px] flex flex-col lg:flex-row gap-[50px] justify-between">
       <div className="max-w-[348px] relative">
         <p className="text-[32px] md:text-[36px] mb-[20px] mt-[25px] md:mt-[8px]">
           {t("contact_form_title")}

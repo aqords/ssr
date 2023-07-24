@@ -10,7 +10,6 @@ import fullline2 from "../../public/assets/images/fullline2.svg";
 import linevector1 from "../../public/assets/images/linevector1.svg";
 import bgvector from "../../public/assets/images/bgvector.svg";
 import opacvector from "../../public/assets/images/opacvector.svg";
-import { thirdphase, fourthphase } from "../Constants/RoadMapTexts";
 import Button from "../UI/Button/Button";
 
 const RoadMap = () => {

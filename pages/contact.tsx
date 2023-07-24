@@ -46,11 +46,8 @@ const contact = () => {
             {t("contact_page_desc4")}
           </p>
           <ContactForm />
-          <p className="md:text-[20px] leading-[25px]   font-man mb-[45px]">
-            {t("contact_page_desc5")}
-          </p>
         </div>
-      </section>{" "}
+      </section>
       <span className="block h-[1px] w-full bg-[#98A2B3] opacity-25"></span>
       <Footer />
     </div>
