@@ -61,6 +61,13 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
     }
   };
 
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setText("");
+  };
+
   const validateForm = async (): Promise<void> => {
     const message = {
       name: "",
@@ -103,6 +110,9 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.subject !== "" &&
       message.body !== ""
     ) {
+      // console.log(message);
+      clearForm();
+      isSentMessage(true);
       try {
         const response = await fetch("http://api.aqords.com/contactus", {
           method: "POST",
