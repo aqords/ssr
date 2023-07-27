@@ -159,7 +159,6 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
             <p className="text-[#ffffff]">
               {t("contact_enter_name")}
               <span className="text-[#F44A77]"> *</span>
-              support@aqords.com
             </p>
             <input
               value={name}

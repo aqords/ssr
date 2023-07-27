@@ -19,10 +19,11 @@ const SentForm = ({ isSentMessage }: IsSentMessageProps) => {
         <button onClick={() => isSentMessage(false)}>
           <Button
             outsideGradient={
-              "hover:btn-hover-gradient hover:cursor-pointer rounded-full md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] w-[300px]"
+              "hover:btn-hover-gradient hover:cursor-pointer rounded-[12px] md:mt-[0px] mt-[10px] bg-gradient-to-r from-[#b5713f]  to-[#c6b38a] p-[2px] "
             }
+            insideGradient="rounded-[12px] bg-gradient-to-r from-[#27241d]  to-[#252118] p-[1px]"
           >
-            <p className="ml-[40px] my-[10px] text-[20px] font-man">
+            <p className="mx-[30px] my-[14px] text-[19px] font-man">
               {t("contact_send_another_message")}
             </p>
           </Button>
