@@ -154,6 +154,15 @@ body {
     height: 50vh;
     margin-top: -50vh;
   }
+  .footer-visible {
+    opacity: 1;
+    transition: all 1.4s;
+    transform: translateY(0px);
+  }
+  .footer-hide {
+    opacity: 0;
+    transform: translateY(50px);
+  }
   .left-bg {
     background: var(
       --roadmap-vertical-grad,
