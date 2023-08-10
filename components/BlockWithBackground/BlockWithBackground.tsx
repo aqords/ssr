@@ -60,7 +60,7 @@ const BlockWithBackground = ({
       </div>
       {img && (
         <Image
-          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
+          sizes="(max-width: 1200px) 100vw"
           className={imgStyle}
           priority={priority}
           src={img}

@@ -109,7 +109,7 @@ const ContactForm = ({ isSentMessage }: IsSentMessageProps) => {
       message.body !== ""
     ) {
       try {
-        const response = await fetch("http://api.aqords.com/contactus", {
+        const response = await fetch("http://api.aqords.com/public/contactus", {
           method: "POST",
           headers: {
             "content-type": "application/json",

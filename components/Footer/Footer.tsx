@@ -34,13 +34,16 @@ const Footer = () => {
     };
     if (emailError === "" && email !== "") {
       try {
-        const response = await fetch("http://api.aqords.com/subscribeme", {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(message),
-        });
+        const response = await fetch(
+          "http://api.aqords.com/public/subscribeme",
+          {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(message),
+          }
+        );
 
         if (response.ok) {
           console.log("Request was successful!");
