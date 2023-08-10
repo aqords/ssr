@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
@@ -18,6 +18,7 @@ const Footer = () => {
 
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [isSubscribe, setisSubscribe] = useState(false);
 
   const emailHandler = (email: string) => {
     setEmail(email);
@@ -57,12 +58,33 @@ const Footer = () => {
     } else {
       setEmailError(t("form_email_error"));
     }
+    setisSubscribe(true);
   };
 
   return (
     <footer className="py-[60px] md:py-[115px] bg-second">
       <div className="container">
-        <div className=" flex flex-col items-start smx:items-center gap-[20px] md:items-start  md:flex-row  md:justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]">
+        <div className="text-left smx:text-center md:text-left  mb-[35px] ">
+          <div
+            className={`absolute   ${
+              isSubscribe ? "footer-visible" : "footer-hide"
+            }  `}
+          >
+            <h3 className="font-medium text-[32px] text-white mb-[10px]">
+              {t("footer_subscribe_confirmed")}
+            </h3>
+
+            <p className="block  lg:mb-[35px] text-[#838383]">
+              {t("footer_lastest_news_confirmed")}
+            </p>
+          </div>
+        </div>
+
+        <div
+          className={`${
+            isSubscribe ? "footer-hide" : "footer-visible"
+          } relative flex flex-col items-start smx:items-center gap-[20px] md:items-start  md:flex-row  md:justify-between border-b border-opacity-25 border-[#98A2B3] mb-[40px]`}
+        >
           <div className="max-w-[270px] smx:max-w-full text-left smx:text-center md:text-left mb-[35px]">
             <h3 className="font-medium text-[32px] text-white mb-[10px]">
               {t("footer_subscribe")}
