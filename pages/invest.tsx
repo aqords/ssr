@@ -133,7 +133,7 @@ const invest = () => {
                     {t("white_paper")}
                   </Link>
                 }
-                &nbsp;
+                {/* &nbsp;
                 {
                   <Link
                     className="text-[#5682FA] underline ml-[3px]"
@@ -141,7 +141,7 @@ const invest = () => {
                   >
                     {t("pitch_deck")}
                   </Link>
-                }
+                } */}
                 &nbsp;
                 {
                   <Link

@@ -28,10 +28,10 @@ export const LinkForExplore: Link[] = [
     name: "road_map",
     path: Routes[6].path,
   },
-  {
-    name: "team",
-    path: Routes[5].path,
-  },
+  // {
+  //   name: "team",
+  //   path: Routes[5].path,
+  // },
   {
     name: "contact_us",
     path: Routes[7].path,
