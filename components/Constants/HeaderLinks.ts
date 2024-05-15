@@ -29,10 +29,10 @@ export const linksForDesktop: Link[] = [
     name: "whitepaper",
     path: Routes[4].path,
   },
-  {
-    name: "team",
-    path: Routes[5].path,
-  },
+  // {
+  //   name: "team",
+  //   path: Routes[5].path,
+  // },
   {
     name: "road_map",
     path: Routes[6].path,
@@ -65,10 +65,10 @@ export const linksForMobile: Link[] = [
     name: "whitepaper",
     path: Routes[4].path,
   },
-  {
-    name: "team",
-    path: Routes[5].path,
-  },
+  // {
+  //   name: "team",
+  //   path: Routes[5].path,
+  // },
   {
     name: "road_map",
     path: Routes[6].path,
