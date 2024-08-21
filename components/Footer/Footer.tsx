@@ -34,7 +34,7 @@ const Footer = () => {
     };
     if (emailError === "" && email !== "") {
       try {
-        const response = await fetch("http://api.aqords.com/subscribeme", {
+        const response = await fetch(`${process.env.API}/subscribeme`, {
           method: "POST",
           headers: {
             "content-type": "application/json",

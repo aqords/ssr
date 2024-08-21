@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const { i18n } = require("./next-i18next.config");
+const dotenv = require('dotenv');
+const path = require('path');
 const headers = [
   {
     key: "X-DNS-Prefetch-Control",
@@ -26,6 +28,12 @@ const headers = [
     value: "nosniff",
   },
 ];
+
+const activeEnv = process.env.ACTIVE_ENV || 'dev';
+
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${activeEnv}`),
+});
 
 const nextConfig = {
   images: {
