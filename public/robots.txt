@@ -4,4 +4,4 @@ Disallow: /_next/*
 Disallow: */legal
 Disallow: /api
 Disallow: /admin
-Disallow: /dash
+Disallow: /dashboard
