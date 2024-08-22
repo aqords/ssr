@@ -6,11 +6,11 @@
     "@babel/plugin-proposal-optional-chaining"
   ],
   "scripts": {
-    "dev": "ACTIVE_ENV=dev next dev -p 3003",
-    "prod": "ACTIVE_ENV=prod next dev -p 3003",
+    "dev": "ACTIVE_ENV=dev next dev -p 3000",
+    "prod": "ACTIVE_ENV=prod next dev -p 3000",
     "build:dev": "ACTIVE_ENV=dev next build",
     "build:prod": "ACTIVE_ENV=prod next build",
-    "start": "next start -p 3003",
+    "start": "next start -p 3000",
     "lint": "next lint",
     "export": "next export"
   },
