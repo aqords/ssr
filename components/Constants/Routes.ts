@@ -62,6 +62,6 @@ export const Routes = [
   },
   {
     name: "Terms and Conditions",
-    path: "/terms",
+    path: "/terms-of-use",
   },
 ];

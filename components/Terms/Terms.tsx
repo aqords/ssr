@@ -64,7 +64,7 @@ const Terms = () => {
                 {
                   <Link
                     className="text-[#5682FA]  cursor-pointer"
-                    href="/privacy"
+                    href="/privacy-policy"
                   >
                     {item.redirect}
                   </Link>
