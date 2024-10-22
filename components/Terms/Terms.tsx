@@ -6,12 +6,12 @@ const Terms = () => {
   return (
     <div>
       <h3 className="text-[38px] font-bold text-white mb-[30px]">
-        Terms of Use for Aqords
+        Terms of Use
       </h3>
       <p className="text-[24px] font-bold text-white mb-[50px]">
-        Welcome to the Aqords Driver App. These Terms of Use govern your access
-        to and use of the app. By using this app, you agree to comply with these
-        terms. Please read them carefully.
+        Welcome to Aqords! These Terms of Use govern your access to and use of
+        the Aqords website, dashboard, and mobile application. By using Aqords,
+        you agree to these terms. Please read them carefully.
       </p>
       <ul className="">
         {terms.map((item) => (
@@ -49,11 +49,6 @@ const Terms = () => {
               {item.category3 && (
                 <li className="mb-[10px] text-[#838383]">
                   <p className="">{item.category3}</p>
-                </li>
-              )}
-              {item.category4 && (
-                <li className="mb-[10px] text-[#838383]">
-                  <p className="">{item.category4}</p>
                 </li>
               )}
             </ul>

@@ -6,14 +6,14 @@ const Privacy = () => {
   return (
     <div>
       <h3 className="text-[38px] font-bold text-white mb-[30px]">
-        Privacy Policy for Aqords
+        Privacy Policy
       </h3>
       <p className="text-[24px] font-bold text-white mb-[50px]">
-        Aqords Driver App was developed to assist truck drivers in executing
-        cargo transportation orders efficiently. This Privacy Policy outlines
-        how we collect, use, and protect your personal data when using our app.
-        By using the Aqords Driver App, you agree to the practices described in
-        this policy.
+        At Aqords, we are committed to protecting your privacy and ensuring that
+        your personal information is handled securely. This Privacy Policy
+        explains how we collect, use, and safeguard information when you use our
+        website, dashboard, and mobile application. By accessing or using
+        Aqords, you agree to the terms outlined in this policy.
       </p>
       <ul className="">
         {privacy.map((item) => (

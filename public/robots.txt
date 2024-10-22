@@ -5,3 +5,5 @@ Disallow: */legal
 Disallow: /api
 Disallow: /admin
 Disallow: /dashboard
+Disallow: /privacy-policy
+Disallow: /terms-of-use
