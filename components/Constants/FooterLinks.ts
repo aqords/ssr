@@ -22,6 +22,10 @@ export const LinksForLearn: Link[] = [
     name: "whitepaper",
     path: Routes[4].path,
   },
+  {
+    name: "Terms and Conditions",
+    path: Routes[14].path,
+  },
 ];
 export const LinkForExplore: Link[] = [
   {

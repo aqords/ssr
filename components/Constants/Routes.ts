@@ -60,4 +60,8 @@ export const Routes = [
     name: "FAQ",
     path: "/faq",
   },
+  {
+    name: "Terms and Conditions",
+    path: "/terms",
+  },
 ];
